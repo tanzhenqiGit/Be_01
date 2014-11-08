@@ -22,6 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name="com.example.contents.ContentsActivity"
+            android:label="@string/contents" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.nine.NineContentsActivity"
+            android:label="@string/contents" >
+        </activity>
     </application>
 
 </manifest>

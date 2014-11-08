@@ -4,5 +4,6 @@
     <string name="app_name">DanDan</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+	<string name="main_interface">点击进入学习Android</string>
+	<string name="contents">Contents</string>
 </resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Contents">
+        <item > 2 Android应用的界面编程 </item>
+        <item > 3 Android事件处理 </item>
+        <item > 4 深入理解Activity与Fragment</item>
+        <item > 5 使用Intent和IntentFilter进行通信</item>
+        <item > 6 Android应用的资源</item>
+        <item > 7 图形与图像处理</item>
+        <item > 8 Android数据存储于IO</item>
+        <item > 9 使用ContentProvider实现数据共享</item>
+        <item > 10 Service与BroadcastReceiver</item>
+        <item > 11 多媒体应用开发</item>
+        <item > 12 OpenGL与3D 应用开发</item>
+        <item > 13 Android网络应用 </item>
+        <item > 14 管理Android手机桌面</item>
+        <item > 15 传感器应用开发 </item>
+        <item > 16 GPS 应用开发</item>
+        <item > 17 使用Google Map 服务</item>
+        <item > 18 疯狂连连看</item>
+        <item > 19 电子拍卖系统 </item>
+    </string-array>
+    
+    
+    <string-array name="chapterNineContents">
+        <item > 9.1 </item>
+        <item > 9.2 </item>
+        <item > 9.3 </item>
+        <item > 9.4 </item>
+        
+    </string-array>
+</resources>
