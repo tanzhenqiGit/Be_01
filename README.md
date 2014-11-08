@@ -1,3 +1,7 @@
+2014-11-08
+I will learn Android in this month.
+
+
 Be_01
 =====
 
