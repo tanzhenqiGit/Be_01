@@ -40,6 +40,16 @@
             >
             
         </activity>
+        <activity
+            android:name="com.example.contents.nine.DictProvider.DictResolvertTest"
+            android:label="@string/contents" >
+            
+        </activity>
+        
+         <activity
+            android:name="com.example.contents.nine.DictProvider$DictProviderResultActivity"
+            android:label="@string/contents" >
+        </activity>
         
         <provider
             android:name="com.example.contents.nineFirstContent.FirstProvider"
