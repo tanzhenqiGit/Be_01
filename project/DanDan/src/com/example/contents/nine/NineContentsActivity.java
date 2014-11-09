@@ -1,8 +1,10 @@
 package com.example.contents.nine;
 
+import com.example.contents.nineFirstContent.FirstResolver;
 import com.example.dandan.R;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -17,6 +19,7 @@ public class NineContentsActivity extends Activity{
 	private String TAG = "ChapterNineContents";
 	
 	private ListView mList;
+	private final int FIRST_CONTENT = 0;
 	private void  initializeList()
 	{
 		Log.d(TAG, "NineContentsActivity initializeList ");
@@ -36,9 +39,19 @@ public class NineContentsActivity extends Activity{
 		mList.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
-			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+			public void onItemClick(AdapterView<?> arg0, View arg1, int position,
 					long arg3) {
-				
+				switch(position)
+				{
+				case FIRST_CONTENT:
+					Intent intent = new Intent(NineContentsActivity.this,
+							FirstResolver.class);
+					startActivity(intent);
+					break;
+				default:
+					
+					break;
+				}
 				
 			}
 		
