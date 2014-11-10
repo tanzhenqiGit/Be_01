@@ -23,8 +23,8 @@
     
     
     <string-array name="chapterNineContents">
-        <item > 9.1 firstContent</item>
-        <item > 9.2 </item>
+        <item > 9.1 FirstContent</item>
+        <item > 9.2 DictProvider</item>
         <item > 9.3 </item>
         <item > 9.4 </item>
         

@@ -35,9 +35,9 @@ public class DictProvider extends ContentProvider {
 		switch(mMatch.match(uri))
 		{
 		case WORDS:
-			return "vnd.android.cursor.dir/org.crazyit.dict";
+			return "vnd.android.cursor.dir/com.example.contents.nine.DictProvider";
 		case WORD:
-			return "vnd.android.cursor.item/org.crazyit.dict";
+			return "vnd.android.cursor.item/com.example.contents.nine.DictProvider";
 		default:
 			throw new IllegalArgumentException("unKnow Uri:" + uri);
 		}

@@ -1,5 +1,6 @@
 package com.example.contents.nine;
 
+import com.example.contents.nine.DictProvider.DictResolvertTest;
 import com.example.contents.nineFirstContent.FirstResolver;
 import com.example.dandan.R;
 
@@ -20,6 +21,7 @@ public class NineContentsActivity extends Activity{
 	
 	private ListView mList;
 	private final int FIRST_CONTENT = 0;
+	private final int DICT_PROVIDER = 1;
 	private void  initializeList()
 	{
 		Log.d(TAG, "NineContentsActivity initializeList ");
@@ -47,6 +49,11 @@ public class NineContentsActivity extends Activity{
 					Intent intent = new Intent(NineContentsActivity.this,
 							FirstResolver.class);
 					startActivity(intent);
+					break;
+				case DICT_PROVIDER:
+					Intent dict_intent = new Intent(NineContentsActivity.this,
+							DictResolvertTest.class);
+					startActivity(dict_intent);
 					break;
 				default:
 					

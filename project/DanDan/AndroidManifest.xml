@@ -56,6 +56,13 @@
             android:authorities="com.example.contents.nineFirstContent"
             android:exported="true"
             />
+        
+        <provider 
+            android:name="com.example.contents.nine.DictProvider.DictProvider"
+            android:authorities="com.example.contents.nine.DictProvider"
+            android:exported="true"
+            />
+
             
     </application>
 
