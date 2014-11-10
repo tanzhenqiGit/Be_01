@@ -46,6 +46,7 @@ public class DictProvider extends ContentProvider {
 	
 	@Override
 	public int delete(Uri uri, String selection, String[] selectionArgs) {
+		Log.d(TAG,"delete");
 		SQLiteDatabase db = mDBOpenHelper.getReadableDatabase();
 		int num = 0;
 		switch(mMatch.match(uri)) {
@@ -70,6 +71,7 @@ public class DictProvider extends ContentProvider {
 
 	@Override
 	public Uri insert(Uri uri, ContentValues values) {
+		Log.d(TAG,"insert");
 		SQLiteDatabase db = mDBOpenHelper.getReadableDatabase();
 		switch (mMatch.match(uri))
 		{
@@ -92,6 +94,7 @@ public class DictProvider extends ContentProvider {
 	@Override
 	public Cursor query(Uri uri, String[] projection, String where,
 			String[] selectionArgs, String sortOrder) {
+		Log.d(TAG,"query");
 		SQLiteDatabase db = mDBOpenHelper.getReadableDatabase();
 		switch(mMatch.match(uri))
 		{
@@ -125,6 +128,7 @@ public class DictProvider extends ContentProvider {
 	@Override
 	public int update(Uri uri, ContentValues values, String selection,
 			String[] selectionArgs) {
+		Log.d(TAG,"update");
 		SQLiteDatabase db = mDBOpenHelper.getWritableDatabase();
 		int num = 0;
 		switch(mMatch.match(uri))

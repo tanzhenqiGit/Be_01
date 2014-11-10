@@ -68,7 +68,7 @@ public class DictResolvertTest extends Activity {
 							new String[] {"%" + Key + "%", "%" + Key + "%"}, null);
 				
 					Bundle data = new Bundle();
-					data.putSerializable("dat", converCursorToList(cursor));
+					data.putSerializable("data", converCursorToList(cursor));
 					Intent intent = new Intent(DictResolvertTest.this,DictProviderResultActivity.class);
 					intent.putExtras(data);
 					startActivity(intent);
