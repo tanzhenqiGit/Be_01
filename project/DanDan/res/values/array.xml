@@ -25,7 +25,7 @@
     <string-array name="chapterNineContents">
         <item > 9.1 FirstContent</item>
         <item > 9.2 DictProvider</item>
-        <item > 9.3 </item>
+        <item > 9.3 ContentProvider</item>
         <item > 9.4 </item>
         
     </string-array>

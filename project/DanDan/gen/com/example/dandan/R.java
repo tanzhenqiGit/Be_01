@@ -30,11 +30,16 @@ public final class R {
         public static final int line=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f09000f;
+        public static final int action_settings=0x7f090014;
         public static final int delete=0x7f09000e;
         public static final int insert=0x7f09000b;
         public static final int listView=0x7f090000;
         public static final int nine_chapter_contests=0x7f090001;
+        public static final int nine_content_provider_add=0x7f09000f;
+        public static final int nine_content_provider_email_text=0x7f090013;
+        public static final int nine_content_provider_name_text=0x7f090011;
+        public static final int nine_content_provider_number_text=0x7f090012;
+        public static final int nine_content_provider_search=0x7f090010;
         public static final int nine_dict_resolver_line_detail=0x7f090003;
         public static final int nine_dict_resolver_line_word=0x7f090002;
         public static final int nine_dict_resolver_main_detail=0x7f090005;
@@ -55,19 +60,24 @@ public final class R {
         public static final int nine_dict_resolver_main=0x7f030004;
         public static final int nine_dict_resolver_result=0x7f030005;
         public static final int nine_first_content=0x7f030006;
+        public static final int ninie_content_provider=0x7f030007;
     }
     public static final class menu {
         public static final int main_interface=0x7f080000;
     }
     public static final class string {
         public static final int action_settings=0x7f060001;
+        public static final int add=0x7f06000b;
         public static final int app_name=0x7f060000;
         public static final int contents=0x7f060004;
         public static final int delete=0x7f060006;
         public static final int detail=0x7f06000a;
         public static final int hello_world=0x7f060002;
         public static final int insert=0x7f060007;
+        public static final int mail=0x7f06000e;
         public static final int main_interface=0x7f060003;
+        public static final int name=0x7f06000c;
+        public static final int number=0x7f06000d;
         public static final int query=0x7f060005;
         public static final int search=0x7f060009;
         public static final int update=0x7f060008;

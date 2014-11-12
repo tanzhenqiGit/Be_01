@@ -51,6 +51,11 @@
             android:label="@string/contents" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.nine.contentprovider.ContentProviderTest"
+            android:label="@string/contents" >
+        </activity>
+        
         <provider
             android:name="com.example.contents.nineFirstContent.FirstProvider"
             android:authorities="com.example.contents.nineFirstContent"
