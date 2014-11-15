@@ -1,6 +1,7 @@
 package com.example.contents;
 
 import com.example.contents.nine.NineContentsActivity;
+import com.example.contents.ten.TenContentsActivity;
 import com.example.dandan.R;
 
 import android.app.Activity;
@@ -77,14 +78,16 @@ public class ContentsActivity extends Activity {
 					case CHAPTER_SEVEN:
 						break;
 					case CHAPTER_EIGHT:
-						
+					
 						break;
 					case CHAPTER_NINE:
 						Log.d(TAG, "goto nine chapter contents");
 						Intent intent = new Intent(ContentsActivity.this, NineContentsActivity.class);
 						startActivity(intent);
 						break;
-					case CHAPTER_TEN:
+					case CHAPTER_TEN:	
+						Intent intentTen = new Intent(ContentsActivity.this, TenContentsActivity.class);
+						startActivity(intentTen);
 						break;
 					case CHAPTER_ELEVEN:
 						break;

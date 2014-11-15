@@ -10,7 +10,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/dandan"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
  
@@ -60,8 +60,15 @@
             android:name="com.example.contents.nine.mediaprovider.MediaProviderTest"
             android:label="@string/contents" >
         </activity>
-            
-        
+         
+         <activity
+            android:name="com.example.contents.ten.TenContentsActivity"
+            android:label="@string/contents" >
+        </activity>
+        <activity
+            android:name="com.example.contents.ten.firstService.FirstServiceTest"
+            android:label="@string/contents" >
+        </activity>
         <provider
             android:name="com.example.contents.nineFirstContent.FirstProvider"
             android:authorities="com.example.contents.nineFirstContent"

@@ -21,6 +21,12 @@
         <item > 19 电子拍卖系统 </item>
     </string-array>
     
+    <string-array name="chapterTenContents">
+        <item > 10.1 FirstService </item>
+        <item > 10.2 </item>
+        <item > 10.3 </item>
+        <item > 10.4 </item>
+    </string-array>
     
     <string-array name="chapterNineContents">
         <item > 9.1 FirstContent</item>

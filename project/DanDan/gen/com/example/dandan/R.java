@@ -10,7 +10,8 @@ package com.example.dandan;
 public final class R {
     public static final class array {
         public static final int Contents=0x7f040000;
-        public static final int chapterNineContents=0x7f040001;
+        public static final int chapterNineContents=0x7f040002;
+        public static final int chapterTenContents=0x7f040001;
     }
     public static final class attr {
     }
@@ -31,7 +32,7 @@ public final class R {
         public static final int line=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f09001c;
+        public static final int action_settings=0x7f09001e;
         public static final int delete=0x7f09000f;
         public static final int insert=0x7f09000c;
         public static final int listView=0x7f090000;
@@ -59,6 +60,8 @@ public final class R {
         public static final int nine_media_provider_name_text=0x7f090010;
         public static final int nine_media_provider_view_imageview=0x7f090016;
         public static final int query=0x7f09000e;
+        public static final int ten_first_service_main_startBtn=0x7f09001c;
+        public static final int ten_first_service_main_stopBtn=0x7f09001d;
         public static final int update=0x7f09000d;
     }
     public static final class layout {
@@ -74,6 +77,7 @@ public final class R {
         public static final int nine_media_provider_main=0x7f030009;
         public static final int nine_media_provider_view=0x7f03000a;
         public static final int ninie_content_provider=0x7f03000b;
+        public static final int ten_first_service_main=0x7f03000c;
     }
     public static final class menu {
         public static final int main_interface=0x7f080000;
@@ -93,6 +97,8 @@ public final class R {
         public static final int number=0x7f06000d;
         public static final int query=0x7f060005;
         public static final int search=0x7f060009;
+        public static final int start=0x7f06000f;
+        public static final int stop=0x7f060010;
         public static final int update=0x7f060008;
     }
     public static final class style {
