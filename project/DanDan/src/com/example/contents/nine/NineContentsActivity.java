@@ -2,6 +2,7 @@ package com.example.contents.nine;
 
 import com.example.contents.nine.DictProvider.DictResolvertTest;
 import com.example.contents.nine.contentprovider.ContentProviderTest;
+import com.example.contents.nine.mediaprovider.MediaProviderTest;
 import com.example.contents.nineFirstContent.FirstResolver;
 import com.example.dandan.R;
 
@@ -24,6 +25,7 @@ public class NineContentsActivity extends Activity{
 	private final int FIRST_CONTENT = 0;
 	private final int DICT_PROVIDER = 1;
 	private final int CONTENT_PROVIDER = 2;
+	private final int MEDIA_PROVIDER = 3;
 	private void  initializeList()
 	{
 		Log.d(TAG, "NineContentsActivity initializeList ");
@@ -61,6 +63,12 @@ public class NineContentsActivity extends Activity{
 					Intent content_intent = new Intent(NineContentsActivity.this, 
 							ContentProviderTest.class);
 					startActivity(content_intent);
+					break;
+				case MEDIA_PROVIDER:
+					Intent media_provider_intent = 
+						new Intent(NineContentsActivity.this,
+								MediaProviderTest.class);
+					startActivity(media_provider_intent);
 					break;
 				default:
 					

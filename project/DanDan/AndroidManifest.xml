@@ -56,6 +56,12 @@
             android:label="@string/contents" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.nine.mediaprovider.MediaProviderTest"
+            android:label="@string/contents" >
+        </activity>
+            
+        
         <provider
             android:name="com.example.contents.nineFirstContent.FirstProvider"
             android:authorities="com.example.contents.nineFirstContent"

@@ -16,7 +16,6 @@ import android.provider.ContactsContract;
 import android.provider.ContactsContract.CommonDataKinds.Email;
 import android.provider.ContactsContract.CommonDataKinds.Phone;
 import android.provider.ContactsContract.CommonDataKinds.StructuredName;
-import android.provider.ContactsContract.Contacts;
 import android.provider.ContactsContract.Data;
 import android.provider.ContactsContract.RawContacts;
 import android.util.Log;
@@ -25,7 +24,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.AbsListView;
-import android.widget.AbsListView.LayoutParams;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ExpandableListAdapter;
@@ -67,6 +65,7 @@ public class ContentProviderTest extends Activity {
 				Cursor cursor = getContentResolver()
 						.query(ContactsContract.Contacts.CONTENT_URI,
 								null, null, null, null);
+				
 				while(cursor.moveToNext())
 				{
 					String contactId = cursor.getString(cursor.getColumnIndex(
@@ -80,13 +79,14 @@ public class ContentProviderTest extends Activity {
 					Cursor phones = getContentResolver()
 							.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, 
 									null, 
-									ContactsContract.CommonDataKinds.Phone.CONTACT_ID + " = " + contactId,
+									ContactsContract.CommonDataKinds.Phone.CONTACT_ID
+									+ " = " + contactId,
 									null,
 									null);
 					ArrayList<String> detail = new ArrayList<String>();
 					while(phones.moveToNext()) {
 						String phoneNumber = phones.getString(
-								phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+							phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
 						detail.add("number:" + phoneNumber);
 						
 					}
@@ -257,6 +257,7 @@ public class ContentProviderTest extends Activity {
 				   .show();
 			}
 		});
+		
 		mAddBtn.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -274,22 +275,26 @@ public class ContentProviderTest extends Activity {
 				values.put(Data.RAW_CONTACT_ID, rawContactId);
 				values.put(Data.MIMETYPE, StructuredName.CONTENT_ITEM_TYPE);
 				values.put(StructuredName.GIVEN_NAME, name);
-				getContentResolver().insert(android.provider.ContactsContract.Data.CONTENT_URI, values);
+				getContentResolver().insert(android.provider.ContactsContract.Data.CONTENT_URI,
+						values);
 				values.clear();
 				
 				values.put(Data.RAW_CONTACT_ID, rawContactId);
 				values.put(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE);
 				values.put(Phone.NUMBER, phone);
 				values.put(Phone.TYPE, Phone.TYPE_MOBILE);
-				getContentResolver().insert(android.provider.ContactsContract.Data.CONTENT_URI, values);
+				getContentResolver().insert(android.provider.ContactsContract.Data.CONTENT_URI, 
+						values);
 				
 				values.clear();
 				values.put(Data.RAW_CONTACT_ID, rawContactId);
 				values.put(Data.MIMETYPE, Email.CONTENT_ITEM_TYPE);
 				values.put(Email.DATA, email);
 				values.put(Email.TYPE, Email.TYPE_WORK);
-				getContentResolver().insert(android.provider.ContactsContract.Data.CONTENT_URI, values);
-				Toast.makeText(ContentProviderTest.this, "联系人数据添加成功", Toast.LENGTH_LONG).show();
+				getContentResolver().insert(android.provider.ContactsContract.Data.CONTENT_URI,
+						values);
+				Toast.makeText(ContentProviderTest.this, 
+						"联系人数据添加成功", Toast.LENGTH_LONG).show();
 				
 				
 				
