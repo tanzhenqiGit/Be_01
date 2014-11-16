@@ -61,7 +61,7 @@
             android:label="@string/contents" >
         </activity>
          
-         <activity
+        <activity
             android:name="com.example.contents.ten.TenContentsActivity"
             android:label="@string/contents" >
         </activity>
@@ -77,6 +77,10 @@
         <activity
             android:name="com.example.contents.ten.intentservicetest.IntentServiceTest"
             android:label="@string/contents" >
+        </activity>
+        <activity
+            android:name="com.example.contents.ten.aidlservice.AidlClient"
+            android:label="@string/getServiceSts" >
         </activity>
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >
@@ -96,6 +100,15 @@
         </service>
         
         <service android:name="com.example.contents.ten.intentservicetest.MyIntentService" >
+        </service>
+        
+        <service android:name="com.example.contents.ten.aidlservice.AidlService" >
+        </service>
+        
+        <service android:name="com.example.contents.ten.aidlservice.AidlService" >
+        	<intent-filter>
+        	    <action android:name="com.example.contents.ten.aidlservice.AidlService" />
+        	</intent-filter>
         </service>
         
         <provider

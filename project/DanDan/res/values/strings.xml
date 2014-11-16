@@ -27,5 +27,8 @@
 	
 	<string name="startService">启动普通Service</string>
 	<string name="startIntentService">启动IntentService</string>
+	<string name="getServiceSts">获取远程Service的状态</string>
+	<string name="color">颜色</string>
+	<string name="weight">体重</string>
 	
 </resources>

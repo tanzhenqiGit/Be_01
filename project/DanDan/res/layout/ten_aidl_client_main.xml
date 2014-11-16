@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <Button 
+        android:id="@+id/ten_aidl_service_main_getServiceStsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/getServiceSts"
+        android:gravity="fill_horizontal"
+        />
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/color"
+        />
+    <EditText
+        android:id="@+id/ten_aidl_service_main_color_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/weight"
+        />
+    <EditText
+        android:id="@+id/ten_aidl_service_main_weight_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />"
+    
+</LinearLayout>
