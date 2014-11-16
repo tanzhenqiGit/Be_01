@@ -74,7 +74,10 @@
             android:name="com.example.contents.ten.bindservice.BindServiceTest"
             android:label="@string/contents" >
         </activity>
-        
+        <activity
+            android:name="com.example.contents.ten.intentservicetest.IntentServiceTest"
+            android:label="@string/contents" >
+        </activity>
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
@@ -82,10 +85,17 @@
         	</intent-filter>
         </service>
         
-         <service android:name="com.example.contents.ten.bindservice.BindService" >
+        <service android:name="com.example.contents.ten.bindservice.BindService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.bindservice.BindService" />
         	</intent-filter>
+        </service>
+        
+        
+        <service android:name="com.example.contents.ten.intentservicetest.MyService" >
+        </service>
+        
+        <service android:name="com.example.contents.ten.intentservicetest.MyIntentService" >
         </service>
         
         <provider

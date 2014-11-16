@@ -24,7 +24,7 @@
     <string-array name="chapterTenContents">
         <item > 10.1 FirstService </item>
         <item > 10.2 BindService </item>
-        <item > 10.3 </item>
+        <item > 10.3 IntentService </item>
         <item > 10.4 </item>
     </string-array>
     

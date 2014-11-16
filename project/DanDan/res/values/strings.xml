@@ -24,4 +24,8 @@
 	<string name="bindService">绑定Service</string>
 	<string name="unBindService">解除Service</string>
 	<string name="getInfo">获取Count</string>
+	
+	<string name="startService">启动普通Service</string>
+	<string name="startIntentService">启动IntentService</string>
+	
 </resources>
