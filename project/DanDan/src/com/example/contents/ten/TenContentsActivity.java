@@ -1,5 +1,6 @@
 package com.example.contents.ten;
 
+import com.example.contents.ten.bindservice.BindServiceTest;
 import com.example.contents.ten.firstService.FirstServiceTest;
 import com.example.dandan.R;
 
@@ -20,6 +21,9 @@ public class TenContentsActivity extends Activity {
 	private String TAG = "TenContentsActivity";
 	private ListView mListView = null;
 	private final int FIRST_SERVICE = 0;
+	private final int BIND_SERVICE = 1;
+	
+	
 	private void initializeComponent()
 	{
 		Log.d(TAG, "initializeComponent");
@@ -42,6 +46,15 @@ public class TenContentsActivity extends Activity {
 						new Intent(TenContentsActivity.this,
 								FirstServiceTest.class);
 					startActivity(first_service_intent);
+					break;
+				case BIND_SERVICE:
+					Intent bind_service_intent =
+						new Intent(TenContentsActivity.this ,
+								BindServiceTest.class);
+					startActivity(bind_service_intent);
+					break;
+				default:
+					
 					break;
 				}
 				

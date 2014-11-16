@@ -69,6 +69,25 @@
             android:name="com.example.contents.ten.firstService.FirstServiceTest"
             android:label="@string/contents" >
         </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.bindservice.BindServiceTest"
+            android:label="@string/contents" >
+        </activity>
+        
+        
+        <service android:name="com.example.contents.ten.firstService.FirstService" >
+        	<intent-filter>
+        	    <action android:name="com.example.contents.ten.firstService.FirstService" />
+        	</intent-filter>
+        </service>
+        
+         <service android:name="com.example.contents.ten.bindservice.BindService" >
+        	<intent-filter>
+        	    <action android:name="com.example.contents.ten.bindservice.BindService" />
+        	</intent-filter>
+        </service>
+        
         <provider
             android:name="com.example.contents.nineFirstContent.FirstProvider"
             android:authorities="com.example.contents.nineFirstContent"

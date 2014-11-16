@@ -20,4 +20,8 @@
 	<string name="mail">邮件</string>
 	<string name="start">开始</string>
 	<string name="stop">停止</string>
+	
+	<string name="bindService">绑定Service</string>
+	<string name="unBindService">解除Service</string>
+	<string name="getInfo">获取Count</string>
 </resources>
