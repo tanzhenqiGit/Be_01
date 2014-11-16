@@ -82,6 +82,10 @@
             android:name="com.example.contents.ten.aidlservice.AidlClient"
             android:label="@string/getServiceSts" >
         </activity>
+        <activity
+            android:name="com.example.contents.ten.complexservice.ComplexClient"
+            android:label="@string/getServiceSts" >
+        </activity>
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
@@ -111,6 +115,12 @@
         	</intent-filter>
         </service>
         
+        
+        <service android:name="com.example.contents.ten.complexservice.ComplexService" >
+        	<intent-filter>
+        	    <action android:name="com.example.contents.ten.complexservice.ComplexService" />
+        	</intent-filter>
+        </service>
         <provider
             android:name="com.example.contents.nineFirstContent.FirstProvider"
             android:authorities="com.example.contents.nineFirstContent"

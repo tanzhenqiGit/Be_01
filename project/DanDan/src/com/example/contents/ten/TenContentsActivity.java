@@ -2,6 +2,7 @@ package com.example.contents.ten;
 
 import com.example.contents.ten.aidlservice.AidlClient;
 import com.example.contents.ten.bindservice.BindServiceTest;
+import com.example.contents.ten.complexservice.ComplexClient;
 import com.example.contents.ten.firstService.FirstServiceTest;
 import com.example.contents.ten.intentservicetest.IntentServiceTest;
 import com.example.dandan.R;
@@ -26,6 +27,7 @@ public class TenContentsActivity extends Activity {
 	private final int BIND_SERVICE = 1;
 	private final int INTENT_SETVICE = 2;
 	private final int AIDL_SERVICE = 3;
+	private final int COMPLEX_SERVICE = 4;
 	
 	private void initializeComponent()
 	{
@@ -67,6 +69,11 @@ public class TenContentsActivity extends Activity {
 						new Intent(TenContentsActivity.this,
 								AidlClient.class);
 					startActivity(aidl_service_intent);
+					break;
+				case COMPLEX_SERVICE:
+					Intent complex_service_intent = 
+						new Intent(TenContentsActivity.this, ComplexClient.class);
+					startActivity(complex_service_intent);
 					break;
 				default:
 					

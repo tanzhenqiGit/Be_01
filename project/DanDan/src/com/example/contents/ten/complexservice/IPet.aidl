@@ -1,6 +1,7 @@
 package com.example.contents.ten.complexservice;
-import java.util.List;
 
+import com.example.contents.ten.complexservice.Person;
+import com.example.contents.ten.complexservice.Pet;
 interface IPet
 {
 	List<Pet> getPets(in Person owner);

@@ -32,7 +32,7 @@ public final class R {
         public static final int line=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f090026;
+        public static final int action_settings=0x7f090029;
         public static final int delete=0x7f09000f;
         public static final int insert=0x7f09000c;
         public static final int listView=0x7f090000;
@@ -66,10 +66,13 @@ public final class R {
         public static final int ten_bind_service_main_bind_btn=0x7f09001f;
         public static final int ten_bind_service_main_getInfo_btn=0x7f090021;
         public static final int ten_bind_service_main_unbind_btn=0x7f090020;
-        public static final int ten_first_service_main_startBtn=0x7f090022;
-        public static final int ten_first_service_main_stopBtn=0x7f090023;
-        public static final int ten_intent_service_start_intent_service=0x7f090025;
-        public static final int ten_intent_service_start_setvice=0x7f090024;
+        public static final int ten_complex_service_main_getServiceBtn=0x7f090022;
+        public static final int ten_complex_service_main_input_text=0x7f090023;
+        public static final int ten_complex_service_main_listView=0x7f090024;
+        public static final int ten_first_service_main_startBtn=0x7f090025;
+        public static final int ten_first_service_main_stopBtn=0x7f090026;
+        public static final int ten_intent_service_start_intent_service=0x7f090028;
+        public static final int ten_intent_service_start_setvice=0x7f090027;
         public static final int update=0x7f09000d;
     }
     public static final class layout {
@@ -87,13 +90,15 @@ public final class R {
         public static final int ninie_content_provider=0x7f03000b;
         public static final int ten_aidl_client_main=0x7f03000c;
         public static final int ten_bind_service_main=0x7f03000d;
-        public static final int ten_first_service_main=0x7f03000e;
-        public static final int ten_intent_service_main=0x7f03000f;
+        public static final int ten_complex_service_main=0x7f03000e;
+        public static final int ten_first_service_main=0x7f03000f;
+        public static final int ten_intent_service_main=0x7f030010;
     }
     public static final class menu {
         public static final int main_interface=0x7f080000;
     }
     public static final class string {
+        public static final int InputName=0x7f060019;
         public static final int action_settings=0x7f060001;
         public static final int add=0x7f06000b;
         public static final int app_name=0x7f060000;

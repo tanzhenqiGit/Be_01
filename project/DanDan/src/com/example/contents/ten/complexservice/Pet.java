@@ -62,4 +62,25 @@ public class Pet implements Parcelable {
 		
 	}
 	
+	
+	@Override
+	public String toString() {
+		return "Pet [mName=" + mName + ", mWeight=" + mWeight + "]";
+	}
+
+
+	static Parcelable.Creator<Pet> CREATOR =
+			new Creator<Pet>() {
+				
+				@Override
+				public Pet[] newArray(int size) {
+					Log.d(Pet.TAG, "newArray");
+					return new Pet[size];
+				}
+				
+				@Override
+				public Pet createFromParcel(Parcel source) {
+					return new Pet(source.readString(),source.readDouble());
+				}
+			};
 }

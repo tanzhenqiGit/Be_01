@@ -30,5 +30,6 @@
 	<string name="getServiceSts">获取远程Service的状态</string>
 	<string name="color">颜色</string>
 	<string name="weight">体重</string>
+	<string name="InputName"> 请输入用户名 </string>
 	
 </resources>
