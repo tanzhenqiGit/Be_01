@@ -26,6 +26,7 @@
         <item > 10.2 BindService </item>
         <item > 10.3 IntentService </item>
         <item > 10.4 AidlService </item>
+        <item > 10.5 ComPlexService </item>
     </string-array>
     
     <string-array name="chapterNineContents">
