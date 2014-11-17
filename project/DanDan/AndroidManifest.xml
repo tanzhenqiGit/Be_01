@@ -86,7 +86,10 @@
             android:name="com.example.contents.ten.complexservice.ComplexClient"
             android:label="@string/getServiceSts" >
         </activity>
-        
+        <activity
+            android:name="com.example.contents.ten.telephonystatus.TelephonyStatus"
+            android:label="@string/getServiceSts" >
+        </activity>
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />

@@ -12,6 +12,15 @@ public final class R {
         public static final int Contents=0x7f040000;
         public static final int chapterNineContents=0x7f040002;
         public static final int chapterTenContents=0x7f040001;
+        /**  声明一个名为phoneType的字符串数组 
+         */
+        public static final int phoneType=0x7f040005;
+        /**  声明一个名为simState的字符串数组 
+         */
+        public static final int simState=0x7f040004;
+        /**  声明一个名为statusNames的字符串数组 
+         */
+        public static final int statusNames=0x7f040003;
     }
     public static final class attr {
     }
@@ -32,7 +41,7 @@ public final class R {
         public static final int line=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f090029;
+        public static final int action_settings=0x7f09002c;
         public static final int delete=0x7f09000f;
         public static final int insert=0x7f09000c;
         public static final int listView=0x7f090000;
@@ -73,6 +82,9 @@ public final class R {
         public static final int ten_first_service_main_stopBtn=0x7f090026;
         public static final int ten_intent_service_start_intent_service=0x7f090028;
         public static final int ten_intent_service_start_setvice=0x7f090027;
+        public static final int ten_telephony_status_line_name=0x7f090029;
+        public static final int ten_telephony_status_line_value=0x7f09002a;
+        public static final int ten_telephony_status_main_listview=0x7f09002b;
         public static final int update=0x7f09000d;
     }
     public static final class layout {
@@ -93,6 +105,8 @@ public final class R {
         public static final int ten_complex_service_main=0x7f03000e;
         public static final int ten_first_service_main=0x7f03000f;
         public static final int ten_intent_service_main=0x7f030010;
+        public static final int ten_telephony_status_line=0x7f030011;
+        public static final int ten_telephony_status_main=0x7f030012;
     }
     public static final class menu {
         public static final int main_interface=0x7f080000;

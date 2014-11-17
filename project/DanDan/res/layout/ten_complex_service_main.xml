@@ -17,7 +17,7 @@
         android:text="@string/InputName"
         />
     
-    <EditText 
+    <EditText
         android:id="@+id/ten_complex_service_main_input_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

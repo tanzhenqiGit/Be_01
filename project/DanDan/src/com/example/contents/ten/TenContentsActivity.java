@@ -5,6 +5,7 @@ import com.example.contents.ten.bindservice.BindServiceTest;
 import com.example.contents.ten.complexservice.ComplexClient;
 import com.example.contents.ten.firstService.FirstServiceTest;
 import com.example.contents.ten.intentservicetest.IntentServiceTest;
+import com.example.contents.ten.telephonystatus.TelephonyStatus;
 import com.example.dandan.R;
 
 import android.app.Activity;
@@ -28,6 +29,7 @@ public class TenContentsActivity extends Activity {
 	private final int INTENT_SETVICE = 2;
 	private final int AIDL_SERVICE = 3;
 	private final int COMPLEX_SERVICE = 4;
+	private final int TELEPHONY_STATUS = 5;
 	
 	private void initializeComponent()
 	{
@@ -74,6 +76,11 @@ public class TenContentsActivity extends Activity {
 					Intent complex_service_intent = 
 						new Intent(TenContentsActivity.this, ComplexClient.class);
 					startActivity(complex_service_intent);
+					break;
+				case TELEPHONY_STATUS:
+					Intent telephony_status_intent =
+						new Intent(TenContentsActivity.this, TelephonyStatus.class);
+					startActivity(telephony_status_intent);
 					break;
 				default:
 					
