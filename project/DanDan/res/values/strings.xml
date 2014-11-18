@@ -41,6 +41,7 @@
 	<string name="MonitorPhone">MonitorPhone </string>
 	<string name="TelephonyStatus">TelephonyStatus</string>
 	<string name="BlockMain">BlockMain</string>
+	<string name="managerBlack"> 管理黑名单 </string>
 	
 	
 </resources>

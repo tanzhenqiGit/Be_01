@@ -36,215 +36,220 @@ public class ContentProviderTest extends Activity {
 	private String TAG = "ContentProviderTest";
 	private Button mAddBtn;
 	private Button mSearchBtn;
-	private void initializeConponent()
-	{
+
+	private void initializeConponent() {
 		Log.d(TAG, "initializeConponent");
-		mAddBtn = (Button)findViewById(R.id.nine_content_provider_add);
+		mAddBtn = (Button) findViewById(R.id.nine_content_provider_add);
 		if (mAddBtn == null) {
 			Log.e(TAG, "get nine_content_provider_add is null");
 			return;
 		}
-		
-		mSearchBtn = (Button)findViewById(R.id.nine_content_provider_search);
+
+		mSearchBtn = (Button) findViewById(R.id.nine_content_provider_search);
 		if (mSearchBtn == null) {
 			Log.e(TAG, "get nine_content_provider_search is null");
 			return;
 		}
 		setButtonListener();
 	}
-	
-	private void setButtonListener()
-	{
+
+	private void setButtonListener() {
 		mSearchBtn.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				final ArrayList<String> names = new ArrayList<String>();
 				final ArrayList<ArrayList<String>> details = new ArrayList<ArrayList<String>>();
-				
-				Cursor cursor = getContentResolver()
-						.query(ContactsContract.Contacts.CONTENT_URI,
-								null, null, null, null);
-				
-				while(cursor.moveToNext())
-				{
-					String contactId = cursor.getString(cursor.getColumnIndex(
-							ContactsContract.Contacts._ID));
-					String name = cursor.getString(cursor.getColumnIndex(
-							ContactsContract.Contacts.DISPLAY_NAME));
+
+				Cursor cursor = getContentResolver().query(
+						ContactsContract.Contacts.CONTENT_URI, null, null,
+						null, null);
+
+				while (cursor.moveToNext()) {
+					String contactId = cursor.getString(cursor
+							.getColumnIndex(ContactsContract.Contacts._ID));
+					String name = cursor.getString(cursor
+							.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
 					names.add(name);
-					Log.d(TAG,"name = " +name);
+					Log.d(TAG, "name = " + name);
 					Log.d(TAG, "ID = " + contactId);
-					
-					Cursor phones = getContentResolver()
-							.query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, 
-									null, 
-									ContactsContract.CommonDataKinds.Phone.CONTACT_ID
-									+ " = " + contactId,
-									null,
-									null);
+
+					Cursor phones = getContentResolver().query(
+							ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
+							null,
+							ContactsContract.CommonDataKinds.Phone.CONTACT_ID
+									+ " = " + contactId, null, null);
 					ArrayList<String> detail = new ArrayList<String>();
-					while(phones.moveToNext()) {
-						String phoneNumber = phones.getString(
-							phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
+					while (phones.moveToNext()) {
+						String phoneNumber = phones.getString(phones
+								.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
 						detail.add("number:" + phoneNumber);
-						
+
 					}
 					phones.close();
-					
+
 					Cursor emails = getContentResolver().query(
 							ContactsContract.CommonDataKinds.Email.CONTENT_URI,
 							null,
-							ContactsContract.CommonDataKinds.Email.CONTACT_ID + " = " + contactId,
-							null, null);
-					
-					while(emails.moveToNext()) {
-						String emailAddress = emails.getString(emails.getColumnIndex(
-								ContactsContract.CommonDataKinds.Email.DATA));
-						detail.add("ÓÊ¼þµØÖ·£º" + emailAddress);
-						
+							ContactsContract.CommonDataKinds.Email.CONTACT_ID
+									+ " = " + contactId, null, null);
+
+					while (emails.moveToNext()) {
+						String emailAddress = emails.getString(emails
+								.getColumnIndex(ContactsContract.CommonDataKinds.Email.DATA));
+						detail.add("ï¿½Ê¼ï¿½ï¿½ï¿½Ö·ï¿½ï¿½" + emailAddress);
+
 					}
 					emails.close();
 					details.add(detail);
 				}
 				cursor.close();
-				
-				View resultDialog = getLayoutInflater()
-						.inflate(R.layout.nine_content_provider_result, null);
+
+				View resultDialog = getLayoutInflater().inflate(
+						R.layout.nine_content_provider_result, null);
 				ExpandableListView list = (ExpandableListView) resultDialog
 						.findViewById(R.id.nine_content_provider_result_list);
 				ExpandableListAdapter adapter = new ExpandableListAdapter() {
-					
-					private TextView getTextView()
-					{
+
+					private TextView getTextView() {
 						AbsListView.LayoutParams lp = new AbsListView.LayoutParams(
-								ViewGroup.LayoutParams.MATCH_PARENT,64);
-						TextView textView = new TextView(ContentProviderTest.this);
+								ViewGroup.LayoutParams.MATCH_PARENT, 64);
+						TextView textView = new TextView(
+								ContentProviderTest.this);
 						textView.setLayoutParams(lp);
-						textView.setGravity(Gravity.CENTER_VERTICAL|Gravity.LEFT);
+						textView.setGravity(Gravity.CENTER_VERTICAL
+								| Gravity.LEFT);
 						textView.setPadding(36, 0, 0, 0);
 						textView.setTextSize(20);
 						return textView;
 					}
-					
+
 					@Override
-					public void unregisterDataSetObserver(DataSetObserver observer) {
+					public void unregisterDataSetObserver(
+							DataSetObserver observer) {
 						// TODO Auto-generated method stub
-						
+
 					}
-					
+
 					@Override
 					public void registerDataSetObserver(DataSetObserver observer) {
 						// TODO Auto-generated method stub
-						
+
 					}
-					
+
 					@Override
 					public void onGroupExpanded(int groupPosition) {
 						// TODO Auto-generated method stub
-						
+
 					}
-					
+
 					@Override
 					public void onGroupCollapsed(int groupPosition) {
 						// TODO Auto-generated method stub
-						
+
 					}
-					
+
 					@Override
 					public boolean isEmpty() {
 						// TODO Auto-generated method stub
 						return false;
 					}
-					
+
 					@Override
-					public boolean isChildSelectable(int groupPosition, int childPosition) {
-						Log.d(TAG, "ischildSelectable groupPosition=" 
-							+ groupPosition + "childPosition=" + childPosition);
-						
+					public boolean isChildSelectable(int groupPosition,
+							int childPosition) {
+						Log.d(TAG, "ischildSelectable groupPosition="
+								+ groupPosition + "childPosition="
+								+ childPosition);
+
 						return true;
 					}
-					
+
 					@Override
 					public boolean hasStableIds() {
 						Log.d(TAG, "hasStableIds");
 						return true;
 					}
-					
+
 					@Override
-					public View getGroupView(int groupPosition, boolean isExpanded,
-							View convertView, ViewGroup parent) {
-						Log.d(TAG, "getGroupView groupPosition="+groupPosition);
+					public View getGroupView(int groupPosition,
+							boolean isExpanded, View convertView,
+							ViewGroup parent) {
+						Log.d(TAG, "getGroupView groupPosition="
+								+ groupPosition);
 						TextView textView = getTextView();
 						textView.setText(getGroup(groupPosition).toString());
 						return textView;
 					}
-					
+
 					@Override
 					public long getGroupId(int groupPosition) {
 						Log.d(TAG, "getGroupId groupPosition=" + groupPosition);
-						
+
 						return groupPosition;
 					}
-					
+
 					@Override
 					public int getGroupCount() {
-						Log.d(TAG,"getGroupCount is called");
-						
+						Log.d(TAG, "getGroupCount is called");
+
 						return names.size();
 					}
-					
+
 					@Override
 					public Object getGroup(int groupPosition) {
 						Log.d(TAG, "getGroup groupPosition=" + groupPosition);
-						
+
 						return names.get(groupPosition);
 					}
-					
+
 					@Override
 					public long getCombinedGroupId(long groupId) {
 						// TODO Auto-generated method stub
 						return 0;
 					}
-					
+
 					@Override
 					public long getCombinedChildId(long groupId, long childId) {
 						// TODO Auto-generated method stub
 						return 0;
 					}
-					
+
 					@Override
 					public int getChildrenCount(int groupPosition) {
-						Log.d(TAG, "getChildrenCount groupPosition:" + groupPosition);
-						
+						Log.d(TAG, "getChildrenCount groupPosition:"
+								+ groupPosition);
+
 						return details.get(groupPosition).size();
 					}
-					
+
 					@Override
-					public View getChildView(int groupPosition, int childPosition,
-							boolean isLastChild, View convertView, ViewGroup parent) {
-						Log.d(TAG, "getChildView groupPosition=" 
-							+ groupPosition + ",childPosition=" + childPosition);
+					public View getChildView(int groupPosition,
+							int childPosition, boolean isLastChild,
+							View convertView, ViewGroup parent) {
+						Log.d(TAG, "getChildView groupPosition="
+								+ groupPosition + ",childPosition="
+								+ childPosition);
 						TextView textView = getTextView();
-						textView.setText(getChild(groupPosition, childPosition).toString());
+						textView.setText(getChild(groupPosition, childPosition)
+								.toString());
 						return textView;
 					}
-					
-					
+
 					@Override
 					public long getChildId(int groupPosition, int childPosition) {
-						Log.d(TAG, "getChildId childPosition" +
-							childPosition +"groupPosition:" + groupPosition);
+						Log.d(TAG, "getChildId childPosition" + childPosition
+								+ "groupPosition:" + groupPosition);
 						return childPosition;
 					}
-					
+
 					@Override
 					public Object getChild(int groupPosition, int childPosition) {
-						Log.d(TAG, "getChind groupPosition:"
-					        + groupPosition + ",childPosition:" + childPosition);
+						Log.d(TAG, "getChind groupPosition:" + groupPosition
+								+ ",childPosition:" + childPosition);
 						return details.get(groupPosition).get(childPosition);
 					}
-					
+
 					@Override
 					public boolean areAllItemsEnabled() {
 						// TODO Auto-generated method stub
@@ -253,13 +258,13 @@ public class ContentProviderTest extends Activity {
 				};
 				list.setAdapter(adapter);
 				new AlertDialog.Builder(ContentProviderTest.this)
-				   .setView(resultDialog).setPositiveButton("È·¶¨", null)
-				   .show();
+						.setView(resultDialog).setPositiveButton("È·ï¿½ï¿½", null)
+						.show();
 			}
 		});
-		
+
 		mAddBtn.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
 			public void onClick(View v) {
 				String name = ((EditText) findViewById(R.id.nine_content_provider_name_text))
@@ -269,39 +274,42 @@ public class ContentProviderTest extends Activity {
 				String email = ((EditText) findViewById(R.id.nine_content_provider_email_text))
 						.getText().toString();
 				ContentValues values = new ContentValues();
-				Uri rawContactUri = getContentResolver().insert(RawContacts.CONTENT_URI, values);
+				Uri rawContactUri = getContentResolver().insert(
+						RawContacts.CONTENT_URI, values);
 				long rawContactId = ContentUris.parseId(rawContactUri);
 				values.clear();
 				values.put(Data.RAW_CONTACT_ID, rawContactId);
 				values.put(Data.MIMETYPE, StructuredName.CONTENT_ITEM_TYPE);
 				values.put(StructuredName.GIVEN_NAME, name);
-				getContentResolver().insert(android.provider.ContactsContract.Data.CONTENT_URI,
+				getContentResolver().insert(
+						android.provider.ContactsContract.Data.CONTENT_URI,
 						values);
 				values.clear();
-				
+
 				values.put(Data.RAW_CONTACT_ID, rawContactId);
 				values.put(Data.MIMETYPE, Phone.CONTENT_ITEM_TYPE);
 				values.put(Phone.NUMBER, phone);
 				values.put(Phone.TYPE, Phone.TYPE_MOBILE);
-				getContentResolver().insert(android.provider.ContactsContract.Data.CONTENT_URI, 
+				getContentResolver().insert(
+						android.provider.ContactsContract.Data.CONTENT_URI,
 						values);
-				
+
 				values.clear();
 				values.put(Data.RAW_CONTACT_ID, rawContactId);
 				values.put(Data.MIMETYPE, Email.CONTENT_ITEM_TYPE);
 				values.put(Email.DATA, email);
 				values.put(Email.TYPE, Email.TYPE_WORK);
-				getContentResolver().insert(android.provider.ContactsContract.Data.CONTENT_URI,
+				getContentResolver().insert(
+						android.provider.ContactsContract.Data.CONTENT_URI,
 						values);
-				Toast.makeText(ContentProviderTest.this, 
-						"ÁªÏµÈËÊý¾ÝÌí¼Ó³É¹¦", Toast.LENGTH_LONG).show();
-				
-				
-				
+				Toast.makeText(ContentProviderTest.this, "jÏµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó³É¹ï¿½",
+						Toast.LENGTH_LONG).show();
+
 			}
 		});
-	
+
 	}
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub

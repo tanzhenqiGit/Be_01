@@ -3,6 +3,7 @@ package com.example.contents.ten;
 import com.example.contents.ten.MonitorPhont.MonitorPhone;
 import com.example.contents.ten.aidlservice.AidlClient;
 import com.example.contents.ten.bindservice.BindServiceTest;
+import com.example.contents.ten.blockmain.BlockMain;
 import com.example.contents.ten.complexservice.ComplexClient;
 import com.example.contents.ten.firstService.FirstServiceTest;
 import com.example.contents.ten.intentservicetest.IntentServiceTest;
@@ -32,6 +33,7 @@ public class TenContentsActivity extends Activity {
 	private final int COMPLEX_SERVICE = 4;
 	private final int TELEPHONY_STATUS = 5;
 	private final int MONITOR_PHONT = 6;
+	private final int BLOCK_MAIN = 7;
 	
 	private void initializeComponent()
 	{
@@ -88,6 +90,11 @@ public class TenContentsActivity extends Activity {
 					Intent monitor_phont_intent =
 						new Intent(TenContentsActivity.this, MonitorPhone.class);
 					startActivity(monitor_phont_intent);
+					break;
+				case BLOCK_MAIN:
+					Intent block_main_intent =
+						new Intent(TenContentsActivity.this, BlockMain.class);
+					startActivity(block_main_intent);
 					break;
 				default:
 					
