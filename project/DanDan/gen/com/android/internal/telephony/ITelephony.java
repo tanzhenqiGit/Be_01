@@ -1,8 +1,8 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/free/tanzhenqiGit/Be_01/project/DanDan/src/com/example/contents/ten/blockmain/ITelephony.aidl
+ * Original file: D:\\Project\\Be_01\\project\\DanDan\\src\\com\\android\\internal\\telephony\\ITelephony.aidl
  */
-package com.example.contents.ten.blockmain;
+package com.android.internal.telephony;
 /**
  * Interface used to interact with the phone.  Mostly this is used by the 
  * TelephonyManager class.  A few places are still using this directly.
@@ -13,28 +13,28 @@ package com.example.contents.ten.blockmain;
 public interface ITelephony extends android.os.IInterface
 {
 /** Local-side IPC implementation stub class. */
-public static abstract class Stub extends android.os.Binder implements com.example.contents.ten.blockmain.ITelephony
+public static abstract class Stub extends android.os.Binder implements com.android.internal.telephony.ITelephony
 {
-private static final java.lang.String DESCRIPTOR = "com.example.contents.ten.blockmain.ITelephony";
+private static final java.lang.String DESCRIPTOR = "com.android.internal.telephony.ITelephony";
 /** Construct the stub at attach it to the interface. */
 public Stub()
 {
 this.attachInterface(this, DESCRIPTOR);
 }
 /**
- * Cast an IBinder object into an com.example.contents.ten.blockmain.ITelephony interface,
+ * Cast an IBinder object into an com.android.internal.telephony.ITelephony interface,
  * generating a proxy if needed.
  */
-public static com.example.contents.ten.blockmain.ITelephony asInterface(android.os.IBinder obj)
+public static com.android.internal.telephony.ITelephony asInterface(android.os.IBinder obj)
 {
 if ((obj==null)) {
 return null;
 }
 android.os.IInterface iin = obj.queryLocalInterface(DESCRIPTOR);
-if (((iin!=null)&&(iin instanceof com.example.contents.ten.blockmain.ITelephony))) {
-return ((com.example.contents.ten.blockmain.ITelephony)iin);
+if (((iin!=null)&&(iin instanceof com.android.internal.telephony.ITelephony))) {
+return ((com.android.internal.telephony.ITelephony)iin);
 }
-return new com.example.contents.ten.blockmain.ITelephony.Stub.Proxy(obj);
+return new com.android.internal.telephony.ITelephony.Stub.Proxy(obj);
 }
 @Override public android.os.IBinder asBinder()
 {
@@ -273,7 +273,7 @@ return true;
 case TRANSACTION_getNeighboringCellInfo:
 {
 data.enforceInterface(DESCRIPTOR);
-java.util.List<com.example.contents.ten.blockmain.NeighboringCellInfo> _result = this.getNeighboringCellInfo();
+java.util.List<android.telephony.NeighboringCellInfo> _result = this.getNeighboringCellInfo();
 reply.writeNoException();
 reply.writeTypedList(_result);
 return true;
@@ -305,7 +305,7 @@ return true;
 }
 return super.onTransact(code, data, reply, flags);
 }
-private static class Proxy implements com.example.contents.ten.blockmain.ITelephony
+private static class Proxy implements com.android.internal.telephony.ITelephony
 {
 private android.os.IBinder mRemote;
 Proxy(android.os.IBinder remote)
@@ -875,16 +875,16 @@ return _result;
 /**
      * Returns the neighboring cell information of the device.
      */
-@Override public java.util.List<com.example.contents.ten.blockmain.NeighboringCellInfo> getNeighboringCellInfo() throws android.os.RemoteException
+@Override public java.util.List<android.telephony.NeighboringCellInfo> getNeighboringCellInfo() throws android.os.RemoteException
 {
 android.os.Parcel _data = android.os.Parcel.obtain();
 android.os.Parcel _reply = android.os.Parcel.obtain();
-java.util.List<com.example.contents.ten.blockmain.NeighboringCellInfo> _result;
+java.util.List<android.telephony.NeighboringCellInfo> _result;
 try {
 _data.writeInterfaceToken(DESCRIPTOR);
 mRemote.transact(Stub.TRANSACTION_getNeighboringCellInfo, _data, _reply, 0);
 _reply.readException();
-_result = _reply.createTypedArrayList(com.example.contents.ten.blockmain.NeighboringCellInfo.CREATOR);
+_result = _reply.createTypedArrayList(android.telephony.NeighboringCellInfo.CREATOR);
 }
 finally {
 _reply.recycle();
@@ -1128,7 +1128,7 @@ public android.os.Bundle getCellLocation() throws android.os.RemoteException;
 /**
      * Returns the neighboring cell information of the device.
      */
-public java.util.List<com.example.contents.ten.blockmain.NeighboringCellInfo> getNeighboringCellInfo() throws android.os.RemoteException;
+public java.util.List<android.telephony.NeighboringCellInfo> getNeighboringCellInfo() throws android.os.RemoteException;
 public int getCallState() throws android.os.RemoteException;
 public int getDataActivity() throws android.os.RemoteException;
 public int getDataState() throws android.os.RemoteException;
