@@ -36,15 +36,14 @@ public class TelephonyStatus extends Activity {
 		String[] simState = getResources().getStringArray(R.array.simState);
 		String[] phoneType = getResources().getStringArray(R.array.phoneType);
 		mStatusName = getResources().getStringArray(R.array.statusNames);
-		
-		mStatusValues.add(telephonyManager.getDeviceId() != null ? telephonyManager.getDeviceId() : "未知");
+		mStatusValues.add(telephonyManager.getDeviceId() != null ? telephonyManager.getDeviceId() : "unKnow");
 		mStatusValues.add(telephonyManager.getDeviceSoftwareVersion() != null 
-				? telephonyManager.getDeviceSoftwareVersion() : "未知");
+				? telephonyManager.getDeviceSoftwareVersion() : "unKnow");
 		mStatusValues.add(telephonyManager.getNetworkOperator());
 		mStatusValues.add(telephonyManager.getNetworkOperatorName());
 		mStatusValues.add(phoneType[telephonyManager.getPhoneType()]);
 		mStatusValues.add(telephonyManager.getCellLocation() != null 
-				? telephonyManager.getCellLocation().toString() : "未知位置");
+				? telephonyManager.getCellLocation().toString() : "unKnow");
 		
 		mStatusValues.add(telephonyManager.getSimCountryIso());
 		mStatusValues.add(telephonyManager.getSimSerialNumber());
