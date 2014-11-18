@@ -29,6 +29,7 @@
         <item > 10.5 ComPlexService </item>
         <item > 10.6 TelephonyStatus </item>
         <item > 10.7 MoniterPhont </item>
+        <item > 10.8 BlockMain </item>
     </string-array>
     
     <string-array name="chapterNineContents">

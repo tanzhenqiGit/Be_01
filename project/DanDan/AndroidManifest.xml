@@ -63,33 +63,46 @@
          
         <activity
             android:name="com.example.contents.ten.TenContentsActivity"
-            android:label="@string/contents" >
+            android:label="@string/TenContentsActivity" >
         </activity>
         <activity
             android:name="com.example.contents.ten.firstService.FirstServiceTest"
-            android:label="@string/contents" >
+            android:label="@string/FirstServiceTest" >
         </activity>
         
         <activity
             android:name="com.example.contents.ten.bindservice.BindServiceTest"
-            android:label="@string/contents" >
+            android:label="@string/BindServiceTest" >
         </activity>
         <activity
             android:name="com.example.contents.ten.intentservicetest.IntentServiceTest"
-            android:label="@string/contents" >
+            android:label="@string/IntentServiceTest" >
         </activity>
         <activity
             android:name="com.example.contents.ten.aidlservice.AidlClient"
-            android:label="@string/getServiceSts" >
+            android:label="@string/AidlClient" >
         </activity>
         <activity
             android:name="com.example.contents.ten.complexservice.ComplexClient"
-            android:label="@string/getServiceSts" >
+            android:label="@string/ComplexClient" >
         </activity>
         <activity
             android:name="com.example.contents.ten.telephonystatus.TelephonyStatus"
-            android:label="@string/getServiceSts" >
+            android:label="@string/TelephonyStatus" >
         </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.MonitorPhont.MonitorPhone"
+            android:label="@string/MonitorPhone" >
+        </activity>
+        <activity
+            android:name="com.example.contents.ten.blockmain.BlockMain"
+            android:label="@string/BlockMain" >
+        </activity>
+        
+        
+        
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />

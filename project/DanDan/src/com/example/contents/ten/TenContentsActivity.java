@@ -1,5 +1,6 @@
 package com.example.contents.ten;
 
+import com.example.contents.ten.MonitorPhont.MonitorPhone;
 import com.example.contents.ten.aidlservice.AidlClient;
 import com.example.contents.ten.bindservice.BindServiceTest;
 import com.example.contents.ten.complexservice.ComplexClient;
@@ -30,6 +31,7 @@ public class TenContentsActivity extends Activity {
 	private final int AIDL_SERVICE = 3;
 	private final int COMPLEX_SERVICE = 4;
 	private final int TELEPHONY_STATUS = 5;
+	private final int MONITOR_PHONT = 6;
 	
 	private void initializeComponent()
 	{
@@ -81,6 +83,11 @@ public class TenContentsActivity extends Activity {
 					Intent telephony_status_intent =
 						new Intent(TenContentsActivity.this, TelephonyStatus.class);
 					startActivity(telephony_status_intent);
+					break;
+				case MONITOR_PHONT:
+					Intent monitor_phont_intent =
+						new Intent(TenContentsActivity.this, MonitorPhone.class);
+					startActivity(monitor_phont_intent);
 					break;
 				default:
 					

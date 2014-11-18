@@ -32,4 +32,15 @@
 	<string name="weight">体重</string>
 	<string name="InputName"> 请输入用户名 </string>
 	
+	<string name="TenContentsActivity">TenContentsActivity</string>
+	<string name="FirstServiceTest">FirstServiceTest</string>
+	<string name="BindServiceTest">BindServiceTest</string>
+	<string name="IntentServiceTest">IntentServiceTest</string>
+	<string name="AidlClient">AidlClient</string>
+	<string name="ComplexClient">ComplexClient</string>
+	<string name="MonitorPhone">MonitorPhone </string>
+	<string name="TelephonyStatus">TelephonyStatus</string>
+	<string name="BlockMain">BlockMain</string>
+	
+	
 </resources>

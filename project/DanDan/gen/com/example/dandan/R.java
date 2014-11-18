@@ -105,14 +105,24 @@ public final class R {
         public static final int ten_complex_service_main=0x7f03000e;
         public static final int ten_first_service_main=0x7f03000f;
         public static final int ten_intent_service_main=0x7f030010;
-        public static final int ten_telephony_status_line=0x7f030011;
-        public static final int ten_telephony_status_main=0x7f030012;
+        public static final int ten_monitor_phone_main=0x7f030011;
+        public static final int ten_telephony_status_line=0x7f030012;
+        public static final int ten_telephony_status_main=0x7f030013;
     }
     public static final class menu {
         public static final int main_interface=0x7f080000;
     }
     public static final class string {
+        public static final int AidlClient=0x7f06001e;
+        public static final int BindServiceTest=0x7f06001c;
+        public static final int BlockMain=0x7f060022;
+        public static final int ComplexClient=0x7f06001f;
+        public static final int FirstServiceTest=0x7f06001b;
         public static final int InputName=0x7f060019;
+        public static final int IntentServiceTest=0x7f06001d;
+        public static final int MonitorPhone=0x7f060020;
+        public static final int TelephonyStatus=0x7f060021;
+        public static final int TenContentsActivity=0x7f06001a;
         public static final int action_settings=0x7f060001;
         public static final int add=0x7f06000b;
         public static final int app_name=0x7f060000;
