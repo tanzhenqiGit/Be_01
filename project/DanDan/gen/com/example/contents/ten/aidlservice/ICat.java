@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\Project\\Be_01\\project\\DanDan\\src\\com\\example\\contents\\ten\\aidlservice\\ICat.aidl
+ * Original file: /home/free/tanzhenqiGit/Be_01/project/DanDan/src/com/example/contents/ten/aidlservice/ICat.aidl
  */
 package com.example.contents.ten.aidlservice;
 public interface ICat extends android.os.IInterface
