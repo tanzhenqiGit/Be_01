@@ -1,6 +1,5 @@
 package com.example.contents.ten;
 
-import java.security.acl.Group;
 
 import com.example.contents.ten.MonitorPhont.MonitorPhone;
 import com.example.contents.ten.aidlservice.AidlClient;
@@ -13,6 +12,7 @@ import com.example.contents.ten.groupsend.GroupSendTest;
 import com.example.contents.ten.intentservicetest.IntentServiceTest;
 import com.example.contents.ten.smsmanager.SmsManagerTest;
 import com.example.contents.ten.telephonystatus.TelephonyStatus;
+import com.example.contents.ten.vibrator.VibratorTest;
 import com.example.dandan.R;
 
 import android.app.Activity;
@@ -42,6 +42,8 @@ public class TenContentsActivity extends Activity {
 	private final int SMS_MANAGER = 8;
 	private final int GROUP_SEND = 9;
 	private final int AUDIO_MANAGER = 10;
+	private final int VIBRATOR_TEST = 11;
+	
 	private void initializeComponent()
 	{
 		Log.d(TAG, "initializeComponent");
@@ -117,6 +119,11 @@ public class TenContentsActivity extends Activity {
 					Intent audio_manager_intent = 
 						new Intent(TenContentsActivity.this, AudioManagerTest.class);
 					startActivity(audio_manager_intent);
+					break;
+				case VIBRATOR_TEST:
+					Intent vibrator_intent =
+						new Intent(TenContentsActivity.this, VibratorTest.class);
+					startActivity(vibrator_intent);
 					break;
 				default:
 					

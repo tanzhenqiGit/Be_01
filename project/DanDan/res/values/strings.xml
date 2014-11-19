@@ -53,6 +53,7 @@
 	<string name="toggle">toogle</string>
 	<string name="play">播放</string>
 	<string name="up">Vol+</string>
-	<string name="down">Vol-</string>	
+	<string name="down">Vol-</string>
+	<string name="Vibrator">振动器</string>
 	
 </resources>

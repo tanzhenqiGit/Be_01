@@ -8,7 +8,7 @@
         android:id="@+id/nine_content_provider_result_list"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:childIndicator="@drawable/icon_dan"
+        android:childIndicator="@drawable/bookmark"
         >
         
     </ExpandableListView>

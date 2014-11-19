@@ -115,6 +115,10 @@
             android:label="@string/AudioManager" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.ten.vibrator.VibratorTest"
+            android:label="@string/Vibrator" >
+        </activity>
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />
@@ -169,5 +173,6 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
 </manifest>

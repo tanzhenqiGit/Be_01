@@ -55,7 +55,7 @@ public class MediaProviderTest extends Activity {
 						Media.EXTERNAL_CONTENT_URI,values
 					);
 					
-					Bitmap bitmap = BitmapFactory.decodeResource(MediaProviderTest.this.getResources(), R.drawable.icon_dan);
+					Bitmap bitmap = BitmapFactory.decodeResource(MediaProviderTest.this.getResources(), R.drawable.android);
 					OutputStream os = null;
 				
 					try {

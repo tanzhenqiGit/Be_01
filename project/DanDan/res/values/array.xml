@@ -33,7 +33,8 @@
         <item > 10.9 SmsManager </item>
         <item > 10.10 GroupSend</item>
         <item > 10.11 AudioManager </item>
-        <item > 10.12 VibratorTest </item>
+        <item > 10.12 Vibrator </item>
+        <item > 10.13 AlarmManager </item>
     </string-array>
     
     <string-array name="chapterNineContents">

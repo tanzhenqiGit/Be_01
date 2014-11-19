@@ -38,15 +38,13 @@ public final class R {
         public static final int android=0x7f020000;
         public static final int bookmark=0x7f020001;
         public static final int box=0x7f020002;
-        public static final int dandan=0x7f020003;
-        public static final int earth=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int icon_dan=0x7f020006;
-        public static final int line=0x7f020007;
-        public static final int music=0x7f020008;
-        public static final int phonebook=0x7f020009;
-        public static final int setting=0x7f02000a;
-        public static final int store=0x7f02000b;
+        public static final int earth=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int line=0x7f020005;
+        public static final int music=0x7f020006;
+        public static final int phonebook=0x7f020007;
+        public static final int setting=0x7f020008;
+        public static final int store=0x7f020009;
     }
     public static final class id {
         public static final int action_settings=0x7f0a0039;
@@ -134,6 +132,7 @@ public final class R {
         public static final int ten_smsmanager_main=0x7f030016;
         public static final int ten_telephony_status_line=0x7f030017;
         public static final int ten_telephony_status_main=0x7f030018;
+        public static final int ten_vibrator_test_main=0x7f030019;
     }
     public static final class menu {
         public static final int main_interface=0x7f090000;
@@ -155,6 +154,7 @@ public final class R {
         public static final int SmsManager=0x7f070024;
         public static final int TelephonyStatus=0x7f070021;
         public static final int TenContentsActivity=0x7f07001a;
+        public static final int Vibrator=0x7f07002e;
         public static final int action_settings=0x7f070001;
         public static final int add=0x7f07000b;
         public static final int app_name=0x7f070000;
