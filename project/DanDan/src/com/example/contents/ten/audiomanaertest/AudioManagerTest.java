@@ -5,6 +5,7 @@ import com.example.dandan.R;
 import android.app.Activity;
 import android.app.Service;
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -12,6 +13,8 @@ import android.view.ContextMenu.ContextMenuInfo;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ToggleButton;
 
 public class AudioManagerTest extends Activity {
@@ -26,17 +29,30 @@ public class AudioManagerTest extends Activity {
 	
 	private void playBtnCallBack()
 	{
-		
+		MediaPlayer player = MediaPlayer.create(AudioManagerTest.this, R.raw.music);
+		if (player != null) {
+			player.setLooping(true);
+			player.start();
+		}
 	}
 	
 	private void upBtnCallBack()
 	{
+		if (mAudioManager != null) {
+			mAudioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC, 
+					AudioManager.ADJUST_RAISE,
+					AudioManager.FLAG_SHOW_UI);
+		}
 		
 	}
 	
 	private void downBtnCallBack()
 	{
-		
+		if (mAudioManager != null) {
+			mAudioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC,
+					AudioManager.ADJUST_LOWER, 
+					AudioManager.FLAG_SHOW_UI);
+		}
 	}
 	
 	private void initialize()
@@ -77,6 +93,18 @@ public class AudioManagerTest extends Activity {
 				public void onClick(View v) {
 					Log.d(TAG, "mUpBtn is onClicked");
 					upBtnCallBack();
+				}
+			});
+		}
+		if (mToglleBtn != null) {
+			mToglleBtn.setOnCheckedChangeListener(new OnCheckedChangeListener() {
+				
+				@Override
+				public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+					Log.d(TAG, "mToglleBtn is onclicked isChecked=" + isChecked);
+					if (mAudioManager != null) {
+						mAudioManager.setStreamMute(AudioManager.STREAM_MUSIC, isChecked);
+					}
 				}
 			});
 		}
