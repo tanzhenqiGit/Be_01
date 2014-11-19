@@ -45,6 +45,9 @@
 	
 	<string name="SmsManager">发送短信</string>
 	<string name="sendmessage"> 发送 </string>
+	<string name="GroupSend">短信群发</string>
+	<string name="sendGroupMsg">群发短信</string>
+	<string name="select">选择</string>
 	
 	
 </resources>

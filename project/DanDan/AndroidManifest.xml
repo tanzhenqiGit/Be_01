@@ -105,7 +105,10 @@
             android:label="@string/SmsManager" >
         </activity>
         
-        
+        <activity
+            android:name="com.example.contents.ten.groupsend.GroupSendTest"
+            android:label="@string/SmsManager" >
+        </activity>
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>

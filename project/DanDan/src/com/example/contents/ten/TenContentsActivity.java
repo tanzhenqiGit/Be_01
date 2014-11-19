@@ -1,11 +1,14 @@
 package com.example.contents.ten;
 
+import java.security.acl.Group;
+
 import com.example.contents.ten.MonitorPhont.MonitorPhone;
 import com.example.contents.ten.aidlservice.AidlClient;
 import com.example.contents.ten.bindservice.BindServiceTest;
 import com.example.contents.ten.blockmain.BlockMain;
 import com.example.contents.ten.complexservice.ComplexClient;
 import com.example.contents.ten.firstService.FirstServiceTest;
+import com.example.contents.ten.groupsend.GroupSendTest;
 import com.example.contents.ten.intentservicetest.IntentServiceTest;
 import com.example.contents.ten.smsmanager.SmsManagerTest;
 import com.example.contents.ten.telephonystatus.TelephonyStatus;
@@ -36,6 +39,7 @@ public class TenContentsActivity extends Activity {
 	private final int MONITOR_PHONT = 6;
 	private final int BLOCK_MAIN = 7;
 	private final int SMS_MANAGER = 8;
+	private final int GROUP_SEND = 9;
 	
 	private void initializeComponent()
 	{
@@ -102,6 +106,11 @@ public class TenContentsActivity extends Activity {
 					Intent sms_manager_intent = 
 						new Intent(TenContentsActivity.this, SmsManagerTest.class);
 					startActivity(sms_manager_intent);
+					break;
+				case GROUP_SEND:
+					Intent group_send_intent =
+						new Intent(TenContentsActivity.this, GroupSendTest.class);
+					startActivity(group_send_intent);
 					break;
 				default:
 					
