@@ -110,6 +110,11 @@
             android:label="@string/SmsManager" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.ten.audiomanaertest.AudioManagerTest"
+            android:label="@string/AudioManager" >
+        </activity>
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />

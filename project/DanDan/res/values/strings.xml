@@ -49,5 +49,10 @@
 	<string name="sendGroupMsg">群发短信</string>
 	<string name="select">选择</string>
 	
+	<string name="AudioManager"> 音频管理 </string>
+	<string name="toggle">toogle</string>
+	<string name="play">播放</string>
+	<string name="up">上一曲</string>
+	<string name="down">下一曲</string>	
 	
 </resources>

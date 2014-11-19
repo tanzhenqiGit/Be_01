@@ -4,6 +4,7 @@ import java.security.acl.Group;
 
 import com.example.contents.ten.MonitorPhont.MonitorPhone;
 import com.example.contents.ten.aidlservice.AidlClient;
+import com.example.contents.ten.audiomanaertest.AudioManagerTest;
 import com.example.contents.ten.bindservice.BindServiceTest;
 import com.example.contents.ten.blockmain.BlockMain;
 import com.example.contents.ten.complexservice.ComplexClient;
@@ -40,7 +41,7 @@ public class TenContentsActivity extends Activity {
 	private final int BLOCK_MAIN = 7;
 	private final int SMS_MANAGER = 8;
 	private final int GROUP_SEND = 9;
-	
+	private final int AUDIO_MANAGER = 10;
 	private void initializeComponent()
 	{
 		Log.d(TAG, "initializeComponent");
@@ -111,6 +112,11 @@ public class TenContentsActivity extends Activity {
 					Intent group_send_intent =
 						new Intent(TenContentsActivity.this, GroupSendTest.class);
 					startActivity(group_send_intent);
+					break;
+				case AUDIO_MANAGER:
+					Intent audio_manager_intent = 
+						new Intent(TenContentsActivity.this, AudioManagerTest.class);
+					startActivity(audio_manager_intent);
 					break;
 				default:
 					

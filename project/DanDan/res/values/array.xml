@@ -32,6 +32,7 @@
         <item > 10.8 BlockMain </item>
         <item > 10.9 SmsManager </item>
         <item > 10.10 GroupSend</item>
+        <item > 10.11 AudioManager </item>
     </string-array>
     
     <string-array name="chapterNineContents">
