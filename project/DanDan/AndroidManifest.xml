@@ -100,6 +100,10 @@
             android:label="@string/BlockMain" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.ten.smsmanager.SmsManagerTest"
+            android:label="@string/SmsManager" >
+        </activity>
         
         
         
@@ -156,5 +160,6 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
 </manifest>

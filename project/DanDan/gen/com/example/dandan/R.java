@@ -49,7 +49,7 @@ public final class R {
         public static final int store=0x7f02000b;
     }
     public static final class id {
-        public static final int action_settings=0x7f09002e;
+        public static final int action_settings=0x7f090031;
         public static final int delete=0x7f09000f;
         public static final int insert=0x7f09000c;
         public static final int listView=0x7f090000;
@@ -92,9 +92,12 @@ public final class R {
         public static final int ten_first_service_main_stopBtn=0x7f090028;
         public static final int ten_intent_service_start_intent_service=0x7f09002a;
         public static final int ten_intent_service_start_setvice=0x7f090029;
-        public static final int ten_telephony_status_line_name=0x7f09002b;
-        public static final int ten_telephony_status_line_value=0x7f09002c;
-        public static final int ten_telephony_status_main_listview=0x7f09002d;
+        public static final int ten_smsmanager_main_content_text=0x7f09002d;
+        public static final int ten_smsmanager_main_number_text=0x7f09002c;
+        public static final int ten_smsmanager_main_send_msg_btn=0x7f09002b;
+        public static final int ten_telephony_status_line_name=0x7f09002e;
+        public static final int ten_telephony_status_line_value=0x7f09002f;
+        public static final int ten_telephony_status_main_listview=0x7f090030;
         public static final int update=0x7f09000d;
     }
     public static final class layout {
@@ -118,8 +121,9 @@ public final class R {
         public static final int ten_first_service_main=0x7f030011;
         public static final int ten_intent_service_main=0x7f030012;
         public static final int ten_monitor_phone_main=0x7f030013;
-        public static final int ten_telephony_status_line=0x7f030014;
-        public static final int ten_telephony_status_main=0x7f030015;
+        public static final int ten_smsmanager_main=0x7f030014;
+        public static final int ten_telephony_status_line=0x7f030015;
+        public static final int ten_telephony_status_main=0x7f030016;
     }
     public static final class menu {
         public static final int main_interface=0x7f080000;
@@ -133,6 +137,7 @@ public final class R {
         public static final int InputName=0x7f060019;
         public static final int IntentServiceTest=0x7f06001d;
         public static final int MonitorPhone=0x7f060020;
+        public static final int SmsManager=0x7f060024;
         public static final int TelephonyStatus=0x7f060021;
         public static final int TenContentsActivity=0x7f06001a;
         public static final int action_settings=0x7f060001;
@@ -154,6 +159,7 @@ public final class R {
         public static final int number=0x7f06000d;
         public static final int query=0x7f060005;
         public static final int search=0x7f060009;
+        public static final int sendmessage=0x7f060025;
         public static final int start=0x7f06000f;
         public static final int startIntentService=0x7f060015;
         public static final int startService=0x7f060014;

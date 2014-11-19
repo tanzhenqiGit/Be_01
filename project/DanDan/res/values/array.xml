@@ -30,6 +30,7 @@
         <item > 10.6 TelephonyStatus </item>
         <item > 10.7 MoniterPhont </item>
         <item > 10.8 BlockMain </item>
+        <item > 10.9 SmsManager </item>
     </string-array>
     
     <string-array name="chapterNineContents">

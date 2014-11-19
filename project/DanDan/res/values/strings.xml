@@ -43,5 +43,8 @@
 	<string name="BlockMain">BlockMain</string>
 	<string name="managerBlack"> 管理黑名单 </string>
 	
+	<string name="SmsManager">发送短信</string>
+	<string name="sendmessage"> 发送 </string>
+	
 	
 </resources>

@@ -7,6 +7,7 @@ import com.example.contents.ten.blockmain.BlockMain;
 import com.example.contents.ten.complexservice.ComplexClient;
 import com.example.contents.ten.firstService.FirstServiceTest;
 import com.example.contents.ten.intentservicetest.IntentServiceTest;
+import com.example.contents.ten.smsmanager.SmsManagerTest;
 import com.example.contents.ten.telephonystatus.TelephonyStatus;
 import com.example.dandan.R;
 
@@ -34,6 +35,7 @@ public class TenContentsActivity extends Activity {
 	private final int TELEPHONY_STATUS = 5;
 	private final int MONITOR_PHONT = 6;
 	private final int BLOCK_MAIN = 7;
+	private final int SMS_MANAGER = 8;
 	
 	private void initializeComponent()
 	{
@@ -95,6 +97,11 @@ public class TenContentsActivity extends Activity {
 					Intent block_main_intent =
 						new Intent(TenContentsActivity.this, BlockMain.class);
 					startActivity(block_main_intent);
+					break;
+				case SMS_MANAGER:
+					Intent sms_manager_intent = 
+						new Intent(TenContentsActivity.this, SmsManagerTest.class);
+					startActivity(sms_manager_intent);
 					break;
 				default:
 					
