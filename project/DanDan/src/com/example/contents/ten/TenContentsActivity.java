@@ -3,6 +3,7 @@ package com.example.contents.ten;
 
 import com.example.contents.ten.MonitorPhont.MonitorPhone;
 import com.example.contents.ten.aidlservice.AidlClient;
+import com.example.contents.ten.alarmmanger.AlarmManagerTest;
 import com.example.contents.ten.audiomanaertest.AudioManagerTest;
 import com.example.contents.ten.bindservice.BindServiceTest;
 import com.example.contents.ten.blockmain.BlockMain;
@@ -43,6 +44,7 @@ public class TenContentsActivity extends Activity {
 	private final int GROUP_SEND = 9;
 	private final int AUDIO_MANAGER = 10;
 	private final int VIBRATOR_TEST = 11;
+	private final int ALARM_MANAGER = 12;
 	
 	private void initializeComponent()
 	{
@@ -124,6 +126,11 @@ public class TenContentsActivity extends Activity {
 					Intent vibrator_intent =
 						new Intent(TenContentsActivity.this, VibratorTest.class);
 					startActivity(vibrator_intent);
+					break;
+				case ALARM_MANAGER:
+					Intent alarm_manager_intent = 
+						new Intent(TenContentsActivity.this, AlarmManagerTest.class);
+					startActivity(alarm_manager_intent);
 					break;
 				default:
 					

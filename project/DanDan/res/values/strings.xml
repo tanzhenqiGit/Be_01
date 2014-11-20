@@ -56,4 +56,8 @@
 	<string name="down">Vol-</string>
 	<string name="Vibrator">振动器</string>
 	
+	<string name="AlarmManager">闹钟管理</string>
+	<string name="Alarming">闹钟时间到了</string>
+	<string name="setTime">设定时间</string>
+	
 </resources>

@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: D:\\Project\\Be_01\\project\\DanDan\\src\\com\\android\\internal\\telephony\\ITelephony.aidl
+ * Original file: /home/free/tanzhenqiGit/Be_01/project/DanDan/src/com/android/internal/telephony/ITelephony.aidl
  */
 package com.android.internal.telephony;
 /**

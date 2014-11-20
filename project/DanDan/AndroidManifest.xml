@@ -119,6 +119,18 @@
             android:name="com.example.contents.ten.vibrator.VibratorTest"
             android:label="@string/Vibrator" >
         </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.alarmmanger.AlarmManagerTest"
+            android:label="@string/AlarmManager" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.alarmmanger.AlarmActivity"
+            android:label="@string/Alarming" >
+        </activity>
+        
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />
