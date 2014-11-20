@@ -59,5 +59,6 @@
 	<string name="AlarmManager">闹钟管理</string>
 	<string name="Alarming">闹钟时间到了</string>
 	<string name="setTime">设定时间</string>
+	<string name="AlarmChangeWallpaper"> 定时切换壁纸 </string>
 	
 </resources>

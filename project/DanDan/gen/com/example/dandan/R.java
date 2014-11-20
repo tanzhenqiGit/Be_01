@@ -144,6 +144,7 @@ public final class R {
     }
     public static final class string {
         public static final int AidlClient=0x7f07001e;
+        public static final int AlarmChangeWallpaper=0x7f070032;
         public static final int AlarmManager=0x7f07002f;
         public static final int Alarming=0x7f070030;
         public static final int AudioManager=0x7f070029;
