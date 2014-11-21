@@ -130,6 +130,11 @@
             android:label="@string/Alarming" >
         </activity>
         
+       <activity
+            android:name="com.example.contents.ten.changewallpaper.AlarmChangeWallPaper"
+            android:label="@string/AlarmChangeWallpaper" >
+        </activity>
+        
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
@@ -165,6 +170,11 @@
         	    <action android:name="com.example.contents.ten.complexservice.ComplexService" />
         	</intent-filter>
         </service>
+        
+        <service android:name="com.example.contents.ten.com.example.contents.ten.changewallpape.ChangeWallPaperService" >
+        </service>
+        
+        
         <provider
             android:name="com.example.contents.nineFirstContent.FirstProvider"
             android:authorities="com.example.contents.nineFirstContent"
@@ -186,5 +196,6 @@
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.SEND_SMS"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
 
 </manifest>
