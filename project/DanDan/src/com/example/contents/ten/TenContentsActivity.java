@@ -7,8 +7,8 @@ import com.example.contents.ten.alarmmanger.AlarmManagerTest;
 import com.example.contents.ten.audiomanaertest.AudioManagerTest;
 import com.example.contents.ten.bindservice.BindServiceTest;
 import com.example.contents.ten.blockmain.BlockMain;
+import com.example.contents.ten.broadcast.BroadcastMain;
 import com.example.contents.ten.changewallpaper.AlarmChangeWallPaper;
-import com.example.contents.ten.changewallpaper.ChangeWallPaperService;
 import com.example.contents.ten.complexservice.ComplexClient;
 import com.example.contents.ten.firstService.FirstServiceTest;
 import com.example.contents.ten.groupsend.GroupSendTest;
@@ -48,6 +48,7 @@ public class TenContentsActivity extends Activity {
 	private final int VIBRATOR_TEST = 11;
 	private final int ALARM_MANAGER = 12;
 	private final int ALARM_CHANGE_WALL_PAPER = 13;
+	private final int BROAD_CAST = 14;
 	private void initializeComponent()
 	{
 		Log.d(TAG, "initializeComponent");
@@ -138,6 +139,11 @@ public class TenContentsActivity extends Activity {
 					Intent alarm_change_wall_intent 
 						= new Intent(TenContentsActivity.this, AlarmChangeWallPaper.class);
 					startActivity(alarm_change_wall_intent);
+					break;
+				case BROAD_CAST:
+					Intent broad_cast_intent 
+						= new Intent(TenContentsActivity.this, BroadcastMain.class);
+					startActivity(broad_cast_intent);
 					break;
 				default:
 					

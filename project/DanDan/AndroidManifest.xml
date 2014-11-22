@@ -135,6 +135,10 @@
             android:label="@string/AlarmChangeWallpaper" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.ten.broadcast.BroadcastMain"
+            android:label="@string/BroadcastMain" >
+        </activity>
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
@@ -187,7 +191,12 @@
             android:authorities="com.example.contents.nine.DictProvider"
             android:exported="true"
             />
-            
+        <receiver android:name="com.example.contents.ten.broadcast.MyReceiver"
+            >
+            <intent-filter>
+                <action android:name="first.broadcast.action.SEND_BROADCAST" />
+            </intent-filter>
+        </receiver>
     </application>
     
     <uses-permission android:name="android.permission.READ_CONTACTS"/>

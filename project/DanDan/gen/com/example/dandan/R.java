@@ -51,7 +51,7 @@ public final class R {
         public static final int store=0x7f02000d;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a003c;
+        public static final int action_settings=0x7f0a003d;
         public static final int delete=0x7f0a000f;
         public static final int insert=0x7f0a000c;
         public static final int listView=0x7f0a0000;
@@ -94,23 +94,24 @@ public final class R {
         public static final int ten_bind_service_main_unbind_btn=0x7f0a0027;
         public static final int ten_blackmain_line_list=0x7f0a0029;
         public static final int ten_blockmain_main_blockBtn=0x7f0a002a;
-        public static final int ten_complex_service_main_getServiceBtn=0x7f0a002b;
-        public static final int ten_complex_service_main_input_text=0x7f0a002c;
-        public static final int ten_complex_service_main_listView=0x7f0a002d;
-        public static final int ten_first_service_main_startBtn=0x7f0a002e;
-        public static final int ten_first_service_main_stopBtn=0x7f0a002f;
-        public static final int ten_group_send_content_text=0x7f0a0033;
-        public static final int ten_group_send_main_select_btn=0x7f0a0031;
-        public static final int ten_group_send_main_send_btn=0x7f0a0030;
-        public static final int ten_group_send_number_text=0x7f0a0032;
-        public static final int ten_intent_service_start_intent_service=0x7f0a0035;
-        public static final int ten_intent_service_start_setvice=0x7f0a0034;
-        public static final int ten_smsmanager_main_content_text=0x7f0a0038;
-        public static final int ten_smsmanager_main_number_text=0x7f0a0037;
-        public static final int ten_smsmanager_main_send_msg_btn=0x7f0a0036;
-        public static final int ten_telephony_status_line_name=0x7f0a0039;
-        public static final int ten_telephony_status_line_value=0x7f0a003a;
-        public static final int ten_telephony_status_main_listview=0x7f0a003b;
+        public static final int ten_broad_cast_main_send_btn=0x7f0a002b;
+        public static final int ten_complex_service_main_getServiceBtn=0x7f0a002c;
+        public static final int ten_complex_service_main_input_text=0x7f0a002d;
+        public static final int ten_complex_service_main_listView=0x7f0a002e;
+        public static final int ten_first_service_main_startBtn=0x7f0a002f;
+        public static final int ten_first_service_main_stopBtn=0x7f0a0030;
+        public static final int ten_group_send_content_text=0x7f0a0034;
+        public static final int ten_group_send_main_select_btn=0x7f0a0032;
+        public static final int ten_group_send_main_send_btn=0x7f0a0031;
+        public static final int ten_group_send_number_text=0x7f0a0033;
+        public static final int ten_intent_service_start_intent_service=0x7f0a0036;
+        public static final int ten_intent_service_start_setvice=0x7f0a0035;
+        public static final int ten_smsmanager_main_content_text=0x7f0a0039;
+        public static final int ten_smsmanager_main_number_text=0x7f0a0038;
+        public static final int ten_smsmanager_main_send_msg_btn=0x7f0a0037;
+        public static final int ten_telephony_status_line_name=0x7f0a003a;
+        public static final int ten_telephony_status_line_value=0x7f0a003b;
+        public static final int ten_telephony_status_main_listview=0x7f0a003c;
         public static final int update=0x7f0a000d;
     }
     public static final class layout {
@@ -133,15 +134,16 @@ public final class R {
         public static final int ten_bind_service_main=0x7f030010;
         public static final int ten_blackmain_line=0x7f030011;
         public static final int ten_blockmain_main=0x7f030012;
-        public static final int ten_complex_service_main=0x7f030013;
-        public static final int ten_first_service_main=0x7f030014;
-        public static final int ten_group_send_main=0x7f030015;
-        public static final int ten_intent_service_main=0x7f030016;
-        public static final int ten_monitor_phone_main=0x7f030017;
-        public static final int ten_smsmanager_main=0x7f030018;
-        public static final int ten_telephony_status_line=0x7f030019;
-        public static final int ten_telephony_status_main=0x7f03001a;
-        public static final int ten_vibrator_test_main=0x7f03001b;
+        public static final int ten_broad_cast_main=0x7f030013;
+        public static final int ten_complex_service_main=0x7f030014;
+        public static final int ten_first_service_main=0x7f030015;
+        public static final int ten_group_send_main=0x7f030016;
+        public static final int ten_intent_service_main=0x7f030017;
+        public static final int ten_monitor_phone_main=0x7f030018;
+        public static final int ten_smsmanager_main=0x7f030019;
+        public static final int ten_telephony_status_line=0x7f03001a;
+        public static final int ten_telephony_status_main=0x7f03001b;
+        public static final int ten_vibrator_test_main=0x7f03001c;
     }
     public static final class menu {
         public static final int main_interface=0x7f090000;
@@ -157,6 +159,7 @@ public final class R {
         public static final int AudioManager=0x7f070029;
         public static final int BindServiceTest=0x7f07001c;
         public static final int BlockMain=0x7f070022;
+        public static final int BroadcastMain=0x7f070033;
         public static final int ComplexClient=0x7f07001f;
         public static final int FirstServiceTest=0x7f07001b;
         public static final int GroupSend=0x7f070026;
@@ -189,6 +192,7 @@ public final class R {
         public static final int query=0x7f070005;
         public static final int search=0x7f070009;
         public static final int select=0x7f070028;
+        public static final int sendBroadCast=0x7f070034;
         public static final int sendGroupMsg=0x7f070027;
         public static final int sendmessage=0x7f070025;
         public static final int setTime=0x7f070031;
