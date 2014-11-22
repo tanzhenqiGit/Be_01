@@ -37,6 +37,7 @@
         <item > 10.13 AlarmManager </item>
         <item > 10.14 AlarmChangeWallpaper </item>
         <item > 10.15 BroadCast </item>
+        <item > 10.16 SortedBroadCast </item>
     </string-array>
     
     <string-array name="chapterNineContents">

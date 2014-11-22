@@ -62,5 +62,6 @@
 	<string name="AlarmChangeWallpaper"> 定时切换壁纸 </string>
 	<string name="BroadcastMain">广播发送</string>
 	<string name="sendBroadCast">发送广播</string>
+	<string name="SortedBroadCast">顺序发送广播</string>
 	
 </resources>

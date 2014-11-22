@@ -167,6 +167,7 @@ public final class R {
         public static final int IntentServiceTest=0x7f07001d;
         public static final int MonitorPhone=0x7f070020;
         public static final int SmsManager=0x7f070024;
+        public static final int SortedBroadCast=0x7f070035;
         public static final int TelephonyStatus=0x7f070021;
         public static final int TenContentsActivity=0x7f07001a;
         public static final int Vibrator=0x7f07002e;
