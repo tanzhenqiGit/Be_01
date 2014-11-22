@@ -145,6 +145,14 @@
             android:label="@string/SortedBroadCast" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.ten.musicbox.MusicBox"
+            android:label="MusicBox"
+            >
+            
+        </activity>
+            
+            
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />
@@ -181,9 +189,10 @@
         </service>
         
         <service android:name="com.example.contents.ten.changewallpaper.ChangeWallPaperService" >
-            
         </service>
         
+        <service android:name="com.example.contents.ten.musicbox.MusicBoxService" >
+        </service>
         
         <provider
             android:name="com.example.contents.nineFirstContent.FirstProvider"

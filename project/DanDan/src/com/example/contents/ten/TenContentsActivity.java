@@ -13,6 +13,7 @@ import com.example.contents.ten.complexservice.ComplexClient;
 import com.example.contents.ten.firstService.FirstServiceTest;
 import com.example.contents.ten.groupsend.GroupSendTest;
 import com.example.contents.ten.intentservicetest.IntentServiceTest;
+import com.example.contents.ten.musicbox.MusicBox;
 import com.example.contents.ten.smsmanager.SmsManagerTest;
 import com.example.contents.ten.sortedbroadcast.SortedBroadCastActivity;
 import com.example.contents.ten.telephonystatus.TelephonyStatus;
@@ -51,6 +52,7 @@ public class TenContentsActivity extends Activity {
 	private final int ALARM_CHANGE_WALL_PAPER = 13;
 	private final int BROAD_CAST = 14;
 	private final int SORTED_BROAD_CAST = 15;
+	private final int MUSIC_BOX = 16;
 	private void initializeComponent()
 	{
 		Log.d(TAG, "initializeComponent");
@@ -151,6 +153,11 @@ public class TenContentsActivity extends Activity {
 					Intent sorted_braod_cast_intent 
 						= new Intent(TenContentsActivity.this, SortedBroadCastActivity.class);
 					startActivity(sorted_braod_cast_intent);
+					break;
+				case MUSIC_BOX:
+					Intent music_box_intent =
+						new Intent(TenContentsActivity.this, MusicBox.class);
+					startActivity(music_box_intent);
 					break;
 				default:
 					

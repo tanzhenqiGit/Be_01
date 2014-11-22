@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    
+    <ImageButton 
+        android:id="@+id/ten_music_box_mian_play_imgbtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:src="@drawable/play"
+		android:contentDescription="@string/play"
+        />
+
+    <ImageButton 
+        android:id="@+id/ten_music_box_main_stop_imgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stop"
+        android:contentDescription="@string/stop"
+        />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+        <TextView 
+	        android:id="@+id/ten_music_box_main_title_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="25px"
+	        android:ellipsize="marquee"
+	        android:layout_weight="1"
+	        android:marqueeRepeatLimit="marquee_forever"
+        />
+        
+        <TextView 
+	        android:id="@+id/ten_music_box_main_author_text"
+	      	android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textSize="15px"
+			android:gravity="center_vertical"
+			android:layout_weight="1"
+        />
+        
+    </LinearLayout>
+  
+</LinearLayout>

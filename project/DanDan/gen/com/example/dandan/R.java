@@ -43,15 +43,18 @@ public final class R {
         public static final int lijiang=0x7f020005;
         public static final int line=0x7f020006;
         public static final int music=0x7f020007;
-        public static final int phonebook=0x7f020008;
-        public static final int qiao=0x7f020009;
-        public static final int setting=0x7f02000a;
-        public static final int shuangta=0x7f02000b;
-        public static final int shui=0x7f02000c;
-        public static final int store=0x7f02000d;
+        public static final int pause=0x7f020008;
+        public static final int phonebook=0x7f020009;
+        public static final int play=0x7f02000a;
+        public static final int qiao=0x7f02000b;
+        public static final int setting=0x7f02000c;
+        public static final int shuangta=0x7f02000d;
+        public static final int shui=0x7f02000e;
+        public static final int stop=0x7f02000f;
+        public static final int store=0x7f020010;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a003d;
+        public static final int action_settings=0x7f0a0041;
         public static final int delete=0x7f0a000f;
         public static final int insert=0x7f0a000c;
         public static final int listView=0x7f0a0000;
@@ -106,12 +109,16 @@ public final class R {
         public static final int ten_group_send_number_text=0x7f0a0033;
         public static final int ten_intent_service_start_intent_service=0x7f0a0036;
         public static final int ten_intent_service_start_setvice=0x7f0a0035;
-        public static final int ten_smsmanager_main_content_text=0x7f0a0039;
-        public static final int ten_smsmanager_main_number_text=0x7f0a0038;
-        public static final int ten_smsmanager_main_send_msg_btn=0x7f0a0037;
-        public static final int ten_telephony_status_line_name=0x7f0a003a;
-        public static final int ten_telephony_status_line_value=0x7f0a003b;
-        public static final int ten_telephony_status_main_listview=0x7f0a003c;
+        public static final int ten_music_box_main_author_text=0x7f0a003a;
+        public static final int ten_music_box_main_stop_imgbtn=0x7f0a0038;
+        public static final int ten_music_box_main_title_text=0x7f0a0039;
+        public static final int ten_music_box_mian_play_imgbtn=0x7f0a0037;
+        public static final int ten_smsmanager_main_content_text=0x7f0a003d;
+        public static final int ten_smsmanager_main_number_text=0x7f0a003c;
+        public static final int ten_smsmanager_main_send_msg_btn=0x7f0a003b;
+        public static final int ten_telephony_status_line_name=0x7f0a003e;
+        public static final int ten_telephony_status_line_value=0x7f0a003f;
+        public static final int ten_telephony_status_main_listview=0x7f0a0040;
         public static final int update=0x7f0a000d;
     }
     public static final class layout {
@@ -140,10 +147,11 @@ public final class R {
         public static final int ten_group_send_main=0x7f030016;
         public static final int ten_intent_service_main=0x7f030017;
         public static final int ten_monitor_phone_main=0x7f030018;
-        public static final int ten_smsmanager_main=0x7f030019;
-        public static final int ten_telephony_status_line=0x7f03001a;
-        public static final int ten_telephony_status_main=0x7f03001b;
-        public static final int ten_vibrator_test_main=0x7f03001c;
+        public static final int ten_music_box_main=0x7f030019;
+        public static final int ten_smsmanager_main=0x7f03001a;
+        public static final int ten_telephony_status_line=0x7f03001b;
+        public static final int ten_telephony_status_main=0x7f03001c;
+        public static final int ten_vibrator_test_main=0x7f03001d;
     }
     public static final class menu {
         public static final int main_interface=0x7f090000;
