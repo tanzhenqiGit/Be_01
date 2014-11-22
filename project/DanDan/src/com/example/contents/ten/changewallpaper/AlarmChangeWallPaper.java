@@ -39,11 +39,12 @@ public class AlarmChangeWallPaper extends Activity {
 					mManager.setRepeating(AlarmManager.RTC_WAKEUP, 0, 5000, pi);
 					mStartBtn.setEnabled(false);
 					mStopBtn.setEnabled(true);
-					Toast.makeText(AlarmChangeWallPaper.this, "定时壁纸启动成功啦", Toast.LENGTH_LONG).show();
+					Toast.makeText(AlarmChangeWallPaper.this,
+							"alarmChangeWallPaper set sucessed.",
+							Toast.LENGTH_LONG).show();
 				}
 			});
-		}
-		
+		}		
 		if (mStopBtn != null) {
 			mStopBtn.setOnClickListener(new OnClickListener() {
 				
@@ -52,7 +53,8 @@ public class AlarmChangeWallPaper extends Activity {
 					Log.d(TAG, "mStopBtn");
 					mStartBtn.setEnabled(true);
 					mStopBtn.setEnabled(false);
-					mManager.cancel(pi);				}
+					mManager.cancel(pi);
+				}
 			});
 		}
 		

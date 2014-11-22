@@ -171,7 +171,8 @@
         	</intent-filter>
         </service>
         
-        <service android:name="com.example.contents.ten.com.example.contents.ten.changewallpape.ChangeWallPaperService" >
+        <service android:name="com.example.contents.ten.changewallpaper.ChangeWallPaperService" >
+            
         </service>
         
         

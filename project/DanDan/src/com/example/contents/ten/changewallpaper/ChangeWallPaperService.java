@@ -1,6 +1,8 @@
 package com.example.contents.ten.changewallpaper;
 
 
+import java.io.IOException;
+
 import com.example.dandan.R;
 
 import android.app.Service;
@@ -33,6 +35,17 @@ public class ChangeWallPaperService extends Service {
 			mCurrrentIndex = 0;
 		}
 		
+		if(mWallManager != null) {
+			try {
+				Log.d(TAG, "setResource succed");
+				mWallManager.setResource(mWallPapers[mCurrrentIndex++]);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} else {
+			Log.d(TAG, "mWallManager == null");
+		}
 	}
 	
 	@Override
@@ -51,12 +64,13 @@ public class ChangeWallPaperService extends Service {
 	public void onStart(Intent intent, int startId) {
 		Log.d(TAG, "onStart startId=" + startId);
 		super.onStart(intent, startId);
-		OnStartIsCalled();
+		//OnStartIsCalled();
 	}
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		Log.d(TAG, "onStartCommand flags="+flags + ",startId=" + startId);
-		return super.onStartCommand(intent, flags, startId);
+		OnStartIsCalled();
+		return START_STICKY;
 	}
 
 }
