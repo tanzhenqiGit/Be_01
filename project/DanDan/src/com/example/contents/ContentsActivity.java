@@ -1,5 +1,6 @@
 package com.example.contents;
 
+import com.example.contents.four.FourContentsActivity;
 import com.example.contents.nine.NineContentsActivity;
 import com.example.contents.ten.TenContentsActivity;
 import com.example.dandan.R;
@@ -58,9 +59,9 @@ public class ContentsActivity extends Activity {
 			mList.setOnItemClickListener(new OnItemClickListener() {
 
 				@Override
-				public void onItemClick(AdapterView<?> arg0, View arg1,
-						int position, long arg3) {
-					Log.d(TAG, "onItemClick arg2:" + position + "arg3:" + arg3);
+				public void onItemClick(AdapterView<?> arg0, View source,
+						int position, long id) {
+					Log.d(TAG, "onItemClick position:" + position + "id:" + id);
 					switch(position) {
 					case CHAPTER_ONE:
 						break;
@@ -69,6 +70,9 @@ public class ContentsActivity extends Activity {
 					case CHAPTER_THREE:
 						break;
 					case CHAPTER_FOUR:
+						Intent four_chapter_intent = 
+							new Intent(ContentsActivity.this, FourContentsActivity.class);
+						startActivity(four_chapter_intent);
 						break;
 					case CHAPTER_FIVE:
 						

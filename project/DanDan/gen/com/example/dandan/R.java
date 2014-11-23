@@ -9,18 +9,19 @@ package com.example.dandan;
 
 public final class R {
     public static final class array {
-        public static final int Contents=0x7f050000;
-        public static final int chapterNineContents=0x7f050002;
-        public static final int chapterTenContents=0x7f050001;
+        public static final int Contents=0x7f060000;
+        public static final int chapterFourContents=0x7f060001;
+        public static final int chapterNineContents=0x7f060002;
+        public static final int chapterTenContents=0x7f060003;
         /**  声明一个名为phoneType的字符串数组 
          */
-        public static final int phoneType=0x7f050005;
+        public static final int phoneType=0x7f060006;
         /**  声明一个名为simState的字符串数组 
          */
-        public static final int simState=0x7f050004;
+        public static final int simState=0x7f060005;
         /**  声明一个名为statusNames的字符串数组 
          */
-        public static final int statusNames=0x7f050003;
+        public static final int statusNames=0x7f060004;
     }
     public static final class attr {
     }
@@ -31,8 +32,8 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f060000;
-        public static final int activity_vertical_margin=0x7f060001;
+        public static final int activity_horizontal_margin=0x7f070000;
+        public static final int activity_vertical_margin=0x7f070001;
     }
     public static final class drawable {
         public static final int android=0x7f020000;
@@ -43,83 +44,87 @@ public final class R {
         public static final int lijiang=0x7f020005;
         public static final int line=0x7f020006;
         public static final int music=0x7f020007;
-        public static final int pause=0x7f020008;
-        public static final int phonebook=0x7f020009;
-        public static final int play=0x7f02000a;
-        public static final int qiao=0x7f02000b;
-        public static final int setting=0x7f02000c;
-        public static final int shuangta=0x7f02000d;
-        public static final int shui=0x7f02000e;
-        public static final int stop=0x7f02000f;
-        public static final int store=0x7f020010;
+        public static final int p=0x7f020008;
+        public static final int pause=0x7f020009;
+        public static final int phonebook=0x7f02000a;
+        public static final int play=0x7f02000b;
+        public static final int qiao=0x7f02000c;
+        public static final int setting=0x7f02000d;
+        public static final int shuangta=0x7f02000e;
+        public static final int shui=0x7f02000f;
+        public static final int stop=0x7f020010;
+        public static final int store=0x7f020011;
+        public static final int t=0x7f020012;
+        public static final int tools=0x7f020013;
+        public static final int z=0x7f020014;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a0041;
-        public static final int delete=0x7f0a000f;
-        public static final int insert=0x7f0a000c;
-        public static final int listView=0x7f0a0000;
-        public static final int nine_chapter_contests=0x7f0a0001;
-        public static final int nine_content_provider_add=0x7f0a0017;
-        public static final int nine_content_provider_email_text=0x7f0a001b;
-        public static final int nine_content_provider_name_text=0x7f0a0019;
-        public static final int nine_content_provider_number_text=0x7f0a001a;
-        public static final int nine_content_provider_result_list=0x7f0a0002;
-        public static final int nine_content_provider_search=0x7f0a0018;
-        public static final int nine_dict_resolver_line_detail=0x7f0a0004;
-        public static final int nine_dict_resolver_line_word=0x7f0a0003;
-        public static final int nine_dict_resolver_main_detail=0x7f0a0006;
-        public static final int nine_dict_resolver_main_insert=0x7f0a0007;
-        public static final int nine_dict_resolver_main_key=0x7f0a0008;
-        public static final int nine_dict_resolver_main_search=0x7f0a0009;
-        public static final int nine_dict_resolver_main_show=0x7f0a000a;
-        public static final int nine_dict_resolver_main_word=0x7f0a0005;
-        public static final int nine_dict_resolver_result_show=0x7f0a000b;
-        public static final int nine_media_provider_desc_text=0x7f0a0012;
-        public static final int nine_media_provider_main_add_btn=0x7f0a0013;
-        public static final int nine_media_provider_main_list=0x7f0a0015;
-        public static final int nine_media_provider_main_query_btn=0x7f0a0014;
-        public static final int nine_media_provider_name_image=0x7f0a0011;
-        public static final int nine_media_provider_name_text=0x7f0a0010;
-        public static final int nine_media_provider_view_imageview=0x7f0a0016;
-        public static final int query=0x7f0a000e;
-        public static final int ten_aidl_service_main_color_text=0x7f0a001d;
-        public static final int ten_aidl_service_main_getServiceStsBtn=0x7f0a001c;
-        public static final int ten_aidl_service_main_weight_text=0x7f0a001e;
-        public static final int ten_alarm_change_wall_paper_main_start_btn=0x7f0a001f;
-        public static final int ten_alarm_change_wall_paper_main_stop_btn=0x7f0a0020;
-        public static final int ten_alarm_manager_main_set_time_btn=0x7f0a0021;
-        public static final int ten_audio_manager_main_down=0x7f0a0025;
-        public static final int ten_audio_manager_main_play=0x7f0a0024;
-        public static final int ten_audio_manager_main_toggle_btn=0x7f0a0022;
-        public static final int ten_audio_manager_main_up=0x7f0a0023;
-        public static final int ten_bind_service_main_bind_btn=0x7f0a0026;
-        public static final int ten_bind_service_main_getInfo_btn=0x7f0a0028;
-        public static final int ten_bind_service_main_unbind_btn=0x7f0a0027;
-        public static final int ten_blackmain_line_list=0x7f0a0029;
-        public static final int ten_blockmain_main_blockBtn=0x7f0a002a;
-        public static final int ten_broad_cast_main_send_btn=0x7f0a002b;
-        public static final int ten_complex_service_main_getServiceBtn=0x7f0a002c;
-        public static final int ten_complex_service_main_input_text=0x7f0a002d;
-        public static final int ten_complex_service_main_listView=0x7f0a002e;
-        public static final int ten_first_service_main_startBtn=0x7f0a002f;
-        public static final int ten_first_service_main_stopBtn=0x7f0a0030;
-        public static final int ten_group_send_content_text=0x7f0a0034;
-        public static final int ten_group_send_main_select_btn=0x7f0a0032;
-        public static final int ten_group_send_main_send_btn=0x7f0a0031;
-        public static final int ten_group_send_number_text=0x7f0a0033;
-        public static final int ten_intent_service_start_intent_service=0x7f0a0036;
-        public static final int ten_intent_service_start_setvice=0x7f0a0035;
-        public static final int ten_music_box_main_author_text=0x7f0a003a;
-        public static final int ten_music_box_main_stop_imgbtn=0x7f0a0038;
-        public static final int ten_music_box_main_title_text=0x7f0a0039;
-        public static final int ten_music_box_mian_play_imgbtn=0x7f0a0037;
-        public static final int ten_smsmanager_main_content_text=0x7f0a003d;
-        public static final int ten_smsmanager_main_number_text=0x7f0a003c;
-        public static final int ten_smsmanager_main_send_msg_btn=0x7f0a003b;
-        public static final int ten_telephony_status_line_name=0x7f0a003e;
-        public static final int ten_telephony_status_line_value=0x7f0a003f;
-        public static final int ten_telephony_status_main_listview=0x7f0a0040;
-        public static final int update=0x7f0a000d;
+        public static final int action_settings=0x7f0b0041;
+        public static final int delete=0x7f0b000f;
+        public static final int insert=0x7f0b000c;
+        public static final int listView=0x7f0b0000;
+        public static final int nine_chapter_contests=0x7f0b0001;
+        public static final int nine_content_provider_add=0x7f0b0017;
+        public static final int nine_content_provider_email_text=0x7f0b001b;
+        public static final int nine_content_provider_name_text=0x7f0b0019;
+        public static final int nine_content_provider_number_text=0x7f0b001a;
+        public static final int nine_content_provider_result_list=0x7f0b0002;
+        public static final int nine_content_provider_search=0x7f0b0018;
+        public static final int nine_dict_resolver_line_detail=0x7f0b0004;
+        public static final int nine_dict_resolver_line_word=0x7f0b0003;
+        public static final int nine_dict_resolver_main_detail=0x7f0b0006;
+        public static final int nine_dict_resolver_main_insert=0x7f0b0007;
+        public static final int nine_dict_resolver_main_key=0x7f0b0008;
+        public static final int nine_dict_resolver_main_search=0x7f0b0009;
+        public static final int nine_dict_resolver_main_show=0x7f0b000a;
+        public static final int nine_dict_resolver_main_word=0x7f0b0005;
+        public static final int nine_dict_resolver_result_show=0x7f0b000b;
+        public static final int nine_media_provider_desc_text=0x7f0b0012;
+        public static final int nine_media_provider_main_add_btn=0x7f0b0013;
+        public static final int nine_media_provider_main_list=0x7f0b0015;
+        public static final int nine_media_provider_main_query_btn=0x7f0b0014;
+        public static final int nine_media_provider_name_image=0x7f0b0011;
+        public static final int nine_media_provider_name_text=0x7f0b0010;
+        public static final int nine_media_provider_view_imageview=0x7f0b0016;
+        public static final int query=0x7f0b000e;
+        public static final int ten_aidl_service_main_color_text=0x7f0b001d;
+        public static final int ten_aidl_service_main_getServiceStsBtn=0x7f0b001c;
+        public static final int ten_aidl_service_main_weight_text=0x7f0b001e;
+        public static final int ten_alarm_change_wall_paper_main_start_btn=0x7f0b001f;
+        public static final int ten_alarm_change_wall_paper_main_stop_btn=0x7f0b0020;
+        public static final int ten_alarm_manager_main_set_time_btn=0x7f0b0021;
+        public static final int ten_audio_manager_main_down=0x7f0b0025;
+        public static final int ten_audio_manager_main_play=0x7f0b0024;
+        public static final int ten_audio_manager_main_toggle_btn=0x7f0b0022;
+        public static final int ten_audio_manager_main_up=0x7f0b0023;
+        public static final int ten_bind_service_main_bind_btn=0x7f0b0026;
+        public static final int ten_bind_service_main_getInfo_btn=0x7f0b0028;
+        public static final int ten_bind_service_main_unbind_btn=0x7f0b0027;
+        public static final int ten_blackmain_line_list=0x7f0b0029;
+        public static final int ten_blockmain_main_blockBtn=0x7f0b002a;
+        public static final int ten_broad_cast_main_send_btn=0x7f0b002b;
+        public static final int ten_complex_service_main_getServiceBtn=0x7f0b002c;
+        public static final int ten_complex_service_main_input_text=0x7f0b002d;
+        public static final int ten_complex_service_main_listView=0x7f0b002e;
+        public static final int ten_first_service_main_startBtn=0x7f0b002f;
+        public static final int ten_first_service_main_stopBtn=0x7f0b0030;
+        public static final int ten_group_send_content_text=0x7f0b0034;
+        public static final int ten_group_send_main_select_btn=0x7f0b0032;
+        public static final int ten_group_send_main_send_btn=0x7f0b0031;
+        public static final int ten_group_send_number_text=0x7f0b0033;
+        public static final int ten_intent_service_start_intent_service=0x7f0b0036;
+        public static final int ten_intent_service_start_setvice=0x7f0b0035;
+        public static final int ten_music_box_main_author_text=0x7f0b003a;
+        public static final int ten_music_box_main_stop_imgbtn=0x7f0b0038;
+        public static final int ten_music_box_main_title_text=0x7f0b0039;
+        public static final int ten_music_box_mian_play_imgbtn=0x7f0b0037;
+        public static final int ten_smsmanager_main_content_text=0x7f0b003d;
+        public static final int ten_smsmanager_main_number_text=0x7f0b003c;
+        public static final int ten_smsmanager_main_send_msg_btn=0x7f0b003b;
+        public static final int ten_telephony_status_line_name=0x7f0b003e;
+        public static final int ten_telephony_status_line_value=0x7f0b003f;
+        public static final int ten_telephony_status_main_listview=0x7f0b0040;
+        public static final int update=0x7f0b000d;
     }
     public static final class layout {
         public static final int activity_main_interface=0x7f030000;
@@ -154,66 +159,67 @@ public final class R {
         public static final int ten_vibrator_test_main=0x7f03001d;
     }
     public static final class menu {
-        public static final int main_interface=0x7f090000;
+        public static final int main_interface=0x7f0a0000;
     }
     public static final class raw {
-        public static final int music=0x7f040000;
+        public static final int music=0x7f050000;
     }
     public static final class string {
-        public static final int AidlClient=0x7f07001e;
-        public static final int AlarmChangeWallpaper=0x7f070032;
-        public static final int AlarmManager=0x7f07002f;
-        public static final int Alarming=0x7f070030;
-        public static final int AudioManager=0x7f070029;
-        public static final int BindServiceTest=0x7f07001c;
-        public static final int BlockMain=0x7f070022;
-        public static final int BroadcastMain=0x7f070033;
-        public static final int ComplexClient=0x7f07001f;
-        public static final int FirstServiceTest=0x7f07001b;
-        public static final int GroupSend=0x7f070026;
-        public static final int InputName=0x7f070019;
-        public static final int IntentServiceTest=0x7f07001d;
-        public static final int MonitorPhone=0x7f070020;
-        public static final int SmsManager=0x7f070024;
-        public static final int SortedBroadCast=0x7f070035;
-        public static final int TelephonyStatus=0x7f070021;
-        public static final int TenContentsActivity=0x7f07001a;
-        public static final int Vibrator=0x7f07002e;
-        public static final int action_settings=0x7f070001;
-        public static final int add=0x7f07000b;
-        public static final int app_name=0x7f070000;
-        public static final int bindService=0x7f070011;
-        public static final int color=0x7f070017;
-        public static final int contents=0x7f070004;
-        public static final int delete=0x7f070006;
-        public static final int detail=0x7f07000a;
-        public static final int down=0x7f07002d;
-        public static final int getInfo=0x7f070013;
-        public static final int getServiceSts=0x7f070016;
-        public static final int hello_world=0x7f070002;
-        public static final int insert=0x7f070007;
-        public static final int mail=0x7f07000e;
-        public static final int main_interface=0x7f070003;
-        public static final int managerBlack=0x7f070023;
-        public static final int name=0x7f07000c;
-        public static final int number=0x7f07000d;
-        public static final int play=0x7f07002b;
-        public static final int query=0x7f070005;
-        public static final int search=0x7f070009;
-        public static final int select=0x7f070028;
-        public static final int sendBroadCast=0x7f070034;
-        public static final int sendGroupMsg=0x7f070027;
-        public static final int sendmessage=0x7f070025;
-        public static final int setTime=0x7f070031;
-        public static final int start=0x7f07000f;
-        public static final int startIntentService=0x7f070015;
-        public static final int startService=0x7f070014;
-        public static final int stop=0x7f070010;
-        public static final int toggle=0x7f07002a;
-        public static final int unBindService=0x7f070012;
-        public static final int up=0x7f07002c;
-        public static final int update=0x7f070008;
-        public static final int weight=0x7f070018;
+        public static final int AidlClient=0x7f08001f;
+        public static final int AlarmChangeWallpaper=0x7f080033;
+        public static final int AlarmManager=0x7f080030;
+        public static final int Alarming=0x7f080031;
+        public static final int AudioManager=0x7f08002a;
+        public static final int BindServiceTest=0x7f08001d;
+        public static final int BlockMain=0x7f080023;
+        public static final int BroadcastMain=0x7f080034;
+        public static final int ComplexClient=0x7f080020;
+        public static final int FirstServiceTest=0x7f08001c;
+        public static final int FourContentsActivity=0x7f08001a;
+        public static final int GroupSend=0x7f080027;
+        public static final int InputName=0x7f080019;
+        public static final int IntentServiceTest=0x7f08001e;
+        public static final int MonitorPhone=0x7f080021;
+        public static final int SmsManager=0x7f080025;
+        public static final int SortedBroadCast=0x7f080036;
+        public static final int TelephonyStatus=0x7f080022;
+        public static final int TenContentsActivity=0x7f08001b;
+        public static final int Vibrator=0x7f08002f;
+        public static final int action_settings=0x7f080001;
+        public static final int add=0x7f08000b;
+        public static final int app_name=0x7f080000;
+        public static final int bindService=0x7f080011;
+        public static final int color=0x7f080017;
+        public static final int contents=0x7f080004;
+        public static final int delete=0x7f080006;
+        public static final int detail=0x7f08000a;
+        public static final int down=0x7f08002e;
+        public static final int getInfo=0x7f080013;
+        public static final int getServiceSts=0x7f080016;
+        public static final int hello_world=0x7f080002;
+        public static final int insert=0x7f080007;
+        public static final int mail=0x7f08000e;
+        public static final int main_interface=0x7f080003;
+        public static final int managerBlack=0x7f080024;
+        public static final int name=0x7f08000c;
+        public static final int number=0x7f08000d;
+        public static final int play=0x7f08002c;
+        public static final int query=0x7f080005;
+        public static final int search=0x7f080009;
+        public static final int select=0x7f080029;
+        public static final int sendBroadCast=0x7f080035;
+        public static final int sendGroupMsg=0x7f080028;
+        public static final int sendmessage=0x7f080026;
+        public static final int setTime=0x7f080032;
+        public static final int start=0x7f08000f;
+        public static final int startIntentService=0x7f080015;
+        public static final int startService=0x7f080014;
+        public static final int stop=0x7f080010;
+        public static final int toggle=0x7f08002b;
+        public static final int unBindService=0x7f080012;
+        public static final int up=0x7f08002d;
+        public static final int update=0x7f080008;
+        public static final int weight=0x7f080018;
     }
     public static final class style {
         /** 
@@ -237,10 +243,13 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f080000;
+        public static final int AppBaseTheme=0x7f090000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f080001;
+        public static final int AppTheme=0x7f090001;
+    }
+    public static final class xml {
+        public static final int four_other_activity_preferences=0x7f040000;
     }
 }

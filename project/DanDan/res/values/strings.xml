@@ -32,6 +32,8 @@
 	<string name="weight">体重</string>
 	<string name="InputName"> 请输入用户名 </string>
 	
+	<string name="FourContentsActivity">第四章内容</string>
+	
 	<string name="TenContentsActivity">TenContentsActivity</string>
 	<string name="FirstServiceTest">FirstServiceTest</string>
 	<string name="BindServiceTest">BindServiceTest</string>
