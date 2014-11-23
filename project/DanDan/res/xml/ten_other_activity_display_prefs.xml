@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Backgroud light group">
+        <ListPreference 
+        android:key="light"
+        android:title="light intensity"
+        android:summary="please chose light intensity"
+        android:dialogTitle="please chose light intensity"
+        android:entries="@array/light_strenght_list"
+        android:entryValues="@array/light_value_list"
+        />
+    </PreferenceCategory>
+    
+	<PreferenceCategory android:title="Text display group"
+	    >
+	    <SwitchPreference 
+	        android:key="autoScroll"
+	        android:title="auto scroll"
+	        android:summaryOn="suto scroll:On"
+			android:summaryOff="suto scroll:Off"
+			android:defaultValue="true"
+	        />
+	</PreferenceCategory>
+</PreferenceScreen>

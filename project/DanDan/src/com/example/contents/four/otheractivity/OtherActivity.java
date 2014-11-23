@@ -3,7 +3,6 @@ package com.example.contents.four.otheractivity;
 import android.app.LauncherActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 import android.util.Log;
 import android.widget.ArrayAdapter;
 

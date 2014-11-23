@@ -13,6 +13,10 @@ public final class R {
         public static final int chapterFourContents=0x7f060001;
         public static final int chapterNineContents=0x7f060002;
         public static final int chapterTenContents=0x7f060003;
+        public static final int gender_name_list=0x7f060007;
+        public static final int gender_value_list=0x7f060008;
+        public static final int light_strenght_list=0x7f060009;
+        public static final int light_value_list=0x7f06000a;
         /**  声明一个名为phoneType的字符串数组 
          */
         public static final int phoneType=0x7f060006;
@@ -250,6 +254,8 @@ public final class R {
         public static final int AppTheme=0x7f090001;
     }
     public static final class xml {
-        public static final int four_other_activity_preferences=0x7f040000;
+        public static final int four_other_activity_preference_headers=0x7f040000;
+        public static final int four_other_activity_preferences=0x7f040001;
+        public static final int ten_other_activity_display_prefs=0x7f040002;
     }
 }

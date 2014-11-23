@@ -83,4 +83,24 @@
 		<item>GSM</item>
 		<item>CDMA</item>
 	</string-array>	
+	
+	<string-array name="gender_name_list">
+		<item>男</item>
+		<item>女</item>
+	</string-array>
+	<string-array name="gender_value_list">
+		<item>male</item>
+		<item>female</item>
+	</string-array>
+	<string-array name="light_strenght_list">
+	    <item>高</item>
+	    <item>中</item>
+	    <item>低</item>
+	    
+	</string-array>
+	<string-array name="light_value_list">
+	    <item>high</item>
+	    <item>meddle</item>
+	    <item>low</item>
+	</string-array>
 </resources>

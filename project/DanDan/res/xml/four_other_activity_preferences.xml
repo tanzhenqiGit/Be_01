@@ -1,5 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
-    
+    <RingtonePreference 
+        android:ringtoneType="all"
+        android:title="Ringing Setting"
+        android:summary="Ringing tone"
+        android:showDefault="true"
+        android:key="ring_key"
+        android:showSilent="true"
+        />
+    <PreferenceCategory 
+        android:title="Personal information setting group"
+        >
+        <EditTextPreference 
+            android:key="name"
+            android:title="Fill in user information"
+            android:summary="please fill in you name"
+            />
+        <ListPreference 
+            android:key="gander"
+            android:title="Sex"
+            android:summary="please chose you sex"
+            android:dialogTitle="ListPreference"
+            android:entries="@array/gender_name_list"
+            android:entryValues="@array/gender_value_list"
+            />
+    </PreferenceCategory>
 
+    <PreferenceCategory 
+        android:title="system function setting" >
+        <CheckBoxPreference
+         android:key="autoSave"
+         android:title="auto save progress"
+         android:summaryOn="auto save On"
+         android:summaryOff="auto save Off"
+         android:defaultValue="true"   
+        />
+        
+    </PreferenceCategory>
 </PreferenceScreen>

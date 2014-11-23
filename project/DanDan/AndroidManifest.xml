@@ -44,7 +44,10 @@
             android:name="com.example.contents.four.otheractivity.ArmsExpandableListActivity"
             android:label="@string/contents" >
         </activity>
-        
+        <activity
+            android:name="com.example.contents.four.otheractivity.ArmsPreferenceActivity"
+            android:label="@string/contents" >
+        </activity>
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" >
+    <header 
+        android:fragment ="com.example.contents.four.otheractivity.ArmsPreferenceActivity$PrefsFragment1"
+        android:icon="@drawable/setting"
+        android:title="Program setting"
+        android:summary="Set up the relevant options"
+        />
+	<header android:fragment="com.example.contents.four.otheractivity.ArmsPreferenceActivity$PrefsFragment2"
+		android:icon="@drawable/store"
+		android:title="Interface setting options"
+		android:summary="Interface display setting options" >
+		<extra 
+		    android:name="website"
+		    android:value="www.baidu.com" />
+		    	
+	</header>
+	
+	<header
+	    android:icon="@drawable/store"
+	    android:title="use Intent"
+	    android:summary="use Intent lauch a Activity">
+	    <intent android:action="android.intent.action.VIEW"
+	        android:data="http://www.baidu.com"/>
+	    
+	</header>
+</preference-headers>
