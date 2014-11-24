@@ -66,4 +66,6 @@
 	<string name="sendBroadCast">发送广播</string>
 	<string name="SortedBroadCast">顺序发送广播</string>
 	
+	<string name="ElevenContents">第十一章内容</string>
+	
 </resources>

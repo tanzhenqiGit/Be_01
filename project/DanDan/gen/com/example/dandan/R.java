@@ -10,22 +10,23 @@ package com.example.dandan;
 public final class R {
     public static final class array {
         public static final int Contents=0x7f060000;
+        public static final int chapterElevenContents=0x7f060004;
         public static final int chapterFourContents=0x7f060001;
         public static final int chapterNineContents=0x7f060002;
         public static final int chapterTenContents=0x7f060003;
-        public static final int gender_name_list=0x7f060007;
-        public static final int gender_value_list=0x7f060008;
-        public static final int light_strenght_list=0x7f060009;
-        public static final int light_value_list=0x7f06000a;
+        public static final int gender_name_list=0x7f060008;
+        public static final int gender_value_list=0x7f060009;
+        public static final int light_strenght_list=0x7f06000a;
+        public static final int light_value_list=0x7f06000b;
         /**  声明一个名为phoneType的字符串数组 
          */
-        public static final int phoneType=0x7f060006;
+        public static final int phoneType=0x7f060007;
         /**  声明一个名为simState的字符串数组 
          */
-        public static final int simState=0x7f060005;
+        public static final int simState=0x7f060006;
         /**  声明一个名为statusNames的字符串数组 
          */
-        public static final int statusNames=0x7f060004;
+        public static final int statusNames=0x7f060005;
     }
     public static final class attr {
     }
@@ -178,6 +179,7 @@ public final class R {
         public static final int BlockMain=0x7f080023;
         public static final int BroadcastMain=0x7f080034;
         public static final int ComplexClient=0x7f080020;
+        public static final int ElevenContents=0x7f080037;
         public static final int FirstServiceTest=0x7f08001c;
         public static final int FourContentsActivity=0x7f08001a;
         public static final int GroupSend=0x7f080027;

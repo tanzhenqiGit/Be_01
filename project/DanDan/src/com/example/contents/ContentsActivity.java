@@ -1,5 +1,6 @@
 package com.example.contents;
 
+import com.example.contents.eleven.ElevenContentsActivity;
 import com.example.contents.four.FourContentsActivity;
 import com.example.contents.nine.NineContentsActivity;
 import com.example.contents.ten.TenContentsActivity;
@@ -94,10 +95,14 @@ public class ContentsActivity extends Activity {
 						startActivity(intentTen);
 						break;
 					case CHAPTER_ELEVEN:
+						Intent eleven_intent 
+						= new Intent(ContentsActivity.this, ElevenContentsActivity.class);
+						startActivity(eleven_intent);
 						break;
 					case CHAPTER_TWELVE:
 						break;
 					case CHAPTER_THRITEEN:
+					
 						break;
 					case CHAPTER_FOURTEEN:
 						break;

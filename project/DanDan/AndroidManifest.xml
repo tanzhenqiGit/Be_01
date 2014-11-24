@@ -170,6 +170,11 @@
             >
             
         </activity>
+        <activity 
+            android:name="com.example.contents.eleven.ElevenContentsActivity"
+            android:label="ElevenContents"
+            >
+        </activity>
             
             
         <service android:name="com.example.contents.ten.firstService.FirstService" >
