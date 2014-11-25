@@ -67,5 +67,9 @@
 	<string name="SortedBroadCast">顺序发送广播</string>
 	
 	<string name="ElevenContents">第十一章内容</string>
+	<string name="SoundPoolActivity">短促音频播放</string>
+	<string name="shot">射击声音</string>
+	<string name="bomb">炸弹声音</string>
+	<string name="arrow">火箭声音</string>
 	
 </resources>

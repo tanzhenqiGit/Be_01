@@ -166,16 +166,16 @@
         
         <activity
             android:name="com.example.contents.ten.musicbox.MusicBox"
-            android:label="MusicBox"
-            >
-            
+            android:label="MusicBox">
         </activity>
         <activity 
             android:name="com.example.contents.eleven.ElevenContentsActivity"
-            android:label="ElevenContents"
-            >
+            android:label="ElevenContents">
         </activity>
-            
+        <activity 
+            android:name="com.example.contents.eleven.soundpool.SoundPoolActivity"
+            android:label="SoundPoolActivity">
+        </activity>  
             
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>

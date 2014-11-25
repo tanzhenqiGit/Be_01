@@ -1,8 +1,10 @@
 package com.example.contents.eleven;
 
+import com.example.contents.eleven.soundpool.SoundPoolActivity;
 import com.example.dandan.R;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -27,7 +29,9 @@ public class ElevenContentsActivity extends Activity {
 						int position, long id) {
 					switch(position) {
 					case SOUND_POOL:
-						
+						Intent sound_pool_intent = new Intent(ElevenContentsActivity.this,
+								SoundPoolActivity.class);
+						startActivity(sound_pool_intent);
 						break;
 					default:
 						break;
