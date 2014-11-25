@@ -1,6 +1,7 @@
 package com.example.contents.eleven;
 
 import com.example.contents.eleven.soundpool.SoundPoolActivity;
+import com.example.contents.eleven.videoview.VideoViewActivity;
 import com.example.dandan.R;
 
 import android.app.Activity;
@@ -19,6 +20,9 @@ public class ElevenContentsActivity extends Activity {
 	private String[] mContents;
 	private ListView mListView;
 	private final int SOUND_POOL = 0;
+	private final int VOIDE_VIEW = 1;
+	
+	
 	private void setListCallBack()
 	{
 		if (mListView != null) {
@@ -32,6 +36,11 @@ public class ElevenContentsActivity extends Activity {
 						Intent sound_pool_intent = new Intent(ElevenContentsActivity.this,
 								SoundPoolActivity.class);
 						startActivity(sound_pool_intent);
+						break;
+					case VOIDE_VIEW:
+						Intent video_view_intent = new Intent(ElevenContentsActivity.this,
+								VideoViewActivity.class);
+						startActivity(video_view_intent);
 						break;
 					default:
 						break;

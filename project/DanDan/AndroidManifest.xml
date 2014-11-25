@@ -175,7 +175,12 @@
         <activity 
             android:name="com.example.contents.eleven.soundpool.SoundPoolActivity"
             android:label="SoundPoolActivity">
-        </activity>  
+        </activity> 
+        
+        <activity 
+            android:name="com.example.contents.eleven.videoview.VideoViewActivity"
+            android:label="VideoViewActivity">
+        </activity> 
             
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
