@@ -181,7 +181,11 @@
             android:name="com.example.contents.eleven.videoview.VideoViewActivity"
             android:label="VideoViewActivity">
         </activity> 
-            
+         
+        <activity 
+            android:name="com.example.contents.eleven.surfaceview.SurfaceViewPlayVideo"
+            android:label="SurfaceViewPlayView">
+        </activity> 
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />

@@ -24,16 +24,17 @@ public class VideoViewActivity extends Activity {
 	{
 		mVideoView = (VideoView)findViewById(R.id.eleven_video_view_main_videoview);
 		mController = new MediaController(this);
-		File video = new File("/mnt/sdcard/movie.mp4");
+		File video = new File("/mnt/sdcard/video.mp4");
 		if (video.exists()) {
-			Log.d(TAG, "/mnt/sdcard/movie.mp4 Exists");
+			Log.d(TAG, "/mnt/sdcard/video.mp4 Exists");
 			mVideoView.setVideoPath(video.getAbsolutePath());
 			mVideoView.setMediaController(mController);
 			mController.setMediaPlayer(mVideoView);
 			mVideoView.requestFocus();
 		} else {
-			Log.d(TAG, "file /mnt/sdcard/movie.mp4 not Exists");
-			Toast.makeText(VideoViewActivity.this, "/mnt/sdcard/movie.mp4 not Exists ", Toast.LENGTH_LONG).show();
+			Log.d(TAG, "file /mnt/sdcard/video.mp4 not Exists");
+			Toast.makeText(VideoViewActivity.this, "/mnt/sdcard/video.mp4  not Exists ", 
+					Toast.LENGTH_LONG).show();
 		}
 	}
 	@Override

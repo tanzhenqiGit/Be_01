@@ -1,6 +1,7 @@
 package com.example.contents.eleven;
 
 import com.example.contents.eleven.soundpool.SoundPoolActivity;
+import com.example.contents.eleven.surfaceview.SurfaceViewPlayVideo;
 import com.example.contents.eleven.videoview.VideoViewActivity;
 import com.example.dandan.R;
 
@@ -21,6 +22,7 @@ public class ElevenContentsActivity extends Activity {
 	private ListView mListView;
 	private final int SOUND_POOL = 0;
 	private final int VOIDE_VIEW = 1;
+	private final int SURFACE_VIEW = 2;
 	
 	
 	private void setListCallBack()
@@ -41,6 +43,11 @@ public class ElevenContentsActivity extends Activity {
 						Intent video_view_intent = new Intent(ElevenContentsActivity.this,
 								VideoViewActivity.class);
 						startActivity(video_view_intent);
+						break;
+					case SURFACE_VIEW:
+						Intent surface_view_intent = new Intent(ElevenContentsActivity.this,
+								SurfaceViewPlayVideo.class);
+						startActivity(surface_view_intent);
 						break;
 					default:
 						break;

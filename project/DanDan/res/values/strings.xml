@@ -73,5 +73,5 @@
 	<string name="arrow">火箭声音</string>
 	
 	<string name="VideoViewActivity">视频播放</string>
-	
+	<string name="SurfaceViewPlayView">SurfaceView视频播放</string>
 </resources>
