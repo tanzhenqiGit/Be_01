@@ -1,5 +1,6 @@
 package com.example.contents.eleven;
 
+import com.example.contents.eleven.recordsound.RecordSoundActivity;
 import com.example.contents.eleven.soundpool.SoundPoolActivity;
 import com.example.contents.eleven.surfaceview.SurfaceViewPlayVideo;
 import com.example.contents.eleven.videoview.VideoViewActivity;
@@ -23,7 +24,7 @@ public class ElevenContentsActivity extends Activity {
 	private final int SOUND_POOL = 0;
 	private final int VOIDE_VIEW = 1;
 	private final int SURFACE_VIEW = 2;
-	
+	private final int RECORD_SOUND = 3;
 	
 	private void setListCallBack()
 	{
@@ -48,6 +49,11 @@ public class ElevenContentsActivity extends Activity {
 						Intent surface_view_intent = new Intent(ElevenContentsActivity.this,
 								SurfaceViewPlayVideo.class);
 						startActivity(surface_view_intent);
+						break;
+					case RECORD_SOUND:
+						Intent record_sound_intent = new Intent(ElevenContentsActivity.this,
+								RecordSoundActivity.class);
+						startActivity(record_sound_intent);
 						break;
 					default:
 						break;
