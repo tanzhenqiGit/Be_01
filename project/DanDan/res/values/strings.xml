@@ -77,4 +77,6 @@
 	<string name="RecodeSound">录制音频</string>
 	<string name="CaptureImage">拍照</string>
 	<string name="ImageName">照片名称</string>
+	
+	<string name="RecordVideo">录制视频</string>
 </resources>

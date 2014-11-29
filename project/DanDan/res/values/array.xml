@@ -58,6 +58,7 @@
         <item >11.3 SurfaceViewPlayerVideo </item>
         <item >11.4 RecordSound </item>
         <item >11.5 CaptureImage </item>
+        <item >11.6 RecordVideo </item>
     </string-array>
  
     

@@ -189,8 +189,8 @@ public class CaptureImageActivity extends Activity {
 		DisplayMetrics metrics = new DisplayMetrics();
 		display.getMetrics(metrics);
 		mScreenWidth = metrics.widthPixels;
-		mScreenHeight = metrics.heightPixels;
-		
+		//mScreenHeight = metrics.heightPixels;
+		mScreenHeight = mScreenWidth;
 		Log.d(TAG, "mScreenWidth=" + mScreenWidth + ",mScreenHeight=" + mScreenHeight);
 		
 		mView = (SurfaceView)findViewById(R.id.eleven_capture_image_main_surface);
