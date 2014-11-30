@@ -77,6 +77,16 @@
             android:name="com.example.contents.four.activityresult.SelectCityActivity"
             android:label="@string/ActivityForResult" >
         </activity>
+        
+        <activity
+            android:name="com.example.contents.four.lifecycle.LifeCycleActivity"
+            android:label="@string/LifeCycle" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.lifecycle.LifeCycleSecondActivity"
+            android:label="@string/LifeCycleSecondActivity" >
+        </activity>
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >

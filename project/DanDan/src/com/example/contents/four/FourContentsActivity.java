@@ -3,6 +3,8 @@ package com.example.contents.four;
 
 import com.example.contents.four.activityresult.ActivityForResult;
 import com.example.contents.four.bundle.BundleActivity;
+import com.example.contents.four.lifecycle.LifeCycleActivity;
+import com.example.contents.four.lifecycle.LifeCycleSecondActivity;
 import com.example.contents.four.otheractivity.OtherActivity;
 import com.example.contents.four.startactivity.StartActivity;
 import com.example.dandan.R;
@@ -28,6 +30,7 @@ public class FourContentsActivity extends Activity {
 	private final int START_ACTIVITY = 1;
 	private final int BUNDLE_ACTIVITY = 2;
 	private final int RESULT_FOR_ACTIVITY = 3;
+	private final int LIFE_CYCLE = 4;
 	private void initialize()
 	{
 		mContentList = (ListView) findViewById(R.id.listView);
@@ -71,6 +74,12 @@ public class FourContentsActivity extends Activity {
 						Intent result_for_activit_intent 
 							= new Intent(FourContentsActivity.this, ActivityForResult.class);
 						startActivity(result_for_activit_intent);
+						break;
+					case LIFE_CYCLE:
+						Intent life_cycle_intent 
+							= new Intent(FourContentsActivity.this, 
+									LifeCycleActivity.class);
+						startActivity(life_cycle_intent);
 						break;
 					default:
 						
