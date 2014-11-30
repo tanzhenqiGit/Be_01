@@ -100,5 +100,7 @@
 	<string name="LifeCycle">Activity生命周期</string>
 	<string name="LifeCycleSecondActivity">SecondActivity</string>
 	<string name="StandardModeActivity">StandardMode</string>
+	<string name="SingleTaskActivity">SingleTask第一个Activity</string>
+	<string name="SingTaskSecondActivity">SingleTask第一个Activity</string>
 
 </resources>

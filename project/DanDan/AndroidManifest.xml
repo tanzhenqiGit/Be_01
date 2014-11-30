@@ -90,8 +90,23 @@
         
         <activity
             android:name="com.example.contents.four.stardard.StandardModeActivity"
-            android:label="@string/StandardModeActivity" >
+            android:label="@string/StandardModeActivity"
+             >
+            
         </activity>
+        
+        <activity
+            android:name="com.example.contents.four.singletask.SingleTaskActivity"
+            android:label="@string/SingleTaskActivity" 
+            android:launchMode="singleTask">
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.singletask.SingTaskSecondActivity"
+            android:label="@string/SingTaskSecondActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        
         
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"

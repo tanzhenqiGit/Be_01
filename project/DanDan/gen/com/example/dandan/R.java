@@ -246,6 +246,8 @@ public final class R {
         public static final int ResultActivity=0x7f080048;
         public static final int SecondActivity=0x7f080043;
         public static final int SelectCityActivity=0x7f080053;
+        public static final int SingTaskSecondActivity=0x7f080058;
+        public static final int SingleTaskActivity=0x7f080057;
         public static final int SmsManager=0x7f080025;
         public static final int SortedBroadCast=0x7f080036;
         public static final int SoundPoolActivity=0x7f080038;

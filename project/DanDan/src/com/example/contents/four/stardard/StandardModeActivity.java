@@ -32,7 +32,7 @@ public class StandardModeActivity extends Activity {
 		
 		TextView tv = new TextView(StandardModeActivity.this);
 		tv.setText("Activity is:" + this.toString() + "\n"
-				+ ",Task ID is:" + this.getTaskId());
+				+ "Task ID is:" + this.getTaskId());
 		ll.addView(tv);
 		
 		Button button = new Button(StandardModeActivity.this);

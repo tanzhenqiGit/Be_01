@@ -5,6 +5,7 @@ import com.example.contents.four.activityresult.ActivityForResult;
 import com.example.contents.four.bundle.BundleActivity;
 import com.example.contents.four.lifecycle.LifeCycleActivity;
 import com.example.contents.four.otheractivity.OtherActivity;
+import com.example.contents.four.singletask.SingleTaskActivity;
 import com.example.contents.four.stardard.StandardModeActivity;
 import com.example.contents.four.startactivity.StartActivity;
 import com.example.dandan.R;
@@ -32,6 +33,8 @@ public class FourContentsActivity extends Activity {
 	private final int RESULT_FOR_ACTIVITY = 3;
 	private final int LIFE_CYCLE = 4;
 	private final int STANDARD_MODE = 5;
+	private final int SINGLE_TASK = 6;
+	
 	private void initialize()
 	{
 		mContentList = (ListView) findViewById(R.id.listView);
@@ -87,6 +90,12 @@ public class FourContentsActivity extends Activity {
 							= new Intent(FourContentsActivity.this,
 									StandardModeActivity.class);
 						startActivity(standard_mode_intent);
+						break;
+					case SINGLE_TASK:
+						Intent single_task_intent 
+							= new Intent(FourContentsActivity.this, 
+									SingleTaskActivity.class);
+						startActivity(single_task_intent);
 						break;
 					default:
 						
