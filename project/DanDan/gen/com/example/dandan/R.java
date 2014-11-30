@@ -249,6 +249,7 @@ public final class R {
         public static final int SmsManager=0x7f080025;
         public static final int SortedBroadCast=0x7f080036;
         public static final int SoundPoolActivity=0x7f080038;
+        public static final int StandardModeActivity=0x7f080056;
         public static final int StartActivity=0x7f080042;
         public static final int SurfaceViewPlayView=0x7f08003d;
         public static final int TelephonyStatus=0x7f080022;

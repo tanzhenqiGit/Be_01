@@ -27,6 +27,7 @@
         <item > 4.3 Use Bundle </item>
         <item > 4.4 ActivityForResult </item>
         <item > 4.5 LifeCycle </item>
+        <item > 4.6 StandardMode </item>
     </string-array>
     
     <string-array name="chapterNineContents">
