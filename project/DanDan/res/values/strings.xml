@@ -97,5 +97,6 @@
 	<string name="ActivityForResult">启动并获取Activity结果</string>
 	<string name="chioceCity">选择您所在的城市</string>
 	<string name="SelectCityActivity">选择城市</string>
+	<string name="LifeCycle">Activity生命周期</string>
 
 </resources>

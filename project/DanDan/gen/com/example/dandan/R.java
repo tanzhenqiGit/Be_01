@@ -235,6 +235,7 @@ public final class R {
         public static final int ImageName=0x7f080040;
         public static final int InputName=0x7f080019;
         public static final int IntentServiceTest=0x7f08001e;
+        public static final int LifeCycle=0x7f080054;
         public static final int MonitorPhone=0x7f080021;
         public static final int RecodeSound=0x7f08003e;
         public static final int RecordVideo=0x7f080041;
