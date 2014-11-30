@@ -107,7 +107,10 @@
             android:launchMode="singleTask" >
         </activity>
         
-        
+        <activity
+            android:name="com.example.contents.four.fragment.SelectBookActivity"
+            android:label="@string/SelectBookActivity" >
+        </activity>
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >

@@ -102,5 +102,6 @@
 	<string name="StandardModeActivity">StandardMode</string>
 	<string name="SingleTaskActivity">SingleTask第一个Activity</string>
 	<string name="SingTaskSecondActivity">SingleTask第一个Activity</string>
+	<string name="SelectBookActivity">Fragment的使用</string>
 
 </resources>

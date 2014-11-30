@@ -3,6 +3,7 @@ package com.example.contents.four;
 
 import com.example.contents.four.activityresult.ActivityForResult;
 import com.example.contents.four.bundle.BundleActivity;
+import com.example.contents.four.fragment.SelectBookActivity;
 import com.example.contents.four.lifecycle.LifeCycleActivity;
 import com.example.contents.four.otheractivity.OtherActivity;
 import com.example.contents.four.singletask.SingleTaskActivity;
@@ -34,6 +35,7 @@ public class FourContentsActivity extends Activity {
 	private final int LIFE_CYCLE = 4;
 	private final int STANDARD_MODE = 5;
 	private final int SINGLE_TASK = 6;
+	private final int FRAGMENT = 7;
 	
 	private void initialize()
 	{
@@ -96,6 +98,12 @@ public class FourContentsActivity extends Activity {
 							= new Intent(FourContentsActivity.this, 
 									SingleTaskActivity.class);
 						startActivity(single_task_intent);
+						break;
+					case FRAGMENT:
+						Intent fragment_intent
+							= new Intent(FourContentsActivity.this,
+									SelectBookActivity.class);
+						startActivity(fragment_intent);
 						break;
 					default:
 						
