@@ -47,6 +47,17 @@
             android:name="com.example.contents.four.otheractivity.ArmsPreferenceActivity"
             android:label="@string/contents" >
         </activity>
+        
+        <activity
+            android:name="com.example.contents.four.startactivity.StartActivity"
+            android:label="@string/StartActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.startactivity.SecondActivity"
+            android:label="@string/SecondActivity" >
+        </activity>
+        
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >
