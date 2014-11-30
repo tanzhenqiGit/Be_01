@@ -69,6 +69,15 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.four.activityresult.ActivityForResult"
+            android:label="@string/ActivityForResult" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.activityresult.SelectCityActivity"
+            android:label="@string/ActivityForResult" >
+        </activity>
+        <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >
         </activity>

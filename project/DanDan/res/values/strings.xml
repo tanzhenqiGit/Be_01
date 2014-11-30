@@ -93,5 +93,9 @@
 	<string name="male">男</string>
 	<string name="female">女</string>
 	<string name="register">注册</string>
+	
+	<string name="ActivityForResult">启动并获取Activity结果</string>
+	<string name="chioceCity">选择您所在的城市</string>
+	<string name="SelectCityActivity">选择城市</string>
 
 </resources>

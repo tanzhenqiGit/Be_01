@@ -25,6 +25,7 @@
         <item > 4.1 Other Activity </item>
         <item > 4.2 Start Activity </item>
         <item > 4.3 Use Bundle </item>
+        <item > 4.4 ActivityForResult </item>
     </string-array>
     
     <string-array name="chapterNineContents">
@@ -111,4 +112,11 @@
 	    <item>meddle</item>
 	    <item>low</item>
 	</string-array>
+	
+	<string-array name="provinces">
+	    <item>广东</item>
+	    <item>广西</item>
+	    <item>湖南</item>
+	</string-array>
+	
 </resources>
