@@ -24,6 +24,7 @@
     <string-array name="chapterFourContents">
         <item > 4.1 Other Activity </item>
         <item > 4.2 Start Activity </item>
+        <item > 4.3 Use Bundle </item>
     </string-array>
     
     <string-array name="chapterNineContents">

@@ -1,6 +1,7 @@
 package com.example.contents.four;
 
 
+import com.example.contents.four.bundle.BundleActivity;
 import com.example.contents.four.otheractivity.OtherActivity;
 import com.example.contents.four.startactivity.StartActivity;
 import com.example.dandan.R;
@@ -24,6 +25,7 @@ public class FourContentsActivity extends Activity {
 	private ListView mContentList = null;
 	private final int OTHER_ACTIVITY= 0;
 	private final int START_ACTIVITY = 1;
+	private final int BUNDLE_ACTIVITY = 2;
 	private void initialize()
 	{
 		mContentList = (ListView) findViewById(R.id.listView);
@@ -57,6 +59,11 @@ public class FourContentsActivity extends Activity {
 						Intent start_activity_intent 
 							= new Intent(FourContentsActivity.this, StartActivity.class);
 						startActivity(start_activity_intent);
+						break;
+					case BUNDLE_ACTIVITY:
+						Intent bundle_activity_intent 
+							= new Intent(FourContentsActivity.this, BundleActivity.class);
+						startActivity(bundle_activity_intent);
 						break;
 					default:
 						

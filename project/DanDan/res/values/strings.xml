@@ -77,12 +77,21 @@
 	<string name="RecodeSound">录制音频</string>
 	<string name="CaptureImage">拍照</string>
 	<string name="ImageName">照片名称</string>
-	
+    <string name="RecordVideo">录制视频</string>
 	<string name="StartActivity">跳转画面1</string>
 	<string name="SecondActivity">跳转画面2</string>
 	<string name="skip">跳转</string>
 	<string name="back">返回</string>
 	<string name="finish">终止</string>
-	
-	<string name="RecordVideo">录制视频</string>
+	<string name="BundleActivity">使用Bundle传递数据  </string>
+	<string name="ResultActivity">使用Bundle接收数据  </string>
+	<string name="inputRegisterInformation">请输入您的注册信息</string>
+	<string name="userName">用户名：</string>
+	<string name="userPasswd">密码：</string>
+	<string name="inputRegisterAccount">填写想注册的账号</string>
+	<string name="sex">性别</string>
+	<string name="male">男</string>
+	<string name="female">女</string>
+	<string name="register">注册</string>
+
 </resources>

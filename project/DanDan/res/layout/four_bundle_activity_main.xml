@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/inputRegisterInformation"
+		android:textSize="20sp"
+        />
+    <TableRow>
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/userName"
+            android:textSize="16sp"
+            />
+        <EditText 
+            android:id="@+id/four_bundle_activity_main_username_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/inputRegisterAccount"
+            android:selectAllOnFocus="true"
+            />
+    </TableRow>
+    
+    <TableRow>
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/userPasswd"
+            android:textSize="16sp"
+            />
+        <EditText 
+            android:id="@+id/four_bundle_activity_main_userpasswd_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/userPasswd"
+            android:selectAllOnFocus="true"
+            />
+    </TableRow>
+    
+    <TableRow >
+        
+        <TextView 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:textSize="16sp"
+            />
+        
+    	<RadioGroup
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal"
+    	    >
+	    	<RadioButton 
+	    	    android:id="@+id/four_bundle_activity_main_male_radiobutton"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="@string/male"
+	    	    android:textSize="16sp"
+	    	    />
+	    	<RadioButton 
+	    	    android:id="@+id/four_bundle_activity_main_female_radiobutton"
+	    	    android:layout_width="wrap_content"
+	    	    android:layout_height="wrap_content"
+	    	    android:text="@string/female"
+	    	    android:textSize="16sp"
+	    	    />
+	    	</RadioGroup>
+    </TableRow>
+    
+	<Button 
+	    android:id="@+id/four_bundle_activity_main_registe_btn"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="@string/register"
+	    android:textSize="16sp"
+	    />
+</TableLayout>
