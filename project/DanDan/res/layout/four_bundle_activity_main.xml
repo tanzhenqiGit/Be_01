@@ -26,12 +26,14 @@
     </TableRow>
     
     <TableRow>
-        <TextView 
+
+        <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:password="true"
             android:text="@string/userPasswd"
-            android:textSize="16sp"
-            />
+            android:textSize="16sp" />
+
         <EditText 
             android:id="@+id/four_bundle_activity_main_userpasswd_text"
             android:layout_width="fill_parent"

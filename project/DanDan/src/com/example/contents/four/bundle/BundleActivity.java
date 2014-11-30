@@ -26,7 +26,7 @@ public class BundleActivity extends Activity
 		mName = (EditText)findViewById(R.id.four_bundle_activity_main_username_text);
 		mPasswd = (EditText)findViewById(R.id.four_bundle_activity_main_userpasswd_text);
 		mMaleRadio = (RadioButton)findViewById(R.id.four_bundle_activity_main_male_radiobutton);
-		mGender = mMaleRadio.isChecked() ? "male" : "female";
+		
 
 		mRegisterBtn = (Button)findViewById(R.id.four_bundle_activity_main_registe_btn);
 		if (mRegisterBtn != null) {
@@ -35,6 +35,7 @@ public class BundleActivity extends Activity
 				@Override
 				public void onClick(View v) {
 					Log.d(TAG, "register button is called");
+					mGender = mMaleRadio.isChecked() ? "male" : "female";
 					PersonInfo personinfo = new PersonInfo(mName.getText().toString(),
 							mPasswd.getText().toString(), mGender);
 					Bundle data = new Bundle();
