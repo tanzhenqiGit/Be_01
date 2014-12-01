@@ -108,5 +108,11 @@
 	<string name="CallBackHandler">基于回调的事件处理</string>
 	<string name="ClickMe">点击我</string>
 	<string name="CustomViewActivity">重写OnTouchEvent</string>
+	<string name="ConfigurationActivity">Configuration测试</string>
+	<string name="Orientation">屏幕类型</string>
+	<string name="Navigation">导航</string>
+	<string name="TouchStatus">显示Touch状态</string>
+	<string name="MNC">显示移动网络信号</string>
+	<string name="getPhoneSts">获取手机信息</string>
 
 </resources>

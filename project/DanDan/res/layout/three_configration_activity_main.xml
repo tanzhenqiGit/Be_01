@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:id="@+id/three_configuration_activity_main_orientation_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Orientation"
+        />
+    
+    <EditText
+        android:id="@+id/three_configuration_activity_main_navigation_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Navigation"
+        />
+    
+    <EditText 
+        android:id="@+id/three_configuration_activity_main_touchsts_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/TouchStatus"
+        />
+    <EditText 
+        android:id="@+id/three_configuration_activity_main_mncsts_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/MNC"
+        />
+    
+    <Button 
+        android:id="@+id/three_configuration_activity_main_getphonests_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/getPhoneSts"
+        android:gravity="fill_horizontal"
+        
+        />
+    
+
+</LinearLayout>

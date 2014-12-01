@@ -67,7 +67,7 @@ public final class R {
         public static final int z=0x7f020015;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0064;
+        public static final int action_settings=0x7f0b0069;
         public static final int delete=0x7f0b0032;
         public static final int eleven_capture_image_main_surface=0x7f0b0001;
         public static final int eleven_capture_image_save_imagename_edittext=0x7f0b0002;
@@ -167,6 +167,11 @@ public final class R {
         public static final int ten_telephony_status_line_name=0x7f0b0061;
         public static final int ten_telephony_status_line_value=0x7f0b0062;
         public static final int ten_telephony_status_main_listview=0x7f0b0063;
+        public static final int three_configuration_activity_main_getphonests_btn=0x7f0b0068;
+        public static final int three_configuration_activity_main_mncsts_text=0x7f0b0067;
+        public static final int three_configuration_activity_main_navigation_text=0x7f0b0065;
+        public static final int three_configuration_activity_main_orientation_text=0x7f0b0064;
+        public static final int three_configuration_activity_main_touchsts_text=0x7f0b0066;
         public static final int update=0x7f0b0030;
     }
     public static final class layout {
@@ -216,7 +221,8 @@ public final class R {
         public static final int ten_telephony_status_main=0x7f03002b;
         public static final int ten_vibrator_test_main=0x7f03002c;
         public static final int three_callback_handler_main=0x7f03002d;
-        public static final int three_draw_view_main=0x7f03002e;
+        public static final int three_configration_activity_main=0x7f03002e;
+        public static final int three_draw_view_main=0x7f03002f;
     }
     public static final class menu {
         public static final int main_interface=0x7f0a0000;
@@ -242,6 +248,7 @@ public final class R {
         public static final int CaptureImage=0x7f08003f;
         public static final int ClickMe=0x7f08005c;
         public static final int ComplexClient=0x7f080020;
+        public static final int ConfigurationActivity=0x7f08005e;
         public static final int CustomViewActivity=0x7f08005d;
         public static final int ElevenContents=0x7f080037;
         public static final int FirstServiceTest=0x7f08001c;
@@ -252,7 +259,10 @@ public final class R {
         public static final int IntentServiceTest=0x7f08001e;
         public static final int LifeCycle=0x7f080054;
         public static final int LifeCycleSecondActivity=0x7f080055;
+        public static final int MNC=0x7f080062;
         public static final int MonitorPhone=0x7f080021;
+        public static final int Navigation=0x7f080060;
+        public static final int Orientation=0x7f08005f;
         public static final int RecodeSound=0x7f08003e;
         public static final int RecordVideo=0x7f080041;
         public static final int ResultActivity=0x7f080048;
@@ -270,6 +280,7 @@ public final class R {
         public static final int TelephonyStatus=0x7f080022;
         public static final int TenContentsActivity=0x7f08001b;
         public static final int ThreeContentsActivity=0x7f08005a;
+        public static final int TouchStatus=0x7f080061;
         public static final int Vibrator=0x7f08002f;
         public static final int VideoViewActivity=0x7f08003c;
         public static final int action_settings=0x7f080001;
@@ -288,6 +299,7 @@ public final class R {
         public static final int female=0x7f08004f;
         public static final int finish=0x7f080046;
         public static final int getInfo=0x7f080013;
+        public static final int getPhoneSts=0x7f080063;
         public static final int getServiceSts=0x7f080016;
         public static final int hello_world=0x7f080002;
         public static final int inputRegisterAccount=0x7f08004c;
