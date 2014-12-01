@@ -10,24 +10,25 @@ package com.example.dandan;
 public final class R {
     public static final class array {
         public static final int Contents=0x7f060000;
-        public static final int chapterElevenContents=0x7f060004;
-        public static final int chapterFourContents=0x7f060001;
-        public static final int chapterNineContents=0x7f060002;
-        public static final int chapterTenContents=0x7f060003;
-        public static final int gender_name_list=0x7f060008;
-        public static final int gender_value_list=0x7f060009;
-        public static final int light_strenght_list=0x7f06000a;
-        public static final int light_value_list=0x7f06000b;
+        public static final int chapterElevenContents=0x7f060005;
+        public static final int chapterFourContents=0x7f060002;
+        public static final int chapterNineContents=0x7f060003;
+        public static final int chapterTenContents=0x7f060004;
+        public static final int chapterThreeContents=0x7f060001;
+        public static final int gender_name_list=0x7f060009;
+        public static final int gender_value_list=0x7f06000a;
+        public static final int light_strenght_list=0x7f06000b;
+        public static final int light_value_list=0x7f06000c;
         /**  声明一个名为phoneType的字符串数组 
          */
-        public static final int phoneType=0x7f060007;
-        public static final int provinces=0x7f06000c;
+        public static final int phoneType=0x7f060008;
+        public static final int provinces=0x7f06000d;
         /**  声明一个名为simState的字符串数组 
          */
-        public static final int simState=0x7f060006;
+        public static final int simState=0x7f060007;
         /**  声明一个名为statusNames的字符串数组 
          */
-        public static final int statusNames=0x7f060005;
+        public static final int statusNames=0x7f060006;
     }
     public static final class attr {
     }
@@ -263,6 +264,7 @@ public final class R {
         public static final int SurfaceViewPlayView=0x7f08003d;
         public static final int TelephonyStatus=0x7f080022;
         public static final int TenContentsActivity=0x7f08001b;
+        public static final int ThreeContentsActivity=0x7f08005a;
         public static final int Vibrator=0x7f08002f;
         public static final int VideoViewActivity=0x7f08003c;
         public static final int action_settings=0x7f080001;

@@ -38,7 +38,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-@SuppressLint("NewApi")
+@SuppressLint({ "NewApi", "InflateParams" })
 public class CaptureImageActivity extends Activity {
 
 	private final String TAG = "CaptureImageActivity";
@@ -177,6 +177,7 @@ public class CaptureImageActivity extends Activity {
 	    	mCamera.autoFocus(mAutoFocusCallback);
 	    }
 	}
+	@SuppressWarnings("deprecation")
 	private void initialize()
 	{
 		requestWindowFeature(Window.FEATURE_NO_TITLE);

@@ -103,5 +103,7 @@
 	<string name="SingleTaskActivity">SingleTask第一个Activity</string>
 	<string name="SingTaskSecondActivity">SingleTask第一个Activity</string>
 	<string name="SelectBookActivity">Fragment的使用</string>
+	
+	<string name="ThreeContentsActivity">第三章内容</string>
 
 </resources>

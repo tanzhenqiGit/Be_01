@@ -28,6 +28,7 @@ public class RecordVideoActivity extends Activity implements OnClickListener {
 	private File mVideoFile;
 	private boolean mIsRecording = false;
 	private MediaRecorder mMRecorder;
+	@SuppressWarnings("deprecation")
 	private void initialzie()
 	{
 		mRecordBtn = (ImageButton)findViewById(R.id.eleven_record_video_main_record);

@@ -4,6 +4,7 @@ import com.example.contents.eleven.ElevenContentsActivity;
 import com.example.contents.four.FourContentsActivity;
 import com.example.contents.nine.NineContentsActivity;
 import com.example.contents.ten.TenContentsActivity;
+import com.example.contents.three.ThreeContentsActivity;
 import com.example.dandan.R;
 
 import android.app.Activity;
@@ -69,6 +70,9 @@ public class ContentsActivity extends Activity {
 					case CHAPTER_TWO:
 						break;
 					case CHAPTER_THREE:
+						Intent three_chapter_intent =
+							new Intent(ContentsActivity.this, ThreeContentsActivity.class);
+						startActivity(three_chapter_intent);
 						break;
 					case CHAPTER_FOUR:
 						Intent four_chapter_intent = 

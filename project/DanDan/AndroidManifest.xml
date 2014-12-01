@@ -30,6 +30,11 @@
         
         
         <activity
+            android:name="com.example.contents.three.ThreeContentsActivity"
+            android:label="@string/ThreeContentsActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.four.FourContentsActivity"
             android:label="@string/FourContentsActivity" >
         </activity>

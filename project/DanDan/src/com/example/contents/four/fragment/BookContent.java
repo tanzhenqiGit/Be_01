@@ -6,6 +6,7 @@
 */ 
 package com.example.contents.four.fragment;
 
+import android.annotation.SuppressLint;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -36,6 +37,7 @@ public class BookContent {
 		
 	}
 	public static List<Book> ITEMS = new ArrayList<Book>();
+	@SuppressLint("UseSparseArrays")
 	public static Map<Integer, Book> ITEM_MAP
 		= new HashMap<Integer, Book>();
 	static
