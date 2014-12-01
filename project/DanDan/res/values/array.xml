@@ -22,7 +22,7 @@
     </string-array>
     
     <string-array name="chapterThreeContents">
-        <item > 3.1 </item>
+        <item > 3.1 CallBackHandler </item>
         <item > 3.2 </item>
         <item > 3.3 </item>
         <item > 3.4 </item>

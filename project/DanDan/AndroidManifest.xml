@@ -35,6 +35,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.three.callback.CallBackHandler"
+            android:label="@string/CallBackHandler" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.four.FourContentsActivity"
             android:label="@string/FourContentsActivity" >
         </activity>

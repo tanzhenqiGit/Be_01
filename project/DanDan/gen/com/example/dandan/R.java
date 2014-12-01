@@ -215,6 +215,7 @@ public final class R {
         public static final int ten_telephony_status_line=0x7f03002a;
         public static final int ten_telephony_status_main=0x7f03002b;
         public static final int ten_vibrator_test_main=0x7f03002c;
+        public static final int three_callback_handler_main=0x7f03002d;
     }
     public static final class menu {
         public static final int main_interface=0x7f0a0000;
@@ -236,7 +237,9 @@ public final class R {
         public static final int BlockMain=0x7f080023;
         public static final int BroadcastMain=0x7f080034;
         public static final int BundleActivity=0x7f080047;
+        public static final int CallBackHandler=0x7f08005b;
         public static final int CaptureImage=0x7f08003f;
+        public static final int ClickMe=0x7f08005c;
         public static final int ComplexClient=0x7f080020;
         public static final int ElevenContents=0x7f080037;
         public static final int FirstServiceTest=0x7f08001c;

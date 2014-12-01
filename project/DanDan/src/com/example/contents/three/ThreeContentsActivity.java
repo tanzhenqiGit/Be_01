@@ -1,8 +1,10 @@
 package com.example.contents.three;
 
+import com.example.contents.three.callback.CallBackHandler;
 import com.example.dandan.R;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
@@ -18,7 +20,7 @@ public class ThreeContentsActivity extends Activity {
 	private final String TAG = "ThreeContentsActivity";
 	private ListView mList;
 	private String[] mChapterThreeContents;
-	
+	private final int CALLBACK_HANDLER = 0;
 	
 	private void setListCallBack()
 	{
@@ -29,8 +31,10 @@ public class ThreeContentsActivity extends Activity {
 				public void onItemClick(AdapterView<?> parent, View view,
 						int position, long id) {
 					switch(position) {
-					case 0:
-						Log.d(TAG, "position 0");
+					case CALLBACK_HANDLER:
+						Intent callback_handler_intent 
+							= new Intent(ThreeContentsActivity.this, CallBackHandler.class);
+						startActivity(callback_handler_intent);
 						break;
 					case 1:
 						Log.d(TAG, "position 1");
