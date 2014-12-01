@@ -107,5 +107,6 @@
 	<string name="ThreeContentsActivity">第三章内容</string>
 	<string name="CallBackHandler">基于回调的事件处理</string>
 	<string name="ClickMe">点击我</string>
+	<string name="CustomViewActivity">重写OnTouchEvent</string>
 
 </resources>

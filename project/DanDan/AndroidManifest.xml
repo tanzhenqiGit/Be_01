@@ -40,6 +40,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.three.drawview.CustomViewActivity"
+            android:label="@string/CustomViewActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.four.FourContentsActivity"
             android:label="@string/FourContentsActivity" >
         </activity>
