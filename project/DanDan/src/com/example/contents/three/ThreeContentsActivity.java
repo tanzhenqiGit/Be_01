@@ -1,6 +1,7 @@
 package com.example.contents.three;
 
 import com.example.contents.three.callback.CallBackHandler;
+import com.example.contents.three.configuration.ConfigurationActivity;
 import com.example.contents.three.drawview.CustomViewActivity;
 import com.example.dandan.R;
 
@@ -23,6 +24,7 @@ public class ThreeContentsActivity extends Activity {
 	private String[] mChapterThreeContents;
 	private final int CALLBACK_HANDLER = 0;
 	private final int CURSTOM_VIEW = 1;
+	private final int CONFIGURATION = 2;
 	
 	private void setListCallBack()
 	{
@@ -43,8 +45,10 @@ public class ThreeContentsActivity extends Activity {
 							= new Intent(ThreeContentsActivity.this, CustomViewActivity.class);
 						startActivity(custom_view_intent);
 						break;
-					case 2:
-						Log.d(TAG, "position 2");
+					case CONFIGURATION:
+						Intent configuration_inteint 
+							= new Intent(ThreeContentsActivity.this, ConfigurationActivity.class);
+						startActivity(configuration_inteint);
 						break;
 					default:
 						Log.d(TAG, "position default");

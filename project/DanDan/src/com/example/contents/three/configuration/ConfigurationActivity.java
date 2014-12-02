@@ -58,6 +58,7 @@ public class ConfigurationActivity extends Activity {
 								 "滚轮控制方向" :
 									cfg.orientation == Configuration.NAVIGATION_DPAD ?
 											"方向键控制方向" : "轨迹控制方向";
+					@SuppressWarnings("deprecation")
 					String touchName = cfg.touchscreen == Configuration.TOUCHSCREEN_NOTOUCH ?
 							"无触摸屏" : cfg.touchscreen == Configuration.TOUCHSCREEN_STYLUS ?
 									"触摸屏幕" : "接受手指的触摸屏";
@@ -86,6 +87,7 @@ public class ConfigurationActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		Log.d(TAG, "onCreate");
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.three_configration_activity_main);
 		initialize();
 	}
 

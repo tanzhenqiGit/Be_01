@@ -45,6 +45,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.three.configuration.ConfigurationActivity"
+            android:label="@string/ConfigurationActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.four.FourContentsActivity"
             android:label="@string/FourContentsActivity" >
         </activity>
