@@ -117,6 +117,12 @@
 	<string name="changeOrientation">改变屏幕方向</string>
 	<string name="ConfigurationChange">屏幕方向</string>
 
+	<string name="Landscape">横向</string>
+	<string name="Vertical">竖向</string>
+	<string name="Button1">button1</string>
+	<string name="Button2">button2</string>
+	<string name="Button3">button3</string>
+	<string name="ToggleButtonActivity">ToggleButton测试</string>
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>
     <string name="ElevenContents">第十一章内容</string>

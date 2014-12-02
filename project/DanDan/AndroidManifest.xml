@@ -34,6 +34,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.toggle.ToggleButtonActivity"
+            android:label="@string/ToggleButtonActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>

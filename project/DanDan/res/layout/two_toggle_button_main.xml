@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ToggleButton 
+        android:id="@+id/two_toggle_button_main_toggle_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="@string/Landscape"
+        android:textOff="@string/Vertical"
+        android:checked="true"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/two_toggle_button_main_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Button1"
+            />
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Button2"
+            />
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Button3"
+            />
+    </LinearLayout>
+
+</LinearLayout>

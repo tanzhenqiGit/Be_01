@@ -9,11 +9,13 @@
 */ 
 package com.example.contents.two;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.two.toggle.ToggleButtonActivity;
 import com.example.dandan.R;
 
 /**
@@ -23,17 +25,16 @@ import com.example.dandan.R;
 public class TwoContentsActivity extends CommonListActivity<String> {
 
 	private final String TAG = "TwoContentsActivity";
-	public TwoContentsActivity()
-	{
-		
-	}
+	private final int TOGGLE_BUTTON = 0;
 
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
 		switch(position) {
-		case 0:
-			Log.d(TAG, "0 position="+position);
+		case TOGGLE_BUTTON:
+			Intent toggle_button_intent 
+				= new Intent(TwoContentsActivity.this, ToggleButtonActivity.class);
+			startActivity(toggle_button_intent);
 			break;
 		case 1:
 			Log.d(TAG, "1 position="+position);

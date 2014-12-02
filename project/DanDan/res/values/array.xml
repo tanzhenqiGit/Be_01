@@ -22,7 +22,7 @@
     </string-array>
     
     <string-array name="chapterTwoContents">
-        <item >2.1 </item>
+        <item >2.1 ToggleButton </item>
         <item >2.2 </item>
         <item >2.3 </item>
         <item >2.4 </item>
