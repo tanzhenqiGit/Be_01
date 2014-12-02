@@ -66,7 +66,7 @@
 	<string name="sendBroadCast">发送广播</string>
 	<string name="SortedBroadCast">顺序发送广播</string>
 	
-	<string name="ElevenContents">第十一章内容</string>
+
 	<string name="SoundPoolActivity">短促音频播放</string>
 	<string name="shot">射击声音</string>
 	<string name="bomb">炸弹声音</string>
@@ -104,7 +104,7 @@
 	<string name="SingTaskSecondActivity">SingleTask第一个Activity</string>
 	<string name="SelectBookActivity">Fragment的使用</string>
 	
-	<string name="ThreeContentsActivity">第三章内容</string>
+	
 	<string name="CallBackHandler">基于回调的事件处理</string>
 	<string name="ClickMe">点击我</string>
 	<string name="CustomViewActivity">重写OnTouchEvent</string>
@@ -117,5 +117,8 @@
 	<string name="changeOrientation">改变屏幕方向</string>
 	<string name="ConfigurationChange">屏幕方向</string>
 
+	<string name="TwoContentsActivity">第二章内容</string>
+	<string name="ThreeContentsActivity">第三章内容</string>
+    <string name="ElevenContents">第十一章内容</string>
 	<string name="ThirteenContentsActivity">第十三章内容</string>
 </resources>

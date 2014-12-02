@@ -21,6 +21,13 @@
         <item > 19 电子拍卖系统 </item>
     </string-array>
     
+    <string-array name="chapterTwoContents">
+        <item >2.1 </item>
+        <item >2.2 </item>
+        <item >2.3 </item>
+        <item >2.4 </item>
+    </string-array>
+    
     <string-array name="chapterThreeContents">
         <item > 3.1 CallBackHandler </item>
         <item > 3.2 CustomView </item>
@@ -79,6 +86,13 @@
         <item >13.2 </item>
         <item >13.3 </item>
         <item >13.4 </item>
+    </string-array>
+    
+    <string-array name="chapterFourteenContents">
+        <item >14.1 </item>
+        <item >14.2 </item>
+        <item >14.3 </item>
+        <item >14.4 </item>
     </string-array>
     
     <!-- 声明一个名为statusNames的字符串数组 -->
