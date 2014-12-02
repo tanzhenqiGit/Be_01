@@ -67,7 +67,7 @@ public final class R {
         public static final int z=0x7f020015;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0069;
+        public static final int action_settings=0x7f0b006b;
         public static final int delete=0x7f0b0032;
         public static final int eleven_capture_image_main_surface=0x7f0b0001;
         public static final int eleven_capture_image_save_imagename_edittext=0x7f0b0002;
@@ -172,6 +172,8 @@ public final class R {
         public static final int three_configuration_activity_main_navigation_text=0x7f0b0065;
         public static final int three_configuration_activity_main_orientation_text=0x7f0b0064;
         public static final int three_configuration_activity_main_touchsts_text=0x7f0b0066;
+        public static final int three_configuration_change_main_change_screen_btn=0x7f0b006a;
+        public static final int three_configuration_change_main_screen_text=0x7f0b0069;
         public static final int update=0x7f0b0030;
     }
     public static final class layout {
@@ -222,7 +224,8 @@ public final class R {
         public static final int ten_vibrator_test_main=0x7f03002c;
         public static final int three_callback_handler_main=0x7f03002d;
         public static final int three_configration_activity_main=0x7f03002e;
-        public static final int three_draw_view_main=0x7f03002f;
+        public static final int three_configuration_change_main=0x7f03002f;
+        public static final int three_draw_view_main=0x7f030030;
     }
     public static final class menu {
         public static final int main_interface=0x7f0a0000;
@@ -249,6 +252,7 @@ public final class R {
         public static final int ClickMe=0x7f08005c;
         public static final int ComplexClient=0x7f080020;
         public static final int ConfigurationActivity=0x7f08005e;
+        public static final int ConfigurationChange=0x7f080065;
         public static final int CustomViewActivity=0x7f08005d;
         public static final int ElevenContents=0x7f080037;
         public static final int FirstServiceTest=0x7f08001c;
@@ -290,6 +294,7 @@ public final class R {
         public static final int back=0x7f080045;
         public static final int bindService=0x7f080011;
         public static final int bomb=0x7f08003a;
+        public static final int changeOrientation=0x7f080064;
         public static final int chioceCity=0x7f080052;
         public static final int color=0x7f080017;
         public static final int contents=0x7f080004;

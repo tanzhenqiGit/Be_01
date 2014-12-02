@@ -2,6 +2,7 @@ package com.example.contents.three;
 
 import com.example.contents.three.callback.CallBackHandler;
 import com.example.contents.three.configuration.ConfigurationActivity;
+import com.example.contents.three.configurationchange.ConfigurationChange;
 import com.example.contents.three.drawview.CustomViewActivity;
 import com.example.dandan.R;
 
@@ -25,7 +26,7 @@ public class ThreeContentsActivity extends Activity {
 	private final int CALLBACK_HANDLER = 0;
 	private final int CURSTOM_VIEW = 1;
 	private final int CONFIGURATION = 2;
-	
+	private final int CHANGE_ORIENTATION = 3;
 	private void setListCallBack()
 	{
 		if (mList != null) {
@@ -49,6 +50,11 @@ public class ThreeContentsActivity extends Activity {
 						Intent configuration_inteint 
 							= new Intent(ThreeContentsActivity.this, ConfigurationActivity.class);
 						startActivity(configuration_inteint);
+						break;
+					case CHANGE_ORIENTATION:
+						Intent change_orientation_intent
+							= new Intent(ThreeContentsActivity.this, ConfigurationChange.class);
+						startActivity(change_orientation_intent);
 						break;
 					default:
 						Log.d(TAG, "position default");

@@ -114,5 +114,7 @@
 	<string name="TouchStatus">显示Touch状态</string>
 	<string name="MNC">显示移动网络信号</string>
 	<string name="getPhoneSts">获取手机信息</string>
+	<string name="changeOrientation">改变屏幕方向</string>
+	<string name="ConfigurationChange">屏幕方向</string>
 
 </resources>

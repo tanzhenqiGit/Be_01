@@ -25,7 +25,7 @@
         <item > 3.1 CallBackHandler </item>
         <item > 3.2 CustomView </item>
         <item > 3.3 Configuration </item>
-        <item > 3.4 </item>
+        <item > 3.4 ConfigurationChange </item>
     </string-array>
     
     <string-array name="chapterFourContents">
