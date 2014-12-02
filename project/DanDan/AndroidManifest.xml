@@ -289,6 +289,11 @@
             android:label="RecordVideo">
         </activity> 
         
+        <activity 
+            android:name="com.example.contents.thirteen.ThirteenContentsActivity"
+            android:label="ThirteenContentsActivity">
+        </activity> 
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />

@@ -117,4 +117,5 @@
 	<string name="changeOrientation">改变屏幕方向</string>
 	<string name="ConfigurationChange">屏幕方向</string>
 
+	<string name="ThirteenContentsActivity">第十三章内容</string>
 </resources>
