@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
 import com.example.contents.two.chronometer.ChronometerActivity;
+import com.example.contents.two.imageview.ImageViewActivity;
 import com.example.contents.two.toggle.ToggleButtonActivity;
 import com.example.dandan.R;
 
@@ -28,7 +29,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final String TAG = "TwoContentsActivity";
 	private final int TOGGLE_BUTTON = 0;
 	private final int CHRONOMETER = 1;
-
+	private final int IMAGEVIEW = 2;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -42,6 +43,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent chronometer_intent 
 				= new Intent(TwoContentsActivity.this, ChronometerActivity.class);
 			startActivity(chronometer_intent);
+			break;
+		case IMAGEVIEW:
+			Intent imageview_intent 
+				= new Intent(TwoContentsActivity.this, ImageViewActivity.class);
+			startActivity(imageview_intent);
 			break;
 		default:
 			Log.d(TAG, "2 position="+position);

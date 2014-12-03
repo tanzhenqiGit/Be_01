@@ -12,7 +12,6 @@ package com.example.contents.two.imageview;
 import com.example.dandan.R;
 
 import android.app.Activity;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -105,10 +104,12 @@ public class ImageViewActivity extends Activity {
 				}
 			});
 		}
+		mImage2 = (ImageView)findViewById(R.id.two_imageview_activity_main_image2);
 		mImage1 = (ImageView)findViewById(R.id.two_imageview_activity_main_image1);
 		if (mImage1 != null) {
 			mImage1.setOnTouchListener(new OnTouchListener() {
 				
+				@SuppressWarnings("deprecation")
 				@Override
 				public boolean onTouch(View v, MotionEvent event) {
 					BitmapDrawable bitmapDrawable = (BitmapDrawable)mImage1.getDrawable();
@@ -118,17 +119,29 @@ public class ImageViewActivity extends Activity {
 					
 					int x = (int)((event.getX()) * scale);
 					int y = (int)((event.getY()) * scale);
-
+					if (x + 120 > bitmap.getWidth()) {
+						x = bitmap.getWidth() - 120;
+					}
+					if (y + 120 > bitmap.getHeight()) {
+						y = bitmap.getHeight() - 120;
+					}
+					if (mImage2 != null) {
+						Bitmap.createBitmap(bitmap);
+						mImage2.setImageBitmap(Bitmap.createBitmap(bitmap, x, y, 120, 120));
+						mImage2.setAlpha(mAlpha);
+						
+					}
 					return false;
 				}
 			});
 		}
-		mImage2 = (ImageView)findViewById(R.id.two_imageview_activity_main_image2);
+		
 	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Log.d(TAG,"onCreate");
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.two_imageview_activity_main);
 		initialize();
 	}
 
