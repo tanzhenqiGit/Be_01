@@ -128,6 +128,13 @@
 	<string name="Increase">增加</string>
 	<string name="Decrease">减少</string>
 	<string name="Next">下一张</string>
+	<string name="MyListActivity">ListActivity</string>
+	
+	
+	
+	
+	
+	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>
     <string name="ElevenContents">第十一章内容</string>

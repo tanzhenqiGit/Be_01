@@ -25,7 +25,7 @@
         <item >2.1 ToggleButton </item>
         <item >2.2 Chronometer </item>
         <item >2.3 ImageView </item>
-        <item >2.4 </item>
+        <item >2.4 ListActivity </item>
     </string-array>
     
     <string-array name="chapterThreeContents">

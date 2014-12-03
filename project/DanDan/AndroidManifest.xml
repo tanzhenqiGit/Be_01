@@ -49,6 +49,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.listactivity.MyListActivity"
+            android:label="@string/MyListActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
