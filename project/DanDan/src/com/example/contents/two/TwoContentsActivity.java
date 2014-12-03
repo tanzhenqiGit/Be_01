@@ -18,6 +18,7 @@ import com.example.contents.CommonListActivity;
 import com.example.contents.two.chronometer.ChronometerActivity;
 import com.example.contents.two.imageview.ImageViewActivity;
 import com.example.contents.two.listactivity.MyListActivity;
+import com.example.contents.two.simpleadapter.SimpleAdapterTest;
 import com.example.contents.two.toggle.ToggleButtonActivity;
 import com.example.dandan.R;
 
@@ -32,6 +33,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int CHRONOMETER = 1;
 	private final int IMAGEVIEW = 2;
 	private final int LIST_ACTIVITY = 3;
+	private final int SIMPLEADAPTER = 4;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -55,6 +57,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent list_activity_intent 
 				= new Intent(TwoContentsActivity.this, MyListActivity.class);
 			startActivity(list_activity_intent);
+			break;
+		case SIMPLEADAPTER:
+			Intent simpleadapter_intent 
+				= new Intent(TwoContentsActivity.this, SimpleAdapterTest.class);
+			startActivity(simpleadapter_intent);
 			break;
 		default:
 			Log.d(TAG, "2 position="+position);

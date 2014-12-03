@@ -47,30 +47,34 @@ public final class R {
     }
     public static final class drawable {
         public static final int android=0x7f020000;
-        public static final int bookmark=0x7f020001;
-        public static final int box=0x7f020002;
-        public static final int earth=0x7f020003;
-        public static final int ic_launcher=0x7f020004;
-        public static final int lijiang=0x7f020005;
-        public static final int line=0x7f020006;
-        public static final int music=0x7f020007;
-        public static final int p=0x7f020008;
-        public static final int pause=0x7f020009;
-        public static final int phonebook=0x7f02000a;
-        public static final int play=0x7f02000b;
-        public static final int qiao=0x7f02000c;
-        public static final int record=0x7f02000d;
-        public static final int setting=0x7f02000e;
-        public static final int shuangta=0x7f02000f;
-        public static final int shui=0x7f020010;
-        public static final int stop=0x7f020011;
-        public static final int store=0x7f020012;
-        public static final int t=0x7f020013;
-        public static final int tools=0x7f020014;
-        public static final int z=0x7f020015;
+        public static final int baliu=0x7f020001;
+        public static final int bookmark=0x7f020002;
+        public static final int box=0x7f020003;
+        public static final int earth=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int lijiang=0x7f020006;
+        public static final int line=0x7f020007;
+        public static final int lisi=0x7f020008;
+        public static final int music=0x7f020009;
+        public static final int p=0x7f02000a;
+        public static final int pause=0x7f02000b;
+        public static final int phonebook=0x7f02000c;
+        public static final int play=0x7f02000d;
+        public static final int qiao=0x7f02000e;
+        public static final int record=0x7f02000f;
+        public static final int setting=0x7f020010;
+        public static final int shuangta=0x7f020011;
+        public static final int shui=0x7f020012;
+        public static final int stop=0x7f020013;
+        public static final int store=0x7f020014;
+        public static final int t=0x7f020015;
+        public static final int tools=0x7f020016;
+        public static final int wangwu=0x7f020017;
+        public static final int z=0x7f020018;
+        public static final int zhangsan=0x7f020019;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0074;
+        public static final int action_settings=0x7f0b0077;
         public static final int delete=0x7f0b0032;
         public static final int eleven_capture_image_main_surface=0x7f0b0001;
         public static final int eleven_capture_image_save_imagename_edittext=0x7f0b0002;
@@ -184,8 +188,11 @@ public final class R {
         public static final int two_imageview_activity_main_image2=0x7f0b0071;
         public static final int two_imageview_activity_main_increase_btn=0x7f0b006d;
         public static final int two_imageview_activity_main_next_btn=0x7f0b006f;
-        public static final int two_toggle_button_main_layout=0x7f0b0073;
-        public static final int two_toggle_button_main_toggle_btn=0x7f0b0072;
+        public static final int two_simpleadapter_item_desc=0x7f0b0074;
+        public static final int two_simpleadapter_item_header=0x7f0b0072;
+        public static final int two_simpleadapter_item_name=0x7f0b0073;
+        public static final int two_toggle_button_main_layout=0x7f0b0076;
+        public static final int two_toggle_button_main_toggle_btn=0x7f0b0075;
         public static final int update=0x7f0b0030;
     }
     public static final class layout {
@@ -240,7 +247,8 @@ public final class R {
         public static final int three_draw_view_main=0x7f030030;
         public static final int two_chronometer_activity_main=0x7f030031;
         public static final int two_imageview_activity_main=0x7f030032;
-        public static final int two_toggle_button_main=0x7f030033;
+        public static final int two_simpleadapter_item=0x7f030033;
+        public static final int two_toggle_button_main=0x7f030034;
     }
     public static final class menu {
         public static final int main_interface=0x7f0a0000;
@@ -274,7 +282,7 @@ public final class R {
         public static final int ConfigurationChange=0x7f080063;
         public static final int CustomViewActivity=0x7f08005b;
         public static final int Decrease=0x7f08006d;
-        public static final int ElevenContents=0x7f080072;
+        public static final int ElevenContents=0x7f080073;
         public static final int FirstServiceTest=0x7f08001c;
         public static final int FourContentsActivity=0x7f08001a;
         public static final int GroupSend=0x7f080027;
@@ -298,6 +306,7 @@ public final class R {
         public static final int SecondActivity=0x7f080042;
         public static final int SelectBookActivity=0x7f080058;
         public static final int SelectCityActivity=0x7f080052;
+        public static final int SimpleAdapterTest=0x7f080070;
         public static final int SingTaskSecondActivity=0x7f080057;
         public static final int SingleTaskActivity=0x7f080056;
         public static final int SmsManager=0x7f080025;
@@ -308,11 +317,11 @@ public final class R {
         public static final int SurfaceViewPlayView=0x7f08003c;
         public static final int TelephonyStatus=0x7f080022;
         public static final int TenContentsActivity=0x7f08001b;
-        public static final int ThirteenContentsActivity=0x7f080073;
-        public static final int ThreeContentsActivity=0x7f080071;
+        public static final int ThirteenContentsActivity=0x7f080074;
+        public static final int ThreeContentsActivity=0x7f080072;
         public static final int ToggleButtonActivity=0x7f08006a;
         public static final int TouchStatus=0x7f08005f;
-        public static final int TwoContentsActivity=0x7f080070;
+        public static final int TwoContentsActivity=0x7f080071;
         public static final int Vertical=0x7f080065;
         public static final int Vibrator=0x7f08002f;
         public static final int VideoViewActivity=0x7f08003b;
