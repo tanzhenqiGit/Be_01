@@ -74,7 +74,7 @@ public final class R {
         public static final int zhangsan=0x7f020019;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0077;
+        public static final int action_settings=0x7f0b0079;
         public static final int delete=0x7f0b0032;
         public static final int eleven_capture_image_main_surface=0x7f0b0001;
         public static final int eleven_capture_image_save_imagename_edittext=0x7f0b0002;
@@ -181,18 +181,20 @@ public final class R {
         public static final int three_configuration_activity_main_touchsts_text=0x7f0b0066;
         public static final int three_configuration_change_main_change_screen_btn=0x7f0b006a;
         public static final int three_configuration_change_main_screen_text=0x7f0b0069;
-        public static final int two_chronometer_activity_main_chronometer=0x7f0b006b;
-        public static final int two_chronometer_activity_main_start_btn=0x7f0b006c;
-        public static final int two_imageview_activity_main_decrease_btn=0x7f0b006e;
-        public static final int two_imageview_activity_main_image1=0x7f0b0070;
-        public static final int two_imageview_activity_main_image2=0x7f0b0071;
-        public static final int two_imageview_activity_main_increase_btn=0x7f0b006d;
-        public static final int two_imageview_activity_main_next_btn=0x7f0b006f;
-        public static final int two_simpleadapter_item_desc=0x7f0b0074;
-        public static final int two_simpleadapter_item_header=0x7f0b0072;
-        public static final int two_simpleadapter_item_name=0x7f0b0073;
-        public static final int two_toggle_button_main_layout=0x7f0b0076;
-        public static final int two_toggle_button_main_toggle_btn=0x7f0b0075;
+        public static final int two_audocomplete_textview_main_auto=0x7f0b006b;
+        public static final int two_audocomplete_textview_main_mult=0x7f0b006c;
+        public static final int two_chronometer_activity_main_chronometer=0x7f0b006d;
+        public static final int two_chronometer_activity_main_start_btn=0x7f0b006e;
+        public static final int two_imageview_activity_main_decrease_btn=0x7f0b0070;
+        public static final int two_imageview_activity_main_image1=0x7f0b0072;
+        public static final int two_imageview_activity_main_image2=0x7f0b0073;
+        public static final int two_imageview_activity_main_increase_btn=0x7f0b006f;
+        public static final int two_imageview_activity_main_next_btn=0x7f0b0071;
+        public static final int two_simpleadapter_item_desc=0x7f0b0076;
+        public static final int two_simpleadapter_item_header=0x7f0b0074;
+        public static final int two_simpleadapter_item_name=0x7f0b0075;
+        public static final int two_toggle_button_main_layout=0x7f0b0078;
+        public static final int two_toggle_button_main_toggle_btn=0x7f0b0077;
         public static final int update=0x7f0b0030;
     }
     public static final class layout {
@@ -245,10 +247,11 @@ public final class R {
         public static final int three_configration_activity_main=0x7f03002e;
         public static final int three_configuration_change_main=0x7f03002f;
         public static final int three_draw_view_main=0x7f030030;
-        public static final int two_chronometer_activity_main=0x7f030031;
-        public static final int two_imageview_activity_main=0x7f030032;
-        public static final int two_simpleadapter_item=0x7f030033;
-        public static final int two_toggle_button_main=0x7f030034;
+        public static final int two_autocomplete_textview_main=0x7f030031;
+        public static final int two_chronometer_activity_main=0x7f030032;
+        public static final int two_imageview_activity_main=0x7f030033;
+        public static final int two_simpleadapter_item=0x7f030034;
+        public static final int two_toggle_button_main=0x7f030035;
     }
     public static final class menu {
         public static final int main_interface=0x7f0a0000;
@@ -266,6 +269,7 @@ public final class R {
         public static final int AlarmManager=0x7f080030;
         public static final int Alarming=0x7f080031;
         public static final int AudioManager=0x7f08002a;
+        public static final int AutoCompleteTextViewTest=0x7f080072;
         public static final int BaseAdapterTest=0x7f080071;
         public static final int BindServiceTest=0x7f08001d;
         public static final int BlockMain=0x7f080023;
@@ -283,7 +287,7 @@ public final class R {
         public static final int ConfigurationChange=0x7f080063;
         public static final int CustomViewActivity=0x7f08005b;
         public static final int Decrease=0x7f08006d;
-        public static final int ElevenContents=0x7f080074;
+        public static final int ElevenContents=0x7f080075;
         public static final int FirstServiceTest=0x7f08001c;
         public static final int FourContentsActivity=0x7f08001a;
         public static final int GroupSend=0x7f080027;
@@ -318,11 +322,11 @@ public final class R {
         public static final int SurfaceViewPlayView=0x7f08003c;
         public static final int TelephonyStatus=0x7f080022;
         public static final int TenContentsActivity=0x7f08001b;
-        public static final int ThirteenContentsActivity=0x7f080075;
-        public static final int ThreeContentsActivity=0x7f080073;
+        public static final int ThirteenContentsActivity=0x7f080076;
+        public static final int ThreeContentsActivity=0x7f080074;
         public static final int ToggleButtonActivity=0x7f08006a;
         public static final int TouchStatus=0x7f08005f;
-        public static final int TwoContentsActivity=0x7f080072;
+        public static final int TwoContentsActivity=0x7f080073;
         public static final int Vertical=0x7f080065;
         public static final int Vibrator=0x7f08002f;
         public static final int VideoViewActivity=0x7f08003b;

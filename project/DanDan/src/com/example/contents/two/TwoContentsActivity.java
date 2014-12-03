@@ -20,6 +20,7 @@ import com.example.contents.two.chronometer.ChronometerActivity;
 import com.example.contents.two.imageview.ImageViewActivity;
 import com.example.contents.two.listactivity.MyListActivity;
 import com.example.contents.two.simpleadapter.SimpleAdapterTest;
+import com.example.contents.two.textview.AutoCompleteTextViewTest;
 import com.example.contents.two.toggle.ToggleButtonActivity;
 import com.example.dandan.R;
 
@@ -36,6 +37,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int LIST_ACTIVITY = 3;
 	private final int SIMPLE_ADAPTER = 4;
 	private final int BASE_ADAPTER = 5;
+	private final int AUTO_COMPLETE_TEXT = 6;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -69,6 +71,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent base_adapter_intent 
 				= new Intent(TwoContentsActivity.this, BaseAdapterTest.class);
 			startActivity(base_adapter_intent);
+			break;
+		case AUTO_COMPLETE_TEXT:
+			Intent auto_complete_intent 
+				= new Intent(TwoContentsActivity.this, AutoCompleteTextViewTest.class);
+			startActivity(auto_complete_intent);
 			break;
 		default:
 			Log.d(TAG, "2 position="+position);

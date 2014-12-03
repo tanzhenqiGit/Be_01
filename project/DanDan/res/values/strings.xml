@@ -131,6 +131,7 @@
 	<string name="MyListActivity">ListActivity</string>
 	<string name="SimpleAdapterTest">SimpleAdapter应用</string>
 	<string name="BaseAdapterTest">BaseAdapter应用</string>
+	<string name="AutoCompleteTextViewTest">AutoCompleteText应用</string>
 	
 	
 	
