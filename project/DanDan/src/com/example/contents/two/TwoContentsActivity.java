@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.two.baseadapter.BaseAdapterTest;
 import com.example.contents.two.chronometer.ChronometerActivity;
 import com.example.contents.two.imageview.ImageViewActivity;
 import com.example.contents.two.listactivity.MyListActivity;
@@ -33,7 +34,8 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int CHRONOMETER = 1;
 	private final int IMAGEVIEW = 2;
 	private final int LIST_ACTIVITY = 3;
-	private final int SIMPLEADAPTER = 4;
+	private final int SIMPLE_ADAPTER = 4;
+	private final int BASE_ADAPTER = 5;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -58,10 +60,15 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 				= new Intent(TwoContentsActivity.this, MyListActivity.class);
 			startActivity(list_activity_intent);
 			break;
-		case SIMPLEADAPTER:
-			Intent simpleadapter_intent 
+		case SIMPLE_ADAPTER:
+			Intent simple_adapter_intent 
 				= new Intent(TwoContentsActivity.this, SimpleAdapterTest.class);
-			startActivity(simpleadapter_intent);
+			startActivity(simple_adapter_intent);
+			break;
+		case BASE_ADAPTER:
+			Intent base_adapter_intent 
+				= new Intent(TwoContentsActivity.this, BaseAdapterTest.class);
+			startActivity(base_adapter_intent);
 			break;
 		default:
 			Log.d(TAG, "2 position="+position);

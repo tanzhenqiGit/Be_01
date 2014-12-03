@@ -57,6 +57,10 @@
             android:name="com.example.contents.two.simpleadapter.SimpleAdapterTest"
             android:label="@string/SimpleAdapterTest" >
         </activity>
+        <activity
+            android:name="com.example.contents.two.baseadapter.BaseAdapterTest"
+            android:label="@string/BaseAdapterTest" >
+        </activity>
         
         <activity
             android:name="com.example.contents.three.ThreeContentsActivity"

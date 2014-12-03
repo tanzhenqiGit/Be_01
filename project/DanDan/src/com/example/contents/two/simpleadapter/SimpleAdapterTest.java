@@ -16,6 +16,10 @@ import com.example.dandan.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -63,6 +67,32 @@ public class SimpleAdapterTest extends Activity {
 						R.id.two_simpleadapter_item_desc});
 		ListView list = (ListView)findViewById(R.id.listView);
 		list.setAdapter(simpleAdapter);
+		
+		list.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int position,
+					long id) {
+				Log.d(TAG, mNames[position] + "被单击了");
+				
+			}
+		});
+		
+		list.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+			@Override
+			public void onItemSelected(AdapterView<?> arg0, View arg1,
+					int position, long id) {
+				Log.d(TAG, mNames[position] + "被选中了");
+				
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0) {
+				Log.d(TAG, "onNothingSelected");
+				
+			}
+		});
 		
 	}
 	@Override

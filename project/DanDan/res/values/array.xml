@@ -27,6 +27,7 @@
         <item >2.3 ImageView </item>
         <item >2.4 ListActivity </item>
         <item >2.5 SimpleAdapter </item>
+        <item >2.6 BaseAdapter </item>
     </string-array>
     
     <string-array name="chapterThreeContents">
