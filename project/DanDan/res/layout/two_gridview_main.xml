@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <GridView 
+        android:id="@+id/two_gridview_main_grid"
+       	android:layout_width="match_parent"
+       	android:layout_height="wrap_content"
+       	android:numColumns="4"
+       	android:gravity="center"
+        >
+        
+    </GridView>
+    
+    <ImageView 
+        android:id="@+id/two_gridview_main_imageview"
+        android:layout_width="240sp"
+        android:layout_height="240sp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="TODO"/>
+</LinearLayout>

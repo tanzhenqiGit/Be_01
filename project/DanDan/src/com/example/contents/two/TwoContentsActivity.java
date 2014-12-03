@@ -17,6 +17,7 @@ import android.widget.AdapterView;
 import com.example.contents.CommonListActivity;
 import com.example.contents.two.baseadapter.BaseAdapterTest;
 import com.example.contents.two.chronometer.ChronometerActivity;
+import com.example.contents.two.gridview.GridViewTest;
 import com.example.contents.two.imageview.ImageViewActivity;
 import com.example.contents.two.listactivity.MyListActivity;
 import com.example.contents.two.simpleadapter.SimpleAdapterTest;
@@ -38,6 +39,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int SIMPLE_ADAPTER = 4;
 	private final int BASE_ADAPTER = 5;
 	private final int AUTO_COMPLETE_TEXT = 6;
+	private final int GRID_VIEW = 7;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -76,6 +78,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent auto_complete_intent 
 				= new Intent(TwoContentsActivity.this, AutoCompleteTextViewTest.class);
 			startActivity(auto_complete_intent);
+			break;
+		case GRID_VIEW:
+			Intent gridview_intent 
+				= new Intent(TwoContentsActivity.this, GridViewTest.class);
+			startActivity(gridview_intent);
 			break;
 		default:
 			Log.d(TAG, "2 position="+position);

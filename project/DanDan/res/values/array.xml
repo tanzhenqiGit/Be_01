@@ -29,6 +29,7 @@
         <item >2.5 SimpleAdapter </item>
         <item >2.6 BaseAdapter </item>
         <item >2.7 AutoCompleteTextView </item>
+        <item >2.8 GridView </item>
     </string-array>
     
     <string-array name="chapterThreeContents">
