@@ -133,7 +133,7 @@
 	<string name="BaseAdapterTest">BaseAdapter应用</string>
 	<string name="AutoCompleteTextViewTest">AutoCompleteText应用</string>
 	<string name="GridViewTest">GridView应用</string>
-	
+	<string name="SpinnerActivityTest">Spinner应用</string>
 	
 	
 	

@@ -30,6 +30,7 @@
         <item >2.6 BaseAdapter </item>
         <item >2.7 AutoCompleteTextView </item>
         <item >2.8 GridView </item>
+        <item >2.9 Spinner </item>
     </string-array>
     
     <string-array name="chapterThreeContents">

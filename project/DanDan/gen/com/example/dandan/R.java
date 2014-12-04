@@ -86,7 +86,7 @@ public final class R {
         public static final int zhangsan=0x7f020025;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b007c;
+        public static final int action_settings=0x7f0b007d;
         public static final int delete=0x7f0b0032;
         public static final int eleven_capture_image_main_surface=0x7f0b0001;
         public static final int eleven_capture_image_save_imagename_edittext=0x7f0b0002;
@@ -208,8 +208,9 @@ public final class R {
         public static final int two_simpleadapter_item_desc=0x7f0b0079;
         public static final int two_simpleadapter_item_header=0x7f0b0077;
         public static final int two_simpleadapter_item_name=0x7f0b0078;
-        public static final int two_toggle_button_main_layout=0x7f0b007b;
-        public static final int two_toggle_button_main_toggle_btn=0x7f0b007a;
+        public static final int two_spinner_activity_main_spinner=0x7f0b007a;
+        public static final int two_toggle_button_main_layout=0x7f0b007c;
+        public static final int two_toggle_button_main_toggle_btn=0x7f0b007b;
         public static final int update=0x7f0b0030;
     }
     public static final class layout {
@@ -268,7 +269,8 @@ public final class R {
         public static final int two_gridview_main=0x7f030034;
         public static final int two_imageview_activity_main=0x7f030035;
         public static final int two_simpleadapter_item=0x7f030036;
-        public static final int two_toggle_button_main=0x7f030037;
+        public static final int two_spinner_activity_main=0x7f030037;
+        public static final int two_toggle_button_main=0x7f030038;
     }
     public static final class menu {
         public static final int main_interface=0x7f0a0000;
@@ -304,7 +306,7 @@ public final class R {
         public static final int ConfigurationChange=0x7f080063;
         public static final int CustomViewActivity=0x7f08005b;
         public static final int Decrease=0x7f08006d;
-        public static final int ElevenContents=0x7f080076;
+        public static final int ElevenContents=0x7f080077;
         public static final int FirstServiceTest=0x7f08001c;
         public static final int FourContentsActivity=0x7f08001a;
         public static final int GridViewTest=0x7f080073;
@@ -335,16 +337,17 @@ public final class R {
         public static final int SmsManager=0x7f080025;
         public static final int SortedBroadCast=0x7f080036;
         public static final int SoundPoolActivity=0x7f080037;
+        public static final int SpinnerActivityTest=0x7f080074;
         public static final int StandardModeActivity=0x7f080055;
         public static final int StartActivity=0x7f080041;
         public static final int SurfaceViewPlayView=0x7f08003c;
         public static final int TelephonyStatus=0x7f080022;
         public static final int TenContentsActivity=0x7f08001b;
-        public static final int ThirteenContentsActivity=0x7f080077;
-        public static final int ThreeContentsActivity=0x7f080075;
+        public static final int ThirteenContentsActivity=0x7f080078;
+        public static final int ThreeContentsActivity=0x7f080076;
         public static final int ToggleButtonActivity=0x7f08006a;
         public static final int TouchStatus=0x7f08005f;
-        public static final int TwoContentsActivity=0x7f080074;
+        public static final int TwoContentsActivity=0x7f080075;
         public static final int Vertical=0x7f080065;
         public static final int Vibrator=0x7f08002f;
         public static final int VideoViewActivity=0x7f08003b;

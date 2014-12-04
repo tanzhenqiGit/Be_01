@@ -2,7 +2,7 @@
 * Copyright 2014 TanZhenqi's Studio.
 * All Right Reserved.
 * @author author E-mail: tan_zhenqi@163.com.
-* @version create time:2014-12-3 обнГ10:56:44.
+* @version create time:2014-12-3 О©╫О©╫О©╫О©╫10:56:44.
 */ 
 package com.example.contents.two.gridview;
 
@@ -67,6 +67,7 @@ public class GridViewTest extends Activity {
 				R.layout.two_gridview_cell,
 				new String[]{"image"}, new int[]{R.id.two_gridview_cell_image});
 		mGrid = (GridView)findViewById(R.id.two_gridview_main_grid);
+		
 		if (mGrid == null) {
 			Log.d(TAG, "mGrid == null");
 			return;

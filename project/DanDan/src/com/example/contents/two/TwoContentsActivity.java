@@ -1,10 +1,10 @@
 /** 
 * Copyright 2014 Tan_ZhenQi's Studio
 * All right reserved.
-* Create on 2014ÏÂÎç1:22:44
+* Create on 2014ï¿½ï¿½ï¿½ï¿½1:22:44
 *
 * @author author E-mail:tan_zhenqi@163.com 
-* @version create time £º2014-12-2 ÏÂÎç1:22:44 
+* @version create time ï¿½ï¿½2014-12-2 ï¿½ï¿½ï¿½ï¿½1:22:44 
 * class declare 
 */ 
 package com.example.contents.two;
@@ -21,6 +21,7 @@ import com.example.contents.two.gridview.GridViewTest;
 import com.example.contents.two.imageview.ImageViewActivity;
 import com.example.contents.two.listactivity.MyListActivity;
 import com.example.contents.two.simpleadapter.SimpleAdapterTest;
+import com.example.contents.two.spinner.SpinnerActivityTest;
 import com.example.contents.two.textview.AutoCompleteTextViewTest;
 import com.example.contents.two.toggle.ToggleButtonActivity;
 import com.example.dandan.R;
@@ -40,6 +41,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int BASE_ADAPTER = 5;
 	private final int AUTO_COMPLETE_TEXT = 6;
 	private final int GRID_VIEW = 7;
+	private final int SPINNER_ACTIVITY = 8;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -83,6 +85,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent gridview_intent 
 				= new Intent(TwoContentsActivity.this, GridViewTest.class);
 			startActivity(gridview_intent);
+			break;
+		case SPINNER_ACTIVITY:
+			Intent spinner_intent 
+				= new Intent(TwoContentsActivity.this, SpinnerActivityTest.class);
+			startActivity(spinner_intent);
 			break;
 		default:
 			Log.d(TAG, "2 position="+position);

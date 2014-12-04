@@ -73,6 +73,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.spinner.SpinnerActivityTest"
+            android:label="@string/SpinnerActivityTest" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
