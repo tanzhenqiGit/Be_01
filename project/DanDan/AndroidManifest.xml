@@ -83,6 +83,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.gallary.GallaryActivity"
+            android:label="@string/GallaryActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>

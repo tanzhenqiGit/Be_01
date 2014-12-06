@@ -135,7 +135,7 @@
 	<string name="GridViewTest">GridView应用</string>
 	<string name="SpinnerActivityTest">Spinner应用</string>
 	<string name="ExpandableListViewActivity">扩展List应用</string>
-	
+	<string name="GallaryActivity">Gallary 的应用 </string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>

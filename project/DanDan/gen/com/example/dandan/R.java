@@ -86,7 +86,7 @@ public final class R {
         public static final int zhangsan=0x7f020025;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b007e;
+        public static final int action_settings=0x7f0b0080;
         public static final int delete=0x7f0b0032;
         public static final int eleven_capture_image_main_surface=0x7f0b0001;
         public static final int eleven_capture_image_save_imagename_edittext=0x7f0b0002;
@@ -198,20 +198,22 @@ public final class R {
         public static final int two_chronometer_activity_main_chronometer=0x7f0b006d;
         public static final int two_chronometer_activity_main_start_btn=0x7f0b006e;
         public static final int two_expandable_list_view_main_list=0x7f0b006f;
-        public static final int two_gridview_cell_image=0x7f0b0070;
-        public static final int two_gridview_main_grid=0x7f0b0071;
-        public static final int two_gridview_main_imageview=0x7f0b0072;
-        public static final int two_imageview_activity_main_decrease_btn=0x7f0b0074;
-        public static final int two_imageview_activity_main_image1=0x7f0b0076;
-        public static final int two_imageview_activity_main_image2=0x7f0b0077;
-        public static final int two_imageview_activity_main_increase_btn=0x7f0b0073;
-        public static final int two_imageview_activity_main_next_btn=0x7f0b0075;
-        public static final int two_simpleadapter_item_desc=0x7f0b007a;
-        public static final int two_simpleadapter_item_header=0x7f0b0078;
-        public static final int two_simpleadapter_item_name=0x7f0b0079;
-        public static final int two_spinner_activity_main_spinner=0x7f0b007b;
-        public static final int two_toggle_button_main_layout=0x7f0b007d;
-        public static final int two_toggle_button_main_toggle_btn=0x7f0b007c;
+        public static final int two_gallart_activity_gallery=0x7f0b0071;
+        public static final int two_gallary_activity_imageview=0x7f0b0070;
+        public static final int two_gridview_cell_image=0x7f0b0072;
+        public static final int two_gridview_main_grid=0x7f0b0073;
+        public static final int two_gridview_main_imageview=0x7f0b0074;
+        public static final int two_imageview_activity_main_decrease_btn=0x7f0b0076;
+        public static final int two_imageview_activity_main_image1=0x7f0b0078;
+        public static final int two_imageview_activity_main_image2=0x7f0b0079;
+        public static final int two_imageview_activity_main_increase_btn=0x7f0b0075;
+        public static final int two_imageview_activity_main_next_btn=0x7f0b0077;
+        public static final int two_simpleadapter_item_desc=0x7f0b007c;
+        public static final int two_simpleadapter_item_header=0x7f0b007a;
+        public static final int two_simpleadapter_item_name=0x7f0b007b;
+        public static final int two_spinner_activity_main_spinner=0x7f0b007d;
+        public static final int two_toggle_button_main_layout=0x7f0b007f;
+        public static final int two_toggle_button_main_toggle_btn=0x7f0b007e;
         public static final int update=0x7f0b0030;
     }
     public static final class layout {
@@ -267,12 +269,13 @@ public final class R {
         public static final int two_autocomplete_textview_main=0x7f030031;
         public static final int two_chronometer_activity_main=0x7f030032;
         public static final int two_expandable_list_view_main=0x7f030033;
-        public static final int two_gridview_cell=0x7f030034;
-        public static final int two_gridview_main=0x7f030035;
-        public static final int two_imageview_activity_main=0x7f030036;
-        public static final int two_simpleadapter_item=0x7f030037;
-        public static final int two_spinner_activity_main=0x7f030038;
-        public static final int two_toggle_button_main=0x7f030039;
+        public static final int two_gallary_activity_main=0x7f030034;
+        public static final int two_gridview_cell=0x7f030035;
+        public static final int two_gridview_main=0x7f030036;
+        public static final int two_imageview_activity_main=0x7f030037;
+        public static final int two_simpleadapter_item=0x7f030038;
+        public static final int two_spinner_activity_main=0x7f030039;
+        public static final int two_toggle_button_main=0x7f03003a;
     }
     public static final class menu {
         public static final int main_interface=0x7f0a0000;
@@ -308,10 +311,11 @@ public final class R {
         public static final int ConfigurationChange=0x7f080063;
         public static final int CustomViewActivity=0x7f08005b;
         public static final int Decrease=0x7f08006d;
-        public static final int ElevenContents=0x7f080078;
+        public static final int ElevenContents=0x7f080079;
         public static final int ExpandableListViewActivity=0x7f080075;
         public static final int FirstServiceTest=0x7f08001c;
         public static final int FourContentsActivity=0x7f08001a;
+        public static final int GallaryActivity=0x7f080076;
         public static final int GridViewTest=0x7f080073;
         public static final int GroupSend=0x7f080027;
         public static final int ImageName=0x7f08003f;
@@ -346,11 +350,11 @@ public final class R {
         public static final int SurfaceViewPlayView=0x7f08003c;
         public static final int TelephonyStatus=0x7f080022;
         public static final int TenContentsActivity=0x7f08001b;
-        public static final int ThirteenContentsActivity=0x7f080079;
-        public static final int ThreeContentsActivity=0x7f080077;
+        public static final int ThirteenContentsActivity=0x7f08007a;
+        public static final int ThreeContentsActivity=0x7f080078;
         public static final int ToggleButtonActivity=0x7f08006a;
         public static final int TouchStatus=0x7f08005f;
-        public static final int TwoContentsActivity=0x7f080076;
+        public static final int TwoContentsActivity=0x7f080077;
         public static final int Vertical=0x7f080065;
         public static final int Vibrator=0x7f08002f;
         public static final int VideoViewActivity=0x7f08003b;
@@ -440,4 +444,25 @@ public final class R {
         public static final int four_other_activity_preferences=0x7f040001;
         public static final int ten_other_activity_display_prefs=0x7f040002;
     }
+    public static final class styleable {
+        /** Attributes that can be used with a Gallery.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Gallery_android_galleryItemBackground com.example.dandan:android_galleryItemBackground}</code></td><td></td></tr>
+           </table>
+           @see #Gallery_android_galleryItemBackground
+         */
+        public static final int[] Gallery = {
+            0x0101004c
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.dandan.R.attr#android_galleryItemBackground}
+          attribute's value can be found in the {@link #Gallery} array.
+          @attr name android:android_galleryItemBackground
+        */
+        public static final int Gallery_android_galleryItemBackground = 0;
+    };
 }
