@@ -37,6 +37,7 @@
         <item >2.13 StackView </item>
         <item >2.14 ProgressBar </item>
         <item >2.15 TitleProgressBar </item>
+        <item >2.16 SeekBar </item>
         
     </string-array>
     

@@ -24,6 +24,7 @@ import com.example.contents.two.gridview.GridViewTest;
 import com.example.contents.two.imageview.ImageViewActivity;
 import com.example.contents.two.listactivity.MyListActivity;
 import com.example.contents.two.progressbar.ProgressBarActivity;
+import com.example.contents.two.progressbar.SeekBarActivity;
 import com.example.contents.two.progressbar.TitleProgressBar;
 import com.example.contents.two.simpleadapter.SimpleAdapterTest;
 import com.example.contents.two.spinner.SpinnerActivityTest;
@@ -54,6 +55,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int STACK_VIEW = 12;
 	private final int PROGRESS_BAR = 13;
 	private final int TITLE_PROGRESS_BAR = 14;
+	private final int SEEK_BAR = 15;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -132,6 +134,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent title_progress_bar_intent
 				= new Intent(TwoContentsActivity.this, TitleProgressBar.class);
 			startActivity(title_progress_bar_intent);
+			break;
+		case SEEK_BAR:
+			Intent seek_bar_intent
+				= new Intent(TwoContentsActivity.this, SeekBarActivity.class);
+			startActivity(seek_bar_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);

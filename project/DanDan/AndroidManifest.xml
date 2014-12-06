@@ -108,6 +108,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.progressbar.SeekBarActivity"
+            android:label="@string/SeekBarActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
