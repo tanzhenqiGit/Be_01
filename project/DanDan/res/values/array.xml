@@ -31,6 +31,7 @@
         <item >2.7 AutoCompleteTextView </item>
         <item >2.8 GridView </item>
         <item >2.9 Spinner </item>
+        <item >2.10 ExpandableListView </item>
     </string-array>
     
     <string-array name="chapterThreeContents">

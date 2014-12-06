@@ -31,7 +31,7 @@ public class SpinnerActivityTest extends Activity {
 				LinearLayout ll = new LinearLayout(SpinnerActivityTest.this);
 				ll.setOrientation(LinearLayout.HORIZONTAL);
 				TextView textview = new TextView(SpinnerActivityTest.this);
-				textview.setText("第"+ position +"条数据");
+				textview.setText("number"+ position +"th");
 				textview.setTextSize(20);
 				textview.setTextColor(Color.GREEN);
 

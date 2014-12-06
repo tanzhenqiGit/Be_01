@@ -78,6 +78,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.expandablelistview.ExpandableListViewActivity"
+            android:label="@string/ExpandableListViewActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>

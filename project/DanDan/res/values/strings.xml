@@ -134,7 +134,7 @@
 	<string name="AutoCompleteTextViewTest">AutoCompleteText应用</string>
 	<string name="GridViewTest">GridView应用</string>
 	<string name="SpinnerActivityTest">Spinner应用</string>
-	
+	<string name="ExpandableListViewActivity">扩展List应用</string>
 	
 	
 	<string name="TwoContentsActivity">第二章内容</string>
