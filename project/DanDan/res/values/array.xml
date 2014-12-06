@@ -34,6 +34,7 @@
         <item >2.10 ExpandableListView </item>
         <item >2.11 Gallary </item>
         <item >2.12 AdapterViewFlipper </item>
+        <item >2.13 StackView </item>
     </string-array>
     
     <string-array name="chapterThreeContents">

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	android:padding="5pt"
+	>
+<ImageView
+	android:id="@+id/two_stackview_cell_image"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:contentDescription="@string/play"/>	
+</LinearLayout>

@@ -25,6 +25,7 @@ import com.example.contents.two.imageview.ImageViewActivity;
 import com.example.contents.two.listactivity.MyListActivity;
 import com.example.contents.two.simpleadapter.SimpleAdapterTest;
 import com.example.contents.two.spinner.SpinnerActivityTest;
+import com.example.contents.two.stackview.StackViewActivity;
 import com.example.contents.two.textview.AutoCompleteTextViewTest;
 import com.example.contents.two.toggle.ToggleButtonActivity;
 import com.example.dandan.R;
@@ -48,6 +49,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int EXPANDABLE_LIST_VIEW = 9;
 	private final int GALLARY_ACTIVITY = 10;
 	private final int ADAPTER_VIEW_FLIPPER = 11;
+	private final int STACK_VIEW = 12;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -111,6 +113,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent adapter_view_flipper_intent
 				= new Intent(TwoContentsActivity.this, AdapterViewFliperActivity.class);
 			startActivity(adapter_view_flipper_intent);
+			break;
+		case STACK_VIEW:
+			Intent stack_view_intent
+				= new Intent(TwoContentsActivity.this, StackViewActivity.class);
+			startActivity(stack_view_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);

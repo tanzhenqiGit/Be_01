@@ -93,6 +93,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.stackview.StackViewActivity"
+            android:label="@string/StackViewActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
