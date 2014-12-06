@@ -128,14 +128,17 @@
 	<string name="Increase">增加</string>
 	<string name="Decrease">减少</string>
 	<string name="Next">下一张</string>
+	<string name="Prev">上一张</string>
+	<string name="AutoPlay">自动播放</string>
 	<string name="MyListActivity">ListActivity</string>
 	<string name="SimpleAdapterTest">SimpleAdapter应用</string>
 	<string name="BaseAdapterTest">BaseAdapter应用</string>
 	<string name="AutoCompleteTextViewTest">AutoCompleteText应用</string>
 	<string name="GridViewTest">GridView应用</string>
-	<string name="SpinnerActivityTest">Spinner应用</string>
-	<string name="ExpandableListViewActivity">扩展List应用</string>
-	<string name="GallaryActivity">Gallary 的应用 </string>
+	<string name="SpinnerActivityTest">Spinner的应用</string>
+	<string name="ExpandableListViewActivity">ExpandableListView的应用</string>
+	<string name="GallaryActivity">Gallary的应用 </string>
+	<string name="AdapterViewFliperActivity">AdapterViewFliper的应用</string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>

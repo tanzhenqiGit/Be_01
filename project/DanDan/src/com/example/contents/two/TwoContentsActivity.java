@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.two.adapterviewflpper.AdapterViewFliperActivity;
 import com.example.contents.two.baseadapter.BaseAdapterTest;
 import com.example.contents.two.chronometer.ChronometerActivity;
 import com.example.contents.two.expandablelistview.ExpandableListViewActivity;
@@ -46,6 +47,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int SPINNER_ACTIVITY = 8;
 	private final int EXPANDABLE_LIST_VIEW = 9;
 	private final int GALLARY_ACTIVITY = 10;
+	private final int ADAPTER_VIEW_FLIPPER = 11;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -104,6 +106,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent gallary_intent
 				= new Intent(TwoContentsActivity.this, GallaryActivity.class);
 			startActivity(gallary_intent);
+			break;
+		case ADAPTER_VIEW_FLIPPER:
+			Intent adapter_view_flipper_intent
+				= new Intent(TwoContentsActivity.this, AdapterViewFliperActivity.class);
+			startActivity(adapter_view_flipper_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);

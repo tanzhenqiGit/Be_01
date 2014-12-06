@@ -33,6 +33,7 @@
         <item >2.9 Spinner </item>
         <item >2.10 ExpandableListView </item>
         <item >2.11 Gallary </item>
+        <item >2.12 AdapterViewFlipper </item>
     </string-array>
     
     <string-array name="chapterThreeContents">
