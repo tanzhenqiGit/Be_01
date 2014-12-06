@@ -140,6 +140,9 @@
 	<string name="GallaryActivity">Gallary的应用 </string>
 	<string name="AdapterViewFliperActivity">AdapterViewFliper的应用</string>
 	<string name="StackViewActivity">StackView的应用</string>
+	<string name="TaskProgress">任务完成进度</string>
+	<string name="ProgressBarActivity">ProgressBar的应用</string>
+	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>
     <string name="ElevenContents">第十一章内容</string>

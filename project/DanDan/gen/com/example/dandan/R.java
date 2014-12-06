@@ -68,25 +68,28 @@ public final class R {
         public static final int line=0x7f020013;
         public static final int lisi=0x7f020014;
         public static final int music=0x7f020015;
-        public static final int p=0x7f020016;
-        public static final int pause=0x7f020017;
-        public static final int phonebook=0x7f020018;
-        public static final int play=0x7f020019;
-        public static final int qiao=0x7f02001a;
-        public static final int record=0x7f02001b;
-        public static final int setting=0x7f02001c;
-        public static final int shuangta=0x7f02001d;
-        public static final int shui=0x7f02001e;
-        public static final int stop=0x7f02001f;
-        public static final int store=0x7f020020;
-        public static final int t=0x7f020021;
-        public static final int tools=0x7f020022;
-        public static final int wangwu=0x7f020023;
-        public static final int z=0x7f020024;
-        public static final int zhangsan=0x7f020025;
+        public static final int no=0x7f020016;
+        public static final int ok=0x7f020017;
+        public static final int p=0x7f020018;
+        public static final int pause=0x7f020019;
+        public static final int phonebook=0x7f02001a;
+        public static final int play=0x7f02001b;
+        public static final int qiao=0x7f02001c;
+        public static final int record=0x7f02001d;
+        public static final int setting=0x7f02001e;
+        public static final int shuangta=0x7f02001f;
+        public static final int shui=0x7f020020;
+        public static final int stop=0x7f020021;
+        public static final int store=0x7f020022;
+        public static final int t=0x7f020023;
+        public static final int tools=0x7f020024;
+        public static final int two_progress_bar=0x7f020025;
+        public static final int wangwu=0x7f020026;
+        public static final int z=0x7f020027;
+        public static final int zhangsan=0x7f020028;
     }
     public static final class id {
-        public static final int action_settings=0x7f0b0088;
+        public static final int action_settings=0x7f0b008a;
         public static final int delete=0x7f0b0032;
         public static final int eleven_capture_image_main_surface=0x7f0b0001;
         public static final int eleven_capture_image_save_imagename_edittext=0x7f0b0002;
@@ -212,16 +215,18 @@ public final class R {
         public static final int two_imageview_activity_main_image2=0x7f0b007d;
         public static final int two_imageview_activity_main_increase_btn=0x7f0b0079;
         public static final int two_imageview_activity_main_next_btn=0x7f0b007b;
-        public static final int two_simpleadapter_item_desc=0x7f0b0080;
-        public static final int two_simpleadapter_item_header=0x7f0b007e;
-        public static final int two_simpleadapter_item_name=0x7f0b007f;
-        public static final int two_spinner_activity_main_spinner=0x7f0b0081;
-        public static final int two_stackview_activity_main_prev=0x7f0b0084;
-        public static final int two_stackview_activity_main_stackview=0x7f0b0083;
-        public static final int two_stackview_actvity_main_next=0x7f0b0085;
-        public static final int two_stackview_cell_image=0x7f0b0082;
-        public static final int two_toggle_button_main_layout=0x7f0b0087;
-        public static final int two_toggle_button_main_toggle_btn=0x7f0b0086;
+        public static final int two_progress_bar_main_bar=0x7f0b007e;
+        public static final int two_progress_bar_main_bar2=0x7f0b007f;
+        public static final int two_simpleadapter_item_desc=0x7f0b0082;
+        public static final int two_simpleadapter_item_header=0x7f0b0080;
+        public static final int two_simpleadapter_item_name=0x7f0b0081;
+        public static final int two_spinner_activity_main_spinner=0x7f0b0083;
+        public static final int two_stackview_activity_main_prev=0x7f0b0086;
+        public static final int two_stackview_activity_main_stackview=0x7f0b0085;
+        public static final int two_stackview_actvity_main_next=0x7f0b0087;
+        public static final int two_stackview_cell_image=0x7f0b0084;
+        public static final int two_toggle_button_main_layout=0x7f0b0089;
+        public static final int two_toggle_button_main_toggle_btn=0x7f0b0088;
         public static final int update=0x7f0b0030;
     }
     public static final class layout {
@@ -282,11 +287,12 @@ public final class R {
         public static final int two_gridview_cell=0x7f030036;
         public static final int two_gridview_main=0x7f030037;
         public static final int two_imageview_activity_main=0x7f030038;
-        public static final int two_simpleadapter_item=0x7f030039;
-        public static final int two_spinner_activity_main=0x7f03003a;
-        public static final int two_stackview_activity_cell=0x7f03003b;
-        public static final int two_stackview_activity_main=0x7f03003c;
-        public static final int two_toggle_button_main=0x7f03003d;
+        public static final int two_progress_bar_main=0x7f030039;
+        public static final int two_simpleadapter_item=0x7f03003a;
+        public static final int two_spinner_activity_main=0x7f03003b;
+        public static final int two_stackview_activity_cell=0x7f03003c;
+        public static final int two_stackview_activity_main=0x7f03003d;
+        public static final int two_toggle_button_main=0x7f03003e;
     }
     public static final class menu {
         public static final int main_interface=0x7f0a0000;
@@ -324,7 +330,7 @@ public final class R {
         public static final int ConfigurationChange=0x7f080063;
         public static final int CustomViewActivity=0x7f08005b;
         public static final int Decrease=0x7f08006d;
-        public static final int ElevenContents=0x7f08007d;
+        public static final int ElevenContents=0x7f08007f;
         public static final int ExpandableListViewActivity=0x7f080077;
         public static final int FirstServiceTest=0x7f08001c;
         public static final int FourContentsActivity=0x7f08001a;
@@ -346,6 +352,7 @@ public final class R {
         public static final int Next=0x7f08006e;
         public static final int Orientation=0x7f08005d;
         public static final int Prev=0x7f08006f;
+        public static final int ProgressBarActivity=0x7f08007c;
         public static final int RecodeSound=0x7f08003d;
         public static final int RecordVideo=0x7f080040;
         public static final int ResultActivity=0x7f080047;
@@ -363,13 +370,14 @@ public final class R {
         public static final int StandardModeActivity=0x7f080055;
         public static final int StartActivity=0x7f080041;
         public static final int SurfaceViewPlayView=0x7f08003c;
+        public static final int TaskProgress=0x7f08007b;
         public static final int TelephonyStatus=0x7f080022;
         public static final int TenContentsActivity=0x7f08001b;
-        public static final int ThirteenContentsActivity=0x7f08007e;
-        public static final int ThreeContentsActivity=0x7f08007c;
+        public static final int ThirteenContentsActivity=0x7f080080;
+        public static final int ThreeContentsActivity=0x7f08007e;
         public static final int ToggleButtonActivity=0x7f08006a;
         public static final int TouchStatus=0x7f08005f;
-        public static final int TwoContentsActivity=0x7f08007b;
+        public static final int TwoContentsActivity=0x7f08007d;
         public static final int Vertical=0x7f080065;
         public static final int Vibrator=0x7f08002f;
         public static final int VideoViewActivity=0x7f08003b;
