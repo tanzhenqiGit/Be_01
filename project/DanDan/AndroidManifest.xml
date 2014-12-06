@@ -103,6 +103,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.progressbar.TitleProgressBar"
+            android:label="@string/TitleProgressBar" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>

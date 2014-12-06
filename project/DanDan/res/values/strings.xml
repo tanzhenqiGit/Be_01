@@ -142,6 +142,9 @@
 	<string name="StackViewActivity">StackView的应用</string>
 	<string name="TaskProgress">任务完成进度</string>
 	<string name="ProgressBarActivity">ProgressBar的应用</string>
+	<string name="Show">显示</string>
+	<string name="Hide">隐藏</string>
+	<string name="TitleProgressBar">TitleProgressBar显示</string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>
