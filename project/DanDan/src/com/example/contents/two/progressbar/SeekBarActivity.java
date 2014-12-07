@@ -53,7 +53,6 @@ public class SeekBarActivity extends Activity {
 					
 				}
 				
-				@SuppressWarnings("deprecation")
 				@Override
 				public void onProgressChanged(SeekBar seekBar, int progress,
 						boolean fromUser) {

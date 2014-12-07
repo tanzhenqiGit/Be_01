@@ -24,6 +24,7 @@ import com.example.contents.two.gridview.GridViewTest;
 import com.example.contents.two.imageview.ImageViewActivity;
 import com.example.contents.two.listactivity.MyListActivity;
 import com.example.contents.two.progressbar.ProgressBarActivity;
+import com.example.contents.two.progressbar.RatingBarActivity;
 import com.example.contents.two.progressbar.SeekBarActivity;
 import com.example.contents.two.progressbar.TitleProgressBar;
 import com.example.contents.two.simpleadapter.SimpleAdapterTest;
@@ -56,6 +57,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int PROGRESS_BAR = 13;
 	private final int TITLE_PROGRESS_BAR = 14;
 	private final int SEEK_BAR = 15;
+	private final int RATING_BAR = 16;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -139,6 +141,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent seek_bar_intent
 				= new Intent(TwoContentsActivity.this, SeekBarActivity.class);
 			startActivity(seek_bar_intent);
+			break;
+		case RATING_BAR:
+			Intent rating_bar_intent
+				= new Intent(TwoContentsActivity.this, RatingBarActivity.class);
+			startActivity(rating_bar_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);
