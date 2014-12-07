@@ -32,6 +32,7 @@ import com.example.contents.two.spinner.SpinnerActivityTest;
 import com.example.contents.two.stackview.StackViewActivity;
 import com.example.contents.two.textview.AutoCompleteTextViewTest;
 import com.example.contents.two.toggle.ToggleButtonActivity;
+import com.example.contents.two.viewanimator.ViewSwitcherActivity;
 import com.example.dandan.R;
 
 /**
@@ -58,6 +59,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int TITLE_PROGRESS_BAR = 14;
 	private final int SEEK_BAR = 15;
 	private final int RATING_BAR = 16;
+	private final int VIEW_SWITCHER = 17;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -146,6 +148,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent rating_bar_intent
 				= new Intent(TwoContentsActivity.this, RatingBarActivity.class);
 			startActivity(rating_bar_intent);
+			break;
+		case VIEW_SWITCHER:
+			Intent view_switch_intent
+				= new Intent(TwoContentsActivity.this, ViewSwitcherActivity.class);
+			startActivity(view_switch_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);
