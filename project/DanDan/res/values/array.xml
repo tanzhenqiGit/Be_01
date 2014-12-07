@@ -41,6 +41,7 @@
         <item >2.17 RatingBar </item>
         <item >2.18 ViewSwitcher </item>
         <item >2.19 ImageSwitcher </item>
+        <item >2.20 TextSwitcher </item>
     </string-array>
     
     <string-array name="chapterThreeContents">

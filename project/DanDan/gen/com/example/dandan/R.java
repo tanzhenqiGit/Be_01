@@ -93,7 +93,7 @@ public final class R {
         public static final int zhangsan=0x7f020028;
     }
     public static final class id {
-        public static final int action_settings=0x7f0c0098;
+        public static final int action_settings=0x7f0c0099;
         public static final int delete=0x7f0c0032;
         public static final int eleven_capture_image_main_surface=0x7f0c0001;
         public static final int eleven_capture_image_save_imagename_edittext=0x7f0c0002;
@@ -235,16 +235,17 @@ public final class R {
         public static final int two_stackview_activity_main_stackview=0x7f0c008b;
         public static final int two_stackview_actvity_main_next=0x7f0c008d;
         public static final int two_stackview_cell_image=0x7f0c008a;
-        public static final int two_titleprogressbar_main_hide_btn=0x7f0c008f;
-        public static final int two_titleprogressbar_main_show_btn=0x7f0c008e;
-        public static final int two_toggle_button_main_layout=0x7f0c0091;
-        public static final int two_toggle_button_main_toggle_btn=0x7f0c0090;
-        public static final int two_viewswitch_main_next_btn=0x7f0c0097;
-        public static final int two_viewswitch_main_prev_btn=0x7f0c0096;
-        public static final int two_viewswitcher_cell_image=0x7f0c0092;
-        public static final int two_viewswitcher_cell_text=0x7f0c0093;
-        public static final int two_viewswitcher_gridview_grid=0x7f0c0094;
-        public static final int two_viewswitcher_main_switcher=0x7f0c0095;
+        public static final int two_textswitcher_main_text=0x7f0c008e;
+        public static final int two_titleprogressbar_main_hide_btn=0x7f0c0090;
+        public static final int two_titleprogressbar_main_show_btn=0x7f0c008f;
+        public static final int two_toggle_button_main_layout=0x7f0c0092;
+        public static final int two_toggle_button_main_toggle_btn=0x7f0c0091;
+        public static final int two_viewswitch_main_next_btn=0x7f0c0098;
+        public static final int two_viewswitch_main_prev_btn=0x7f0c0097;
+        public static final int two_viewswitcher_cell_image=0x7f0c0093;
+        public static final int two_viewswitcher_cell_text=0x7f0c0094;
+        public static final int two_viewswitcher_gridview_grid=0x7f0c0095;
+        public static final int two_viewswitcher_main_switcher=0x7f0c0096;
         public static final int update=0x7f0c0030;
     }
     public static final class layout {
@@ -313,11 +314,12 @@ public final class R {
         public static final int two_spinner_activity_main=0x7f03003e;
         public static final int two_stackview_activity_cell=0x7f03003f;
         public static final int two_stackview_activity_main=0x7f030040;
-        public static final int two_titleprogressbar_main=0x7f030041;
-        public static final int two_toggle_button_main=0x7f030042;
-        public static final int two_viewswitcher_gridview_cell=0x7f030043;
-        public static final int two_viewswithcer_gridview=0x7f030044;
-        public static final int two_viewswither_main=0x7f030045;
+        public static final int two_textswitcher_main=0x7f030041;
+        public static final int two_titleprogressbar_main=0x7f030042;
+        public static final int two_toggle_button_main=0x7f030043;
+        public static final int two_viewswitcher_gridview_cell=0x7f030044;
+        public static final int two_viewswithcer_gridview=0x7f030045;
+        public static final int two_viewswither_main=0x7f030046;
     }
     public static final class menu {
         public static final int main_interface=0x7f0b0000;
@@ -356,7 +358,7 @@ public final class R {
         public static final int CustomViewActivity=0x7f09005b;
         public static final int Decrease=0x7f09006d;
         public static final int Default=0x7f090082;
-        public static final int ElevenContents=0x7f090087;
+        public static final int ElevenContents=0x7f090088;
         public static final int ExpandableListViewActivity=0x7f090077;
         public static final int FirstServiceTest=0x7f09001c;
         public static final int FourContentsActivity=0x7f09001a;
@@ -404,12 +406,13 @@ public final class R {
         public static final int TaskProgress=0x7f09007b;
         public static final int TelephonyStatus=0x7f090022;
         public static final int TenContentsActivity=0x7f09001b;
-        public static final int ThirteenContentsActivity=0x7f090088;
-        public static final int ThreeContentsActivity=0x7f090086;
+        public static final int TextSwitchActivity=0x7f090085;
+        public static final int ThirteenContentsActivity=0x7f090089;
+        public static final int ThreeContentsActivity=0x7f090087;
         public static final int TitleProgressBar=0x7f09007f;
         public static final int ToggleButtonActivity=0x7f09006a;
         public static final int TouchStatus=0x7f09005f;
-        public static final int TwoContentsActivity=0x7f090085;
+        public static final int TwoContentsActivity=0x7f090086;
         public static final int Vertical=0x7f090065;
         public static final int Vibrator=0x7f09002f;
         public static final int VideoViewActivity=0x7f09003b;

@@ -19,8 +19,8 @@
 	    android:layout_width="300dp"
 	    android:layout_height="300dp"
 	    android:layout_gravity="center_horizontal"
-	    android:inAnimation="@animator/slide_in_right"
-	    android:outAnimation="@animator/slide_out_left"
+	    android:inAnimation="@android:anim/slide_in_left"
+	    android:outAnimation="@android:anim/slide_out_right"
 	    />
 	    
 	    

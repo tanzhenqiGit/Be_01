@@ -128,6 +128,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.viewanimator.TextSwitchActivity"
+            android:label="@string/TextSwitchActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
