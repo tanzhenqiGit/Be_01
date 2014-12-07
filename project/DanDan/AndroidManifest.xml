@@ -123,6 +123,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.viewanimator.ImageSwitcherActivity"
+            android:label="@string/ImageSwitcherActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>

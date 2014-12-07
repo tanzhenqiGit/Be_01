@@ -149,6 +149,7 @@
 	<string name="RatingBarActivity">RatingBar的应用</string>
 	<string name="Default">默认</string>
 	<string name="ViewSwitcherActivity">ViewSwitcher的应用</string>
+	<string name="ImageSwitcherActivity">ImageSwitcher的应用</string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>

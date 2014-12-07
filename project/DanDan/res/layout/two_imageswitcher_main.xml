@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<GridView
+	    android:id="@+id/two_imageswitcher_main_grid"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:numColumns="4"
+	    android:horizontalSpacing="pt"
+	    android:verticalSpacing="2pt"
+	    android:gravity="center"
+	    />
+	    
+	<ImageSwitcher
+	    android:id="@+id/two_imageswitcher_main_switcher"
+	    android:layout_width="300dp"
+	    android:layout_height="300dp"
+	    android:layout_gravity="center_horizontal"
+	    android:inAnimation="@animator/slide_in_right"
+	    android:outAnimation="@animator/slide_out_left"
+	    />
+	    
+	    
+
+    
+</LinearLayout>
