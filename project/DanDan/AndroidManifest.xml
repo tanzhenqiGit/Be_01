@@ -133,6 +133,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.viewanimator.ViewFlipperActivity"
+            android:label="@string/ViewFlipperActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>

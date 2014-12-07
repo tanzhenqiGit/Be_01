@@ -151,6 +151,7 @@
 	<string name="ViewSwitcherActivity">ViewSwitcher的应用</string>
 	<string name="ImageSwitcherActivity">ImageSwitcher的应用</string>
 	<string name="TextSwitchActivity">TextSwitch的应用</string>
+	<string name="ViewFlipperActivity">ViewFlipper的应用</string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>

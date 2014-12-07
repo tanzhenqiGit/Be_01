@@ -34,6 +34,7 @@ import com.example.contents.two.textview.AutoCompleteTextViewTest;
 import com.example.contents.two.toggle.ToggleButtonActivity;
 import com.example.contents.two.viewanimator.ImageSwitcherActivity;
 import com.example.contents.two.viewanimator.TextSwitchActivity;
+import com.example.contents.two.viewanimator.ViewFlipperActivity;
 import com.example.contents.two.viewanimator.ViewSwitcherActivity;
 import com.example.dandan.R;
 
@@ -64,6 +65,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int VIEW_SWITCHER = 17;
 	private final int IMAGE_SWITCHER = 18;
 	private final int TEXT_SWITCHER = 19;
+	private final int VIEW_FLIPPER = 20;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -167,6 +169,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent text_switch_intent
 				= new Intent(TwoContentsActivity.this, TextSwitchActivity.class);
 			startActivity(text_switch_intent);
+			break;
+		case VIEW_FLIPPER:
+			Intent view_flipper_intent
+				= new Intent(TwoContentsActivity.this, ViewFlipperActivity.class);
+			startActivity(view_flipper_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);
