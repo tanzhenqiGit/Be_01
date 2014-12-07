@@ -39,7 +39,7 @@ public class RatingBarActivity extends Activity {
 						boolean fromUser) {
 					Log.d(TAG,"onRatingChanged rating=" + rating);
 					if (mImage != null) {
-						mImage.setAlpha(rating * 255 / 5);
+						mImage.setAlpha(rating / 5);
 					} else {
 						Log.d(TAG, "mImage == null");
 					}
