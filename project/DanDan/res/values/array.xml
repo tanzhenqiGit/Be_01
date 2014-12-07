@@ -39,6 +39,7 @@
         <item >2.15 TitleProgressBar </item>
         <item >2.16 SeekBar </item>
         <item >2.17 RatingBar </item>
+        <item >2.18 ViewAnimator </item>
     </string-array>
     
     <string-array name="chapterThreeContents">

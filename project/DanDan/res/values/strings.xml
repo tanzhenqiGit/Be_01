@@ -116,7 +116,7 @@
 	<string name="getPhoneSts">获取手机信息</string>
 	<string name="changeOrientation">改变屏幕方向</string>
 	<string name="ConfigurationChange">屏幕方向</string>
-
+	<string name="Default">默认</string>
 	<string name="Landscape">横向</string>
 	<string name="Vertical">竖向</string>
 	<string name="Button1">button1</string>
@@ -147,6 +147,7 @@
 	<string name="TitleProgressBar">TitleProgressBar显示</string>
 	<string name="SeekBarActivity">SeekBar应用</string>
 	<string name="RatingBarActivity">RatingBar的应用</string>
+	<string name="ViewSwitcherActivity">ViewSwitcher的应用</string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>
