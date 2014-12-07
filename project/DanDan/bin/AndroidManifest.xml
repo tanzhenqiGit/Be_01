@@ -10,9 +10,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:icon="@drawable/box"
+        android:label="@string/app_name" >
+ 
         <activity
             android:name="com.example.dandan.MainInterface"
             android:label="@string/app_name" >
@@ -29,9 +29,449 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.TwoContentsActivity"
+            android:label="@string/TwoContentsActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.toggle.ToggleButtonActivity"
+            android:label="@string/ToggleButtonActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.chronometer.ChronometerActivity"
+            android:label="@string/ChronometerActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.imageview.ImageViewActivity"
+            android:label="@string/ImageViewActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.listactivity.MyListActivity"
+            android:label="@string/MyListActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.simpleadapter.SimpleAdapterTest"
+            android:label="@string/SimpleAdapterTest" >
+        </activity>
+        <activity
+            android:name="com.example.contents.two.baseadapter.BaseAdapterTest"
+            android:label="@string/BaseAdapterTest" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.textview.AutoCompleteTextViewTest"
+            android:label="@string/AutoCompleteTextViewTest" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.gridview.GridViewTest"
+            android:label="@string/GridViewTest" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.spinner.SpinnerActivityTest"
+            android:label="@string/SpinnerActivityTest" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.expandablelistview.ExpandableListViewActivity"
+            android:label="@string/ExpandableListViewActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.gallary.GallaryActivity"
+            android:label="@string/GallaryActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.adapterviewflpper.AdapterViewFliperActivity"
+            android:label="@string/AdapterViewFliperActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.stackview.StackViewActivity"
+            android:label="@string/StackViewActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.progressbar.ProgressBarActivity"
+            android:label="@string/ProgressBarActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.progressbar.TitleProgressBar"
+            android:label="@string/TitleProgressBar" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.progressbar.SeekBarActivity"
+            android:label="@string/SeekBarActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.two.progressbar.RatingBarActivity"
+            android:label="@string/RatingBarActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.three.ThreeContentsActivity"
+            android:label="@string/ThreeContentsActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.three.callback.CallBackHandler"
+            android:label="@string/CallBackHandler" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.three.drawview.CustomViewActivity"
+            android:label="@string/CustomViewActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.three.configuration.ConfigurationActivity"
+            android:label="@string/ConfigurationActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.three.configurationchange.ConfigurationChange"
+            android:label="@string/ConfigurationChange" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.FourContentsActivity"
+            android:label="@string/FourContentsActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.otheractivity.OtherActivity"
+            android:label="@string/contents" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.otheractivity.ArmsExpandableListActivity"
+            android:label="@string/contents" >
+        </activity>
+        <activity
+            android:name="com.example.contents.four.otheractivity.ArmsPreferenceActivity"
+            android:label="@string/contents" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.startactivity.StartActivity"
+            android:label="@string/StartActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.startactivity.SecondActivity"
+            android:label="@string/SecondActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.bundle.BundleActivity"
+            android:label="@string/ResultActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.bundle.BundleResultActivity"
+            android:label="@string/SecondActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.activityresult.ActivityForResult"
+            android:label="@string/ActivityForResult" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.activityresult.SelectCityActivity"
+            android:label="@string/ActivityForResult" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.lifecycle.LifeCycleActivity"
+            android:label="@string/LifeCycle" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.lifecycle.LifeCycleSecondActivity"
+            android:label="@string/LifeCycleSecondActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.stardard.StandardModeActivity"
+            android:label="@string/StandardModeActivity"
+             >
+            
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.singletask.SingleTaskActivity"
+            android:label="@string/SingleTaskActivity" 
+            android:launchMode="singleTask">
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.singletask.SingTaskSecondActivity"
+            android:label="@string/SingTaskSecondActivity"
+            android:launchMode="singleTask" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.four.fragment.SelectBookActivity"
+            android:label="@string/SelectBookActivity" >
+        </activity>
+        <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >
         </activity>
+        
+        <activity 
+            android:name="com.example.contents.nineFirstContent.FirstResolver"
+            android:label="@string/contents"
+            >
+            
+        </activity>
+        <activity
+            android:name="com.example.contents.nine.DictProvider.DictResolvertTest"
+            android:label="@string/contents" >
+            
+        </activity>
+        
+         <activity
+            android:name="com.example.contents.nine.DictProvider.DictProviderResultActivity"
+            android:label="@string/contents" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.nine.contentprovider.ContentProviderTest"
+            android:label="@string/contents" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.nine.mediaprovider.MediaProviderTest"
+            android:label="@string/contents" >
+        </activity>
+         
+        <activity
+            android:name="com.example.contents.ten.TenContentsActivity"
+            android:label="@string/TenContentsActivity" >
+        </activity>
+        <activity
+            android:name="com.example.contents.ten.firstService.FirstServiceTest"
+            android:label="@string/FirstServiceTest" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.bindservice.BindServiceTest"
+            android:label="@string/BindServiceTest" >
+        </activity>
+        <activity
+            android:name="com.example.contents.ten.intentservicetest.IntentServiceTest"
+            android:label="@string/IntentServiceTest" >
+        </activity>
+        <activity
+            android:name="com.example.contents.ten.aidlservice.AidlClient"
+            android:label="@string/AidlClient" >
+        </activity>
+        <activity
+            android:name="com.example.contents.ten.complexservice.ComplexClient"
+            android:label="@string/ComplexClient" >
+        </activity>
+        <activity
+            android:name="com.example.contents.ten.telephonystatus.TelephonyStatus"
+            android:label="@string/TelephonyStatus" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.MonitorPhont.MonitorPhone"
+            android:label="@string/MonitorPhone" >
+        </activity>
+        <activity
+            android:name="com.example.contents.ten.blockmain.BlockMain"
+            android:label="@string/BlockMain" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.smsmanager.SmsManagerTest"
+            android:label="@string/SmsManager" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.groupsend.GroupSendTest"
+            android:label="@string/SmsManager" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.audiomanaertest.AudioManagerTest"
+            android:label="@string/AudioManager" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.vibrator.VibratorTest"
+            android:label="@string/Vibrator" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.alarmmanger.AlarmManagerTest"
+            android:label="@string/AlarmManager" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.alarmmanger.AlarmActivity"
+            android:label="@string/Alarming" >
+        </activity>
+        
+       <activity
+            android:name="com.example.contents.ten.changewallpaper.AlarmChangeWallPaper"
+            android:label="@string/AlarmChangeWallpaper" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.broadcast.BroadcastMain"
+            android:label="@string/BroadcastMain" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.sortedbroadcast.SortedBroadCastActivity"
+            android:label="@string/SortedBroadCast" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.ten.musicbox.MusicBox"
+            android:label="MusicBox">
+        </activity>
+        <activity 
+            android:name="com.example.contents.eleven.ElevenContentsActivity"
+            android:label="ElevenContents">
+        </activity>
+        <activity 
+            android:name="com.example.contents.eleven.soundpool.SoundPoolActivity"
+            android:label="SoundPoolActivity">
+        </activity> 
+        
+        <activity 
+            android:name="com.example.contents.eleven.videoview.VideoViewActivity"
+            android:label="VideoViewActivity">
+        </activity> 
+         
+        <activity 
+            android:name="com.example.contents.eleven.surfaceview.SurfaceViewPlayVideo"
+            android:label="SurfaceViewPlayView">
+        </activity> 
+        <activity 
+            android:name="com.example.contents.eleven.recordsound.RecordSoundActivity"
+            android:label="RecordSound">
+        </activity> 
+        
+        <activity 
+            android:name="com.example.contents.eleven.captureimage.CaptureImageActivity"
+            android:label="CaptureImage">
+        </activity> 
+        
+        <activity 
+            android:name="com.example.contents.eleven.recordvideo.RecordVideoActivity"
+            android:label="RecordVideo">
+        </activity> 
+        
+        <activity 
+            android:name="com.example.contents.thirteen.ThirteenContentsActivity"
+            android:label="ThirteenContentsActivity">
+        </activity> 
+        
+        <service android:name="com.example.contents.ten.firstService.FirstService" >
+        	<intent-filter>
+        	    <action android:name="com.example.contents.ten.firstService.FirstService" />
+        	</intent-filter>
+        </service>
+        
+        <service android:name="com.example.contents.ten.bindservice.BindService" >
+        	<intent-filter>
+        	    <action android:name="com.example.contents.ten.bindservice.BindService" />
+        	</intent-filter>
+        </service>
+        
+        
+        <service android:name="com.example.contents.ten.intentservicetest.MyService" >
+        </service>
+        
+        <service android:name="com.example.contents.ten.intentservicetest.MyIntentService" >
+        </service>
+        
+        <service android:name="com.example.contents.ten.aidlservice.AidlService" >
+        </service>
+        
+        <service android:name="com.example.contents.ten.aidlservice.AidlService" >
+        	<intent-filter>
+        	    <action android:name="com.example.contents.ten.aidlservice.AidlService" />
+        	</intent-filter>
+        </service>
+        
+        
+        <service android:name="com.example.contents.ten.complexservice.ComplexService" >
+        	<intent-filter>
+        	    <action android:name="com.example.contents.ten.complexservice.ComplexService" />
+        	</intent-filter>
+        </service>
+        
+        <service android:name="com.example.contents.ten.changewallpaper.ChangeWallPaperService" >
+        </service>
+        
+        <service android:name="com.example.contents.ten.musicbox.MusicBoxService" >
+        </service>
+        
+        <provider
+            android:name="com.example.contents.nineFirstContent.FirstProvider"
+            android:authorities="com.example.contents.nineFirstContent"
+            android:exported="true"
+            />
+        
+        <provider 
+            android:name="com.example.contents.nine.DictProvider.DictProvider"
+            android:authorities="com.example.contents.nine.DictProvider"
+            android:exported="true"
+            />
+        <receiver android:name="com.example.contents.ten.broadcast.MyReceiver"
+            >
+            <intent-filter>
+                <action android:name="first.broadcast.action.SEND_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name="com.example.contents.ten.sortedbroadcast.MySortReceiver"
+            >
+            <intent-filter android:priority="20"
+                >
+                <action android:name="sortedBroadCast.action.SEND_BRAOADCAST"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.example.contents.ten.sortedbroadcast.MySortReceiver2"
+            >
+            <intent-filter android:priority="0"
+                >
+                <action android:name="sortedBroadCast.action.SEND_BRAOADCAST"/>
+            </intent-filter>
+        </receiver>
     </application>
+    
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+	<uses-feature android:name="android.hardware.camera" /> 
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	
 
 </manifest>
