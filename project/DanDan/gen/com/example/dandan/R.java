@@ -369,7 +369,7 @@ public final class R {
         public static final int Decrease=0x7f09006d;
         public static final int Default=0x7f090082;
         public static final int DialogActivity=0x7f09008c;
-        public static final int ElevenContents=0x7f09008f;
+        public static final int ElevenContents=0x7f090090;
         public static final int ExpandableListViewActivity=0x7f090077;
         public static final int FirstServiceTest=0x7f09001c;
         public static final int FourContentsActivity=0x7f09001a;
@@ -386,6 +386,7 @@ public final class R {
         public static final int Landscape=0x7f090064;
         public static final int LifeCycle=0x7f090053;
         public static final int LifeCycleSecondActivity=0x7f090054;
+        public static final int ListDialogActivity=0x7f09008d;
         public static final int MNC=0x7f090060;
         public static final int MonitorPhone=0x7f090021;
         public static final int MyListActivity=0x7f090071;
@@ -423,12 +424,12 @@ public final class R {
         public static final int TelephonyStatus=0x7f090022;
         public static final int TenContentsActivity=0x7f09001b;
         public static final int TextSwitchActivity=0x7f090085;
-        public static final int ThirteenContentsActivity=0x7f090090;
-        public static final int ThreeContentsActivity=0x7f09008e;
+        public static final int ThirteenContentsActivity=0x7f090091;
+        public static final int ThreeContentsActivity=0x7f09008f;
         public static final int TitleProgressBar=0x7f09007f;
         public static final int ToggleButtonActivity=0x7f09006a;
         public static final int TouchStatus=0x7f09005f;
-        public static final int TwoContentsActivity=0x7f09008d;
+        public static final int TwoContentsActivity=0x7f09008e;
         public static final int Vertical=0x7f090065;
         public static final int Vibrator=0x7f09002f;
         public static final int VideoViewActivity=0x7f09003b;

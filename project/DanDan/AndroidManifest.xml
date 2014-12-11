@@ -148,6 +148,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.specialview.ListDialogActivity"
+            android:label="@string/ListDialogActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>

@@ -45,6 +45,7 @@
         <item >2.21 ViewFliper </item>
         <item >2.22 TabHost </item>
         <item >2.23 Dialog </item>
+        <item >2.24 ListDialog </item>
     </string-array>
     
     <string-array name="chapterThreeContents">
