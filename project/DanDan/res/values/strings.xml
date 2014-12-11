@@ -152,6 +152,11 @@
 	<string name="ImageSwitcherActivity">ImageSwitcher的应用</string>
 	<string name="TextSwitchActivity">TextSwitch的应用</string>
 	<string name="ViewFlipperActivity">ViewFlipper的应用</string>
+	<string name="TabHostActivity">TabHostActivity的应用</string>
+	<string name="TabHost01">TabHost01</string>
+	<string name="TabHost02">TabHost02</string>
+	<string name="TabHost03">TabHost03</string>
+	<string name="TabHost04">TabHost04</string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>

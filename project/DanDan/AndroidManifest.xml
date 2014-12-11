@@ -138,6 +138,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.specialview.TabHostActivity"
+            android:label="@string/TabHostActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
