@@ -44,6 +44,7 @@
         <item >2.20 TextSwitcher </item>
         <item >2.21 ViewFliper </item>
         <item >2.22 TabHost </item>
+        <item >2.23 Dialog </item>
     </string-array>
     
     <string-array name="chapterThreeContents">

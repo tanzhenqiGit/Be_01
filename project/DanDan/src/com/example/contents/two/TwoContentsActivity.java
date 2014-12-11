@@ -28,6 +28,7 @@ import com.example.contents.two.progressbar.RatingBarActivity;
 import com.example.contents.two.progressbar.SeekBarActivity;
 import com.example.contents.two.progressbar.TitleProgressBar;
 import com.example.contents.two.simpleadapter.SimpleAdapterTest;
+import com.example.contents.two.specialview.DialogActivity;
 import com.example.contents.two.specialview.TabHostActivity;
 import com.example.contents.two.spinner.SpinnerActivityTest;
 import com.example.contents.two.stackview.StackViewActivity;
@@ -68,6 +69,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int TEXT_SWITCHER = 19;
 	private final int VIEW_FLIPPER = 20;
 	private final int TAB_HOST = 21;
+	private final int DIALOG = 22;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -181,6 +183,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent tab_host_intent
 				= new Intent(TwoContentsActivity.this, TabHostActivity.class);
 			startActivity(tab_host_intent);
+			break;
+		case DIALOG:
+			Intent dialog_intent
+				= new Intent(TwoContentsActivity.this, DialogActivity.class);
+			startActivity(dialog_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);

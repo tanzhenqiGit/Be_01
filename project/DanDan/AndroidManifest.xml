@@ -143,6 +143,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.specialview.DialogActivity"
+            android:label="@string/DialogActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
