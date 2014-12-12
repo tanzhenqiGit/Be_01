@@ -166,6 +166,7 @@
 	<string name="DatePick">日期设定</string>
 	<string name="TimePick">时间设定</string>
 	<string name="DateDialogActivity">DateDialog的应用</string>
+	<string name="ProgerssDialogActivity">ProgerssDialog 的应用></string>
 	
 	
 	<string name="TwoContentsActivity">第二章内容</string>
