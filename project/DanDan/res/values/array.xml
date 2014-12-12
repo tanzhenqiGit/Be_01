@@ -48,6 +48,7 @@
         <item >2.24 ListDialog </item>
         <item >2.25 SingleChoiceDialog </item>
         <item >2.26 MultiChoiceDialot </item>
+        <item >2.27 CustomListDialog </item>
     </string-array>
     
     <string-array name="chapterThreeContents">

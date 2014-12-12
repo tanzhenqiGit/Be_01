@@ -163,6 +163,11 @@
         </activity> 
         
         <activity
+            android:name="com.example.contents.two.specialview.CustomListDialog"
+            android:label="@string/CustomListDialog" >
+        </activity> 
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>

@@ -28,6 +28,7 @@ import com.example.contents.two.progressbar.RatingBarActivity;
 import com.example.contents.two.progressbar.SeekBarActivity;
 import com.example.contents.two.progressbar.TitleProgressBar;
 import com.example.contents.two.simpleadapter.SimpleAdapterTest;
+import com.example.contents.two.specialview.CustomListDialog;
 import com.example.contents.two.specialview.DialogActivity;
 import com.example.contents.two.specialview.ListDialogActivity;
 import com.example.contents.two.specialview.MultiChoiceDialog;
@@ -76,6 +77,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int LIST_DIALOG = 23;
 	private final int SINGLE_CHOICE_DIALOG = 24;
 	private final int MULTI_CHOICE_DIALOG = 25;
+	private final int CUSTOM_LIST_DIALOG = 26;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -209,6 +211,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent multi_choice_dialog_intent
 				= new Intent(TwoContentsActivity.this, MultiChoiceDialog.class);
 			startActivity(multi_choice_dialog_intent);
+			break;
+		case CUSTOM_LIST_DIALOG:
+			Intent custom_list_dialog_intent
+				= new Intent(TwoContentsActivity.this, CustomListDialog.class);
+			startActivity(custom_list_dialog_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);
