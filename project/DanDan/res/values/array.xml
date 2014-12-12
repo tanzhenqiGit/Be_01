@@ -47,8 +47,9 @@
         <item >2.23 Dialog </item>
         <item >2.24 ListDialog </item>
         <item >2.25 SingleChoiceDialog </item>
-        <item >2.26 MultiChoiceDialot </item>
+        <item >2.26 MultiChoiceDialog </item>
         <item >2.27 CustomListDialog </item>
+        <item >2.28 PopupWindow </item>
     </string-array>
     
     <string-array name="chapterThreeContents">

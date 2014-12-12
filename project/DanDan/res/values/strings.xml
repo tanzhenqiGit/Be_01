@@ -162,6 +162,7 @@
 	<string name="SingChoiceDialogActivity">SingChoiceDialog的应用</string>
 	<string name="MultiChoiceDialog">MultiChoiceDialog</string>
 	<string name="CustomListDialog">CustomListDialog</string>
+	<string name="PopupWindowActivity">PopupWindowActivity</string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>

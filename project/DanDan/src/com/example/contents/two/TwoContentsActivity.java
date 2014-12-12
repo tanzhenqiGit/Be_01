@@ -32,6 +32,7 @@ import com.example.contents.two.specialview.CustomListDialog;
 import com.example.contents.two.specialview.DialogActivity;
 import com.example.contents.two.specialview.ListDialogActivity;
 import com.example.contents.two.specialview.MultiChoiceDialog;
+import com.example.contents.two.specialview.PopupWindowActivity;
 import com.example.contents.two.specialview.SingChoiceDialogActivity;
 import com.example.contents.two.specialview.TabHostActivity;
 import com.example.contents.two.spinner.SpinnerActivityTest;
@@ -78,6 +79,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int SINGLE_CHOICE_DIALOG = 24;
 	private final int MULTI_CHOICE_DIALOG = 25;
 	private final int CUSTOM_LIST_DIALOG = 26;
+	private final int POPUP_WINDOW = 27;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -216,6 +218,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent custom_list_dialog_intent
 				= new Intent(TwoContentsActivity.this, CustomListDialog.class);
 			startActivity(custom_list_dialog_intent);
+			break;
+		case POPUP_WINDOW:
+			Intent popup_window_intent
+				= new Intent(TwoContentsActivity.this, PopupWindowActivity.class);
+			startActivity(popup_window_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);
