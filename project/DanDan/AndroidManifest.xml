@@ -158,6 +158,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.two.specialview.MultiChoiceDialog"
+            android:label="@string/MultiChoiceDialog" >
+        </activity> 
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
