@@ -30,6 +30,7 @@ import com.example.contents.two.progressbar.TitleProgressBar;
 import com.example.contents.two.simpleadapter.SimpleAdapterTest;
 import com.example.contents.two.specialview.DialogActivity;
 import com.example.contents.two.specialview.ListDialogActivity;
+import com.example.contents.two.specialview.SingChoiceDialogActivity;
 import com.example.contents.two.specialview.TabHostActivity;
 import com.example.contents.two.spinner.SpinnerActivityTest;
 import com.example.contents.two.stackview.StackViewActivity;
@@ -72,6 +73,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int TAB_HOST = 21;
 	private final int DIALOG = 22;
 	private final int LIST_DIALOG = 23;
+	private final int SINGLE_CHOICE_DIALOG = 24;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -195,6 +197,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent list_dialog_intent
 				= new Intent(TwoContentsActivity.this, ListDialogActivity.class);
 			startActivity(list_dialog_intent);
+			break;
+		case SINGLE_CHOICE_DIALOG:
+			Intent single_choice_dialog_intent
+				= new Intent(TwoContentsActivity.this, SingChoiceDialogActivity.class);
+			startActivity(single_choice_dialog_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);

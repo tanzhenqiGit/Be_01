@@ -46,6 +46,7 @@
         <item >2.22 TabHost </item>
         <item >2.23 Dialog </item>
         <item >2.24 ListDialog </item>
+        <item >2.25 SingleChoiceDialog </item>
     </string-array>
     
     <string-array name="chapterThreeContents">
