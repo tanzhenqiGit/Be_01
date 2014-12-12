@@ -48,9 +48,9 @@ public class PopupWindowActivity extends Activity {
 				@Override
 				public void onClick(View v) {
 					if (ppWindow != null) {
-						ppWindow.showAsDropDown(v);
+						//ppWindow.showAsDropDown(v);
 						ppWindow.showAtLocation(findViewById(R.id.two_special_dialog_main_btn),
-								Gravity.CENTER, 20, 20);
+								Gravity.CENTER, 0, 0);
 						
 					}
 					

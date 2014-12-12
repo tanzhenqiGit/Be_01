@@ -163,6 +163,10 @@
 	<string name="MultiChoiceDialog">MultiChoiceDialog</string>
 	<string name="CustomListDialog">CustomListDialog</string>
 	<string name="PopupWindowActivity">PopupWindowActivity</string>
+	<string name="DatePick">日期设定</string>
+	<string name="TimePick">时间设定</string>
+	<string name="DateDialogActivity">DateDialog的应用</string>
+	
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>
