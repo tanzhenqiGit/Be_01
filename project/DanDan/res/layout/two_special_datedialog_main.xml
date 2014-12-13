@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -8,32 +9,53 @@
         android:id="@+id/two_special_datedialog_main_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"/>
+        android:inputType="text" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal"
         android:layout_gravity="center_horizontal"
-        >
-        
-        <Button 
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
             android:id="@+id/two_special_datedialog_main_date_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/DatePick"
-            />
-        <Button 
+            android:text="@string/DatePick" />
+
+        <Button
             android:id="@+id/two_special_datedialog_main_time_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/TimePick"
-            />
+            android:text="@string/TimePick" />
+
+        <Button
+            android:id="@+id/two_special_datedialog_main_number_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NumerPick" />
     </LinearLayout>
-    
-    <AnalogClock 
+
+    <AnalogClock
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
-
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+	    <NumberPicker
+	        android:id="@+id/two_special_datedialog_main_number_pick1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        tools:ignore="NewApi" />
+	    <NumberPicker
+	        android:id="@+id/two_special_datedialog_main_number_pick2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        tools:ignore="NewApi" />
+	</LinearLayout>
 </LinearLayout>

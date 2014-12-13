@@ -13,6 +13,7 @@ import java.util.Calendar;
 
 import com.example.dandan.R;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
@@ -22,18 +23,62 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.NumberPicker;
+import android.widget.NumberPicker.OnValueChangeListener;
 import android.widget.TimePicker;
 
 /**
  * @author free
  *
  */
+@SuppressLint("NewApi")
 public class DateDialogActivity extends Activity {
 
 	private final String TAG = "DateDialogActivity";
-	private Button mDatePickBtn, mTimePickBtn;
+	private Button mDatePickBtn, mTimePickBtn, mNumberPickBtn;
 	private EditText mShowText;
+	private int mMinValue, mMaxValue;
+	private NumberPicker mNp1, mNp2;
 	
+	private void setNumberPickCallBack()
+	{
+		mNp1 = (NumberPicker)findViewById(R.id.two_special_datedialog_main_number_pick1);
+		mNp2 = (NumberPicker)findViewById(R.id.two_special_datedialog_main_number_pick2);
+		
+		mNp1.setMinValue(10);
+		mNp1.setMaxValue(50);
+		mNp2.setMinValue(60);
+		mNp2.setMaxValue(100);
+		mNp1.setOnValueChangedListener(new OnValueChangeListener() {
+			
+			@Override
+			public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+				
+				mMinValue = newVal;
+				if (mShowText != null) {
+					mShowText.setText("你选择了：" + mMinValue + "为最低" + mMaxValue + "为最高");
+				}
+				
+			}
+		});
+		
+		
+		
+		mNp2.setOnValueChangedListener(new OnValueChangeListener() {
+			
+			@Override
+			public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+				
+				mMaxValue = newVal;
+				if (mShowText != null) {
+					mShowText.setText("你选择了：" + mMinValue + "为最低" + mMaxValue + "为最高");
+				}
+				
+			}
+		});
+		
+		
+	}
 	
 	private void setTimePickCallBack()
 	{
@@ -70,7 +115,6 @@ public class DateDialogActivity extends Activity {
 	{
 		mShowText = (EditText)findViewById(R.id.two_special_datedialog_main_text);
 		mDatePickBtn = (Button)findViewById(R.id.two_special_datedialog_main_date_btn);
-		mTimePickBtn = (Button)findViewById(R.id.two_special_datedialog_main_time_btn);
 		
 		if (mDatePickBtn != null) {
 			mDatePickBtn.setOnClickListener(new View.OnClickListener() {
@@ -84,6 +128,7 @@ public class DateDialogActivity extends Activity {
 		}
 		
 		mTimePickBtn = (Button)findViewById(R.id.two_special_datedialog_main_time_btn);
+		setNumberPickCallBack();
 		if (mTimePickBtn != null) {
 			mTimePickBtn.setOnClickListener(new View.OnClickListener() {
 				
@@ -95,6 +140,22 @@ public class DateDialogActivity extends Activity {
 			});
 		} else {
 			Log.d(TAG, "mTimePickBtn == null");
+		}
+		mMinValue = 25;
+		mMaxValue = 75;
+		mNumberPickBtn = (Button)findViewById(R.id.two_special_datedialog_main_number_btn);
+		if (mNumberPickBtn != null) {
+			mNumberPickBtn.setOnClickListener(new View.OnClickListener(){
+
+				@Override
+				public void onClick(View v) {
+
+					
+				}
+				
+			});
+		} else {
+			Log.d(TAG, "mNumberPickBtn == null");
 		}
 		
 	}

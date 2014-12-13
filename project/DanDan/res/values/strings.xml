@@ -165,6 +165,7 @@
 	<string name="PopupWindowActivity">PopupWindowActivity</string>
 	<string name="DatePick">日期设定</string>
 	<string name="TimePick">时间设定</string>
+	<string name="NumerPick">数值设定</string>
 	<string name="DateDialogActivity">DateDialog的应用</string>
 	<string name="ProgerssDialogActivity">ProgerssDialog 的应用></string>
 	

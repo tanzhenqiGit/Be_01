@@ -94,7 +94,7 @@ public final class R {
         public static final int zhangsan=0x7f020029;
     }
     public static final class id {
-        public static final int action_settings=0x7f0c00a4;
+        public static final int action_settings=0x7f0c00a7;
         public static final int delete=0x7f0c0032;
         public static final int eleven_capture_image_main_surface=0x7f0c0001;
         public static final int eleven_capture_image_save_imagename_edittext=0x7f0c0002;
@@ -233,31 +233,34 @@ public final class R {
         public static final int two_simpleadapter_item_header=0x7f0c0087;
         public static final int two_simpleadapter_item_name=0x7f0c0088;
         public static final int two_special_datedialog_main_date_btn=0x7f0c008b;
+        public static final int two_special_datedialog_main_number_btn=0x7f0c008d;
+        public static final int two_special_datedialog_main_number_pick1=0x7f0c008e;
+        public static final int two_special_datedialog_main_number_pick2=0x7f0c008f;
         public static final int two_special_datedialog_main_text=0x7f0c008a;
         public static final int two_special_datedialog_main_time_btn=0x7f0c008c;
-        public static final int two_special_dialog_main_btn=0x7f0c008d;
-        public static final int two_special_dialog_main_text=0x7f0c008e;
-        public static final int two_spinner_activity_main_spinner=0x7f0c008f;
-        public static final int two_stackview_activity_main_prev=0x7f0c0092;
-        public static final int two_stackview_activity_main_stackview=0x7f0c0091;
-        public static final int two_stackview_actvity_main_next=0x7f0c0093;
-        public static final int two_stackview_cell_image=0x7f0c0090;
-        public static final int two_tabhost_tab01=0x7f0c0094;
-        public static final int two_tabhost_tab02=0x7f0c0095;
-        public static final int two_tabhost_tab03=0x7f0c0096;
-        public static final int two_tabhost_tab04=0x7f0c0097;
-        public static final int two_textswitcher_main_text=0x7f0c0098;
-        public static final int two_titleprogressbar_main_hide_btn=0x7f0c009a;
-        public static final int two_titleprogressbar_main_show_btn=0x7f0c0099;
-        public static final int two_toggle_button_main_layout=0x7f0c009c;
-        public static final int two_toggle_button_main_toggle_btn=0x7f0c009b;
-        public static final int two_viewflipper_activity_main_flipper=0x7f0c009d;
-        public static final int two_viewswitch_main_next_btn=0x7f0c00a3;
-        public static final int two_viewswitch_main_prev_btn=0x7f0c00a2;
-        public static final int two_viewswitcher_cell_image=0x7f0c009e;
-        public static final int two_viewswitcher_cell_text=0x7f0c009f;
-        public static final int two_viewswitcher_gridview_grid=0x7f0c00a0;
-        public static final int two_viewswitcher_main_switcher=0x7f0c00a1;
+        public static final int two_special_dialog_main_btn=0x7f0c0090;
+        public static final int two_special_dialog_main_text=0x7f0c0091;
+        public static final int two_spinner_activity_main_spinner=0x7f0c0092;
+        public static final int two_stackview_activity_main_prev=0x7f0c0095;
+        public static final int two_stackview_activity_main_stackview=0x7f0c0094;
+        public static final int two_stackview_actvity_main_next=0x7f0c0096;
+        public static final int two_stackview_cell_image=0x7f0c0093;
+        public static final int two_tabhost_tab01=0x7f0c0097;
+        public static final int two_tabhost_tab02=0x7f0c0098;
+        public static final int two_tabhost_tab03=0x7f0c0099;
+        public static final int two_tabhost_tab04=0x7f0c009a;
+        public static final int two_textswitcher_main_text=0x7f0c009b;
+        public static final int two_titleprogressbar_main_hide_btn=0x7f0c009d;
+        public static final int two_titleprogressbar_main_show_btn=0x7f0c009c;
+        public static final int two_toggle_button_main_layout=0x7f0c009f;
+        public static final int two_toggle_button_main_toggle_btn=0x7f0c009e;
+        public static final int two_viewflipper_activity_main_flipper=0x7f0c00a0;
+        public static final int two_viewswitch_main_next_btn=0x7f0c00a6;
+        public static final int two_viewswitch_main_prev_btn=0x7f0c00a5;
+        public static final int two_viewswitcher_cell_image=0x7f0c00a1;
+        public static final int two_viewswitcher_cell_text=0x7f0c00a2;
+        public static final int two_viewswitcher_gridview_grid=0x7f0c00a3;
+        public static final int two_viewswitcher_main_switcher=0x7f0c00a4;
         public static final int update=0x7f0c0030;
     }
     public static final class layout {
@@ -374,12 +377,12 @@ public final class R {
         public static final int ConfigurationChange=0x7f090063;
         public static final int CustomListDialog=0x7f090090;
         public static final int CustomViewActivity=0x7f09005b;
-        public static final int DateDialogActivity=0x7f090094;
+        public static final int DateDialogActivity=0x7f090095;
         public static final int DatePick=0x7f090092;
         public static final int Decrease=0x7f09006d;
         public static final int Default=0x7f090082;
         public static final int DialogActivity=0x7f09008c;
-        public static final int ElevenContents=0x7f090098;
+        public static final int ElevenContents=0x7f090099;
         public static final int ExpandableListViewActivity=0x7f090077;
         public static final int FirstServiceTest=0x7f09001c;
         public static final int FourContentsActivity=0x7f09001a;
@@ -403,10 +406,11 @@ public final class R {
         public static final int MyListActivity=0x7f090071;
         public static final int Navigation=0x7f09005e;
         public static final int Next=0x7f09006e;
+        public static final int NumerPick=0x7f090094;
         public static final int Orientation=0x7f09005d;
         public static final int PopupWindowActivity=0x7f090091;
         public static final int Prev=0x7f09006f;
-        public static final int ProgerssDialogActivity=0x7f090095;
+        public static final int ProgerssDialogActivity=0x7f090096;
         public static final int ProgressBarActivity=0x7f09007c;
         public static final int RatingBarActivity=0x7f090081;
         public static final int RecodeSound=0x7f09003d;
@@ -438,13 +442,13 @@ public final class R {
         public static final int TelephonyStatus=0x7f090022;
         public static final int TenContentsActivity=0x7f09001b;
         public static final int TextSwitchActivity=0x7f090085;
-        public static final int ThirteenContentsActivity=0x7f090099;
-        public static final int ThreeContentsActivity=0x7f090097;
+        public static final int ThirteenContentsActivity=0x7f09009a;
+        public static final int ThreeContentsActivity=0x7f090098;
         public static final int TimePick=0x7f090093;
         public static final int TitleProgressBar=0x7f09007f;
         public static final int ToggleButtonActivity=0x7f09006a;
         public static final int TouchStatus=0x7f09005f;
-        public static final int TwoContentsActivity=0x7f090096;
+        public static final int TwoContentsActivity=0x7f090097;
         public static final int Vertical=0x7f090065;
         public static final int Vibrator=0x7f09002f;
         public static final int VideoViewActivity=0x7f09003b;
@@ -543,7 +547,7 @@ public final class R {
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Gallery_android_galleryItemBackground android:galleryItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Gallery_android_galleryItemBackground com.example.dandan:android_galleryItemBackground}</code></td><td></td></tr>
            </table>
            @see #Gallery_android_galleryItemBackground
          */
@@ -551,9 +555,9 @@ public final class R {
             0x0101004c
         };
         /**
-          <p>This symbol is the offset where the {@link android.R.attr#galleryItemBackground}
+          <p>This symbol is the offset where the {@link com.example.dandan.R.attr#android_galleryItemBackground}
           attribute's value can be found in the {@link #Gallery} array.
-          @attr name android:galleryItemBackground
+          @attr name android:android_galleryItemBackground
         */
         public static final int Gallery_android_galleryItemBackground = 0;
     };
