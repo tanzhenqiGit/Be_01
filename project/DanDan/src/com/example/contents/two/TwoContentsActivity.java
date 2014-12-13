@@ -37,6 +37,7 @@ import com.example.contents.two.specialview.PopupWindowActivity;
 import com.example.contents.two.specialview.ProgerssDialogActivity;
 import com.example.contents.two.specialview.SingChoiceDialogActivity;
 import com.example.contents.two.specialview.TabHostActivity;
+import com.example.contents.two.specialview.ToastActivity;
 import com.example.contents.two.spinner.SpinnerActivityTest;
 import com.example.contents.two.stackview.StackViewActivity;
 import com.example.contents.two.textview.AutoCompleteTextViewTest;
@@ -84,6 +85,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int POPUP_WINDOW = 27;
 	private final int DATE_PICK_DIALOG = 28;
 	private final int PROGRESS_DIALOG = 29;
+	private final int TOAST = 30;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -237,6 +239,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent progress_dialog_intent
 				= new Intent(TwoContentsActivity.this, ProgerssDialogActivity.class);
 			startActivity(progress_dialog_intent);
+			break;
+		case TOAST:
+			Intent toast_intent
+				= new Intent(TwoContentsActivity.this, ToastActivity.class);
+			startActivity(toast_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);

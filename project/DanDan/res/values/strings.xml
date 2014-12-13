@@ -168,6 +168,7 @@
 	<string name="NumerPick">数值设定</string>
 	<string name="DateDialogActivity">DateDialog的应用</string>
 	<string name="ProgerssDialogActivity">ProgerssDialog 的应用></string>
+	<string name="ToastActivity">Toast的应用</string>
 	
 	
 	<string name="TwoContentsActivity">第二章内容</string>

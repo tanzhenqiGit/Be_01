@@ -52,6 +52,7 @@
         <item >2.28 PopupWindow </item>
         <item >2.29 DateDialog </item>
         <item >3.30 ProgerssDialog </item>
+        <item >3.31 Toast </item>
     </string-array>
     
     <string-array name="chapterThreeContents">

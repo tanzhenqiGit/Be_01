@@ -183,6 +183,11 @@
         </activity> 
         
         <activity
+            android:name="com.example.contents.two.specialview.ToastActivity"
+            android:label="@string/ToastActivity" >
+        </activity> 
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
