@@ -3,6 +3,7 @@
     <item 
         android:title="@string/font_size"
         android:icon="@drawable/font"
+        android:showAsAction="always|withText"
         >
     	<menu>
     	    <group
@@ -35,11 +36,13 @@
    	<item 
    	    android:id="@+id/two_menu_resource_main_plain_item"
    	    android:title="@string/plain_item"
+   	    android:showAsAction="always|withText"
    	    />
 
     <item
         android:title="@string/font_color"
         android:icon="@drawable/color"
+        android:showAsAction="always"
 		>
     	<menu>
     	    <group>
