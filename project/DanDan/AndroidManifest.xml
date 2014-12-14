@@ -193,6 +193,11 @@
         </activity> 
         
         <activity
+            android:name="com.example.contents.two.menu.MenuTest"
+            android:label="@string/MenuTest" >
+        </activity> 
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
