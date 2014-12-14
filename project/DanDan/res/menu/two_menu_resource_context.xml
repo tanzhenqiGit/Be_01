@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/two_menu_resource_context_red"
+            android:title="@string/font_red"
+            >
+        </item>
+        
+        <item
+            android:id="@+id/two_menu_resource_context_green"
+            android:title="@string/font_green"
+            >
+        </item>
+        
+        <item
+            android:id="@+id/two_menu_resource_context_blue"
+            android:title="@string/font_blue"
+            >
+        </item>
+        
+    </group>
+
+</menu>

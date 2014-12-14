@@ -25,6 +25,7 @@ import com.example.contents.two.imageview.ImageViewActivity;
 import com.example.contents.two.listactivity.MyListActivity;
 import com.example.contents.two.menu.ActivityMenu;
 import com.example.contents.two.menu.ContextMenuActivity;
+import com.example.contents.two.menu.MenuResourceActivity;
 import com.example.contents.two.menu.MenuTest;
 import com.example.contents.two.progressbar.ProgressBarActivity;
 import com.example.contents.two.progressbar.RatingBarActivity;
@@ -94,6 +95,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int MENU_TEST = 32;
 	private final int ACTIVITY_MENU = 33;
 	private final int CONTEXT_MENU = 34;
+	private final int MENU_RESOURCE = 35;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -272,6 +274,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent context_menu_intent
 				= new Intent(TwoContentsActivity.this, ContextMenuActivity.class);
 			startActivity(context_menu_intent);
+			break;
+		case MENU_RESOURCE:
+			Intent menu_resource_intent
+				= new Intent(TwoContentsActivity.this, MenuResourceActivity.class);
+			startActivity(menu_resource_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);

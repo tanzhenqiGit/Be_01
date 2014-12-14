@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item 
+        android:title="@string/font_size"
+        android:icon="@drawable/font"
+        >
+    	<menu>
+    	    <group
+    	        android:checkableBehavior="single"
+    	        >
+    	    	<item
+    	    	    android:id="@+id/two_menu_resource_main_font_10"
+    	    	    android:title="@string/font_10"
+    	    	    />
+    	    	<item
+    	    	    android:id="@+id/two_menu_resource_main_font_12"
+    	    	    android:title="@string/font_12"
+    	    	    />
+    	    	<item
+    	    	    android:id="@+id/two_menu_resource_main_font_14"
+    	    	    android:title="@string/font_14"
+    	    	    />
+    	    	<item
+    	    	    android:id="@+id/two_menu_resource_main_font_16"
+    	    	    android:title="@string/font_16"
+    	    	    />
+    	    	<item
+    	    	    android:id="@+id/two_menu_resource_main_font_18"
+    	    	    android:title="@string/font_18"
+    	    	    />
+    	    </group>
+    	</menu>
+    </item>
+    
+   	<item 
+   	    android:id="@+id/two_menu_resource_main_plain_item"
+   	    android:title="@string/plain_item"
+   	    />
+
+    <item
+        android:title="@string/font_color"
+        android:icon="@drawable/color"
+		>
+    	<menu>
+    	    <group>
+    	        <item
+    	            android:id="@+id/two_menu_resource_main_red_font"
+    	            android:title="@string/font_red"
+    	            />
+    	        <item
+    	            android:id="@+id/two_menu_resource_main_green_font"
+    	            android:title="@string/font_green"
+    	            />
+    	        <item
+    	            android:id="@+id/two_menu_resource_main_blue_font"
+    	            android:title="@string/font_blue"
+    	            />
+    	        
+    	    </group>
+    	</menu>
+    </item>
+</menu>

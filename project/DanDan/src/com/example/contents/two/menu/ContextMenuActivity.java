@@ -12,9 +12,10 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.SubMenu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,14 +39,17 @@ public class ContextMenuActivity extends Activity {
 		Log.d(TAG, "initialize");
 		mShowBtn = (Button)findViewById(R.id.two_special_dialog_main_btn);
 		if (mShowBtn != null) {
-			mShowBtn.setVisibility(View.INVISIBLE);
+			//mShowBtn.setVisibility(View.INVISIBLE);
+			mShowBtn.setText("长按我");
+			registerForContextMenu(mShowBtn);
+			
 		}
 		
 		mShowTxt = (EditText)findViewById(R.id.two_special_dialog_main_text);
 		if (mShowTxt != null) {
 			mShowTxt.setText("ContextMenu 的测试");
 			mShowTxt.setFocusable(false);
-			registerForContextMenu(mShowTxt);
+			
 		}
 	}
 	
@@ -95,15 +99,22 @@ public class ContextMenuActivity extends Activity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		Log.d(TAG,"onCreateOptionsMenu");
-		SubMenu menu1 = menu.addSubMenu("选择背景颜色");
-		menu1.add(0, MENU_RED, 0, "红色");
-		menu1.add(0, MENU_BLUE, 0, "绿色");
-		menu1.add(0, MENU_GREEN, 0, "蓝色");
-		menu1.setGroupCheckable(0, true, true);
-		menu1.setHeaderTitle("选择文字背景颜色");
-		menu1.setIcon(R.drawable.tools);
+	
 		
 		return super.onCreateOptionsMenu(menu);
+	}
+
+	@Override
+	public void onCreateContextMenu(ContextMenu menu, View v,
+			ContextMenuInfo menuInfo) {
+		Log.d(TAG, "onCreateContextMenu");
+		menu.add(0, MENU_RED, 0, "红色");
+		menu.add(0, MENU_BLUE, 0, "绿色");
+		menu.add(0, MENU_GREEN, 0, "蓝色");
+		menu.setGroupCheckable(0, true, true);
+		menu.setHeaderTitle("选择文字背景颜色");
+		menu.setHeaderIcon(R.drawable.tools);
+		//super.onCreateContextMenu(menu, v, menuInfo);
 	}
 
 	

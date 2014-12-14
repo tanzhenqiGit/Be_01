@@ -224,6 +224,18 @@ public final class R {
         public static final int two_imageview_activity_main_image2=0x7f0c007f;
         public static final int two_imageview_activity_main_increase_btn=0x7f0c007b;
         public static final int two_imageview_activity_main_next_btn=0x7f0c007d;
+        public static final int two_menu_resource_context_blue=0x7f0c00ac;
+        public static final int two_menu_resource_context_green=0x7f0c00ab;
+        public static final int two_menu_resource_context_red=0x7f0c00aa;
+        public static final int two_menu_resource_main_blue_font=0x7f0c00b5;
+        public static final int two_menu_resource_main_font_10=0x7f0c00ad;
+        public static final int two_menu_resource_main_font_12=0x7f0c00ae;
+        public static final int two_menu_resource_main_font_14=0x7f0c00af;
+        public static final int two_menu_resource_main_font_16=0x7f0c00b0;
+        public static final int two_menu_resource_main_font_18=0x7f0c00b1;
+        public static final int two_menu_resource_main_green_font=0x7f0c00b4;
+        public static final int two_menu_resource_main_plain_item=0x7f0c00b2;
+        public static final int two_menu_resource_main_red_font=0x7f0c00b3;
         public static final int two_popup_window_layout_close=0x7f0c0080;
         public static final int two_progress_bar_main_bar=0x7f0c0081;
         public static final int two_progress_bar_main_bar2=0x7f0c0082;
@@ -349,6 +361,8 @@ public final class R {
     }
     public static final class menu {
         public static final int main_interface=0x7f0b0000;
+        public static final int two_menu_resource_context=0x7f0b0001;
+        public static final int two_menu_resource_mymenu=0x7f0b0002;
     }
     public static final class raw {
         public static final int arrow=0x7f060000;
@@ -390,7 +404,7 @@ public final class R {
         public static final int Decrease=0x7f09006d;
         public static final int Default=0x7f090082;
         public static final int DialogActivity=0x7f09008c;
-        public static final int ElevenContents=0x7f09009f;
+        public static final int ElevenContents=0x7f0900ab;
         public static final int ExpandableListViewActivity=0x7f090077;
         public static final int FirstServiceTest=0x7f09001c;
         public static final int FourContentsActivity=0x7f09001a;
@@ -409,6 +423,7 @@ public final class R {
         public static final int LifeCycleSecondActivity=0x7f090054;
         public static final int ListDialogActivity=0x7f09008d;
         public static final int MNC=0x7f090060;
+        public static final int MenuResourceActivity=0x7f09009d;
         public static final int MenuTest=0x7f090099;
         public static final int MonitorPhone=0x7f090021;
         public static final int MultiChoiceDialog=0x7f09008f;
@@ -453,14 +468,14 @@ public final class R {
         public static final int TelephonyStatus=0x7f090022;
         public static final int TenContentsActivity=0x7f09001b;
         public static final int TextSwitchActivity=0x7f090085;
-        public static final int ThirteenContentsActivity=0x7f0900a0;
-        public static final int ThreeContentsActivity=0x7f09009e;
+        public static final int ThirteenContentsActivity=0x7f0900ac;
+        public static final int ThreeContentsActivity=0x7f0900aa;
         public static final int TimePick=0x7f090093;
         public static final int TitleProgressBar=0x7f09007f;
         public static final int ToastActivity=0x7f090097;
         public static final int ToggleButtonActivity=0x7f09006a;
         public static final int TouchStatus=0x7f09005f;
-        public static final int TwoContentsActivity=0x7f09009d;
+        public static final int TwoContentsActivity=0x7f0900a9;
         public static final int Vertical=0x7f090065;
         public static final int Vibrator=0x7f09002f;
         public static final int VideoViewActivity=0x7f09003b;
@@ -482,6 +497,16 @@ public final class R {
         public static final int down=0x7f09002e;
         public static final int female=0x7f09004e;
         public static final int finish=0x7f090045;
+        public static final int font_10=0x7f09009f;
+        public static final int font_12=0x7f0900a0;
+        public static final int font_14=0x7f0900a1;
+        public static final int font_16=0x7f0900a2;
+        public static final int font_18=0x7f0900a3;
+        public static final int font_blue=0x7f0900a8;
+        public static final int font_color=0x7f0900a5;
+        public static final int font_green=0x7f0900a7;
+        public static final int font_red=0x7f0900a6;
+        public static final int font_size=0x7f09009e;
         public static final int getInfo=0x7f090013;
         public static final int getPhoneSts=0x7f090061;
         public static final int getServiceSts=0x7f090016;
@@ -495,6 +520,7 @@ public final class R {
         public static final int managerBlack=0x7f090024;
         public static final int name=0x7f09000c;
         public static final int number=0x7f09000d;
+        public static final int plain_item=0x7f0900a4;
         public static final int play=0x7f09002c;
         public static final int query=0x7f090005;
         public static final int register=0x7f09004f;
