@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.two.actionbar.ActionBarActivity;
 import com.example.contents.two.adapterviewflpper.AdapterViewFliperActivity;
 import com.example.contents.two.baseadapter.BaseAdapterTest;
 import com.example.contents.two.chronometer.ChronometerActivity;
@@ -98,6 +99,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int CONTEXT_MENU = 34;
 	private final int MENU_RESOURCE = 35;
 	private final int POPUP_MENU = 36;
+	private final int ACTION_BAR = 37;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -286,6 +288,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent popup_menu_intent
 				= new Intent(TwoContentsActivity.this, PopupMenuActivity.class);
 			startActivity(popup_menu_intent);
+			break;
+		case ACTION_BAR:
+			Intent action_bar_intent
+				= new Intent(TwoContentsActivity.this, ActionBarActivity.class);
+			startActivity(action_bar_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);

@@ -189,6 +189,9 @@
 	<string name="PopupMenuActivity">PopupMenu的应用</string>
 	<string name="edit">编辑</string>
 	<string name="exit">退出</string>
+	<string name="ActionBarActivity">ActionBar的应用</string>
+	<string name="showActionBar">显示ActionBar</string>
+	<string name="hideActionBar">隐藏ActionBar</string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>

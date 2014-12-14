@@ -224,6 +224,11 @@
         </activity> 
         
         <activity
+            android:name="com.example.contents.two.actionbar.ActionBarActivity"
+            android:label="@string/ActionBarActivity" >
+        </activity> 
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
