@@ -186,6 +186,9 @@
 	<string name="font_red">红色</string>
 	<string name="font_green">蓝色</string>
 	<string name="font_blue">绿色</string>
+	<string name="PopupMenuActivity">PopupMenu的应用</string>
+	<string name="edit">编辑</string>
+	<string name="exit">退出</string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>

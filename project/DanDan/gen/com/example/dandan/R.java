@@ -158,6 +158,10 @@ public final class R {
         public static final int nine_media_provider_name_image=0x7f0c0034;
         public static final int nine_media_provider_name_text=0x7f0c0033;
         public static final int nine_media_provider_view_imageview=0x7f0c0039;
+        public static final int popup_menu_main_add=0x7f0c00ab;
+        public static final int popup_menu_main_edit=0x7f0c00ac;
+        public static final int popup_menu_main_exit=0x7f0c00ad;
+        public static final int popup_menu_main_search=0x7f0c00aa;
         public static final int query=0x7f0c0031;
         public static final int ten_aidl_service_main_color_text=0x7f0c0040;
         public static final int ten_aidl_service_main_getServiceStsBtn=0x7f0c003f;
@@ -224,18 +228,18 @@ public final class R {
         public static final int two_imageview_activity_main_image2=0x7f0c007f;
         public static final int two_imageview_activity_main_increase_btn=0x7f0c007b;
         public static final int two_imageview_activity_main_next_btn=0x7f0c007d;
-        public static final int two_menu_resource_context_blue=0x7f0c00ac;
-        public static final int two_menu_resource_context_green=0x7f0c00ab;
-        public static final int two_menu_resource_context_red=0x7f0c00aa;
-        public static final int two_menu_resource_main_blue_font=0x7f0c00b5;
-        public static final int two_menu_resource_main_font_10=0x7f0c00ad;
-        public static final int two_menu_resource_main_font_12=0x7f0c00ae;
-        public static final int two_menu_resource_main_font_14=0x7f0c00af;
-        public static final int two_menu_resource_main_font_16=0x7f0c00b0;
-        public static final int two_menu_resource_main_font_18=0x7f0c00b1;
-        public static final int two_menu_resource_main_green_font=0x7f0c00b4;
-        public static final int two_menu_resource_main_plain_item=0x7f0c00b2;
-        public static final int two_menu_resource_main_red_font=0x7f0c00b3;
+        public static final int two_menu_resource_context_blue=0x7f0c00b0;
+        public static final int two_menu_resource_context_green=0x7f0c00af;
+        public static final int two_menu_resource_context_red=0x7f0c00ae;
+        public static final int two_menu_resource_main_blue_font=0x7f0c00b9;
+        public static final int two_menu_resource_main_font_10=0x7f0c00b1;
+        public static final int two_menu_resource_main_font_12=0x7f0c00b2;
+        public static final int two_menu_resource_main_font_14=0x7f0c00b3;
+        public static final int two_menu_resource_main_font_16=0x7f0c00b4;
+        public static final int two_menu_resource_main_font_18=0x7f0c00b5;
+        public static final int two_menu_resource_main_green_font=0x7f0c00b8;
+        public static final int two_menu_resource_main_plain_item=0x7f0c00b6;
+        public static final int two_menu_resource_main_red_font=0x7f0c00b7;
         public static final int two_popup_window_layout_close=0x7f0c0080;
         public static final int two_progress_bar_main_bar=0x7f0c0081;
         public static final int two_progress_bar_main_bar2=0x7f0c0082;
@@ -361,8 +365,9 @@ public final class R {
     }
     public static final class menu {
         public static final int main_interface=0x7f0b0000;
-        public static final int two_menu_resource_context=0x7f0b0001;
-        public static final int two_menu_resource_mymenu=0x7f0b0002;
+        public static final int popup_menu_main=0x7f0b0001;
+        public static final int two_menu_resource_context=0x7f0b0002;
+        public static final int two_menu_resource_mymenu=0x7f0b0003;
     }
     public static final class raw {
         public static final int arrow=0x7f060000;
@@ -404,7 +409,7 @@ public final class R {
         public static final int Decrease=0x7f09006d;
         public static final int Default=0x7f090082;
         public static final int DialogActivity=0x7f09008c;
-        public static final int ElevenContents=0x7f0900ab;
+        public static final int ElevenContents=0x7f0900ae;
         public static final int ExpandableListViewActivity=0x7f090077;
         public static final int FirstServiceTest=0x7f09001c;
         public static final int FourContentsActivity=0x7f09001a;
@@ -433,6 +438,7 @@ public final class R {
         public static final int NumerPick=0x7f090094;
         public static final int Orientation=0x7f09005d;
         public static final int OtherActivity=0x7f09009b;
+        public static final int PopupMenuActivity=0x7f0900a9;
         public static final int PopupWindowActivity=0x7f090091;
         public static final int Prev=0x7f09006f;
         public static final int ProgerssDialogActivity=0x7f090096;
@@ -468,14 +474,14 @@ public final class R {
         public static final int TelephonyStatus=0x7f090022;
         public static final int TenContentsActivity=0x7f09001b;
         public static final int TextSwitchActivity=0x7f090085;
-        public static final int ThirteenContentsActivity=0x7f0900ac;
-        public static final int ThreeContentsActivity=0x7f0900aa;
+        public static final int ThirteenContentsActivity=0x7f0900af;
+        public static final int ThreeContentsActivity=0x7f0900ad;
         public static final int TimePick=0x7f090093;
         public static final int TitleProgressBar=0x7f09007f;
         public static final int ToastActivity=0x7f090097;
         public static final int ToggleButtonActivity=0x7f09006a;
         public static final int TouchStatus=0x7f09005f;
-        public static final int TwoContentsActivity=0x7f0900a9;
+        public static final int TwoContentsActivity=0x7f0900ac;
         public static final int Vertical=0x7f090065;
         public static final int Vibrator=0x7f09002f;
         public static final int VideoViewActivity=0x7f09003b;
@@ -495,6 +501,8 @@ public final class R {
         public static final int delete=0x7f090006;
         public static final int detail=0x7f09000a;
         public static final int down=0x7f09002e;
+        public static final int edit=0x7f0900aa;
+        public static final int exit=0x7f0900ab;
         public static final int female=0x7f09004e;
         public static final int finish=0x7f090045;
         public static final int font_10=0x7f09009f;

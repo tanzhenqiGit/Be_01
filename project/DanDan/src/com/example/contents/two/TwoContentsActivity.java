@@ -27,6 +27,7 @@ import com.example.contents.two.menu.ActivityMenu;
 import com.example.contents.two.menu.ContextMenuActivity;
 import com.example.contents.two.menu.MenuResourceActivity;
 import com.example.contents.two.menu.MenuTest;
+import com.example.contents.two.menu.PopupMenuActivity;
 import com.example.contents.two.progressbar.ProgressBarActivity;
 import com.example.contents.two.progressbar.RatingBarActivity;
 import com.example.contents.two.progressbar.SeekBarActivity;
@@ -96,6 +97,7 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int ACTIVITY_MENU = 33;
 	private final int CONTEXT_MENU = 34;
 	private final int MENU_RESOURCE = 35;
+	private final int POPUP_MENU = 36;
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -279,6 +281,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent menu_resource_intent
 				= new Intent(TwoContentsActivity.this, MenuResourceActivity.class);
 			startActivity(menu_resource_intent);
+			break;
+		case POPUP_MENU:
+			Intent popup_menu_intent
+				= new Intent(TwoContentsActivity.this, PopupMenuActivity.class);
+			startActivity(popup_menu_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);

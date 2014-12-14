@@ -219,6 +219,11 @@
         </activity> 
         
         <activity
+            android:name="com.example.contents.two.menu.PopupMenuActivity"
+            android:label="@string/PopupMenuActivity" >
+        </activity> 
+        
+        <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
         </activity>
