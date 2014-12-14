@@ -173,6 +173,7 @@
 	<string name="MenuTest">Menu应用</string>
 	<string name="ActivityMenu">ActivityMenu</string>
 	<string name="OtherActivity">OtherActivity</string>
+	<string name="ContextMenuActivity">ContextMenuActivity 应用</string>
 	
 	
 	<string name="TwoContentsActivity">第二章内容</string>

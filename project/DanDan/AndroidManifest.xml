@@ -207,6 +207,12 @@
             android:name="com.example.contents.two.menu.OtherActivity"
             android:label="@string/OtherActivity" >
         </activity> 
+        
+        <activity
+            android:name="com.example.contents.two.menu.ContextMenuActivity"
+            android:label="@string/ContextMenuActivity" >
+        </activity> 
+        
         <activity
             android:name="com.example.contents.three.ThreeContentsActivity"
             android:label="@string/ThreeContentsActivity" >
