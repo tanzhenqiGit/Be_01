@@ -23,6 +23,7 @@ import com.example.contents.two.gallary.GallaryActivity;
 import com.example.contents.two.gridview.GridViewTest;
 import com.example.contents.two.imageview.ImageViewActivity;
 import com.example.contents.two.listactivity.MyListActivity;
+import com.example.contents.two.menu.ActivityMenu;
 import com.example.contents.two.menu.MenuTest;
 import com.example.contents.two.progressbar.ProgressBarActivity;
 import com.example.contents.two.progressbar.RatingBarActivity;
@@ -90,6 +91,8 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 	private final int TOAST = 30;
 	private final int SEARCH_VIEW = 31;
 	private final int MENU_TEST = 32;
+	private final int ACTIVITY_MENU = 33;
+	
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
@@ -258,6 +261,11 @@ public class TwoContentsActivity extends CommonListActivity<String> {
 			Intent menu_test_intent
 				= new Intent(TwoContentsActivity.this, MenuTest.class);
 			startActivity(menu_test_intent);
+			break;
+		case ACTIVITY_MENU:
+			Intent activity_menu_intent
+				= new Intent(TwoContentsActivity.this, ActivityMenu.class);
+			startActivity(activity_menu_intent);
 			break;
 		default:
 			Log.d(TAG, "default position="+position);

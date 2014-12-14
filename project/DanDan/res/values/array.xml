@@ -55,6 +55,7 @@
         <item >3.31 Toast </item>
         <item >3.32 SearchView </item>
         <item >3.33 Menu </item>
+        <item >3.34 ActivityMenu </item>
     </string-array>
     
     <string-array name="chapterThreeContents">
