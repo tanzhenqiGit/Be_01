@@ -82,6 +82,14 @@
         <item > 4.8 Fragment </item>
     </string-array>
     
+    <string-array name="chapterFiveContents">
+        <item > 5.1 </item>
+        <item > 5.2 </item>
+        <item > 5.3 </item>
+        <item > 5.4 </item>
+    </string-array>
+    
+    
     <string-array name="chapterNineContents">
         <item > 9.1 FirstContent</item>
         <item > 9.2 DictProvider</item>
