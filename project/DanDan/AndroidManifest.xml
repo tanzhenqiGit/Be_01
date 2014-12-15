@@ -341,6 +341,16 @@
             android:label="@string/FiveContentsActivity" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.five.component.ComponentAttrActivity"
+            android:label="@string/ComponentAttrActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.five.component.SecondActivity"
+            android:label="@string/SecondActivity" >
+        </activity>
+        
         
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"

@@ -9,10 +9,12 @@
 */ 
 package com.example.contents.five;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.five.component.ComponentAttrActivity;
 import com.example.dandan.R;
 
 /**
@@ -20,6 +22,8 @@ import com.example.dandan.R;
  *
  */
 public class FiveContentsActivity extends CommonListActivity<String> {
+	
+	private final int COMPONENT_ATTR = 0;
 
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
@@ -29,8 +33,10 @@ public class FiveContentsActivity extends CommonListActivity<String> {
 			int position, long id) {
 		switch (position)
 		{
-		case 0:
-			
+		case COMPONENT_ATTR:
+			Intent component_attr_intent = 
+				new Intent(FiveContentsActivity.this, ComponentAttrActivity.class);
+			startActivity(component_attr_intent);
 			break;
 		case 1:
 			
