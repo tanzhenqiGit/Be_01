@@ -28,6 +28,8 @@ public class ActionAttrActivity extends Activity {
 	private final String TAG = "ActionAttrActivity";
 	public final static String FIVE_ACTION_ATTR = 
 			"com.example.contents.five.intent.SecondActivity.Action";
+	public final static String FIVE_CATEGORY =
+			"com.example.contents.five.intent.CATEGORY";
 	private Button mSkipBtn;
 	private EditText mShowTxt;
 	
@@ -47,6 +49,7 @@ public class ActionAttrActivity extends Activity {
 				public void onClick(View v) {
 					Intent intent = new Intent();
 					intent.setAction(ActionAttrActivity.FIVE_ACTION_ATTR);
+					intent.addCategory(FIVE_CATEGORY);
 					startActivity(intent);
 				}
 			});

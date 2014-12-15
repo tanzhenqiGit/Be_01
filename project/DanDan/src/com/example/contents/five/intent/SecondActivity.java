@@ -9,6 +9,8 @@
 */ 
 package com.example.contents.five.intent;
 
+import java.util.Set;
+
 import com.example.dandan.R;
 
 import android.app.Activity;
@@ -41,9 +43,9 @@ public class SecondActivity extends Activity {
 			ComponentName comp = null;
 			comp = getIntent().getComponent();
 			String action = getIntent().getAction();
-
+			Set<String> cates = getIntent().getCategories();
 			if (action != null) {
-				mShowTxt.setText("action is :"+ action);
+				mShowTxt.setText("action is :"+ action +"cates:" +cates);
 			} else {
 				mShowTxt.setText("组件包名：" + comp.getPackageName() + "\n" 
 						+"类名：" + comp.getClassName());

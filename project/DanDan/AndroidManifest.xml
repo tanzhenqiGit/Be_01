@@ -351,6 +351,7 @@
             android:label="@string/SecondActivity" >
             <intent-filter >
                 <action android:name="com.example.contents.five.intent.SecondActivity.Action" />
+                <category android:name="com.example.contents.five.intent.CATEGORY" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
