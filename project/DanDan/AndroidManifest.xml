@@ -342,15 +342,23 @@
         </activity>
         
         <activity
-            android:name="com.example.contents.five.component.ComponentAttrActivity"
+            android:name="com.example.contents.five.intent.ComponentAttrActivity"
             android:label="@string/ComponentAttrActivity" >
         </activity>
         
         <activity
-            android:name="com.example.contents.five.component.SecondActivity"
+            android:name="com.example.contents.five.intent.SecondActivity"
             android:label="@string/SecondActivity" >
+            <intent-filter >
+                <action android:name="com.example.contents.five.intent.SecondActivity.Action" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         
+        <activity
+            android:name="com.example.contents.five.intent.ActionAttrActivity"
+            android:label="@string/ActionAttrActivity" >
+        </activity>
         
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"

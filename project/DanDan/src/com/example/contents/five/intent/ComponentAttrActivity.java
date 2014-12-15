@@ -7,7 +7,7 @@
 * @version create time : 2014-12-15 обнГ2:13:30
 * @class ComponentAttrActivity.java
 */ 
-package com.example.contents.five.component;
+package com.example.contents.five.intent;
 
 import com.example.dandan.R;
 

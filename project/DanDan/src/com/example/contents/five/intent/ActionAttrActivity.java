@@ -4,15 +4,15 @@
 * Create on 2014-12-15
 *
 * @author author E-mail:tan_zhenqi@163.com 
-* @version create time : 2014-12-15 下午2:35:02
-* @class SecondActivity.java
+* @version create time : 2014-12-15 下午3:26:42
+* @class ActionAttrActivity.java
 */ 
-package com.example.contents.five.component;
+package com.example.contents.five.intent;
 
 import com.example.dandan.R;
 
 import android.app.Activity;
-import android.content.ComponentName;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -23,24 +23,33 @@ import android.widget.EditText;
  * @author free
  *
  */
-public class SecondActivity extends Activity {
+public class ActionAttrActivity extends Activity {
 
-	private final String TAG = "ComponentAttrActivity";
+	private final String TAG = "ActionAttrActivity";
+	public final static String FIVE_ACTION_ATTR = 
+			"com.example.contents.five.intent.SecondActivity.Action";
 	private Button mSkipBtn;
 	private EditText mShowTxt;
 	
 	private void initialize()
 	{
-		mSkipBtn = (Button)findViewById(R.id.five_common_activity_main_btn);
-		if (mSkipBtn != null) {
-			mSkipBtn.setVisibility(View.INVISIBLE);
-		}
-		
 		mShowTxt = (EditText)findViewById(R.id.five_common_activity_main_txt);
 		if (mShowTxt != null) {
-			ComponentName comp = getIntent().getComponent();
-			mShowTxt.setText("组件包名：" + comp.getPackageName() + "\n" 
-					+"类名：" + comp.getClassName());
+			mShowTxt.setVisibility(View.INVISIBLE);
+		}
+		
+		mSkipBtn = (Button)findViewById(R.id.five_common_activity_main_btn);
+		
+		if (mSkipBtn != null) {
+			mSkipBtn.setOnClickListener(new View.OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					Intent intent = new Intent();
+					intent.setAction(ActionAttrActivity.FIVE_ACTION_ATTR);
+					startActivity(intent);
+				}
+			});
 		}
 	}
 	/* (non-Javadoc)

@@ -383,6 +383,7 @@ public final class R {
         public static final int shot=0x7f060003;
     }
     public static final class string {
+        public static final int ActionAttrActivity=0x7f0900b0;
         public static final int ActionBarActivity=0x7f0900ac;
         public static final int ActivityForResult=0x7f090050;
         public static final int ActivityMenu=0x7f09009a;
@@ -418,10 +419,10 @@ public final class R {
         public static final int Decrease=0x7f09006d;
         public static final int Default=0x7f090082;
         public static final int DialogActivity=0x7f09008c;
-        public static final int ElevenContents=0x7f0900b3;
+        public static final int ElevenContents=0x7f0900b4;
         public static final int ExpandableListViewActivity=0x7f090077;
         public static final int FirstServiceTest=0x7f09001c;
-        public static final int FiveContentsActivity=0x7f0900b2;
+        public static final int FiveContentsActivity=0x7f0900b3;
         public static final int FourContentsActivity=0x7f09001a;
         public static final int GallaryActivity=0x7f090078;
         public static final int GridViewTest=0x7f090075;
@@ -484,14 +485,14 @@ public final class R {
         public static final int TelephonyStatus=0x7f090022;
         public static final int TenContentsActivity=0x7f09001b;
         public static final int TextSwitchActivity=0x7f090085;
-        public static final int ThirteenContentsActivity=0x7f0900b4;
-        public static final int ThreeContentsActivity=0x7f0900b1;
+        public static final int ThirteenContentsActivity=0x7f0900b5;
+        public static final int ThreeContentsActivity=0x7f0900b2;
         public static final int TimePick=0x7f090093;
         public static final int TitleProgressBar=0x7f09007f;
         public static final int ToastActivity=0x7f090097;
         public static final int ToggleButtonActivity=0x7f09006a;
         public static final int TouchStatus=0x7f09005f;
-        public static final int TwoContentsActivity=0x7f0900b0;
+        public static final int TwoContentsActivity=0x7f0900b1;
         public static final int Vertical=0x7f090065;
         public static final int Vibrator=0x7f09002f;
         public static final int VideoViewActivity=0x7f09003b;
