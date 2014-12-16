@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import com.example.contents.CommonListActivity;
 import com.example.contents.five.intent.ActionAttrActivity;
 import com.example.contents.five.intent.ComponentAttrActivity;
+import com.example.contents.five.sysaction.SysActionActivity;
 import com.example.dandan.R;
 
 /**
@@ -26,6 +27,7 @@ public class FiveContentsActivity extends CommonListActivity<String> {
 	
 	private final int COMPONENT_ATTR = 0;
 	private final int ACTION_ATTR = 1;
+	private final int SYATEM_ACTION = 2;
 
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
@@ -44,6 +46,11 @@ public class FiveContentsActivity extends CommonListActivity<String> {
 			Intent action_attr_intent = 
 				new Intent(FiveContentsActivity.this, ActionAttrActivity.class);
 			startActivity(action_attr_intent);
+			break;
+		case SYATEM_ACTION:
+			Intent system_action_intent = 
+				new Intent(FiveContentsActivity.this, SysActionActivity.class);
+			startActivity(system_action_intent);
 			break;
 		default:
 			

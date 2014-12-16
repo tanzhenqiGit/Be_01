@@ -194,6 +194,8 @@
 	<string name="hideActionBar">隐藏ActionBar</string>
 	<string name="ComponentAttrActivity">Component 测试</string>
 	<string name="ActionAttrActivity">ActionAttr 测试</string>
+	<string name="SysActionActivity">SystemAction的应用</string>
+	<string name="CheckContact">查看联系人</string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>

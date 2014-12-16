@@ -85,7 +85,7 @@
     <string-array name="chapterFiveContents">
         <item > 5.1 ComponentAttr </item>
         <item > 5.2 ActionAttr </item>
-        <item > 5.3 ActionCateAttr </item>
+        <item > 5.3 SyncAction </item>
         <item > 5.4 </item>
     </string-array>
     
