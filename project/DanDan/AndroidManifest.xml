@@ -361,9 +361,15 @@
             android:label="@string/ActionAttrActivity" >
         </activity>
         
+        
         <activity
             android:name="com.example.contents.five.sysaction.SysActionActivity"
             android:label="@string/SysActionActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.five.sysaction.ReturnHome"
+            android:label="@string/ReturnHome" >
         </activity>
         
         <activity

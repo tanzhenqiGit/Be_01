@@ -41,21 +41,30 @@ public class SysActionActivity extends Activity {
 				Uri contactData = data.getData();
 				@SuppressWarnings("deprecation")
 				Cursor cursor = managedQuery(contactData, null, null, null, null);
+				if (cursor == null) {
+					Log.d(TAG, "cursor == null");
+					return ;
+				}
 				if (cursor.moveToFirst())
 				{
 					String contactId = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts._ID));
-					String name = cursor.getString(cursor.getColumnIndexOrThrow(ContactsContract.Contacts.DISPLAY_NAME));
-					Log.d(TAG, "contactId=" + contactId + ",name= "+name);
+					String name = cursor.getString(
+							cursor.getColumnIndexOrThrow(ContactsContract.Contacts.DISPLAY_NAME));
+					Log.d(TAG, "contactId=" + contactId + ",name="+name);
 					String phoneNumber = "此联系人暂未输入电话号码";
 					Cursor phones = getContentResolver().query(
 							ContactsContract.CommonDataKinds.Phone.CONTENT_URI,
 							null, 
-							ContactsContract.CommonDataKinds.Phone.CONTACT_ID +" = " + contactId, null, null);
-					
+							ContactsContract.CommonDataKinds.Phone.CONTACT_ID +" = " + contactId,
+							null,
+							null);
+					Log.d(TAG, "phones="+phones);
 					if (phones.moveToFirst())
 					{
 						phoneNumber = phones.getString(phones.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-						
+						Log.d(TAG, "phoneNumber="+phoneNumber);
+					} else {
+						Log.d(TAG, "phones move to first return false");
 					}
 					phones.close();
 					if (mContactTxt != null) {

@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import com.example.contents.CommonListActivity;
 import com.example.contents.five.intent.ActionAttrActivity;
 import com.example.contents.five.intent.ComponentAttrActivity;
+import com.example.contents.five.sysaction.ReturnHome;
 import com.example.contents.five.sysaction.SysActionActivity;
 import com.example.dandan.R;
 
@@ -28,6 +29,7 @@ public class FiveContentsActivity extends CommonListActivity<String> {
 	private final int COMPONENT_ATTR = 0;
 	private final int ACTION_ATTR = 1;
 	private final int SYATEM_ACTION = 2;
+	private final int RETURN_HOME = 3;
 
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
@@ -51,6 +53,11 @@ public class FiveContentsActivity extends CommonListActivity<String> {
 			Intent system_action_intent = 
 				new Intent(FiveContentsActivity.this, SysActionActivity.class);
 			startActivity(system_action_intent);
+			break;
+		case RETURN_HOME:
+			Intent return_home_intent = 
+				new Intent(FiveContentsActivity.this, ReturnHome.class);
+			startActivity(return_home_intent);
 			break;
 		default:
 			

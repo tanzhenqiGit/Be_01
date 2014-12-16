@@ -424,10 +424,10 @@ public final class R {
         public static final int Decrease=0x7f09006d;
         public static final int Default=0x7f090082;
         public static final int DialogActivity=0x7f09008c;
-        public static final int ElevenContents=0x7f0900b6;
+        public static final int ElevenContents=0x7f0900b7;
         public static final int ExpandableListViewActivity=0x7f090077;
         public static final int FirstServiceTest=0x7f09001c;
-        public static final int FiveContentsActivity=0x7f0900b5;
+        public static final int FiveContentsActivity=0x7f0900b6;
         public static final int FourContentsActivity=0x7f09001a;
         public static final int GallaryActivity=0x7f090078;
         public static final int GridViewTest=0x7f090075;
@@ -463,6 +463,7 @@ public final class R {
         public static final int RecodeSound=0x7f09003d;
         public static final int RecordVideo=0x7f090040;
         public static final int ResultActivity=0x7f090047;
+        public static final int ReturnHome=0x7f0900b3;
         public static final int SearchViewActivity=0x7f090098;
         public static final int SecondActivity=0x7f090042;
         public static final int SeekBarActivity=0x7f090080;
@@ -491,14 +492,14 @@ public final class R {
         public static final int TelephonyStatus=0x7f090022;
         public static final int TenContentsActivity=0x7f09001b;
         public static final int TextSwitchActivity=0x7f090085;
-        public static final int ThirteenContentsActivity=0x7f0900b7;
-        public static final int ThreeContentsActivity=0x7f0900b4;
+        public static final int ThirteenContentsActivity=0x7f0900b8;
+        public static final int ThreeContentsActivity=0x7f0900b5;
         public static final int TimePick=0x7f090093;
         public static final int TitleProgressBar=0x7f09007f;
         public static final int ToastActivity=0x7f090097;
         public static final int ToggleButtonActivity=0x7f09006a;
         public static final int TouchStatus=0x7f09005f;
-        public static final int TwoContentsActivity=0x7f0900b3;
+        public static final int TwoContentsActivity=0x7f0900b4;
         public static final int Vertical=0x7f090065;
         public static final int Vibrator=0x7f09002f;
         public static final int VideoViewActivity=0x7f09003b;
@@ -612,7 +613,7 @@ public final class R {
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Gallery_android_galleryItemBackground android:galleryItemBackground}</code></td><td></td></tr>
+           <tr><td><code>{@link #Gallery_android_galleryItemBackground com.example.dandan:android_galleryItemBackground}</code></td><td></td></tr>
            </table>
            @see #Gallery_android_galleryItemBackground
          */
@@ -620,9 +621,9 @@ public final class R {
             0x0101004c
         };
         /**
-          <p>This symbol is the offset where the {@link android.R.attr#galleryItemBackground}
+          <p>This symbol is the offset where the {@link com.example.dandan.R.attr#android_galleryItemBackground}
           attribute's value can be found in the {@link #Gallery} array.
-          @attr name android:galleryItemBackground
+          @attr name android:android_galleryItemBackground
         */
         public static final int Gallery_android_galleryItemBackground = 0;
     };
