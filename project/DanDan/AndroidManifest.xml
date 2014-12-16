@@ -373,6 +373,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.five.sysaction.DataTypeOverride"
+            android:label="@string/DataTypeOverride" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >
         </activity>

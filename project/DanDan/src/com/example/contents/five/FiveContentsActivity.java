@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 import com.example.contents.CommonListActivity;
 import com.example.contents.five.intent.ActionAttrActivity;
 import com.example.contents.five.intent.ComponentAttrActivity;
+import com.example.contents.five.sysaction.DataTypeOverride;
 import com.example.contents.five.sysaction.ReturnHome;
 import com.example.contents.five.sysaction.SysActionActivity;
 import com.example.dandan.R;
@@ -30,7 +31,8 @@ public class FiveContentsActivity extends CommonListActivity<String> {
 	private final int ACTION_ATTR = 1;
 	private final int SYATEM_ACTION = 2;
 	private final int RETURN_HOME = 3;
-
+	private final int DATA_TYPE_OVERRIDE = 4;
+	
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -58,6 +60,11 @@ public class FiveContentsActivity extends CommonListActivity<String> {
 			Intent return_home_intent = 
 				new Intent(FiveContentsActivity.this, ReturnHome.class);
 			startActivity(return_home_intent);
+			break;
+		case DATA_TYPE_OVERRIDE:
+			Intent data_type_override_intent = 
+				new Intent(FiveContentsActivity.this, DataTypeOverride.class);
+			startActivity(data_type_override_intent);
 			break;
 		default:
 			
