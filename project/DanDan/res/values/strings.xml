@@ -198,6 +198,7 @@
 	<string name="CheckContact">查看联系人</string>
 	<string name="ReturnHome">ReturnHome</string>
 	<string name="DataTypeOverride">DataTypeOverride</string>
+	<string name="ActionDataActivity">ActionData的应用</string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>

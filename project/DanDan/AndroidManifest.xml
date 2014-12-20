@@ -378,6 +378,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.five.sysaction.ActionDataActivity"
+            android:label="@string/ActionDataActivity" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >
         </activity>
