@@ -9,9 +9,11 @@
 */ 
 package com.example.contents.thirteen;
 
+import com.example.contents.thirteen.simpleclient.SimpleClient;
 import com.example.dandan.R;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -29,6 +31,7 @@ public class ThirteenContentsActivity extends Activity {
 	private final String TAG = "ThirteenContentsActivity";
 	private ListView mListView;
 	private String[] mContents;
+	private final int SIMPLE_CLIENT = 0;
 	
 	private void ListCallBack()
 	{
@@ -39,8 +42,10 @@ public class ThirteenContentsActivity extends Activity {
 				public void onItemClick(AdapterView<?> parent, View view,
 						int position, long id) {
 					switch(position) {
-					case 0:
-						
+					case SIMPLE_CLIENT:
+						Intent simple_client_intent = new Intent(ThirteenContentsActivity.this, 
+								SimpleClient.class);
+						startActivity(simple_client_intent);
 						break;
 					case 1:
 						
