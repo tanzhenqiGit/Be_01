@@ -9,6 +9,7 @@
 */ 
 package com.example.contents.thirteen;
 
+import com.example.contents.thirteen.multi.MutiThreadClient;
 import com.example.contents.thirteen.simpleclient.SimpleClient;
 import com.example.dandan.R;
 
@@ -32,6 +33,7 @@ public class ThirteenContentsActivity extends Activity {
 	private ListView mListView;
 	private String[] mContents;
 	private final int SIMPLE_CLIENT = 0;
+	private final int MULTI_THREAD_CLIENT = 1;
 	
 	private void ListCallBack()
 	{
@@ -47,8 +49,10 @@ public class ThirteenContentsActivity extends Activity {
 								SimpleClient.class);
 						startActivity(simple_client_intent);
 						break;
-					case 1:
-						
+					case MULTI_THREAD_CLIENT:
+						Intent multi_thread_client_intent = new Intent(ThirteenContentsActivity.this, 
+								MutiThreadClient.class);
+						startActivity(multi_thread_client_intent);
 						break;
 					case 2:
 						

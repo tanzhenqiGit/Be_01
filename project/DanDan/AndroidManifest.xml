@@ -542,7 +542,12 @@
         
         <activity 
             android:name="com.example.contents.thirteen.simpleclient.SimpleClient"
-            android:label="ThirteenContentsActivity">
+            android:label="SimpleClient">
+        </activity> 
+        
+        <activity 
+            android:name="com.example.contents.thirteen.multi.MutiThreadClient"
+            android:label="MutiThreadClient">
         </activity> 
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >

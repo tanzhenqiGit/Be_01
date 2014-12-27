@@ -130,7 +130,7 @@
  
     <string-array name="chapterThirteenContents">
         <item >13.1 SimpleClient </item>
-        <item >13.2 </item>
+        <item >13.2 MutiThreadClient </item>
         <item >13.3 </item>
         <item >13.4 </item>
     </string-array>
