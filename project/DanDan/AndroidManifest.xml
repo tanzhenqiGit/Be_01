@@ -550,6 +550,11 @@
             android:label="MutiThreadClient">
         </activity> 
         
+        <activity 
+            android:name="com.example.contents.thirteen.url.URLClient"
+            android:label="URLClient">
+        </activity>
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />

@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: /home/free/tanzhenqiGit/Be_01/project/DanDan/src/com/example/contents/ten/complexservice/IPet.aidl
+ * Original file: D:\\Project\\Be_01\\project\\DanDan\\src\\com\\example\\contents\\ten\\complexservice\\IPet.aidl
  */
 package com.example.contents.ten.complexservice;
 public interface IPet extends android.os.IInterface

@@ -11,6 +11,7 @@ package com.example.contents.thirteen;
 
 import com.example.contents.thirteen.multi.MutiThreadClient;
 import com.example.contents.thirteen.simpleclient.SimpleClient;
+import com.example.contents.thirteen.url.URLClient;
 import com.example.dandan.R;
 
 import android.app.Activity;
@@ -34,6 +35,7 @@ public class ThirteenContentsActivity extends Activity {
 	private String[] mContents;
 	private final int SIMPLE_CLIENT = 0;
 	private final int MULTI_THREAD_CLIENT = 1;
+	private final int URL_CLIENT = 2;
 	
 	private void ListCallBack()
 	{
@@ -54,8 +56,10 @@ public class ThirteenContentsActivity extends Activity {
 								MutiThreadClient.class);
 						startActivity(multi_thread_client_intent);
 						break;
-					case 2:
-						
+					case URL_CLIENT:
+						Intent url_client_intent = new Intent(ThirteenContentsActivity.this, 
+								URLClient.class);
+						startActivity(url_client_intent);
 						break;
 					default:
 						

@@ -201,6 +201,7 @@
 	<string name="ActionDataActivity">ActionData的应用</string>
 	<string name="MutiThreadClient">MutiThreadClient 的应用</string>
 	<string name="SimpleClient">SimpleClient的应用</string>
+	<string name="URLClient">URLClient 的应用 </string>
 	
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>
