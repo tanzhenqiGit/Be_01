@@ -203,6 +203,9 @@
 	<string name="SimpleClient">SimpleClient的应用</string>
 	<string name="URLClient">URLClient 的应用 </string>
 	
+	<string name="GetPostMainActivity">GetPostMainActivity 的应用</string>
+	<string name="sendReq">发送Get请求</string>
+	<string name="getReq">获取Post请求</string>
 	<string name="TwoContentsActivity">第二章内容</string>
 	<string name="ThreeContentsActivity">第三章内容</string>
 	<string name="FiveContentsActivity">第五章内容</string>

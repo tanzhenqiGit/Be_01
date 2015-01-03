@@ -555,6 +555,11 @@
             android:label="URLClient">
         </activity>
         
+        <activity 
+            android:name="com.example.contents.thirteen.postutil.GetPostMainActivity"
+            android:label="GetPostMainActivity">
+        </activity>
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />

@@ -132,7 +132,7 @@
         <item >13.1 SimpleClient </item>
         <item >13.2 MutiThreadClient </item>
         <item >13.3 URLClient </item>
-        <item >13.4 </item>
+        <item >13.4 HTTPGetPost </item>
     </string-array>
     
     <string-array name="chapterFourteenContents">

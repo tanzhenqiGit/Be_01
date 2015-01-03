@@ -10,6 +10,7 @@
 package com.example.contents.thirteen;
 
 import com.example.contents.thirteen.multi.MutiThreadClient;
+import com.example.contents.thirteen.postutil.GetPostMainActivity;
 import com.example.contents.thirteen.simpleclient.SimpleClient;
 import com.example.contents.thirteen.url.URLClient;
 import com.example.dandan.R;
@@ -36,6 +37,7 @@ public class ThirteenContentsActivity extends Activity {
 	private final int SIMPLE_CLIENT = 0;
 	private final int MULTI_THREAD_CLIENT = 1;
 	private final int URL_CLIENT = 2;
+	private final int HTTP_GET_POST = 3;
 	
 	private void ListCallBack()
 	{
@@ -60,6 +62,11 @@ public class ThirteenContentsActivity extends Activity {
 						Intent url_client_intent = new Intent(ThirteenContentsActivity.this, 
 								URLClient.class);
 						startActivity(url_client_intent);
+						break;
+					case HTTP_GET_POST:
+						Intent http_get_post_intent = new Intent(ThirteenContentsActivity.this, 
+								GetPostMainActivity.class);
+						startActivity(http_get_post_intent);
 						break;
 					default:
 						
