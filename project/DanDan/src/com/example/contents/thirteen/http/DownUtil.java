@@ -9,9 +9,9 @@
 */ 
 package com.example.contents.thirteen.http;
 
+import java.io.InputStream;
 import java.io.RandomAccessFile;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
@@ -76,7 +76,12 @@ public class DownUtil {
 		int sumSize = 0;
 		for (int i = 0; i < mThreadNum; i++)
 		{
-			sumSize += mThreads[i].mLength;
+			if (mThreads[i] != null) {
+				sumSize += mThreads[i].mLength;
+			}
+		}
+		if (mFileSize <= 0) {
+			return 0;
 		}
 		
 		return sumSize * 1.0 / mFileSize;
@@ -113,7 +118,21 @@ public class DownUtil {
 				URL url = new URL(mPath);
 				HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 				conn.setConnectTimeout(5 * 1000);
+				conn.setRequestMethod("GET");
+				//conn.setRequestProperty(field, newValue)
+				conn.setRequestProperty("Accept-Language", "zh-CN");
+				conn.setRequestProperty("Charset", "UTF-8");
 				
+				InputStream inStream = conn.getInputStream();
+				inStream.skip(this.mStartPos);
+				byte[] buffer = new byte[1024];
+				int hasRead = 0;
+				while (mLength < mCurrentPartSize && (hasRead = inStream.read(buffer)) != -1) {
+					mCurrentPart.write(buffer, 0, hasRead);
+					mLength += hasRead;
+				}
+				mCurrentPart.close();
+				inStream.close();
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

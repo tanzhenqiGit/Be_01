@@ -203,6 +203,11 @@
 	<string name="SimpleClient">SimpleClient的应用</string>
 	<string name="URLClient">URLClient 的应用 </string>
 	
+	<string name="MultiThreadDownActivity">MultiThreadDownActivity</string>
+	<string name="defaultName">/mnt/sdcard/a.rar</string>
+	<string name="download">下载</string>
+	<string name="defaultPath">http://www.</string>
+	
 	<string name="GetPostMainActivity">GetPostMainActivity 的应用</string>
 	<string name="sendReq">发送Get请求</string>
 	<string name="getReq">获取Post请求</string>

@@ -9,6 +9,7 @@
 */ 
 package com.example.contents.thirteen;
 
+import com.example.contents.thirteen.http.MultiThreadDownActivity;
 import com.example.contents.thirteen.multi.MutiThreadClient;
 import com.example.contents.thirteen.postutil.GetPostMainActivity;
 import com.example.contents.thirteen.simpleclient.SimpleClient;
@@ -38,6 +39,7 @@ public class ThirteenContentsActivity extends Activity {
 	private final int MULTI_THREAD_CLIENT = 1;
 	private final int URL_CLIENT = 2;
 	private final int HTTP_GET_POST = 3;
+	private final int HTTP_MULT_THREAD_DOWNLOAD = 4;
 	
 	private void ListCallBack()
 	{
@@ -67,6 +69,11 @@ public class ThirteenContentsActivity extends Activity {
 						Intent http_get_post_intent = new Intent(ThirteenContentsActivity.this, 
 								GetPostMainActivity.class);
 						startActivity(http_get_post_intent);
+						break;
+					case HTTP_MULT_THREAD_DOWNLOAD:
+						Intent http_mult_thread_donw_intent = new Intent(ThirteenContentsActivity.this, 
+								MultiThreadDownActivity.class);
+						startActivity(http_mult_thread_donw_intent);
 						break;
 					default:
 						

@@ -133,6 +133,7 @@
         <item >13.2 MutiThreadClient </item>
         <item >13.3 URLClient </item>
         <item >13.4 HTTPGetPost </item>
+        <item >13.5 HTTPMultThreadDownload </item>
     </string-array>
     
     <string-array name="chapterFourteenContents">

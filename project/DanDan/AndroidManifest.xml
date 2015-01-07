@@ -560,6 +560,11 @@
             android:label="GetPostMainActivity">
         </activity>
         
+        <activity 
+            android:name="com.example.contents.thirteen.http.MultiThreadDownActivity"
+            android:label="MultiThreadDownActivity">
+        </activity>
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />
