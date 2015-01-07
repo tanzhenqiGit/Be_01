@@ -208,6 +208,7 @@
 	<string name="download">下载</string>
 	<string name="defaultPath">http://www.</string>
 	<string name="MiniBrowser">MiniBrowser</string>
+	<string name="ViewHtmlActivity">ViewHtmlActivity</string>
 	
 	<string name="GetPostMainActivity">GetPostMainActivity 的应用</string>
 	<string name="sendReq">发送Get请求</string>
