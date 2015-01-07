@@ -14,6 +14,7 @@ import com.example.contents.thirteen.multi.MutiThreadClient;
 import com.example.contents.thirteen.postutil.GetPostMainActivity;
 import com.example.contents.thirteen.simpleclient.SimpleClient;
 import com.example.contents.thirteen.url.URLClient;
+import com.example.contents.thirteen.web.MiniBrowser;
 import com.example.dandan.R;
 
 import android.app.Activity;
@@ -40,6 +41,7 @@ public class ThirteenContentsActivity extends Activity {
 	private final int URL_CLIENT = 2;
 	private final int HTTP_GET_POST = 3;
 	private final int HTTP_MULT_THREAD_DOWNLOAD = 4;
+	private final int WEB_BROWSER = 5;
 	
 	private void ListCallBack()
 	{
@@ -74,6 +76,11 @@ public class ThirteenContentsActivity extends Activity {
 						Intent http_mult_thread_donw_intent = new Intent(ThirteenContentsActivity.this, 
 								MultiThreadDownActivity.class);
 						startActivity(http_mult_thread_donw_intent);
+						break;
+					case WEB_BROWSER:
+						Intent web_browser_intent = new Intent(ThirteenContentsActivity.this, 
+							MiniBrowser.class);
+						startActivity(web_browser_intent);
 						break;
 					default:
 						
