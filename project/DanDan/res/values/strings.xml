@@ -210,6 +210,9 @@
 	<string name="MiniBrowser">MiniBrowser</string>
 	<string name="ViewHtmlActivity">ViewHtmlActivity</string>
 	
+	<string name="Province">省份</string>
+	<string name="city">城市</string>
+	
 	<string name="GetPostMainActivity">GetPostMainActivity 的应用</string>
 	<string name="sendReq">发送Get请求</string>
 	<string name="getReq">获取Post请求</string>
