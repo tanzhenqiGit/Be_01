@@ -14,6 +14,7 @@ import com.example.contents.thirteen.multi.MutiThreadClient;
 import com.example.contents.thirteen.postutil.GetPostMainActivity;
 import com.example.contents.thirteen.simpleclient.SimpleClient;
 import com.example.contents.thirteen.url.URLClient;
+import com.example.contents.thirteen.weather.WeatherActivity;
 import com.example.contents.thirteen.web.MiniBrowser;
 import com.example.contents.thirteen.web.ViewHtmlActivity;
 import com.example.dandan.R;
@@ -44,6 +45,7 @@ public class ThirteenContentsActivity extends Activity {
 	private final int HTTP_MULT_THREAD_DOWNLOAD = 4;
 	private final int WEB_BROWSER = 5;
 	private final int VIEW_HTML = 6;
+	private final int WEB_WEATHER = 7;
 	
 	private void ListCallBack()
 	{
@@ -87,7 +89,12 @@ public class ThirteenContentsActivity extends Activity {
 					case VIEW_HTML:
 						Intent view_html_intent = new Intent(ThirteenContentsActivity.this, 
 								ViewHtmlActivity.class);
-							startActivity(view_html_intent);
+						startActivity(view_html_intent);
+						break;
+					case WEB_WEATHER:
+						Intent web_weather_intent = new Intent(ThirteenContentsActivity.this, 
+								WeatherActivity.class);
+						startActivity(web_weather_intent);
 						break;
 					default:
 						

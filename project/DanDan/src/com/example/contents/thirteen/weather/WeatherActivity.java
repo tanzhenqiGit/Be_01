@@ -23,7 +23,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -49,10 +48,16 @@ public class WeatherActivity extends Activity {
 		setProvincesSpinner();
     }
     
+    private int parseIcon(String strIcon)
+    {
+    	Log.d(TAG, "parseIncon strIcon=" + strIcon);
+    	return 0;
+    }
+    
     private void showWeather(String City)
     {
     	String todayWeather = null;
-    	String tommorrowWeather = null;
+    	String tomorrowWeather = null;
     	String afterDayWeather = null;
     	String currentWeather = null;
     	
@@ -65,7 +70,52 @@ public class WeatherActivity extends Activity {
     	currentWeather = detail.getProperty(4).toString();
     	Log.d(TAG, "showWeather::currentWeather=" + currentWeather);
     	
+    	String date = detail.getProperty(7).toString();
+    	todayWeather = "今天" + date.split(" ")[0];
+    	todayWeather = todayWeather + "\n 天气：" + date.split(" ")[1];
+    	todayWeather = todayWeather + "\n 气温：" + detail.getProperty(8).toString();
+    	todayWeather = todayWeather + "\n 风力：" + detail.getProperty(9).toString() + "\n";
+    	
+    	todayIcon[0] = parseIcon(detail.getProperty(10).toString());
+    	todayIcon[1] = parseIcon(detail.getProperty(11).toString());
+    	
+    	date = detail.getProperty(12).toString();
+    	tomorrowWeather = "明天：" + date.split(" ")[0];
+    	tomorrowWeather = tomorrowWeather + "\n 天气：" + date.split(" ")[1];
+    	tomorrowWeather = tomorrowWeather + "\n 气温：" + detail.getProperty(13).toString();
+    	tomorrowWeather = tomorrowWeather + "\n 风力：" + detail.getProperty(14).toString() + "\n";
+    	
+    	tomorrowIcon[0] = parseIcon(detail.getProperty(15).toString());
+    	tomorrowIcon[1] = parseIcon(detail.getProperty(16).toString());
+    	
+    	
+    	date = detail.getProperty(17).toString();
+    	afterDayWeather = "后天：" + date.split(" ")[0];
+    	afterDayWeather = afterDayWeather + "\n 天气：" + date.split(" ")[1];
+    	afterDayWeather = afterDayWeather + "\n 气温：" + detail.getProperty(18).toString();
+    	afterDayWeather = afterDayWeather + "\n 风力：" + detail.getProperty(19).toString() + "\n";
+    
+    	afterdayIcon[0] = parseIcon(detail.getProperty(20).toString());
+    	afterdayIcon[1] = parseIcon(detail.getProperty(21).toString());
+    	
+    	
+    	if (mCurrentShow != null) {
+    		mCurrentShow.setText(currentWeather);
+    	}
+    	
+    	if (mTodayShow != null) {
+    		mTodayShow.setText(todayWeather);
+    	}
+    	
+    	if (mTomorrowShow != null) {
+    		mTomorrowShow.setText(tomorrowWeather);
+    	}
+    	
+    	if (mAfterdayShow != null) {
+    		mAfterdayShow.setText(afterDayWeather);
+    	}
     }
+    	
     
     private void setCitysSpiner()
     {
@@ -152,7 +202,6 @@ public class WeatherActivity extends Activity {
     	mTomorrowIcon1 = (ImageView) findViewById(R.id.thirteen_web_service_main_tommorrow_icon_1);
     	mTomorrowIcon2 = (ImageView) findViewById(R.id.thirteen_web_service_main_tommorrow_icon_2);
     	mTomorrowShow = (TextView) findViewById(R.id.thirteen_web_service_main_tommorrow_show_txt);
-    	
     	
     	mAfterdayICon1 = (ImageView) findViewById(R.id.thirteen_web_service_main_afterday_icon_1);
     	mAfterdayICon2 = (ImageView) findViewById(R.id.thirteen_web_service_main_afterday_icon_2);
