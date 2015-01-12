@@ -118,12 +118,13 @@ public class WebServiceUtil {
 		Log.d(TAG, "getWeatherByCity cityName=" + cityName);
 		String methodName = "getWeather";
 		HttpTransportSE ht = new HttpTransportSE(SERVICE_URL);
-		
 		ht.debug = true;
+		
 		SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
-		SoapObject soapObject = new SoapObject(SERVICE_NS,methodName);
-		soapObject.addProperty("theCityCode",cityName);
+		SoapObject soapObject = new SoapObject(SERVICE_NS, methodName);
+		soapObject.addProperty("theCityCode", cityName);
 		envelope.bodyOut = soapObject;
+		envelope.dotNet = true;
 		
 		try {
 			ht.call(SERVICE_NS + methodName, envelope);

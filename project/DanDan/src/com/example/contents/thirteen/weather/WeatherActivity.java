@@ -17,6 +17,8 @@ import com.example.dandan.R;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -33,19 +35,48 @@ import android.widget.TextView;
 public class WeatherActivity extends Activity {
 
 	private final String TAG = "WebServiceUtil";
+	private final int MSG_TYPE_GET_PROVICES = 0x01;
+	private final int MSG_TYPE_GET_CITYS = 0x02;
+	private final int MSG_TYPE_GET_WEATHER = 0x03;
     private Spinner mProvinceSpr, mCitySpr;
     private ImageView mTodayIcon1, mTodayIcon2, mTomorrowIcon1, mTomorrowIcon2, mAfterdayICon1, mAfterdayICon2;
     private TextView mTodayShow, mTomorrowShow, mAfterdayShow, mCurrentShow;
     
     private List<String> mProvinces , mCitys;
+    private String mSelectProvince,mSelectCity;
+    private SoapObject mWeather = null;
     
+    private Handler mHandler = new Handler()
+    {
+
+		/* (non-Javadoc)
+		 * @see android.os.Handler#handleMessage(android.os.Message)
+		 */
+		@Override
+		public void handleMessage(Message msg) {
+			Log.d(TAG, "Receiver msg id = " + msg.what);
+			switch(msg.what) {
+			case MSG_TYPE_GET_PROVICES:
+				setProvincesSpinner();
+				break;
+			case MSG_TYPE_GET_CITYS:
+				setCitysSpiner();
+				break;
+			case MSG_TYPE_GET_WEATHER:
+				showWeather();
+				break;
+			default:
+				
+				break;
+			}
+		}
+    	
+    };
     
     private void HandlerOnCreate()
     {
     	Log.d(TAG, "HandlerOnCreate");
-		setContentView(R.layout.thirteen_web_service_main);
-		initialize();
-		setProvincesSpinner();
+    	getProvincesList();
     }
     
     private int parseIcon(String strIcon)
@@ -54,7 +85,7 @@ public class WeatherActivity extends Activity {
     	return 0;
     }
     
-    private void showWeather(String City)
+    private void showWeather()
     {
     	String todayWeather = null;
     	String tomorrowWeather = null;
@@ -65,8 +96,11 @@ public class WeatherActivity extends Activity {
     	int tomorrowIcon[] = new int [2];
     	int afterdayIcon[] = new int [2];
     	
-    	SoapObject detail = WebServiceUtil.getWeatherByCity(City);
-    	
+    	if (mWeather == null) {
+    		Log.d(TAG, "showWeather mWeather == null");
+    		return;
+    	}
+    	SoapObject detail = mWeather;
     	currentWeather = detail.getProperty(4).toString();
     	Log.d(TAG, "showWeather::currentWeather=" + currentWeather);
     	
@@ -138,7 +172,7 @@ public class WeatherActivity extends Activity {
 						int position, long id) {
 					String city = mCitySpr.getSelectedItem().toString();
 					Log.d(TAG, "onItemSelected city" + city);
-					showWeather(city);
+					getWeatherByCity(city);
 				}
 
 				@Override
@@ -154,7 +188,6 @@ public class WeatherActivity extends Activity {
     private void setProvincesSpinner()
     {
     	Log.d(TAG, "setProvincesSpinner --start--");
-    	mProvinces = WebServiceUtil.getProvinceList();
     	if (mProvinces == null) {
     		Log.d(TAG, "setProvincesSpinner mProvinces == null");
     		return;
@@ -172,8 +205,7 @@ public class WeatherActivity extends Activity {
 						int position, long id) {
 					String province = mProvinceSpr.getSelectedItem().toString();
 					Log.d(TAG, "setOnItemSelectedListener:province = " + province);
-					mCitys = WebServiceUtil.getCityListByProvince(province);
-					setCitysSpiner();
+					getCitysList(province);
 					
 				}
 
@@ -183,10 +215,77 @@ public class WeatherActivity extends Activity {
 				}
     			
 			});
+			
     	}
-    	
-    	
-    	
+    }
+    
+    private void printList(List<String> list)
+    {
+    	Log.d(TAG, "list size = " + mProvinces.size());
+    	//for debug ....
+    	for (int index = 0; index < list.size(); index ++)
+    	{
+    		Log.d(TAG, index + ":" + list.get(index));
+    	}
+    	//end for debug ...
+    }
+    
+    private void getWeatherByCity(String City)
+    {
+    	Log.d(TAG, "getWeatherByCity(" + City + ") --start--");
+    	mSelectCity = City;
+    	new Thread()
+    	{
+			@Override
+			public void run() {
+				SoapObject detail = WebServiceUtil.getWeatherByCity(mSelectCity);
+				if (detail != null && mHandler != null) {
+					mWeather = detail;
+					mHandler.sendEmptyMessage(MSG_TYPE_GET_WEATHER);
+				}
+			}
+    		
+    	}.start();
+    }
+    
+    private void getCitysList(String province)
+    {
+    	Log.d(TAG, "getCitysList(" + province + ") --start--");
+    	mSelectProvince = province;
+    	new Thread()
+    	{
+			@Override
+			public void run() {
+				Log.d(TAG, "getCityList run()");
+				mCitys = WebServiceUtil.getCityListByProvince(mSelectProvince);
+				printList(mCitys);
+				if (mCitys.size() > 0 && mHandler != null) {
+					mHandler.sendEmptyMessage(MSG_TYPE_GET_CITYS);
+				}
+			}
+    		
+    	}.start();
+        
+    }
+    
+    
+    
+    private void getProvincesList()
+    {
+    	Log.d(TAG, "setProvincesSpinner --start--");
+		new Thread()
+		{
+			@Override
+			public void run() {
+				Log.d(TAG, "getProvincesList run()");
+		    	mProvinces = WebServiceUtil.getProvinceList();
+		    	printList(mProvinces);
+		    	if (mProvinces.size() > 0 && mHandler != null) {
+		    		mHandler.sendEmptyMessage(MSG_TYPE_GET_PROVICES);
+		    	}
+			}
+			
+		}.start();
     }
     
     private void initialize()
@@ -215,6 +314,8 @@ public class WeatherActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		setContentView(R.layout.thirteen_web_service_main);
+		initialize();
 		HandlerOnCreate();
 	}
 
