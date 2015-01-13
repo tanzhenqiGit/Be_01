@@ -31,7 +31,7 @@ public class WebServiceUtil {
 	public static final String TAG = "WebServiceUtil ";
 	public static final String  SERVICE_NS = "http://WebXml.com.cn/";
 	public static final String SERVICE_URL = "http://webservice.webxml.com.cn/WebServices/WeatherWS.asmx";
-
+   // public static final String USER_ID = "41aa15c5961645fd814f639baf0d8a6c";
 	
 	private static List<String> parseProvinceOrCity(SoapObject detail)
 	{
@@ -113,24 +113,26 @@ public class WebServiceUtil {
 		return null;
 	}
 
-	public static SoapObject getWeatherByCity(String cityName)
+	public static SoapObject getWeatherByCity(String city)
 	{
-		Log.d(TAG, "getWeatherByCity cityName=" + cityName);
 		String methodName = "getWeather";
 		HttpTransportSE ht = new HttpTransportSE(SERVICE_URL);
 		ht.debug = true;
 		
-		SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
 		SoapObject soapObject = new SoapObject(SERVICE_NS, methodName);
-		soapObject.addProperty("theCityCode", cityName);
+		soapObject.addProperty("theCityCode", methodName);
+		SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
 		envelope.bodyOut = soapObject;
 		envelope.dotNet = true;
 		
 		try {
 			ht.call(SERVICE_NS + methodName, envelope);
-			SoapObject result = (SoapObject) envelope.bodyIn;
-			SoapObject detail = (SoapObject) result.getProperty(methodName + "Result");
-			return detail;
+			if (envelope.getResponse() != null) {
+				SoapObject result = (SoapObject) envelope.bodyIn;
+				SoapObject detail = (SoapObject) result.getProperty(methodName + "Result");
+				Log.d(TAG,"get Weather end");
+				return detail;
+			}
 		} catch (HttpResponseException e) {
 			Log.d(TAG, "getWeatherByCity::HttpResponseException");
 			e.printStackTrace();

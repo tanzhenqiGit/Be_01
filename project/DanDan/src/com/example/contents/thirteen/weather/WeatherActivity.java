@@ -100,37 +100,37 @@ public class WeatherActivity extends Activity {
     		Log.d(TAG, "showWeather mWeather == null");
     		return;
     	}
-    	SoapObject detail = mWeather;
-    	currentWeather = detail.getProperty(4).toString();
+
+    	currentWeather = mWeather.getProperty(4).toString();
     	Log.d(TAG, "showWeather::currentWeather=" + currentWeather);
     	
-    	String date = detail.getProperty(7).toString();
+    	String date = mWeather.getProperty(7).toString();
     	todayWeather = "今天" + date.split(" ")[0];
     	todayWeather = todayWeather + "\n 天气：" + date.split(" ")[1];
-    	todayWeather = todayWeather + "\n 气温：" + detail.getProperty(8).toString();
-    	todayWeather = todayWeather + "\n 风力：" + detail.getProperty(9).toString() + "\n";
+    	todayWeather = todayWeather + "\n 气温：" + mWeather.getProperty(8).toString();
+    	todayWeather = todayWeather + "\n 风力：" + mWeather.getProperty(9).toString() + "\n";
     	
-    	todayIcon[0] = parseIcon(detail.getProperty(10).toString());
-    	todayIcon[1] = parseIcon(detail.getProperty(11).toString());
+    	todayIcon[0] = parseIcon(mWeather.getProperty(10).toString());
+    	todayIcon[1] = parseIcon(mWeather.getProperty(11).toString());
     	
-    	date = detail.getProperty(12).toString();
+    	date = mWeather.getProperty(12).toString();
     	tomorrowWeather = "明天：" + date.split(" ")[0];
     	tomorrowWeather = tomorrowWeather + "\n 天气：" + date.split(" ")[1];
-    	tomorrowWeather = tomorrowWeather + "\n 气温：" + detail.getProperty(13).toString();
-    	tomorrowWeather = tomorrowWeather + "\n 风力：" + detail.getProperty(14).toString() + "\n";
+    	tomorrowWeather = tomorrowWeather + "\n 气温：" + mWeather.getProperty(13).toString();
+    	tomorrowWeather = tomorrowWeather + "\n 风力：" + mWeather.getProperty(14).toString() + "\n";
     	
-    	tomorrowIcon[0] = parseIcon(detail.getProperty(15).toString());
-    	tomorrowIcon[1] = parseIcon(detail.getProperty(16).toString());
+    	tomorrowIcon[0] = parseIcon(mWeather.getProperty(15).toString());
+    	tomorrowIcon[1] = parseIcon(mWeather.getProperty(16).toString());
     	
     	
-    	date = detail.getProperty(17).toString();
+    	date = mWeather.getProperty(17).toString();
     	afterDayWeather = "后天：" + date.split(" ")[0];
     	afterDayWeather = afterDayWeather + "\n 天气：" + date.split(" ")[1];
-    	afterDayWeather = afterDayWeather + "\n 气温：" + detail.getProperty(18).toString();
-    	afterDayWeather = afterDayWeather + "\n 风力：" + detail.getProperty(19).toString() + "\n";
+    	afterDayWeather = afterDayWeather + "\n 气温：" + mWeather.getProperty(18).toString();
+    	afterDayWeather = afterDayWeather + "\n 风力：" + mWeather.getProperty(19).toString() + "\n";
     
-    	afterdayIcon[0] = parseIcon(detail.getProperty(20).toString());
-    	afterdayIcon[1] = parseIcon(detail.getProperty(21).toString());
+    	afterdayIcon[0] = parseIcon(mWeather.getProperty(20).toString());
+    	afterdayIcon[1] = parseIcon(mWeather.getProperty(21).toString());
     	
     	
     	if (mCurrentShow != null) {
@@ -171,7 +171,7 @@ public class WeatherActivity extends Activity {
 				public void onItemSelected(AdapterView<?> parent, View view,
 						int position, long id) {
 					String city = mCitySpr.getSelectedItem().toString();
-					Log.d(TAG, "onItemSelected city" + city);
+					Log.d(TAG, "onItemSelected city:" + city);
 					getWeatherByCity(city);
 				}
 
@@ -222,23 +222,25 @@ public class WeatherActivity extends Activity {
     private void printList(List<String> list)
     {
     	Log.d(TAG, "list size = " + mProvinces.size());
-    	//for debug ....
+    	/*
     	for (int index = 0; index < list.size(); index ++)
     	{
     		Log.d(TAG, index + ":" + list.get(index));
     	}
+    	*/
     	//end for debug ...
     }
     
     private void getWeatherByCity(String City)
     {
-    	Log.d(TAG, "getWeatherByCity(" + City + ") --start--");
     	mSelectCity = City;
+    	Log.d(TAG, "getWeatherByCity(" + mSelectCity + ") --start--");
     	new Thread()
     	{
 			@Override
 			public void run() {
 				SoapObject detail = WebServiceUtil.getWeatherByCity(mSelectCity);
+				
 				if (detail != null && mHandler != null) {
 					mWeather = detail;
 					mHandler.sendEmptyMessage(MSG_TYPE_GET_WEATHER);
