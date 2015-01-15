@@ -9,11 +9,13 @@
 */ 
 package com.example.contents.fourteen;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.fourteen.livewallpaper.LiveWallPaperService;
 import com.example.dandan.R;
 
 /**
@@ -23,17 +25,20 @@ import com.example.dandan.R;
 public class FourteenContentActivity extends CommonListActivity<String> {
 
 	private final String TAG = "FourteenContentActivity";
+	private final int LIVE_WALL_PAPER = 0;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
 	@Override
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
-		Log.d(TAG, "handlerOnItemListClicked!");
+		Log.d(TAG, "handlerOnItemListClicked! position=" + position);
 		switch (position)
 		{
-		case 0:
-			
+		case LIVE_WALL_PAPER:
+			Intent live_wall_paper = new Intent(FourteenContentActivity.this,
+					LiveWallPaperService.class);
+			startService(live_wall_paper);
 			break;
 		default:
 			

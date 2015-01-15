@@ -694,7 +694,8 @@ public final class R {
     public static final class xml {
         public static final int four_other_activity_preference_headers=0x7f050000;
         public static final int four_other_activity_preferences=0x7f050001;
-        public static final int ten_other_activity_display_prefs=0x7f050002;
+        public static final int livewallpaper=0x7f050002;
+        public static final int ten_other_activity_display_prefs=0x7f050003;
     }
     public static final class styleable {
         /** Attributes that can be used with a Gallery.

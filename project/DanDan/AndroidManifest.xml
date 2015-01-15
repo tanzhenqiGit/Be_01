@@ -626,6 +626,18 @@
         <service android:name="com.example.contents.ten.musicbox.MusicBoxService" >
         </service>
         
+        <service android:name="com.example.contents.fourteen.livewallpaper.LiveWallPaperService"
+            android:permission="android.permission.BIND_WALLPAPER" >
+           
+            <intent-filter>
+            	<action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/livewallpaper"
+                />
+        </service>
+        
         <provider
             android:name="com.example.contents.nineFirstContent.FirstProvider"
             android:authorities="com.example.contents.nineFirstContent"
