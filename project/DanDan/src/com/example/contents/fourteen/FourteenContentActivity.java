@@ -16,6 +16,7 @@ import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
 import com.example.contents.fourteen.livewallpaper.LiveWallPaperService;
+import com.example.contents.fourteen.shortcut.AddShortCutActivity;
 import com.example.dandan.R;
 
 /**
@@ -26,6 +27,7 @@ public class FourteenContentActivity extends CommonListActivity<String> {
 
 	private final String TAG = "FourteenContentActivity";
 	private final int LIVE_WALL_PAPER = 0;
+	private final int ADD_SHORT_CUT = 1;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -39,6 +41,11 @@ public class FourteenContentActivity extends CommonListActivity<String> {
 			Intent live_wall_paper = new Intent(FourteenContentActivity.this,
 					LiveWallPaperService.class);
 			startService(live_wall_paper);
+			break;
+		case ADD_SHORT_CUT:
+			Intent add_short_cut_intent = new Intent(FourteenContentActivity.this,
+					AddShortCutActivity.class);
+			startActivity(add_short_cut_intent);
 			break;
 		default:
 			

@@ -9,8 +9,10 @@ package com.example.dandan;
 
 public final class R {
     public static final class animator {
-        public static final int slide_in_right=0x7f040000;
-        public static final int slide_out_left=0x7f040001;
+        public static final int anim=0x7f040000;
+        public static final int reverse=0x7f040001;
+        public static final int slide_in_right=0x7f040002;
+        public static final int slide_out_left=0x7f040003;
     }
     public static final class array {
         public static final int Contents=0x7f070000;
@@ -465,6 +467,7 @@ public final class R {
         public static final int ActivityForResult=0x7f090050;
         public static final int ActivityMenu=0x7f09009a;
         public static final int AdapterViewFliperActivity=0x7f090079;
+        public static final int AddShortCutActivity=0x7f0900c2;
         public static final int AidlClient=0x7f09001f;
         public static final int AlarmChangeWallpaper=0x7f090033;
         public static final int AlarmManager=0x7f090030;
@@ -498,14 +501,14 @@ public final class R {
         public static final int Decrease=0x7f09006d;
         public static final int Default=0x7f090082;
         public static final int DialogActivity=0x7f09008c;
-        public static final int ElevenContents=0x7f0900c8;
+        public static final int ElevenContents=0x7f0900c9;
         public static final int ExpandableListViewActivity=0x7f090077;
         public static final int FirstServiceTest=0x7f09001c;
-        public static final int FiveContentsActivity=0x7f0900c7;
+        public static final int FiveContentsActivity=0x7f0900c8;
         public static final int FourContentsActivity=0x7f09001a;
-        public static final int FourteenContentActivity=0x7f0900ca;
+        public static final int FourteenContentActivity=0x7f0900cb;
         public static final int GallaryActivity=0x7f090078;
-        public static final int GetPostMainActivity=0x7f0900c2;
+        public static final int GetPostMainActivity=0x7f0900c3;
         public static final int GridViewTest=0x7f090075;
         public static final int GroupSend=0x7f090027;
         public static final int Hide=0x7f09007e;
@@ -573,14 +576,14 @@ public final class R {
         public static final int TelephonyStatus=0x7f090022;
         public static final int TenContentsActivity=0x7f09001b;
         public static final int TextSwitchActivity=0x7f090085;
-        public static final int ThirteenContentsActivity=0x7f0900c9;
-        public static final int ThreeContentsActivity=0x7f0900c6;
+        public static final int ThirteenContentsActivity=0x7f0900ca;
+        public static final int ThreeContentsActivity=0x7f0900c7;
         public static final int TimePick=0x7f090093;
         public static final int TitleProgressBar=0x7f09007f;
         public static final int ToastActivity=0x7f090097;
         public static final int ToggleButtonActivity=0x7f09006a;
         public static final int TouchStatus=0x7f09005f;
-        public static final int TwoContentsActivity=0x7f0900c5;
+        public static final int TwoContentsActivity=0x7f0900c6;
         public static final int URLClient=0x7f0900b8;
         public static final int Vertical=0x7f090065;
         public static final int Vibrator=0x7f09002f;
@@ -623,7 +626,7 @@ public final class R {
         public static final int font_size=0x7f09009e;
         public static final int getInfo=0x7f090013;
         public static final int getPhoneSts=0x7f090061;
-        public static final int getReq=0x7f0900c4;
+        public static final int getReq=0x7f0900c5;
         public static final int getServiceSts=0x7f090016;
         public static final int hello_world=0x7f090002;
         public static final int hideActionBar=0x7f0900ae;
@@ -644,7 +647,7 @@ public final class R {
         public static final int select=0x7f090029;
         public static final int sendBroadCast=0x7f090035;
         public static final int sendGroupMsg=0x7f090028;
-        public static final int sendReq=0x7f0900c3;
+        public static final int sendReq=0x7f0900c4;
         public static final int sendmessage=0x7f090026;
         public static final int setTime=0x7f090032;
         public static final int sex=0x7f09004c;
