@@ -580,6 +580,10 @@
             android:label="WeatherActivity">
         </activity>
         
+        <activity 
+            android:name="com.example.contents.fourteen.FourteenContentActivity"
+            android:label="FourteenContentActivity">
+        </activity>
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
