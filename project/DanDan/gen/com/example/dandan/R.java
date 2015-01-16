@@ -17,6 +17,7 @@ public final class R {
     public static final class array {
         public static final int Contents=0x7f070000;
         public static final int chapterElevenContents=0x7f070007;
+        public static final int chapterFifteenContents=0x7f07000a;
         public static final int chapterFiveContents=0x7f070004;
         public static final int chapterFourContents=0x7f070003;
         public static final int chapterFourteenContents=0x7f070009;
@@ -25,20 +26,20 @@ public final class R {
         public static final int chapterThirteenContents=0x7f070008;
         public static final int chapterThreeContents=0x7f070002;
         public static final int chapterTwoContents=0x7f070001;
-        public static final int gender_name_list=0x7f07000d;
-        public static final int gender_value_list=0x7f07000e;
-        public static final int light_strenght_list=0x7f07000f;
-        public static final int light_value_list=0x7f070010;
+        public static final int gender_name_list=0x7f07000e;
+        public static final int gender_value_list=0x7f07000f;
+        public static final int light_strenght_list=0x7f070010;
+        public static final int light_value_list=0x7f070011;
         /**  声明一个名为phoneType的字符串数组 
          */
-        public static final int phoneType=0x7f07000c;
-        public static final int provinces=0x7f070011;
+        public static final int phoneType=0x7f07000d;
+        public static final int provinces=0x7f070012;
         /**  声明一个名为simState的字符串数组 
          */
-        public static final int simState=0x7f07000b;
+        public static final int simState=0x7f07000c;
         /**  声明一个名为statusNames的字符串数组 
          */
-        public static final int statusNames=0x7f07000a;
+        public static final int statusNames=0x7f07000b;
     }
     public static final class attr {
     }
@@ -503,6 +504,7 @@ public final class R {
         public static final int DialogActivity=0x7f09008c;
         public static final int ElevenContents=0x7f0900c9;
         public static final int ExpandableListViewActivity=0x7f090077;
+        public static final int FifteenContentsActivity=0x7f0900cc;
         public static final int FirstServiceTest=0x7f09001c;
         public static final int FiveContentsActivity=0x7f0900c8;
         public static final int FourContentsActivity=0x7f09001a;

@@ -593,6 +593,12 @@
             </intent-filter>
         </activity>
         
+        
+         <activity 
+            android:name="com.example.contents.fifteen.FifteenContentsActivity"
+            android:label="FifteenContentsActivity">
+         </activity>           
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />

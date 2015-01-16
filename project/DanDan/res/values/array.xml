@@ -142,8 +142,11 @@
     <string-array name="chapterFourteenContents">
         <item >14.1 LiveWallPapers </item>
         <item >14.2 AddShortCut </item>
-        <item >14.3 </item>
-        <item >14.4 </item>
+    </string-array>
+    
+    <string-array name="chapterFifteenContents">
+        <item > 15.1 </item>
+        <item > 15.2 </item>
     </string-array>
     
     <!-- 声明一个名为statusNames的字符串数组 -->
