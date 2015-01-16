@@ -588,6 +588,9 @@
         <activity 
             android:name="com.example.contents.fourteen.shortcut.AddShortCutActivity"
             android:label="AddShortCutActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+            </intent-filter>
         </activity>
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >
@@ -675,9 +678,21 @@
                 <action android:name="sortedBroadCast.action.SEND_BRAOADCAST"/>
             </intent-filter>
         </receiver>
+        
+        <receiver 
+            android:name="com.example.contents.fourteen.desktop.DesktopApp"
+            >
+            <intent-filter >
+                <action  android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data 
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider"
+                />
+            
+        </receiver>
     </application>
     
-    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
@@ -694,6 +709,7 @@
 	<uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
 	<uses-feature android:name="android.hardware.camera" /> 
 	<uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
 	
 
 </manifest>

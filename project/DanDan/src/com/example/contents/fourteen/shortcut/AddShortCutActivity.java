@@ -14,6 +14,7 @@ import java.util.TimerTask;
 
 import com.example.dandan.R;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -31,10 +32,12 @@ import android.widget.ImageView;
  * @author free
  *
  */
+@SuppressLint("HandlerLeak")
 public class AddShortCutActivity extends Activity {
 
 	private final String TAG = "AddShortCutActivity";
 	public final int MSG_TYPE_START_ANIMATION = 0x12;
+	public final int MSG_TYPE_SEND_BROAD_CAST = 0x13;
 	private ImageView mFlowerImg;
 	private Animation mAnim, mReverse;
 	private Button mButton;
@@ -51,15 +54,24 @@ public class AddShortCutActivity extends Activity {
 					Log.d(TAG,"receiver msg MSG_TYPE_START_ANIMATION");
 					mFlowerImg.startAnimation(mReverse);
 				}
+			} else if (msg.what == MSG_TYPE_SEND_BROAD_CAST) {
+				new Thread()
+				{
+					@Override
+					public void run() {
+						addShortCut();
+					}
+					
+				}.start();
 			}
 		}
 		
 		
 	};
 	
-	private void setCallBack()
+	private void addShortCut()
 	{
-		Log.d(TAG, "setCallBack is called");
+		Log.d(TAG, "addShortCut is called");
 		
 		Intent addIntent = new Intent("com.android.launcher.action.INSTALL_SHORTCUT");
 		String title = getResources().getString(R.string.app_name);
@@ -88,7 +100,9 @@ public class AddShortCutActivity extends Activity {
 				
 				@Override
 				public void onClick(View v) {
-					setCallBack();
+					if (mHandler != null) {
+						mHandler.sendEmptyMessage(MSG_TYPE_SEND_BROAD_CAST);
+					}
 				}
 			});
 		}
