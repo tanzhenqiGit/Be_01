@@ -9,10 +9,12 @@
 */ 
 package com.example.contents.fifteen;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.fifteen.sensor.AccelerometerActivity;
 import com.example.dandan.R;
 
 /**
@@ -21,6 +23,7 @@ import com.example.dandan.R;
  */
 public class FifteenContentsActivity extends CommonListActivity<String> {
 
+	private final int SENSOR_MANAGER = 0;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -28,7 +31,10 @@ public class FifteenContentsActivity extends CommonListActivity<String> {
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
 		switch (position) {
-		case 0:
+		case SENSOR_MANAGER:
+			Intent sensor_manager = new Intent(FifteenContentsActivity.this,
+					AccelerometerActivity.class);
+			startActivity(sensor_manager);
 			break;
 		default:
 			

@@ -594,10 +594,15 @@
         </activity>
         
         
-         <activity 
+        <activity 
             android:name="com.example.contents.fifteen.FifteenContentsActivity"
             android:label="FifteenContentsActivity">
-         </activity>           
+        </activity>   
+        
+        <activity 
+            android:name="com.example.contents.fifteen.sensor.AccelerometerActivity"
+            android:label="AccelerometerActivity">
+        </activity>
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
