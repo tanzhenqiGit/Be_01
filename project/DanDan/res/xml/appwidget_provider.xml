@@ -9,7 +9,7 @@
  
 <appwidget-provider
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:minWidth="600dip"
+    android:minWidth="240dip"
     android:minHeight="30dip"
     android:updatePeriodMillis="1000"
     android:initialLayout="@layout/fourteen_led_clock_main"
