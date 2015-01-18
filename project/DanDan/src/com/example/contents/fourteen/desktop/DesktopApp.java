@@ -53,9 +53,13 @@ public class DesktopApp extends AppWidgetProvider {
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
 			int[] appWidgetIds) {
 		Log.d(TAG, "onDeleted appWidgetIds = " + java.util.Arrays.toString(appWidgetIds));
+		//1
 		RemoteViews remoteViews = new RemoteViews(context.getPackageName(),R.layout.common_view_main);
+		//2
 		remoteViews.setImageViewResource(R.id.common_view_main_img, R.drawable.shuangta);
+		//3
 		ComponentName conponentName = new ComponentName(context, DesktopApp.class);
+		//4
 		appWidgetManager.updateAppWidget(conponentName, remoteViews);
 	}
 

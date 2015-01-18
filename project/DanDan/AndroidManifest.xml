@@ -692,6 +692,21 @@
         
         <receiver 
             android:name="com.example.contents.fourteen.desktop.DesktopApp"
+            android:label="DesktopApp"
+            >
+            <intent-filter >
+                <action  android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data 
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_provider"
+                />
+            
+        </receiver>
+        
+        <receiver 
+            android:name="com.example.contents.fourteen.desktop.LedClock"
+            android:label="LedClock"
             >
             <intent-filter >
                 <action  android:name="android.appwidget.action.APPWIDGET_UPDATE"/>

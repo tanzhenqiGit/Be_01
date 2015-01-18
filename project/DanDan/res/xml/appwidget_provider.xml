@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	minWidth:桌面控制的最小宽度
+	minHeight:最小高度
+	updatePeriodMillis:更新频率
+	initaliLayout:初始时显示的布局
+ -->
+ 
+ 
 <appwidget-provider
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:minWidth="150dip"
-    android:minHeight="70dip"
+    android:minWidth="600dip"
+    android:minHeight="30dip"
     android:updatePeriodMillis="1000"
-    android:initialLayout="@layout/common_view_main"
-    
+    android:initialLayout="@layout/fourteen_led_clock_main"
     />
 
 

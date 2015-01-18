@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="480dip"
+    android:layout_height="30dip"
+    android:orientation="horizontal" >
+
+	<!-- 定义5个ImageView来显示液晶数字 -->
+	<ImageView
+		android:id="@+id/fourteen_led_clock_img01"  
+		android:layout_width="@dimen/textWidthSize" 
+		android:layout_height="@dimen/textHighSize" 
+		android:contentDescription="@string/Default"
+		android:src="@drawable/su01"	
+		/>
+	<ImageView
+		android:id="@+id/fourteen_led_clock_img02"  
+		android:layout_width="@dimen/textWidthSize" 
+		android:layout_height="@dimen/textHighSize" 
+		android:contentDescription="@string/Default"
+		android:src="@drawable/su01"	
+		/>
+	<ImageView
+		android:id="@+id/fourteen_led_clock_img03"  
+		android:layout_width="@dimen/textWidthSize" 
+		android:layout_height="@dimen/textHighSize" 
+		android:src="@drawable/su00"
+		android:contentDescription="@string/Default"
+		/>
+	<ImageView
+		android:id="@+id/fourteen_led_clock_img04"  
+		android:layout_width="@dimen/textWidthSize" 
+		android:layout_height="@dimen/textHighSize" 
+		android:contentDescription="@string/Default"
+		android:src="@drawable/su01"	
+		/>
+	<ImageView
+		android:id="@+id/fourteen_led_clock_img05"  
+		android:layout_width="@dimen/textWidthSize" 
+		android:layout_height="@dimen/textHighSize" 
+		android:contentDescription="@string/Default"
+		android:src="@drawable/su01"	
+		/>
+	<ImageView
+		android:id="@+id/fourteen_led_clock_img06"  
+		android:layout_width="@dimen/textWidthSize" 
+		android:layout_height="@dimen/textHighSize"
+		android:contentDescription="@string/Default"
+		android:src="@drawable/su00"	 
+		/>
+	<ImageView
+		android:id="@+id/fourteen_led_clock_img07"  
+		android:layout_width="@dimen/textWidthSize" 
+		android:layout_height="@dimen/textHighSize" 
+		android:contentDescription="@string/Default"
+		android:src="@drawable/su01"	
+		/>
+	<ImageView
+		android:id="@+id/fourteen_led_clock_img08"  
+		android:layout_width="@dimen/textWidthSize" 
+		android:layout_height="@dimen/textHighSize" 
+		android:contentDescription="@string/Default"
+		android:src="@drawable/su01"	
+		/>						
+    
+
+</LinearLayout>
