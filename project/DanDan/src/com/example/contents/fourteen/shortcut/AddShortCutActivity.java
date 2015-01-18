@@ -84,7 +84,7 @@ public class AddShortCutActivity extends Activity {
 				AddShortCutActivity.class);
 		
 		addIntent.putExtra(Intent.EXTRA_SHORTCUT_NAME, title);
-		addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON, icon);
+		addIntent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, icon);
 		addIntent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, myIntent);
 		
 		sendBroadcast(addIntent);
