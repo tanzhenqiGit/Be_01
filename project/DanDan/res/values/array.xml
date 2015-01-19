@@ -147,7 +147,8 @@
     
     <string-array name="chapterFifteenContents">
         <item > 15.1 SensorManager </item>
-        <item > 15.2 </item>
+        <item > 15.2 SensorManagerEmulator</item>
+        <item > 15.3 SensorTest </item>
     </string-array>
     
     <!-- 声明一个名为statusNames的字符串数组 -->

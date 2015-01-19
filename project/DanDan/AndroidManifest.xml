@@ -604,6 +604,16 @@
             android:label="AccelerometerActivity">
         </activity>
         
+        <activity 
+            android:name="com.example.contents.fifteen.sensor.SensorManagerSimulatorActivity"
+            android:label="SensorManagerSimulatorActivity">           
+        </activity>
+        
+        <activity 
+            android:name="com.example.contents.fifteen.sensor.SensorTestActivity"
+            android:label="SensorTestActivity">           
+        </activity>
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />
@@ -717,6 +727,7 @@
                 />
             
         </receiver>
+        
     </application>
     
     <uses-permission android:name="android.permission.INTERNET" />

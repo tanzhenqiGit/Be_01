@@ -15,6 +15,8 @@ import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
 import com.example.contents.fifteen.sensor.AccelerometerActivity;
+import com.example.contents.fifteen.sensor.SensorManagerSimulatorActivity;
+import com.example.contents.fifteen.sensor.SensorTestActivity;
 import com.example.dandan.R;
 
 /**
@@ -24,6 +26,8 @@ import com.example.dandan.R;
 public class FifteenContentsActivity extends CommonListActivity<String> {
 
 	private final int SENSOR_MANAGER = 0;
+	private final int SENSOR_MANAGER_EMULATOR = 1;
+	private final int SENSOR_MANAGER_TEST = 2;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -35,6 +39,16 @@ public class FifteenContentsActivity extends CommonListActivity<String> {
 			Intent sensor_manager = new Intent(FifteenContentsActivity.this,
 					AccelerometerActivity.class);
 			startActivity(sensor_manager);
+			break;
+		case SENSOR_MANAGER_EMULATOR:
+			Intent sensor_manager_emulator = new Intent(FifteenContentsActivity.this,
+					SensorManagerSimulatorActivity.class);
+			startActivity(sensor_manager_emulator);
+			break;
+		case SENSOR_MANAGER_TEST:
+			Intent sensor_manager_test = new Intent(FifteenContentsActivity.this,
+					SensorTestActivity.class);
+			startActivity(sensor_manager_test);
 			break;
 		default:
 			

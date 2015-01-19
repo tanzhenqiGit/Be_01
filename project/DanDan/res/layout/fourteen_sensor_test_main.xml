@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/fourteen_sensor_orientation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:hint="@string/Default"
+        />
+    
+    <EditText
+        android:id="@+id/fourteen_sensor_magnetic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:hint="@string/Default"
+        />
+
+     
+    <EditText
+        android:id="@+id/fourteen_sensor_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Default"
+        />
+      
+    <EditText
+        android:id="@+id/fourteen_sensor_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Default"
+        />
+       
+    <EditText
+        android:id="@+id/fourteen_sensor_pressure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Default"
+        />
+</LinearLayout>
