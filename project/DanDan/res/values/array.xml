@@ -150,6 +150,7 @@
         <item > 15.2 SensorManagerEmulator</item>
         <item > 15.3 SensorTest </item>
         <item > 15.4 Compass </item>
+        <item > 15.5 Gradienter </item>
     </string-array>
     
     <!-- 声明一个名为statusNames的字符串数组 -->

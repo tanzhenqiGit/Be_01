@@ -618,6 +618,11 @@
             android:label="CompassActivity">           
         </activity>
         
+        <activity 
+            android:name="com.example.contents.fifteen.Gradienter.GradienterActivity"
+            android:label="GradienterActivity">           
+        </activity>
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />

@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.fifteen.Gradienter.GradienterActivity;
 import com.example.contents.fifteen.compass.CompassActivity;
 import com.example.contents.fifteen.sensor.AccelerometerActivity;
 import com.example.contents.fifteen.sensor.SensorManagerSimulatorActivity;
@@ -30,6 +31,7 @@ public class FifteenContentsActivity extends CommonListActivity<String> {
 	private final int SENSOR_MANAGER_EMULATOR = 1;
 	private final int SENSOR_MANAGER_TEST = 2;
 	private final int COMPASSS = 3;
+	private final int GRADIENTER = 4;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -56,6 +58,11 @@ public class FifteenContentsActivity extends CommonListActivity<String> {
 			Intent compass = new Intent(FifteenContentsActivity.this,
 					CompassActivity.class);
 			startActivity(compass);
+			break;
+		case GRADIENTER:
+			Intent gradienter = new Intent(FifteenContentsActivity.this,
+					GradienterActivity.class);
+			startActivity(gradienter);
 			break;
 		default:
 			
