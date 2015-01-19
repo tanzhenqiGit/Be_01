@@ -6,10 +6,12 @@
 */ 
 package com.example.contents.six;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.six.statelist.StateListDrawbleActivity;
 import com.example.dandan.R;
 
 /**
@@ -18,6 +20,7 @@ import com.example.dandan.R;
  */
 public class SixContentsActivity extends CommonListActivity<String> {
 
+	private final int STATE_LIST_DRAWABLE = 0;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -25,8 +28,9 @@ public class SixContentsActivity extends CommonListActivity<String> {
 	public void handlerOnItemListClicked(AdapterView<?> parent, View view,
 			int position, long id) {
 		switch (position) {
-		case 0:
-			
+		case STATE_LIST_DRAWABLE:
+			Intent state_list_drawable = new Intent(SixContentsActivity.this, StateListDrawbleActivity.class);
+			startActivity(state_list_drawable);
 			break;
 		default:
 			

@@ -387,9 +387,10 @@
             android:label="@string/SixContentsActivity" >
         </activity>
         
-        
-        
-        
+        <activity
+            android:name="com.example.contents.six.statelist.StateListDrawbleActivity"
+            android:label="@string/StateListDrawbleActivity" >
+        </activity>
         
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
