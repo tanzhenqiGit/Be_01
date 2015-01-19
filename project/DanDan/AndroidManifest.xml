@@ -383,6 +383,15 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.six.SixContentsActivity"
+            android:label="@string/SixContentsActivity" >
+        </activity>
+        
+        
+        
+        
+        
+        <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >
         </activity>
