@@ -613,6 +613,10 @@
             android:name="com.example.contents.fifteen.sensor.SensorTestActivity"
             android:label="SensorTestActivity">           
         </activity>
+        <activity 
+            android:name="com.example.contents.fifteen.compass.CompassActivity"
+            android:label="CompassActivity">           
+        </activity>
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
