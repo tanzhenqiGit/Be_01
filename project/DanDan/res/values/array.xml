@@ -94,7 +94,7 @@
     
     <string-array name="chapterSixContents">
         <item > 6.1 StateListDrawble </item>
-        <item > 6.2 </item>
+        <item > 6.2 LayerDrawable </item>
         <item > 6.3 </item>
     </string-array>
     
