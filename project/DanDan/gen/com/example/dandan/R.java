@@ -173,7 +173,9 @@ public final class R {
         public static final int zhangsan=0x7f020062;
     }
     public static final class id {
-        public static final int action_settings=0x7f0e00e2;
+        public static final int action_settings=0x7f0e00e5;
+        public static final int blue=0x7f0e00e4;
+        public static final int blue_font=0x7f0e00ee;
         public static final int common_view_main_btn=0x7f0e0001;
         public static final int common_view_main_img=0x7f0e0002;
         public static final int common_view_main_text=0x7f0e0000;
@@ -205,6 +207,11 @@ public final class R {
         public static final int five_sys_action_main_contact_txt=0x7f0e001c;
         public static final int five_sys_action_main_number_txt=0x7f0e001d;
         public static final int five_sys_action_main_show_contact_btn=0x7f0e001e;
+        public static final int font_10=0x7f0e00e6;
+        public static final int font_12=0x7f0e00e7;
+        public static final int font_14=0x7f0e00e8;
+        public static final int font_16=0x7f0e00e9;
+        public static final int font_18=0x7f0e00ea;
         public static final int four_activity_for_result_main_choice_city_btn=0x7f0e001f;
         public static final int four_activity_for_result_main_choice_city_text=0x7f0e0020;
         public static final int four_book_detail_fragment_bookdesc_txt=0x7f0e0022;
@@ -237,6 +244,8 @@ public final class R {
         public static final int fourteen_sensor_orientation=0x7f0e003a;
         public static final int fourteen_sensor_pressure=0x7f0e003e;
         public static final int fourteen_sensor_temperature=0x7f0e003c;
+        public static final int green=0x7f0e00e3;
+        public static final int green_font=0x7f0e00ed;
         public static final int insert=0x7f0e004a;
         public static final int listView=0x7f0e0003;
         public static final int nine_chapter_contests=0x7f0e003f;
@@ -262,11 +271,14 @@ public final class R {
         public static final int nine_media_provider_name_image=0x7f0e004f;
         public static final int nine_media_provider_name_text=0x7f0e004e;
         public static final int nine_media_provider_view_imageview=0x7f0e0054;
-        public static final int popup_menu_main_add=0x7f0e00e4;
-        public static final int popup_menu_main_edit=0x7f0e00e5;
-        public static final int popup_menu_main_exit=0x7f0e00e6;
-        public static final int popup_menu_main_search=0x7f0e00e3;
+        public static final int plain_item=0x7f0e00eb;
+        public static final int popup_menu_main_add=0x7f0e00f0;
+        public static final int popup_menu_main_edit=0x7f0e00f1;
+        public static final int popup_menu_main_exit=0x7f0e00f2;
+        public static final int popup_menu_main_search=0x7f0e00ef;
         public static final int query=0x7f0e004c;
+        public static final int red=0x7f0e00e2;
+        public static final int red_font=0x7f0e00ec;
         public static final int six_clip_drawable_main_image=0x7f0e005a;
         public static final int six_layer_drawable_bar=0x7f0e005b;
         public static final int six_xml_explain_main_btn=0x7f0e005c;
@@ -362,18 +374,18 @@ public final class R {
         public static final int two_imageview_activity_main_image2=0x7f0e00b8;
         public static final int two_imageview_activity_main_increase_btn=0x7f0e00b4;
         public static final int two_imageview_activity_main_next_btn=0x7f0e00b6;
-        public static final int two_menu_resource_context_blue=0x7f0e00e9;
-        public static final int two_menu_resource_context_green=0x7f0e00e8;
-        public static final int two_menu_resource_context_red=0x7f0e00e7;
-        public static final int two_menu_resource_main_blue_font=0x7f0e00f2;
-        public static final int two_menu_resource_main_font_10=0x7f0e00ea;
-        public static final int two_menu_resource_main_font_12=0x7f0e00eb;
-        public static final int two_menu_resource_main_font_14=0x7f0e00ec;
-        public static final int two_menu_resource_main_font_16=0x7f0e00ed;
-        public static final int two_menu_resource_main_font_18=0x7f0e00ee;
-        public static final int two_menu_resource_main_green_font=0x7f0e00f1;
-        public static final int two_menu_resource_main_plain_item=0x7f0e00ef;
-        public static final int two_menu_resource_main_red_font=0x7f0e00f0;
+        public static final int two_menu_resource_context_blue=0x7f0e00f5;
+        public static final int two_menu_resource_context_green=0x7f0e00f4;
+        public static final int two_menu_resource_context_red=0x7f0e00f3;
+        public static final int two_menu_resource_main_blue_font=0x7f0e00fe;
+        public static final int two_menu_resource_main_font_10=0x7f0e00f6;
+        public static final int two_menu_resource_main_font_12=0x7f0e00f7;
+        public static final int two_menu_resource_main_font_14=0x7f0e00f8;
+        public static final int two_menu_resource_main_font_16=0x7f0e00f9;
+        public static final int two_menu_resource_main_font_18=0x7f0e00fa;
+        public static final int two_menu_resource_main_green_font=0x7f0e00fd;
+        public static final int two_menu_resource_main_plain_item=0x7f0e00fb;
+        public static final int two_menu_resource_main_red_font=0x7f0e00fc;
         public static final int two_popup_window_layout_close=0x7f0e00b9;
         public static final int two_progress_bar_main_bar=0x7f0e00ba;
         public static final int two_progress_bar_main_bar2=0x7f0e00bb;
@@ -518,10 +530,12 @@ public final class R {
         public static final int two_viewswither_main=0x7f030061;
     }
     public static final class menu {
-        public static final int main_interface=0x7f0d0000;
-        public static final int popup_menu_main=0x7f0d0001;
-        public static final int two_menu_resource_context=0x7f0d0002;
-        public static final int two_menu_resource_mymenu=0x7f0d0003;
+        public static final int content=0x7f0d0000;
+        public static final int main_interface=0x7f0d0001;
+        public static final int my_menu=0x7f0d0002;
+        public static final int popup_menu_main=0x7f0d0003;
+        public static final int two_menu_resource_context=0x7f0d0004;
+        public static final int two_menu_resource_mymenu=0x7f0d0005;
     }
     public static final class raw {
         public static final int arrow=0x7f070000;
@@ -572,15 +586,15 @@ public final class R {
         public static final int Decrease=0x7f0b006d;
         public static final int Default=0x7f0b0082;
         public static final int DialogActivity=0x7f0b008c;
-        public static final int ElevenContents=0x7f0b00d1;
+        public static final int ElevenContents=0x7f0b00d2;
         public static final int ExpandableListViewActivity=0x7f0b0077;
-        public static final int FifteenContentsActivity=0x7f0b00d4;
+        public static final int FifteenContentsActivity=0x7f0b00d5;
         public static final int FirstServiceTest=0x7f0b001c;
-        public static final int FiveContentsActivity=0x7f0b00cf;
+        public static final int FiveContentsActivity=0x7f0b00d0;
         public static final int FourContentsActivity=0x7f0b001a;
-        public static final int FourteenContentActivity=0x7f0b00d3;
+        public static final int FourteenContentActivity=0x7f0b00d4;
         public static final int GallaryActivity=0x7f0b0078;
-        public static final int GetPostMainActivity=0x7f0b00ca;
+        public static final int GetPostMainActivity=0x7f0b00cb;
         public static final int GridViewTest=0x7f0b0075;
         public static final int GroupSend=0x7f0b0027;
         public static final int Hide=0x7f0b007e;
@@ -596,6 +610,7 @@ public final class R {
         public static final int LifeCycleSecondActivity=0x7f0b0054;
         public static final int ListDialogActivity=0x7f0b008d;
         public static final int MNC=0x7f0b0060;
+        public static final int MenuResActivity=0x7f0b00ca;
         public static final int MenuResourceActivity=0x7f0b009d;
         public static final int MenuTest=0x7f0b0099;
         public static final int MiniBrowser=0x7f0b00bd;
@@ -632,7 +647,7 @@ public final class R {
         public static final int SingChoiceDialogActivity=0x7f0b008e;
         public static final int SingTaskSecondActivity=0x7f0b0057;
         public static final int SingleTaskActivity=0x7f0b0056;
-        public static final int SixContentsActivity=0x7f0b00d0;
+        public static final int SixContentsActivity=0x7f0b00d1;
         public static final int SmsManager=0x7f0b0025;
         public static final int SortedBroadCast=0x7f0b0036;
         public static final int SoundPoolActivity=0x7f0b0037;
@@ -652,14 +667,14 @@ public final class R {
         public static final int TelephonyStatus=0x7f0b0022;
         public static final int TenContentsActivity=0x7f0b001b;
         public static final int TextSwitchActivity=0x7f0b0085;
-        public static final int ThirteenContentsActivity=0x7f0b00d2;
-        public static final int ThreeContentsActivity=0x7f0b00ce;
+        public static final int ThirteenContentsActivity=0x7f0b00d3;
+        public static final int ThreeContentsActivity=0x7f0b00cf;
         public static final int TimePick=0x7f0b0093;
         public static final int TitleProgressBar=0x7f0b007f;
         public static final int ToastActivity=0x7f0b0097;
         public static final int ToggleButtonActivity=0x7f0b006a;
         public static final int TouchStatus=0x7f0b005f;
-        public static final int TwoContentsActivity=0x7f0b00cd;
+        public static final int TwoContentsActivity=0x7f0b00ce;
         public static final int URLClient=0x7f0b00b8;
         public static final int Vertical=0x7f0b0065;
         public static final int Vibrator=0x7f0b002f;
@@ -704,7 +719,7 @@ public final class R {
         public static final int font_size=0x7f0b009e;
         public static final int getInfo=0x7f0b0013;
         public static final int getPhoneSts=0x7f0b0061;
-        public static final int getReq=0x7f0b00cc;
+        public static final int getReq=0x7f0b00cd;
         public static final int getServiceSts=0x7f0b0016;
         public static final int hello_world=0x7f0b0002;
         public static final int hideActionBar=0x7f0b00ae;
@@ -725,7 +740,7 @@ public final class R {
         public static final int select=0x7f0b0029;
         public static final int sendBroadCast=0x7f0b0035;
         public static final int sendGroupMsg=0x7f0b0028;
-        public static final int sendReq=0x7f0b00cb;
+        public static final int sendReq=0x7f0b00cc;
         public static final int sendmessage=0x7f0b0026;
         public static final int setTime=0x7f0b0032;
         public static final int sex=0x7f0b004c;

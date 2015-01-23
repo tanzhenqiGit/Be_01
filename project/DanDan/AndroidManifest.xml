@@ -417,6 +417,12 @@
             android:name="com.example.contents.six.xml.XmlExplainActivity"
             android:label="@string/XmlExplainActivity" >
         </activity>  
+        
+        <activity
+            android:name="com.example.contents.six.menu.MenuResActivity"
+            android:label="@string/MenuResActivity" >
+        </activity>  
+        
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >
