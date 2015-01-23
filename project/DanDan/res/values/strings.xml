@@ -219,7 +219,8 @@
 	<string name="ShapeDrawableActivity">ShapeDrawable的应用</string>
 	<string name="ClipDrawableActivity">ClipDrawable的应用</string>
 	<string name="AnimationDrawableActivity">AnimationDrawable的应用</string>
-	
+	<string name="explainXml">解析XML文件</string>
+	<string name="XmlExplainActivity">XmlExplain的应用</string>
 	
 	<string name="GetPostMainActivity">GetPostMainActivity 的应用</string>
 	<string name="sendReq">发送Get请求</string>

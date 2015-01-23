@@ -16,6 +16,7 @@ import com.example.contents.six.statelist.ClipDrawableActivity;
 import com.example.contents.six.statelist.LayerDrawablerActivity;
 import com.example.contents.six.statelist.ShapeDrawableActivity;
 import com.example.contents.six.statelist.StateListDrawbleActivity;
+import com.example.contents.six.xml.XmlExplainActivity;
 import com.example.dandan.R;
 
 /**
@@ -29,6 +30,7 @@ public class SixContentsActivity extends CommonListActivity<String> {
 	private final int SHAPE_DRAWABLE_TEST = 2;
 	private final int CLIP_DRAWABLE = 3;
 	private final int ANIMATION_DRAWABLE = 4;
+	private final int EXPLAIN_XML = 5;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -60,6 +62,11 @@ public class SixContentsActivity extends CommonListActivity<String> {
 			Intent animation_drawable = new Intent(SixContentsActivity.this,
 				AnimationDrawableActivity.class);
 			startActivity(animation_drawable);
+			break;
+		case EXPLAIN_XML:
+			Intent explain_xml = new Intent(SixContentsActivity.this,
+					XmlExplainActivity.class);
+			startActivity(explain_xml);
 			break;
 		default:
 			
