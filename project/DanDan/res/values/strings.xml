@@ -217,6 +217,8 @@
 	<string name="StateListDrawbleActivity">StateListDrawable的应用</string>
 	<string name="LayerDrawablerActivity">LayerDrawabler的应用</string>
 	<string name="ShapeDrawableActivity">ShapeDrawable的应用</string>
+	<string name="ClipDrawableActivity">ClipDrawable的应用</string>
+	
 	
 	<string name="GetPostMainActivity">GetPostMainActivity 的应用</string>
 	<string name="sendReq">发送Get请求</string>
