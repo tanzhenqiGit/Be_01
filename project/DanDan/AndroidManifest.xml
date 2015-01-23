@@ -11,7 +11,8 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/box"
-        android:label="@string/app_name" >
+        android:label="@string/app_name"
+         >
  
         <activity
             android:name="com.example.dandan.MainInterface"
@@ -421,6 +422,13 @@
         <activity
             android:name="com.example.contents.six.menu.MenuResActivity"
             android:label="@string/MenuResActivity" >
+        </activity>  
+        
+        <activity
+            android:name="com.example.contents.six.style.StyleResActivity"
+            android:label="@string/StyleResActivity"
+            
+             >
         </activity>  
         
         <activity
