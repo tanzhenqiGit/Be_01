@@ -12,6 +12,7 @@ import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
 import com.example.contents.six.statelist.LayerDrawablerActivity;
+import com.example.contents.six.statelist.ShapeDrawableActivity;
 import com.example.contents.six.statelist.StateListDrawbleActivity;
 import com.example.dandan.R;
 
@@ -23,6 +24,7 @@ public class SixContentsActivity extends CommonListActivity<String> {
 
 	private final int STATE_LIST_DRAWABLE = 0;
 	private final int LAYER_DRAWABLER = 1;
+	private final int SHAPE_DRAWABLE_TEST = 2;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -39,6 +41,11 @@ public class SixContentsActivity extends CommonListActivity<String> {
 			Intent layer_drawabler = new Intent(SixContentsActivity.this, 
 					LayerDrawablerActivity.class);
 			startActivity(layer_drawabler);
+			break;
+		case SHAPE_DRAWABLE_TEST:
+			Intent shape_drawabler = new Intent(SixContentsActivity.this, 
+					ShapeDrawableActivity.class);
+			startActivity(shape_drawabler);
 			break;
 		default:
 			

@@ -392,10 +392,16 @@
             android:label="@string/StateListDrawbleActivity" >
         </activity>
         
-         <activity
+        <activity
             android:name="com.example.contents.six.statelist.LayerDrawablerActivity"
             android:label="@string/LayerDrawablerActivity" >
         </activity>
+        
+        <activity 
+            android:name="com.example.contents.six.statelist.ShapeDrawableActivity"
+            android:label="@string/ShapeDrawableActivity" 
+            >
+        </activity> 
         
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
