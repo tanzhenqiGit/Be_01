@@ -47,6 +47,22 @@ public final class R {
         public static final int statusNames=0x7f08000c;
     }
     public static final class attr {
+        /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>May be an integer value, such as "<code>100</code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+         */
+        public static final int duration=0x7f010000;
     }
     public static final class color {
         public static final int c1=0x7f090000;
@@ -467,69 +483,70 @@ public final class R {
         public static final int nine_media_provider_main=0x7f030021;
         public static final int nine_media_provider_view=0x7f030022;
         public static final int ninie_content_provider=0x7f030023;
-        public static final int six_clip_drawable_main=0x7f030024;
-        public static final int six_layer_drawable_main=0x7f030025;
-        public static final int six_shape_drawable_main=0x7f030026;
-        public static final int six_state_list_drawable_main=0x7f030027;
-        public static final int six_style_main=0x7f030028;
-        public static final int six_xml_explain_main=0x7f030029;
-        public static final int ten_aidl_client_main=0x7f03002a;
-        public static final int ten_alarm_change_wall_paper_main=0x7f03002b;
-        public static final int ten_alarm_manager_main=0x7f03002c;
-        public static final int ten_audio_manager_main=0x7f03002d;
-        public static final int ten_bind_service_main=0x7f03002e;
-        public static final int ten_blackmain_line=0x7f03002f;
-        public static final int ten_blockmain_main=0x7f030030;
-        public static final int ten_broad_cast_main=0x7f030031;
-        public static final int ten_complex_service_main=0x7f030032;
-        public static final int ten_first_service_main=0x7f030033;
-        public static final int ten_group_send_main=0x7f030034;
-        public static final int ten_intent_service_main=0x7f030035;
-        public static final int ten_monitor_phone_main=0x7f030036;
-        public static final int ten_music_box_main=0x7f030037;
-        public static final int ten_smsmanager_main=0x7f030038;
-        public static final int ten_telephony_status_line=0x7f030039;
-        public static final int ten_telephony_status_main=0x7f03003a;
-        public static final int ten_vibrator_test_main=0x7f03003b;
-        public static final int thirteen_getpost_main=0x7f03003c;
-        public static final int thirteen_minibrowser_main=0x7f03003d;
-        public static final int thirteen_multi_thread_client=0x7f03003e;
-        public static final int thirteen_multi_thread_down_main=0x7f03003f;
-        public static final int thirteen_web_service_main=0x7f030040;
-        public static final int three_callback_handler_main=0x7f030041;
-        public static final int three_configration_activity_main=0x7f030042;
-        public static final int three_configuration_change_main=0x7f030043;
-        public static final int three_draw_view_main=0x7f030044;
-        public static final int two_action_bar_main=0x7f030045;
-        public static final int two_adapterviewfliper_activity_main=0x7f030046;
-        public static final int two_autocomplete_textview_main=0x7f030047;
-        public static final int two_chronometer_activity_main=0x7f030048;
-        public static final int two_expandable_list_view_main=0x7f030049;
-        public static final int two_gallary_activity_main=0x7f03004a;
-        public static final int two_gridview_cell=0x7f03004b;
-        public static final int two_gridview_main=0x7f03004c;
-        public static final int two_imageswitcher_main=0x7f03004d;
-        public static final int two_imageview_activity_main=0x7f03004e;
-        public static final int two_menu_activity_main=0x7f03004f;
-        public static final int two_popup_window_layout=0x7f030050;
-        public static final int two_progress_bar_main=0x7f030051;
-        public static final int two_ratingbar_main=0x7f030052;
-        public static final int two_searchview_main=0x7f030053;
-        public static final int two_seekbar_main=0x7f030054;
-        public static final int two_simpleadapter_item=0x7f030055;
-        public static final int two_special_datedialog_main=0x7f030056;
-        public static final int two_special_dialog_main=0x7f030057;
-        public static final int two_spinner_activity_main=0x7f030058;
-        public static final int two_stackview_activity_cell=0x7f030059;
-        public static final int two_stackview_activity_main=0x7f03005a;
-        public static final int two_tabhost_main=0x7f03005b;
-        public static final int two_textswitcher_main=0x7f03005c;
-        public static final int two_titleprogressbar_main=0x7f03005d;
-        public static final int two_toggle_button_main=0x7f03005e;
-        public static final int two_viewflipper_activity_main=0x7f03005f;
-        public static final int two_viewswitcher_gridview_cell=0x7f030060;
-        public static final int two_viewswithcer_gridview=0x7f030061;
-        public static final int two_viewswither_main=0x7f030062;
+        public static final int six_attr_main=0x7f030024;
+        public static final int six_clip_drawable_main=0x7f030025;
+        public static final int six_layer_drawable_main=0x7f030026;
+        public static final int six_shape_drawable_main=0x7f030027;
+        public static final int six_state_list_drawable_main=0x7f030028;
+        public static final int six_style_main=0x7f030029;
+        public static final int six_xml_explain_main=0x7f03002a;
+        public static final int ten_aidl_client_main=0x7f03002b;
+        public static final int ten_alarm_change_wall_paper_main=0x7f03002c;
+        public static final int ten_alarm_manager_main=0x7f03002d;
+        public static final int ten_audio_manager_main=0x7f03002e;
+        public static final int ten_bind_service_main=0x7f03002f;
+        public static final int ten_blackmain_line=0x7f030030;
+        public static final int ten_blockmain_main=0x7f030031;
+        public static final int ten_broad_cast_main=0x7f030032;
+        public static final int ten_complex_service_main=0x7f030033;
+        public static final int ten_first_service_main=0x7f030034;
+        public static final int ten_group_send_main=0x7f030035;
+        public static final int ten_intent_service_main=0x7f030036;
+        public static final int ten_monitor_phone_main=0x7f030037;
+        public static final int ten_music_box_main=0x7f030038;
+        public static final int ten_smsmanager_main=0x7f030039;
+        public static final int ten_telephony_status_line=0x7f03003a;
+        public static final int ten_telephony_status_main=0x7f03003b;
+        public static final int ten_vibrator_test_main=0x7f03003c;
+        public static final int thirteen_getpost_main=0x7f03003d;
+        public static final int thirteen_minibrowser_main=0x7f03003e;
+        public static final int thirteen_multi_thread_client=0x7f03003f;
+        public static final int thirteen_multi_thread_down_main=0x7f030040;
+        public static final int thirteen_web_service_main=0x7f030041;
+        public static final int three_callback_handler_main=0x7f030042;
+        public static final int three_configration_activity_main=0x7f030043;
+        public static final int three_configuration_change_main=0x7f030044;
+        public static final int three_draw_view_main=0x7f030045;
+        public static final int two_action_bar_main=0x7f030046;
+        public static final int two_adapterviewfliper_activity_main=0x7f030047;
+        public static final int two_autocomplete_textview_main=0x7f030048;
+        public static final int two_chronometer_activity_main=0x7f030049;
+        public static final int two_expandable_list_view_main=0x7f03004a;
+        public static final int two_gallary_activity_main=0x7f03004b;
+        public static final int two_gridview_cell=0x7f03004c;
+        public static final int two_gridview_main=0x7f03004d;
+        public static final int two_imageswitcher_main=0x7f03004e;
+        public static final int two_imageview_activity_main=0x7f03004f;
+        public static final int two_menu_activity_main=0x7f030050;
+        public static final int two_popup_window_layout=0x7f030051;
+        public static final int two_progress_bar_main=0x7f030052;
+        public static final int two_ratingbar_main=0x7f030053;
+        public static final int two_searchview_main=0x7f030054;
+        public static final int two_seekbar_main=0x7f030055;
+        public static final int two_simpleadapter_item=0x7f030056;
+        public static final int two_special_datedialog_main=0x7f030057;
+        public static final int two_special_dialog_main=0x7f030058;
+        public static final int two_spinner_activity_main=0x7f030059;
+        public static final int two_stackview_activity_cell=0x7f03005a;
+        public static final int two_stackview_activity_main=0x7f03005b;
+        public static final int two_tabhost_main=0x7f03005c;
+        public static final int two_textswitcher_main=0x7f03005d;
+        public static final int two_titleprogressbar_main=0x7f03005e;
+        public static final int two_toggle_button_main=0x7f03005f;
+        public static final int two_viewflipper_activity_main=0x7f030060;
+        public static final int two_viewswitcher_gridview_cell=0x7f030061;
+        public static final int two_viewswithcer_gridview=0x7f030062;
+        public static final int two_viewswither_main=0x7f030063;
     }
     public static final class menu {
         public static final int content=0x7f0d0000;
@@ -558,6 +575,7 @@ public final class R {
         public static final int AlarmManager=0x7f0c0030;
         public static final int Alarming=0x7f0c0031;
         public static final int AnimationDrawableActivity=0x7f0c00c7;
+        public static final int AttrActivity=0x7f0c00cc;
         public static final int AudioManager=0x7f0c002a;
         public static final int AutoCompleteTextViewTest=0x7f0c0074;
         public static final int AutoPlay=0x7f0c0070;
@@ -588,15 +606,15 @@ public final class R {
         public static final int Decrease=0x7f0c006d;
         public static final int Default=0x7f0c0082;
         public static final int DialogActivity=0x7f0c008c;
-        public static final int ElevenContents=0x7f0c00d3;
+        public static final int ElevenContents=0x7f0c00d4;
         public static final int ExpandableListViewActivity=0x7f0c0077;
-        public static final int FifteenContentsActivity=0x7f0c00d6;
+        public static final int FifteenContentsActivity=0x7f0c00d7;
         public static final int FirstServiceTest=0x7f0c001c;
-        public static final int FiveContentsActivity=0x7f0c00d1;
+        public static final int FiveContentsActivity=0x7f0c00d2;
         public static final int FourContentsActivity=0x7f0c001a;
-        public static final int FourteenContentActivity=0x7f0c00d5;
+        public static final int FourteenContentActivity=0x7f0c00d6;
         public static final int GallaryActivity=0x7f0c0078;
-        public static final int GetPostMainActivity=0x7f0c00cc;
+        public static final int GetPostMainActivity=0x7f0c00cd;
         public static final int GridViewTest=0x7f0c0075;
         public static final int GroupSend=0x7f0c0027;
         public static final int Hide=0x7f0c007e;
@@ -649,7 +667,7 @@ public final class R {
         public static final int SingChoiceDialogActivity=0x7f0c008e;
         public static final int SingTaskSecondActivity=0x7f0c0057;
         public static final int SingleTaskActivity=0x7f0c0056;
-        public static final int SixContentsActivity=0x7f0c00d2;
+        public static final int SixContentsActivity=0x7f0c00d3;
         public static final int SmsManager=0x7f0c0025;
         public static final int SortedBroadCast=0x7f0c0036;
         public static final int SoundPoolActivity=0x7f0c0037;
@@ -670,14 +688,14 @@ public final class R {
         public static final int TelephonyStatus=0x7f0c0022;
         public static final int TenContentsActivity=0x7f0c001b;
         public static final int TextSwitchActivity=0x7f0c0085;
-        public static final int ThirteenContentsActivity=0x7f0c00d4;
-        public static final int ThreeContentsActivity=0x7f0c00d0;
+        public static final int ThirteenContentsActivity=0x7f0c00d5;
+        public static final int ThreeContentsActivity=0x7f0c00d1;
         public static final int TimePick=0x7f0c0093;
         public static final int TitleProgressBar=0x7f0c007f;
         public static final int ToastActivity=0x7f0c0097;
         public static final int ToggleButtonActivity=0x7f0c006a;
         public static final int TouchStatus=0x7f0c005f;
-        public static final int TwoContentsActivity=0x7f0c00cf;
+        public static final int TwoContentsActivity=0x7f0c00d0;
         public static final int URLClient=0x7f0c00b8;
         public static final int Vertical=0x7f0c0065;
         public static final int Vibrator=0x7f0c002f;
@@ -722,7 +740,7 @@ public final class R {
         public static final int font_size=0x7f0c009e;
         public static final int getInfo=0x7f0c0013;
         public static final int getPhoneSts=0x7f0c0061;
-        public static final int getReq=0x7f0c00ce;
+        public static final int getReq=0x7f0c00cf;
         public static final int getServiceSts=0x7f0c0016;
         public static final int hello_world=0x7f0c0002;
         public static final int hideActionBar=0x7f0c00ae;
@@ -743,7 +761,7 @@ public final class R {
         public static final int select=0x7f0c0029;
         public static final int sendBroadCast=0x7f0c0035;
         public static final int sendGroupMsg=0x7f0c0028;
-        public static final int sendReq=0x7f0c00cd;
+        public static final int sendReq=0x7f0c00ce;
         public static final int sendmessage=0x7f0c0026;
         public static final int setTime=0x7f0c0032;
         public static final int sex=0x7f0c004c;
@@ -802,6 +820,41 @@ public final class R {
         public static final int ten_other_activity_display_prefs=0x7f060005;
     }
     public static final class styleable {
+        /** Attributes that can be used with a AlphaImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #AlphaImageView_duration com.example.dandan:duration}</code></td><td></td></tr>
+           </table>
+           @see #AlphaImageView_duration
+         */
+        public static final int[] AlphaImageView = {
+            0x7f010000
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.dandan.R.attr#duration}
+          attribute's value can be found in the {@link #AlphaImageView} array.
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
+<p>May be an integer value, such as "<code>100</code>".
+<p>May be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>May be a floating point value, such as "<code>1.2</code>".
+<p>May be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>May be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+          @attr name com.example.dandan:duration
+        */
+        public static final int AlphaImageView_duration = 0;
         /** Attributes that can be used with a Gallery.
            <p>Includes the following attributes:</p>
            <table>

@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.six.attr.AttrActivity;
 import com.example.contents.six.menu.MenuResActivity;
 import com.example.contents.six.statelist.AnimationDrawableActivity;
 import com.example.contents.six.statelist.ClipDrawableActivity;
@@ -35,6 +36,7 @@ public class SixContentsActivity extends CommonListActivity<String> {
 	private final int EXPLAIN_XML = 5;
 	private final int MENU_XML = 6;
 	private final int STYLE = 7;
+	private final int ATTR = 8;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -81,6 +83,11 @@ public class SixContentsActivity extends CommonListActivity<String> {
 			Intent style_intent = new Intent(SixContentsActivity.this,
 					StyleResActivity.class);
 			startActivity(style_intent);
+			break;
+		case ATTR:	
+			Intent attr_intent = new Intent(SixContentsActivity.this,
+				AttrActivity.class);
+			startActivity(attr_intent);
 			break;
 		default:
 			

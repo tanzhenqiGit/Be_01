@@ -426,11 +426,13 @@
         
         <activity
             android:name="com.example.contents.six.style.StyleResActivity"
-            android:label="@string/StyleResActivity"
-            
-             >
+            android:label="@string/StyleResActivity">
         </activity>  
         
+        <activity
+            android:name="com.example.contents.six.attr.AttrActivity"
+            android:label="@string/AttrActivity">
+        </activity>  
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >
