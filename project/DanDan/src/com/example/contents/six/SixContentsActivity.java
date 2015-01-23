@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.six.statelist.AnimationDrawableActivity;
 import com.example.contents.six.statelist.ClipDrawableActivity;
 import com.example.contents.six.statelist.LayerDrawablerActivity;
 import com.example.contents.six.statelist.ShapeDrawableActivity;
@@ -27,6 +28,7 @@ public class SixContentsActivity extends CommonListActivity<String> {
 	private final int LAYER_DRAWABLER = 1;
 	private final int SHAPE_DRAWABLE_TEST = 2;
 	private final int CLIP_DRAWABLE = 3;
+	private final int ANIMATION_DRAWABLE = 4;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -53,6 +55,11 @@ public class SixContentsActivity extends CommonListActivity<String> {
 			Intent clip_drawabler = new Intent(SixContentsActivity.this, 
 				ClipDrawableActivity.class);
 			startActivity(clip_drawabler);
+			break;
+		case ANIMATION_DRAWABLE:
+			Intent animation_drawable = new Intent(SixContentsActivity.this,
+				AnimationDrawableActivity.class);
+			startActivity(animation_drawable);
 			break;
 		default:
 			

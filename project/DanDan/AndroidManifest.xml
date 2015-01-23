@@ -409,6 +409,10 @@
             android:label="@string/ClipDrawableActivity" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.six.statelist.AnimationDrawableActivity"
+            android:label="@string/AnimationDrawableActivity" >
+        </activity>  
         
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
