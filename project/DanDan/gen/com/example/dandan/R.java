@@ -577,6 +577,7 @@ some parent container.
         public static final int AlarmChangeWallpaper=0x7f0c0033;
         public static final int AlarmManager=0x7f0c0030;
         public static final int Alarming=0x7f0c0031;
+        public static final int AllProvidersActivity=0x7f0c00dc;
         public static final int AnimationDrawableActivity=0x7f0c00c7;
         public static final int AttrActivity=0x7f0c00cc;
         public static final int AudioManager=0x7f0c002a;
@@ -714,7 +715,7 @@ some parent container.
         public static final int XmlExplainActivity=0x7f0c00c9;
         public static final int action_settings=0x7f0c0001;
         public static final int add=0x7f0c000b;
-        public static final int android=0x7f0c00dd;
+        public static final int android=0x7f0c00de;
         public static final int app_name=0x7f0c0000;
         public static final int arrow=0x7f0c003a;
         public static final int back=0x7f0c0044;
@@ -750,7 +751,7 @@ some parent container.
         public static final int getPhoneSts=0x7f0c0061;
         public static final int getReq=0x7f0c00d0;
         public static final int getServiceSts=0x7f0c0016;
-        public static final int hello=0x7f0c00dc;
+        public static final int hello=0x7f0c00dd;
         public static final int hello_world=0x7f0c0002;
         public static final int hideActionBar=0x7f0c00ae;
         public static final int inputRegisterAccount=0x7f0c004b;

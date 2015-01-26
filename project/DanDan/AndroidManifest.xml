@@ -691,6 +691,10 @@
             android:name="com.example.contents.sixteen.SixteenContentsActivity"
             android:label="@string/SixteenContentsActivity">           
         </activity>
+        <activity 
+            android:name="com.example.contents.sixteen.provider.AllProvidersActivity"
+            android:label="@string/AllProvidersActivity">           
+        </activity>
         
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>

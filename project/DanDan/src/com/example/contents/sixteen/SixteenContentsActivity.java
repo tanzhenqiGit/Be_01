@@ -9,11 +9,13 @@
 */ 
 package com.example.contents.sixteen;
 
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.sixteen.provider.AllProvidersActivity;
 import com.example.dandan.R;
 
 /**
@@ -23,6 +25,8 @@ import com.example.dandan.R;
 public class SixteenContentsActivity extends CommonListActivity<String>
 {
 	private final String TAG = "SixContentsActivity";
+	
+	private final int ALL_PROVIDERS = 0;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -31,8 +35,10 @@ public class SixteenContentsActivity extends CommonListActivity<String>
 			int position, long id) {
 		switch (position)
 		{
-		case 0:
-			
+		case ALL_PROVIDERS:
+			Intent all_providers = new Intent(SixteenContentsActivity.this, 
+					AllProvidersActivity.class);
+			startActivity(all_providers);
 			break;
 		default:
 			
