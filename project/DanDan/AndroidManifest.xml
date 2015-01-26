@@ -433,6 +433,13 @@
             android:name="com.example.contents.six.attr.AttrActivity"
             android:label="@string/AttrActivity">
         </activity>  
+        
+        <activity
+            android:name="com.example.contents.six.string.StringValue"
+            android:label="@string/StringValue">
+        </activity>
+        
+        
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >

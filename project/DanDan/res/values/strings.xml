@@ -224,6 +224,7 @@
 	<string name="MenuResActivity">MenuResActivity 的应用</string>
 	<string name="StyleResActivity">Style的应用</string>
 	<string name="AttrActivity">Attr的应用</string>
+	<string name="StringValue">String的国际化应用</string>
 	
 	<string name="GetPostMainActivity">GetPostMainActivity 的应用</string>
 	<string name="sendReq">发送Get请求</string>
