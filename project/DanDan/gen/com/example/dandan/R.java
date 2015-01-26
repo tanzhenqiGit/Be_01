@@ -28,26 +28,27 @@ public final class R {
         public static final int chapterFourteenContents=0x7f08000c;
         public static final int chapterNineContents=0x7f080008;
         public static final int chapterSevenContents=0x7f080006;
+        public static final int chapterSeventeenContents=0x7f08000f;
         public static final int chapterSixContents=0x7f080005;
         public static final int chapterSixteenContents=0x7f08000e;
         public static final int chapterTenContents=0x7f080009;
         public static final int chapterThirteenContents=0x7f08000b;
         public static final int chapterThreeContents=0x7f080002;
         public static final int chapterTwoContents=0x7f080001;
-        public static final int gender_name_list=0x7f080012;
-        public static final int gender_value_list=0x7f080013;
-        public static final int light_strenght_list=0x7f080014;
-        public static final int light_value_list=0x7f080015;
+        public static final int gender_name_list=0x7f080013;
+        public static final int gender_value_list=0x7f080014;
+        public static final int light_strenght_list=0x7f080015;
+        public static final int light_value_list=0x7f080016;
         /**  声明一个名为phoneType的字符串数组 
          */
-        public static final int phoneType=0x7f080011;
-        public static final int provinces=0x7f080016;
+        public static final int phoneType=0x7f080012;
+        public static final int provinces=0x7f080017;
         /**  声明一个名为simState的字符串数组 
          */
-        public static final int simState=0x7f080010;
+        public static final int simState=0x7f080011;
         /**  声明一个名为statusNames的字符串数组 
          */
-        public static final int statusNames=0x7f08000f;
+        public static final int statusNames=0x7f080010;
     }
     public static final class attr {
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -579,7 +580,7 @@ some parent container.
         public static final int AlarmChangeWallpaper=0x7f0c0033;
         public static final int AlarmManager=0x7f0c0030;
         public static final int Alarming=0x7f0c0031;
-        public static final int AllProvidersActivity=0x7f0c00dc;
+        public static final int AllProvidersActivity=0x7f0c00dd;
         public static final int AnimationDrawableActivity=0x7f0c00c7;
         public static final int AttrActivity=0x7f0c00cc;
         public static final int AudioManager=0x7f0c002a;
@@ -636,7 +637,7 @@ some parent container.
         public static final int LifeCycle=0x7f0c0053;
         public static final int LifeCycleSecondActivity=0x7f0c0054;
         public static final int ListDialogActivity=0x7f0c008d;
-        public static final int LocationActivity=0x7f0c00dd;
+        public static final int LocationActivity=0x7f0c00de;
         public static final int MNC=0x7f0c0060;
         public static final int MenuResActivity=0x7f0c00ca;
         public static final int MenuResourceActivity=0x7f0c009d;
@@ -658,7 +659,7 @@ some parent container.
         public static final int ProgerssDialogActivity=0x7f0c0096;
         public static final int ProgressBarActivity=0x7f0c007c;
         public static final int Province=0x7f0c00bf;
-        public static final int ProximityActivity=0x7f0c00de;
+        public static final int ProximityActivity=0x7f0c00df;
         public static final int RatingBarActivity=0x7f0c0081;
         public static final int RecodeSound=0x7f0c003d;
         public static final int RecordVideo=0x7f0c0040;
@@ -670,6 +671,7 @@ some parent container.
         public static final int SelectBookActivity=0x7f0c0058;
         public static final int SelectCityActivity=0x7f0c0052;
         public static final int SevenContentsActivity=0x7f0c00d5;
+        public static final int SeventeenContentsActivity=0x7f0c00dc;
         public static final int ShapeDrawableActivity=0x7f0c00c5;
         public static final int Show=0x7f0c007d;
         public static final int SimpleAdapterTest=0x7f0c0072;
@@ -719,7 +721,7 @@ some parent container.
         public static final int XmlExplainActivity=0x7f0c00c9;
         public static final int action_settings=0x7f0c0001;
         public static final int add=0x7f0c000b;
-        public static final int android=0x7f0c00e0;
+        public static final int android=0x7f0c00e1;
         public static final int app_name=0x7f0c0000;
         public static final int arrow=0x7f0c003a;
         public static final int back=0x7f0c0044;
@@ -755,7 +757,7 @@ some parent container.
         public static final int getPhoneSts=0x7f0c0061;
         public static final int getReq=0x7f0c00d0;
         public static final int getServiceSts=0x7f0c0016;
-        public static final int hello=0x7f0c00df;
+        public static final int hello=0x7f0c00e0;
         public static final int hello_world=0x7f0c0002;
         public static final int hideActionBar=0x7f0c00ae;
         public static final int inputRegisterAccount=0x7f0c004b;

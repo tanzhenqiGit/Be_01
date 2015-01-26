@@ -705,7 +705,13 @@
         <activity 
             android:name="com.example.contents.sixteen.proximity.ProximityActivity"
             android:label="@string/ProximityActivity">           
-        </activity>    
+        </activity>
+        
+        <activity 
+            android:name="com.example.contents.seventeen.SeventeenContentsActivity"
+            android:label="@string/SeventeenContentsActivity">           
+        </activity>
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />
