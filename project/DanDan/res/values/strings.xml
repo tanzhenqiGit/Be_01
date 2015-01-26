@@ -242,4 +242,6 @@
 	<string name="FifteenContentsActivity">第十五章内容</string>
 	<string name="SixteenContentsActivity">第十六章内容</string>
 	<string name="AllProvidersActivity">AllProvidersActivity的应用</string>
+	<string name="LocationActivity">Location的应用</string>
+	<string name="ProximityActivity">Proximity的应用</string>
 </resources>

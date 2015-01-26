@@ -691,16 +691,27 @@
             android:name="com.example.contents.sixteen.SixteenContentsActivity"
             android:label="@string/SixteenContentsActivity">           
         </activity>
+        
         <activity 
             android:name="com.example.contents.sixteen.provider.AllProvidersActivity"
             android:label="@string/AllProvidersActivity">           
         </activity>
         
+        <activity 
+            android:name="com.example.contents.sixteen.location.LocationActivity"
+            android:label="@string/LocationActivity">           
+        </activity>
+        
+        <activity 
+            android:name="com.example.contents.sixteen.proximity.ProximityActivity"
+            android:label="@string/ProximityActivity">           
+        </activity>    
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />
         	</intent-filter>
         </service>
+        
         
         <service android:name="com.example.contents.ten.bindservice.BindService" >
         	<intent-filter>
@@ -760,6 +771,7 @@
             android:authorities="com.example.contents.nine.DictProvider"
             android:exported="true"
             />
+        
         <receiver android:name="com.example.contents.ten.broadcast.MyReceiver"
             >
             <intent-filter>
@@ -810,6 +822,9 @@
             
         </receiver>
         
+        <receiver android:name="com.example.contents.sixteen.proximity.ProximityAlertReciever">
+		</receiver>
+        
     </application>
     
     <uses-permission android:name="android.permission.INTERNET" />
@@ -829,6 +844,7 @@
 	<uses-feature android:name="android.hardware.camera" /> 
 	<uses-feature android:name="android.hardware.camera.autofocus" />
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 	
 
 </manifest>

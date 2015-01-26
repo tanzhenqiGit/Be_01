@@ -15,7 +15,9 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.sixteen.location.LocationActivity;
 import com.example.contents.sixteen.provider.AllProvidersActivity;
+import com.example.contents.sixteen.proximity.ProximityActivity;
 import com.example.dandan.R;
 
 /**
@@ -27,6 +29,8 @@ public class SixteenContentsActivity extends CommonListActivity<String>
 	private final String TAG = "SixContentsActivity";
 	
 	private final int ALL_PROVIDERS = 0;
+	private final int LOCATION = 1;
+	private final int PROXIMITY_ALERT = 2;
 	/* (non-Javadoc)
 	 * @see com.example.contents.CommonListActivity#handlerOnItemListClicked(android.widget.AdapterView, android.view.View, int, long)
 	 */
@@ -39,6 +43,16 @@ public class SixteenContentsActivity extends CommonListActivity<String>
 			Intent all_providers = new Intent(SixteenContentsActivity.this, 
 					AllProvidersActivity.class);
 			startActivity(all_providers);
+			break;
+		case LOCATION:
+			Intent location = new Intent(SixteenContentsActivity.this, 
+					LocationActivity.class);
+			startActivity(location);
+			break;
+		case PROXIMITY_ALERT:
+			Intent Proximity_Alert = new Intent(SixteenContentsActivity.this, 
+					ProximityActivity.class);
+			startActivity(Proximity_Alert);
 			break;
 		default:
 			

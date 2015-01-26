@@ -15,6 +15,7 @@ import com.example.dandan.R;
 
 import android.app.Activity;
 import android.content.Context;
+import android.location.Criteria;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.util.Log;
@@ -34,6 +35,11 @@ public class AllProvidersActivity extends Activity {
 	private void initialize()
 	{
 		mLocalMgr = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+		Criteria cri = new Criteria();
+		cri.setCostAllowed(false);
+		cri.setAltitudeRequired(true);
+		cri.setBearingRequired(true);
+		
 		List<String> providerNames = mLocalMgr.getAllProviders();
 		Log.d(TAG, "initialize list size="+ providerNames.size());
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(
