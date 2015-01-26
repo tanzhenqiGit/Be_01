@@ -20,31 +20,33 @@ public final class R {
     }
     public static final class array {
         public static final int Contents=0x7f080000;
-        public static final int chapterElevenContents=0x7f080008;
-        public static final int chapterFifteenContents=0x7f08000b;
+        public static final int chapterEightContents=0x7f080007;
+        public static final int chapterElevenContents=0x7f08000a;
+        public static final int chapterFifteenContents=0x7f08000d;
         public static final int chapterFiveContents=0x7f080004;
         public static final int chapterFourContents=0x7f080003;
-        public static final int chapterFourteenContents=0x7f08000a;
-        public static final int chapterNineContents=0x7f080006;
+        public static final int chapterFourteenContents=0x7f08000c;
+        public static final int chapterNineContents=0x7f080008;
+        public static final int chapterSevenContents=0x7f080006;
         public static final int chapterSixContents=0x7f080005;
-        public static final int chapterTenContents=0x7f080007;
-        public static final int chapterThirteenContents=0x7f080009;
+        public static final int chapterTenContents=0x7f080009;
+        public static final int chapterThirteenContents=0x7f08000b;
         public static final int chapterThreeContents=0x7f080002;
         public static final int chapterTwoContents=0x7f080001;
-        public static final int gender_name_list=0x7f08000f;
-        public static final int gender_value_list=0x7f080010;
-        public static final int light_strenght_list=0x7f080011;
-        public static final int light_value_list=0x7f080012;
+        public static final int gender_name_list=0x7f080011;
+        public static final int gender_value_list=0x7f080012;
+        public static final int light_strenght_list=0x7f080013;
+        public static final int light_value_list=0x7f080014;
         /**  声明一个名为phoneType的字符串数组 
          */
-        public static final int phoneType=0x7f08000e;
-        public static final int provinces=0x7f080013;
+        public static final int phoneType=0x7f080010;
+        public static final int provinces=0x7f080015;
         /**  声明一个名为simState的字符串数组 
          */
-        public static final int simState=0x7f08000d;
+        public static final int simState=0x7f08000f;
         /**  声明一个名为statusNames的字符串数组 
          */
-        public static final int statusNames=0x7f08000c;
+        public static final int statusNames=0x7f08000e;
     }
     public static final class attr {
         /** <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -606,13 +608,14 @@ some parent container.
         public static final int Decrease=0x7f0c006d;
         public static final int Default=0x7f0c0082;
         public static final int DialogActivity=0x7f0c008c;
-        public static final int ElevenContents=0x7f0c00d5;
+        public static final int EightContentsActivity=0x7f0c00d6;
+        public static final int ElevenContents=0x7f0c00d7;
         public static final int ExpandableListViewActivity=0x7f0c0077;
-        public static final int FifteenContentsActivity=0x7f0c00d8;
+        public static final int FifteenContentsActivity=0x7f0c00da;
         public static final int FirstServiceTest=0x7f0c001c;
         public static final int FiveContentsActivity=0x7f0c00d3;
         public static final int FourContentsActivity=0x7f0c001a;
-        public static final int FourteenContentActivity=0x7f0c00d7;
+        public static final int FourteenContentActivity=0x7f0c00d9;
         public static final int GallaryActivity=0x7f0c0078;
         public static final int GetPostMainActivity=0x7f0c00ce;
         public static final int GridViewTest=0x7f0c0075;
@@ -660,6 +663,7 @@ some parent container.
         public static final int SeekBarActivity=0x7f0c0080;
         public static final int SelectBookActivity=0x7f0c0058;
         public static final int SelectCityActivity=0x7f0c0052;
+        public static final int SevenContentsActivity=0x7f0c00d5;
         public static final int ShapeDrawableActivity=0x7f0c00c5;
         public static final int Show=0x7f0c007d;
         public static final int SimpleAdapterTest=0x7f0c0072;
@@ -689,7 +693,7 @@ some parent container.
         public static final int TelephonyStatus=0x7f0c0022;
         public static final int TenContentsActivity=0x7f0c001b;
         public static final int TextSwitchActivity=0x7f0c0085;
-        public static final int ThirteenContentsActivity=0x7f0c00d6;
+        public static final int ThirteenContentsActivity=0x7f0c00d8;
         public static final int ThreeContentsActivity=0x7f0c00d2;
         public static final int TimePick=0x7f0c0093;
         public static final int TitleProgressBar=0x7f0c007f;
@@ -708,7 +712,7 @@ some parent container.
         public static final int XmlExplainActivity=0x7f0c00c9;
         public static final int action_settings=0x7f0c0001;
         public static final int add=0x7f0c000b;
-        public static final int android=0x7f0c00da;
+        public static final int android=0x7f0c00dc;
         public static final int app_name=0x7f0c0000;
         public static final int arrow=0x7f0c003a;
         public static final int back=0x7f0c0044;
@@ -744,7 +748,7 @@ some parent container.
         public static final int getPhoneSts=0x7f0c0061;
         public static final int getReq=0x7f0c00d0;
         public static final int getServiceSts=0x7f0c0016;
-        public static final int hello=0x7f0c00d9;
+        public static final int hello=0x7f0c00db;
         public static final int hello_world=0x7f0c0002;
         public static final int hideActionBar=0x7f0c00ae;
         public static final int inputRegisterAccount=0x7f0c004b;

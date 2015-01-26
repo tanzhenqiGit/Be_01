@@ -1,5 +1,6 @@
 package com.example.contents;
 
+import com.example.contents.eight.EightContentsActivity;
 import com.example.contents.eleven.ElevenContentsActivity;
 import com.example.contents.fifteen.FifteenContentsActivity;
 import com.example.contents.five.FiveContentsActivity;
@@ -95,13 +96,15 @@ public class ContentsActivity extends Activity {
 						break;
 					case CHAPTER_SIX:
 						Intent six_chapter_intent = 
-						new Intent(ContentsActivity.this, SixContentsActivity.class);
+							new Intent(ContentsActivity.this, SixContentsActivity.class);
 						startActivity(six_chapter_intent);
 						break;
 					case CHAPTER_SEVEN:
 						break;
 					case CHAPTER_EIGHT:
-					
+						Intent eight_chapter_intent = 
+							new Intent(ContentsActivity.this, EightContentsActivity.class);
+						startActivity(eight_chapter_intent);
 						break;
 					case CHAPTER_NINE:
 						Log.d(TAG, "goto nine chapter contents");

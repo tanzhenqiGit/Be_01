@@ -233,6 +233,9 @@
 	<string name="ThreeContentsActivity">第三章内容</string>
 	<string name="FiveContentsActivity">第五章内容</string>
 	<string name="SixContentsActivity">第六章内容</string>
+    <string name="SevenContentsActivity">第七章内容</string>
+    <string name="EightContentsActivity">第八章内容</string>
+    
     <string name="ElevenContents">第十一章内容</string>
 	<string name="ThirteenContentsActivity">第十三章内容</string>
 	<string name="FourteenContentActivity">第十四张内容</string>
