@@ -180,6 +180,12 @@
         <item > 15.5 Gradienter </item>
     </string-array>
     
+    <string-array name="chapterSixteenContents">
+        <item > 16.1 </item>
+        <item > 16.2 </item>
+        <item > 16.3 </item>
+        <item > 16.4 </item>
+    </string-array>
     <!-- 声明一个名为statusNames的字符串数组 -->
 	<string-array name="statusNames">
 		<item>设备编号</item>
