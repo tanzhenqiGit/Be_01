@@ -235,6 +235,7 @@
 	<string name="SixContentsActivity">第六章内容</string>
     <string name="SevenContentsActivity">第七章内容</string>
     <string name="EightContentsActivity">第八章内容</string>
+    <string name="SharedPreferencesActivity">SharedPreferencesActivity</string>
     
     <string name="ElevenContents">第十一章内容</string>
 	<string name="ThirteenContentsActivity">第十三章内容</string>
@@ -245,4 +246,9 @@
 	<string name="AllProvidersActivity">AllProvidersActivity的应用</string>
 	<string name="LocationActivity">Location的应用</string>
 	<string name="ProximityActivity">Proximity的应用</string>
+	<string name="Latitude">纬度</string>
+	<string name="Langitude">经度</string>
+	
+	<string name="normal_view">正常视图</string>
+	<string name="satellite">卫星视图</string>
 </resources>

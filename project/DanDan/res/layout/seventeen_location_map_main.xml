@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
+        <TextView 
+            android:text="@string/Langitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/seventeen_location_main_langitude"
+            android:layout_width="@dimen/map_edittext_size"
+            android:layout_height="wrap_content"
+            android:text="@string/Langitude"
+            />
+        
+        <TextView 
+            android:text="@string/Latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/map_pading"
+            />
+        
+        <EditText 
+            android:id="@+id/seventeen_location_main_latitude"
+            android:layout_width="@dimen/map_edittext_size"
+            android:layout_height="wrap_content"
+            android:text="@string/Latitude"
+            />
+        
+        <Button 
+            android:id="@+id/seventeen_location_main_show_btn"
+            android:text="@string/Show"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        
+        <RadioGroup
+            android:id="@+id/seventeen_location_main_radio_group"
+            android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+            >
+            
+            <RadioButton 
+                android:text="@string/normal_view"
+                android:id="@+id/seventeen_location_main_normal_rb"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            
+            <RadioButton 
+                android:text="@string/satellite"
+                android:id="@+id/seventeen_location_main_satellite_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                />
+        </RadioGroup>
+    </LinearLayout>
+    
+    <com.google.android.maps.MapView
+        android:id="@+id/seventeen_location_main_mapview"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:apiKey="AIzaSyAx6J4wRY1w32hsTKXClHn9DCoSEkS29S8"
+        />
+
+</LinearLayout>

@@ -9,10 +9,12 @@
 */ 
 package com.example.contents.eight;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.eight.sharedpreferences.SharedPreferencesActivity;
 import com.example.dandan.R;
 
 /**
@@ -30,8 +32,10 @@ public class EightContentsActivity extends CommonListActivity<String>
 			int position, long id) {
 		switch (position)
 		{
-		case 0:
-			
+		case SHARED_PREFERENCES:
+			Intent shared_preferences = new Intent(EightContentsActivity.this,
+					SharedPreferencesActivity.class);
+			startActivity(shared_preferences);
 			break;
 		default:
 			
@@ -49,4 +53,5 @@ public class EightContentsActivity extends CommonListActivity<String>
 		prepareContents(constents);
 	}
 
+	public final int SHARED_PREFERENCES = 0;
 }

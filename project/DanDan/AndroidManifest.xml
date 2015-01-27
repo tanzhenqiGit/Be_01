@@ -445,6 +445,11 @@
             android:label="@string/EightContentsActivity" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.eight.sharedpreferences.SharedPreferencesActivity"
+            android:label="@string/SharedPreferencesActivity" >
+        </activity>
+        
         
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
