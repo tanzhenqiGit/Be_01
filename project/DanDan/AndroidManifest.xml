@@ -455,6 +455,10 @@
             android:label="@string/FileActivity" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.eight.file.SDCardActivity"
+            android:label="@string/SDCardActivity" >
+        </activity>
         
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"

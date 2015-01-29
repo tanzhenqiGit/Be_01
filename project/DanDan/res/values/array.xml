@@ -114,8 +114,8 @@
     
     <string-array name="chapterEightContents">
         <item > 8.1 SharedPreferences</item>
-        <item > 8.2 File </item>
-        <item > 8.3 </item>
+        <item > 8.2 FileInProgram </item>
+        <item > 8.3 FileInSDCard </item>
         <item > 8.4 </item>
     </string-array>
     

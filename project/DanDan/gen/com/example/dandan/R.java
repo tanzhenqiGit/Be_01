@@ -597,7 +597,7 @@ some parent container.
         public static final int AlarmChangeWallpaper=0x7f0c0033;
         public static final int AlarmManager=0x7f0c0030;
         public static final int Alarming=0x7f0c0031;
-        public static final int AllProvidersActivity=0x7f0c00df;
+        public static final int AllProvidersActivity=0x7f0c00e0;
         public static final int AnimationDrawableActivity=0x7f0c00c7;
         public static final int AttrActivity=0x7f0c00cc;
         public static final int AudioManager=0x7f0c002a;
@@ -631,14 +631,14 @@ some parent container.
         public static final int Default=0x7f0c0082;
         public static final int DialogActivity=0x7f0c008c;
         public static final int EightContentsActivity=0x7f0c00d6;
-        public static final int ElevenContents=0x7f0c00d9;
+        public static final int ElevenContents=0x7f0c00da;
         public static final int ExpandableListViewActivity=0x7f0c0077;
-        public static final int FifteenContentsActivity=0x7f0c00dc;
+        public static final int FifteenContentsActivity=0x7f0c00dd;
         public static final int FileActivity=0x7f0c00d8;
         public static final int FirstServiceTest=0x7f0c001c;
         public static final int FiveContentsActivity=0x7f0c00d3;
         public static final int FourContentsActivity=0x7f0c001a;
-        public static final int FourteenContentActivity=0x7f0c00db;
+        public static final int FourteenContentActivity=0x7f0c00dc;
         public static final int GallaryActivity=0x7f0c0078;
         public static final int GetPostMainActivity=0x7f0c00ce;
         public static final int GridViewTest=0x7f0c0075;
@@ -651,13 +651,13 @@ some parent container.
         public static final int InputName=0x7f0c0019;
         public static final int IntentServiceTest=0x7f0c001e;
         public static final int Landscape=0x7f0c0064;
-        public static final int Langitude=0x7f0c00e3;
-        public static final int Latitude=0x7f0c00e2;
+        public static final int Langitude=0x7f0c00e4;
+        public static final int Latitude=0x7f0c00e3;
         public static final int LayerDrawablerActivity=0x7f0c00c4;
         public static final int LifeCycle=0x7f0c0053;
         public static final int LifeCycleSecondActivity=0x7f0c0054;
         public static final int ListDialogActivity=0x7f0c008d;
-        public static final int LocationActivity=0x7f0c00e0;
+        public static final int LocationActivity=0x7f0c00e1;
         public static final int MNC=0x7f0c0060;
         public static final int MenuResActivity=0x7f0c00ca;
         public static final int MenuResourceActivity=0x7f0c009d;
@@ -679,19 +679,20 @@ some parent container.
         public static final int ProgerssDialogActivity=0x7f0c0096;
         public static final int ProgressBarActivity=0x7f0c007c;
         public static final int Province=0x7f0c00bf;
-        public static final int ProximityActivity=0x7f0c00e1;
+        public static final int ProximityActivity=0x7f0c00e2;
         public static final int RatingBarActivity=0x7f0c0081;
         public static final int RecodeSound=0x7f0c003d;
         public static final int RecordVideo=0x7f0c0040;
         public static final int ResultActivity=0x7f0c0047;
         public static final int ReturnHome=0x7f0c00b3;
+        public static final int SDCardActivity=0x7f0c00d9;
         public static final int SearchViewActivity=0x7f0c0098;
         public static final int SecondActivity=0x7f0c0042;
         public static final int SeekBarActivity=0x7f0c0080;
         public static final int SelectBookActivity=0x7f0c0058;
         public static final int SelectCityActivity=0x7f0c0052;
         public static final int SevenContentsActivity=0x7f0c00d5;
-        public static final int SeventeenContentsActivity=0x7f0c00de;
+        public static final int SeventeenContentsActivity=0x7f0c00df;
         public static final int ShapeDrawableActivity=0x7f0c00c5;
         public static final int SharedPreferencesActivity=0x7f0c00d7;
         public static final int Show=0x7f0c007d;
@@ -701,7 +702,7 @@ some parent container.
         public static final int SingTaskSecondActivity=0x7f0c0057;
         public static final int SingleTaskActivity=0x7f0c0056;
         public static final int SixContentsActivity=0x7f0c00d4;
-        public static final int SixteenContentsActivity=0x7f0c00dd;
+        public static final int SixteenContentsActivity=0x7f0c00de;
         public static final int SmsManager=0x7f0c0025;
         public static final int SortedBroadCast=0x7f0c0036;
         public static final int SoundPoolActivity=0x7f0c0037;
@@ -723,7 +724,7 @@ some parent container.
         public static final int TelephonyStatus=0x7f0c0022;
         public static final int TenContentsActivity=0x7f0c001b;
         public static final int TextSwitchActivity=0x7f0c0085;
-        public static final int ThirteenContentsActivity=0x7f0c00da;
+        public static final int ThirteenContentsActivity=0x7f0c00db;
         public static final int ThreeContentsActivity=0x7f0c00d2;
         public static final int TimePick=0x7f0c0093;
         public static final int TitleProgressBar=0x7f0c007f;
@@ -742,7 +743,7 @@ some parent container.
         public static final int XmlExplainActivity=0x7f0c00c9;
         public static final int action_settings=0x7f0c0001;
         public static final int add=0x7f0c000b;
-        public static final int android=0x7f0c00e9;
+        public static final int android=0x7f0c00ea;
         public static final int app_name=0x7f0c0000;
         public static final int arrow=0x7f0c003a;
         public static final int back=0x7f0c0044;
@@ -778,7 +779,7 @@ some parent container.
         public static final int getPhoneSts=0x7f0c0061;
         public static final int getReq=0x7f0c00d0;
         public static final int getServiceSts=0x7f0c0016;
-        public static final int hello=0x7f0c00e8;
+        public static final int hello=0x7f0c00e9;
         public static final int hello_world=0x7f0c0002;
         public static final int hideActionBar=0x7f0c00ae;
         public static final int inputRegisterAccount=0x7f0c004b;
@@ -789,14 +790,14 @@ some parent container.
         public static final int male=0x7f0c004d;
         public static final int managerBlack=0x7f0c0024;
         public static final int name=0x7f0c000c;
-        public static final int normal_view=0x7f0c00e4;
+        public static final int normal_view=0x7f0c00e5;
         public static final int number=0x7f0c000d;
         public static final int plain_item=0x7f0c00a4;
         public static final int play=0x7f0c002c;
         public static final int query=0x7f0c0005;
-        public static final int read=0x7f0c00e6;
+        public static final int read=0x7f0c00e7;
         public static final int register=0x7f0c004f;
-        public static final int satellite=0x7f0c00e5;
+        public static final int satellite=0x7f0c00e6;
         public static final int search=0x7f0c0009;
         public static final int select=0x7f0c0029;
         public static final int sendBroadCast=0x7f0c0035;
@@ -819,7 +820,7 @@ some parent container.
         public static final int userName=0x7f0c0049;
         public static final int userPasswd=0x7f0c004a;
         public static final int weight=0x7f0c0018;
-        public static final int write=0x7f0c00e7;
+        public static final int write=0x7f0c00e8;
     }
     public static final class style {
         /** 

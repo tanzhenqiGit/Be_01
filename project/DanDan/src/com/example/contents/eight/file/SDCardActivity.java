@@ -4,31 +4,33 @@
 * Create on 2015-1-29
 *
 * @author author E-mail:tan_zhenqi@163.com 
-* @version create time : 2015-1-29 ÏÂÎç2:05:19
-* @class FileTest.java
+* @version create time : 2015-1-29 ÏÂÎç3:03:22
+* @class SDCardActivity.java
 */ 
 package com.example.contents.eight.file;
 
-
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 
 import com.example.dandan.R;
+
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Environment;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-
 /**
  * @author free
  *
  */
-public class FileActivity extends Activity {
+public class SDCardActivity extends Activity {
 
 	/* (non-Javadoc)
 	 * @see android.app.Activity#onCreate(android.os.Bundle)
@@ -43,6 +45,7 @@ public class FileActivity extends Activity {
 	
 	private void initialize()
 	{
+		Log.d(TAG, "initialize");
 		mReadBtn = (Button) findViewById(R.id.common_view_main_2_read_btn);
 		if (mReadBtn != null) {
 			mReadBtn.setOnClickListener(new View.OnClickListener() {
@@ -77,57 +80,75 @@ public class FileActivity extends Activity {
 		
 	}
 	
+	
 	private String read()
 	{
-		StringBuilder sb = new StringBuilder();
-		byte[] bytes = new byte [10];
-		try {
-			FileInputStream fis = openFileInput(FILE_NAME);
-			int readNum = 0;
+		if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED))
+		{
+			File file = Environment.getExternalStorageDirectory();
+			StringBuilder sb = new StringBuilder();
+			byte [] bytes = new byte [10];
 			try {
-				while ((readNum = fis.read(bytes)) > 0) {
-					sb.append(new String(bytes, 0, readNum));
-					Log.d(TAG, sb.toString());
+				FileInputStream fis = new FileInputStream(file.getCanonicalPath() + FILE_NAME);
+				int readNum = 0;
+				try {
+					while ((readNum = fis.read(bytes)) > 0) {
+						sb.append(new String(bytes, 0, readNum));
+						Log.d(TAG, sb.toString());
+					}
+					fis.close();
+					return sb.toString();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
-				fis.close();
-				return sb.toString();
-			} catch (IOException e) {
+			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
+		} else {
 			
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
-		
 		return null;
 	}
 	
 	private void write(String value)
 	{
-		if (value == null) {
-			Log.d(TAG, "write function , but value is null do nothing.");
-			return;
-		}
-		try {
-			FileOutputStream pos = openFileOutput(FILE_NAME, MODE_PRIVATE);
-			try {
-				pos.write(value.getBytes());
-				pos.close();
-				Log.d(TAG, "write succeed");
-			} catch (IOException e) {
+		if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
+			Log.d(TAG, "SDCard is existed");
+			File storageDiratory = Environment.getExternalStorageDirectory();
+
+			try {	
+				String path = storageDiratory.getCanonicalPath() + FILE_NAME;
+				Log.d(TAG, path);
+				//File target = new File(path);
+				//RandomAccessFile fos = new RandomAccessFile(target, "rw");
+				FileOutputStream fos = new FileOutputStream(path);			
+				try {
+					fos.write(value.getBytes());
+					fos.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			} catch (FileNotFoundException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
+			
+		} else {
+			
+			Log.e(TAG, "SDCard is not existed");
+		}
 	}
 	
-	private final String TAG = "FileActivity";
-	private final String FILE_NAME = "com.example.dandan.file.text.txt";
+	private final String TAG = "SDCardActivity";
+	public final String FILE_NAME = "/SDCardTest.bin";
+	
 	private Button mReadBtn, mWriteBtn;
 	private EditText mReadTxt, mWriteTxt;
 

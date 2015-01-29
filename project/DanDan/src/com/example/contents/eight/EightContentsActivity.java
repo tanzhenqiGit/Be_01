@@ -15,6 +15,7 @@ import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
 import com.example.contents.eight.file.FileActivity;
+import com.example.contents.eight.file.SDCardActivity;
 import com.example.contents.eight.sharedpreferences.SharedPreferencesActivity;
 import com.example.dandan.R;
 
@@ -43,6 +44,11 @@ public class EightContentsActivity extends CommonListActivity<String>
 					FileActivity.class);
 			startActivity(file_test);
 			break;
+		case SD_CARD_TEST:
+			Intent sd_card_test = new Intent(EightContentsActivity.this,
+					SDCardActivity.class);
+			startActivity(sd_card_test);
+			break;
 		default:
 			
 			break;
@@ -61,4 +67,5 @@ public class EightContentsActivity extends CommonListActivity<String>
 
 	public final int SHARED_PREFERENCES = 0;
 	public final int FILE_TEST = 1;
+	public final int SD_CARD_TEST = 2;
 }
