@@ -17,6 +17,7 @@ import com.example.contents.CommonListActivity;
 import com.example.contents.eight.file.FileActivity;
 import com.example.contents.eight.file.SDCardActivity;
 import com.example.contents.eight.sharedpreferences.SharedPreferencesActivity;
+import com.example.contents.eight.sqlite.HandleSQLiteActivity;
 import com.example.dandan.R;
 
 /**
@@ -49,6 +50,11 @@ public class EightContentsActivity extends CommonListActivity<String>
 					SDCardActivity.class);
 			startActivity(sd_card_test);
 			break;
+		case SQLITE_TEST:
+			Intent sqlite_test = new Intent(EightContentsActivity.this,
+					HandleSQLiteActivity.class);
+			startActivity(sqlite_test);
+			break;
 		default:
 			
 			break;
@@ -68,4 +74,5 @@ public class EightContentsActivity extends CommonListActivity<String>
 	public final int SHARED_PREFERENCES = 0;
 	public final int FILE_TEST = 1;
 	public final int SD_CARD_TEST = 2;
+	public final int SQLITE_TEST = 3;
 }

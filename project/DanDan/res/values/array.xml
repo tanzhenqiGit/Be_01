@@ -116,7 +116,7 @@
         <item > 8.1 SharedPreferences</item>
         <item > 8.2 FileInProgram </item>
         <item > 8.3 FileInSDCard </item>
-        <item > 8.4 </item>
+        <item > 8.4 SQLiteDatabase </item>
     </string-array>
     
     

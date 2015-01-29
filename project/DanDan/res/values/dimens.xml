@@ -7,5 +7,5 @@
     <dimen name="textHighSize">20dip</dimen>
     <dimen name="map_edittext_size">85px</dimen>
     <dimen name="map_pading">8px</dimen>
-    
+    <dimen name="key_size">100dp</dimen>
 </resources>
