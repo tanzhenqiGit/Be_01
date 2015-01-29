@@ -236,6 +236,7 @@
     <string name="SevenContentsActivity">第七章内容</string>
     <string name="EightContentsActivity">第八章内容</string>
     <string name="SharedPreferencesActivity">SharedPreferencesActivity</string>
+    <string name="FileActivity">FileActivity</string>
     
     <string name="ElevenContents">第十一章内容</string>
 	<string name="ThirteenContentsActivity">第十三章内容</string>
@@ -251,4 +252,7 @@
 	
 	<string name="normal_view">正常视图</string>
 	<string name="satellite">卫星视图</string>
+	<string name="read">读入</string>
+	<string name="write">写出</string>
+	
 </resources>

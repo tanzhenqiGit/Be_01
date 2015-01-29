@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import com.example.contents.CommonListActivity;
+import com.example.contents.eight.file.FileActivity;
 import com.example.contents.eight.sharedpreferences.SharedPreferencesActivity;
 import com.example.dandan.R;
 
@@ -37,6 +38,11 @@ public class EightContentsActivity extends CommonListActivity<String>
 					SharedPreferencesActivity.class);
 			startActivity(shared_preferences);
 			break;
+		case FILE_TEST:
+			Intent file_test = new Intent(EightContentsActivity.this,
+					FileActivity.class);
+			startActivity(file_test);
+			break;
 		default:
 			
 			break;
@@ -54,4 +60,5 @@ public class EightContentsActivity extends CommonListActivity<String>
 	}
 
 	public final int SHARED_PREFERENCES = 0;
+	public final int FILE_TEST = 1;
 }

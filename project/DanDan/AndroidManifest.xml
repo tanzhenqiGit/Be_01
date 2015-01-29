@@ -450,6 +450,11 @@
             android:label="@string/SharedPreferencesActivity" >
         </activity>
         
+        <activity
+            android:name="com.example.contents.eight.file.FileActivity"
+            android:label="@string/FileActivity" >
+        </activity>
+        
         
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
