@@ -18,6 +18,7 @@ import com.example.contents.eight.file.FileActivity;
 import com.example.contents.eight.file.SDCardActivity;
 import com.example.contents.eight.sharedpreferences.SharedPreferencesActivity;
 import com.example.contents.eight.sqlite.HandleSQLiteActivity;
+import com.example.contents.eight.sqliteopenhelper.DictActivity;
 import com.example.dandan.R;
 
 /**
@@ -55,6 +56,11 @@ public class EightContentsActivity extends CommonListActivity<String>
 					HandleSQLiteActivity.class);
 			startActivity(sqlite_test);
 			break;
+		case SQLITE_OPEH_HELPER:
+			Intent sqlite_open = new Intent(EightContentsActivity.this,
+					DictActivity.class);
+			startActivity(sqlite_open);
+			break;
 		default:
 			
 			break;
@@ -75,4 +81,5 @@ public class EightContentsActivity extends CommonListActivity<String>
 	public final int FILE_TEST = 1;
 	public final int SD_CARD_TEST = 2;
 	public final int SQLITE_TEST = 3;
+	public final int SQLITE_OPEH_HELPER = 4;
 }

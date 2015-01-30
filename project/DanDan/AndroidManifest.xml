@@ -465,6 +465,17 @@
             android:label="@string/HandleSQLiteActivity" >
         </activity>
         
+
+        <activity
+            android:name="com.example.contents.eight.sqliteopenhelper.DictActivity"
+            android:label="@string/DictActivity" >
+        </activity>
+        
+        <activity
+            android:name="com.example.contents.eight.sqliteopenhelper.ResultActivity"
+            android:label="@string/ResultActivity" >
+        </activity>
+        
         <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >

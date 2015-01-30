@@ -239,6 +239,10 @@
     <string name="FileActivity">FileActivity</string>
     <string name="SDCardActivity">SDCardActivity</string>
     <string name="HandleSQLiteActivity">HandleSQLiteActivity</string>
+    <string name="DictActivity">DictActivity</string>
+    
+    <string name="word">单词</string>
+    <string name="explain">解释</string>
     
     <string name="ElevenContents">第十一章内容</string>
 	<string name="ThirteenContentsActivity">第十三章内容</string>
