@@ -82,7 +82,7 @@ public class HandleSQLiteActivity extends Activity {
 	{
 		if (db != null && key != null && value != null)
 		{
-			db.execSQL("insert into news_inf values(null, ? , ?)", new String[] {key, value});
+			db.execSQL("delete from news_inf where news_title = ? ", new String[] {key});
 			Log.d(TAG, "deleteData key:" + key + ",value:" + value);
 			Cursor cursor = db.rawQuery("select * from news_inf", null);
 			inflateList(cursor);
@@ -91,12 +91,42 @@ public class HandleSQLiteActivity extends Activity {
 		}
 	}
 	
+	boolean isKeyExist(String key)
+	{
+		if (mSQLite != null && mSQLite.isOpen()) {
+			Cursor cursor = mSQLite.rawQuery("select * from news_inf where news_title = ?", new String[] {key});
+			if (cursor != null) {
+				int count = cursor.getCount();
+				Log.d(TAG, "isKeyExist count = " + count);
+				if (count > 0) {
+					return true;
+				}
+				return false;
+			}
+		} else {
+			Log.d(TAG, "mSQLite == null or mSQLite is close.");
+			return false;
+		}
+		return true;
+	}
+	
 	void insertData(SQLiteDatabase db, String key, String value)
 	{
 		if (db != null && key != null && value != null)
 		{
-			db.execSQL("insert into news_inf values(null, ? , ?)", new String[] {key, value});
-			Log.d(TAG, "insertData key:" + key + ",value:" + value);
+			if (key.equals("") || value.equals("")) {
+				Log.d(TAG,"insertData do nothint key or value is empty.");
+				return;
+			}
+			if (isKeyExist(key)) {
+				Log.d(TAG, "insertData key is exist just update.");
+				db.execSQL("update news_inf set news_content = ? where news_title = ?", 
+						new String[] {value, key});
+				
+			} else {
+				db.execSQL("insert into news_inf values(null, ? , ?)", new String[] {key, value});
+				Log.d(TAG, "insertData key:" + key + ",value:" + value);
+			}
 			Cursor cursor = db.rawQuery("select * from news_inf", null);
 			inflateList(cursor);
 		} else {
@@ -120,8 +150,11 @@ public class HandleSQLiteActivity extends Activity {
 	{
 		if (mSQLite != null) {
 			Log.d(TAG, "queryBtnCallBack is start");
-			Cursor cursor = mSQLite.rawQuery("select * from news_inf", null);
-			inflateList(cursor);
+			if (mSQLite.isOpen()) {
+			    Cursor cursor = mSQLite.rawQuery("select * from news_inf", null);
+			    
+			    inflateList(cursor);
+			}
 		} else {
 			Log.d(TAG, "queryBtnCallBack mSQLite == null");
 		}
@@ -139,6 +172,7 @@ public class HandleSQLiteActivity extends Activity {
 					insertData(mSQLite, key, value);
 					
 				} catch (SQLiteException e) {
+					Log.d(TAG, "insertBtnCallBack receiver a SQLiteException");
 					createSQLiteTable(mSQLite);
 					insertData(mSQLite, key, value);
 				}
@@ -150,7 +184,13 @@ public class HandleSQLiteActivity extends Activity {
 	
 	private void inflateList(Cursor cursor)
 	{
+		
 		if (cursor != null) {
+			if (mKeyTxt != null && mValueTxt != null) {
+				mKeyTxt.setText("");
+				mValueTxt.setText("");
+			}
+			Log.d(TAG, "inflateList cursor is not null count=" + cursor.getCount()  + "total number =" + cursor.getColumnCount());
 			@SuppressWarnings("deprecation")
 			SimpleCursorAdapter sa = new SimpleCursorAdapter(
 					this, 
