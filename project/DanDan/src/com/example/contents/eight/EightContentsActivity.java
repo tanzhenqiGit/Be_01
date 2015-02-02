@@ -16,6 +16,8 @@ import android.widget.AdapterView;
 import com.example.contents.CommonListActivity;
 import com.example.contents.eight.file.FileActivity;
 import com.example.contents.eight.file.SDCardActivity;
+import com.example.contents.eight.gesture.GestureTest;
+import com.example.contents.eight.gesture.PageTurningActivity;
 import com.example.contents.eight.sharedpreferences.SharedPreferencesActivity;
 import com.example.contents.eight.sqlite.HandleSQLiteActivity;
 import com.example.contents.eight.sqliteopenhelper.DictActivity;
@@ -61,6 +63,16 @@ public class EightContentsActivity extends CommonListActivity<String>
 					DictActivity.class);
 			startActivity(sqlite_open);
 			break;
+		case GESTURE_DETECTOR:
+			Intent gesture_detector = new Intent(EightContentsActivity.this,
+					GestureTest.class);
+			startActivity(gesture_detector);
+			break;
+		case PAGE_TURNING:
+			Intent page_turning = new Intent(EightContentsActivity.this,
+					PageTurningActivity.class);
+			startActivity(page_turning);
+			break;
 		default:
 			
 			break;
@@ -82,4 +94,6 @@ public class EightContentsActivity extends CommonListActivity<String>
 	public final int SD_CARD_TEST = 2;
 	public final int SQLITE_TEST = 3;
 	public final int SQLITE_OPEH_HELPER = 4;
+	public final int GESTURE_DETECTOR = 5;
+	public final int PAGE_TURNING = 6;
 }
