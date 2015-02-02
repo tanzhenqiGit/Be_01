@@ -242,6 +242,7 @@
     <string name="DictActivity">DictActivity</string>
     <string name="GestureTest">GestureTest</string>
     <string name="PageTurningActivity">PageTurningActivity</string>
+    <string name="RecogniseGesture">RecogniseGesture</string>
     
     <string name="word">单词</string>
     <string name="explain">解释</string>
@@ -262,5 +263,7 @@
 	<string name="satellite">卫星视图</string>
 	<string name="read">读入</string>
 	<string name="write">写出</string>
+	<string name="addGesture">请在下面屏幕上绘制手势</string>
+	<string name="gestureName">手势名称</string>
 	
 </resources>

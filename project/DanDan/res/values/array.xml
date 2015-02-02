@@ -120,6 +120,7 @@
         <item > 8.5 SQLiteOpenHelper </item>
         <item > 8.6 GestureDetector </item>
         <item > 8.7 PageTurning </item>
+        <item > 8.8 AddGesture </item>
     </string-array>
     
     

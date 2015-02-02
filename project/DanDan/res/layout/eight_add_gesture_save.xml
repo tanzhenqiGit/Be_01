@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:text="@string/gestureName"
+            />
+
+        <EditText
+            android:id="@+id/eight_add_gesture_save_txt"
+            android:layout_width="match_parent"
+			android:layout_height="wrap_content"   
+			android:hint="@string/Default"
+			/>
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/eight_add_gesture_image"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Default"
+        />
+
+</LinearLayout>

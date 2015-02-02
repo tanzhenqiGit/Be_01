@@ -18,6 +18,7 @@ import com.example.contents.eight.file.FileActivity;
 import com.example.contents.eight.file.SDCardActivity;
 import com.example.contents.eight.gesture.GestureTest;
 import com.example.contents.eight.gesture.PageTurningActivity;
+import com.example.contents.eight.gesture.RecogniseGesture;
 import com.example.contents.eight.sharedpreferences.SharedPreferencesActivity;
 import com.example.contents.eight.sqlite.HandleSQLiteActivity;
 import com.example.contents.eight.sqliteopenhelper.DictActivity;
@@ -73,6 +74,11 @@ public class EightContentsActivity extends CommonListActivity<String>
 					PageTurningActivity.class);
 			startActivity(page_turning);
 			break;
+		case RECOGNISE:
+			Intent recognise = new Intent(EightContentsActivity.this,
+					RecogniseGesture.class);
+			startActivity(recognise);
+			break;
 		default:
 			
 			break;
@@ -96,4 +102,5 @@ public class EightContentsActivity extends CommonListActivity<String>
 	public final int SQLITE_OPEH_HELPER = 4;
 	public final int GESTURE_DETECTOR = 5;
 	public final int PAGE_TURNING = 6;
+	public final int RECOGNISE = 7;
 }

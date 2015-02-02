@@ -488,6 +488,11 @@
         </activity>
         
         <activity
+            android:name="com.example.contents.eight.gesture.RecogniseGesture"
+            android:label="@string/RecogniseGesture" >
+        </activity>
+        
+        <activity
             android:name="com.example.contents.nine.NineContentsActivity"
             android:label="@string/contents" >
         </activity>
