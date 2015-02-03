@@ -243,6 +243,7 @@
     <string name="GestureTest">GestureTest</string>
     <string name="PageTurningActivity">PageTurningActivity</string>
     <string name="RecogniseGesture">RecogniseGesture</string>
+    <string name="SpeechActivity">SpeechActivity</string>
     
     <string name="word">单词</string>
     <string name="explain">解释</string>
@@ -265,5 +266,7 @@
 	<string name="write">写出</string>
 	<string name="addGesture">请在下面屏幕上绘制手势</string>
 	<string name="gestureName">手势名称</string>
+	<string name="speech">朗读</string>
+	<string name="record">录音</string>
 	
 </resources>

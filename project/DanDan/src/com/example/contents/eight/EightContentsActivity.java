@@ -20,6 +20,7 @@ import com.example.contents.eight.gesture.GestureTest;
 import com.example.contents.eight.gesture.PageTurningActivity;
 import com.example.contents.eight.gesture.RecogniseGesture;
 import com.example.contents.eight.sharedpreferences.SharedPreferencesActivity;
+import com.example.contents.eight.speech.SpeechActivity;
 import com.example.contents.eight.sqlite.HandleSQLiteActivity;
 import com.example.contents.eight.sqliteopenhelper.DictActivity;
 import com.example.dandan.R;
@@ -79,6 +80,11 @@ public class EightContentsActivity extends CommonListActivity<String>
 					RecogniseGesture.class);
 			startActivity(recognise);
 			break;
+		case SPEECH:
+			Intent speech = new Intent(EightContentsActivity.this,
+					SpeechActivity.class);
+			startActivity(speech);
+			break;
 		default:
 			
 			break;
@@ -103,4 +109,5 @@ public class EightContentsActivity extends CommonListActivity<String>
 	public final int GESTURE_DETECTOR = 5;
 	public final int PAGE_TURNING = 6;
 	public final int RECOGNISE = 7;
+	public final int SPEECH = 8;
 }
