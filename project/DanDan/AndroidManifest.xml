@@ -761,6 +761,11 @@
             android:label="@string/SeventeenContentsActivity">           
         </activity>
         
+        <activity 
+            android:name="com.example.contents.eighteen.LinkMainActivity"
+            android:label="@string/LinkMainActivity">           
+        </activity>
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />

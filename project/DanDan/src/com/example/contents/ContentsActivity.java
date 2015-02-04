@@ -1,6 +1,7 @@
 package com.example.contents;
 
 import com.example.contents.eight.EightContentsActivity;
+import com.example.contents.eighteen.LinkMainActivity;
 import com.example.contents.eleven.ElevenContentsActivity;
 import com.example.contents.fifteen.FifteenContentsActivity;
 import com.example.contents.five.FiveContentsActivity;
@@ -150,7 +151,9 @@ public class ContentsActivity extends Activity {
 						startActivity(seventeen_intent);
 						break;
 					case CHAPTER_EIGHTEEN:
-						
+						Intent eighteen_intent 
+							= new Intent(ContentsActivity.this, LinkMainActivity.class);
+						startActivity(eighteen_intent);
 						break;
 					case CHAPTER_NINETEEN:
 						
