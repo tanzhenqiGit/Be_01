@@ -2,6 +2,7 @@ package com.example.contents.eighteen;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -23,7 +24,7 @@ public class ImageUtil {
 	}
 	
 	/**
-	 * @see get all image id (all image is begin with "p_".
+	 * @see get all image id (all image is begin with "p_").
 	 * @param void
 	 * @return
 	 */
@@ -51,10 +52,10 @@ public class ImageUtil {
 	}
 	
 	/**
-	 * 
+	 * @see get ImageId according random function.
 	 * @param sourceValue
 	 * @param size
-	 * @return
+	 * @return List contains image Id.
 	 */
 	
 	public static List<Integer> getRandomValues(List<Integer> sourceValue, int size)
@@ -73,6 +74,43 @@ public class ImageUtil {
 		return result;
 		
 	}
+	
+	/**
+	 * @param size get image ID size
+	 * @return List save images ID
+	 */
+	public static List<Integer> getPlayValues(int size)
+	{
+		if (size % 2 != 0) {
+			size += 1;
+		}
+		
+		List<Integer> playImageValues = getRandomValues(mImageValue, size / 2);
+		playImageValues.addAll(playImageValues);
+		Collections.shuffle(playImageValues);
+		return playImageValues;
+	}
+	
+	/**
+	 * 
+	 * @param context
+	 * @param size
+	 * @return
+	 */
+	public static List<PieceImage> getPlayImages(Context context, int size)
+	{
+		List<Integer> resourceValues = getPlayValues(size);
+		List<PieceImage> result = new ArrayList<PieceImage>();
+		for (Integer value : resourceValues) {
+			Bitmap bm = BitmapFactory.decodeResource(context.getResources(), value);
+			PieceImage pieceimage = new PieceImage(bm, value);
+			result.add(pieceimage);
+		}
+		
+		return result;
+	}
+	
+	
 	
 	public static String TAG = "ImageUtil";
 	private static List<Integer> mImageValue = getImageValues();

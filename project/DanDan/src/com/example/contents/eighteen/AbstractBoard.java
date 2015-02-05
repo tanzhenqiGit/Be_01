@@ -14,7 +14,21 @@ public abstract class AbstractBoard {
 			return null;
 		}
 		Piece[][] pieces = new Piece[config.getmXSize()][config.getmYSize()];
-		//List<PieceImage> playImages = 
+		List<Piece> notNullPieces = createPiece(config, pieces); 
+		
+		List<PieceImage> playImages = 
+				ImageUtil.getPlayImages(config.getmContext(), notNullPieces.size());
+		
+		int imageWidth = playImages.get(0).getmImage().getWidth();
+		int imageHeight = playImages.get(0).getmImage().getHeight();
+		
+		for (int i = 0; i < notNullPieces.size(); i++) {
+			Piece piece = notNullPieces.get(i);
+			piece.setmImage(playImages.get(i));
+			piece.setmBeginX(piece.getmIndexX() * imageWidth + config.getmBeginImageX());
+			piece.setmBeginY(piece.getmIndexY() * imageHeight + config.getmBeginImageY());
+			pieces[piece.getmIndexX()][piece.getmIndexY()] = piece;
+		}
 		
 		return pieces;
 	}
