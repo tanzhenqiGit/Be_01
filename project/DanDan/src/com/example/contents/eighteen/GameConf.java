@@ -4,11 +4,26 @@ import android.content.Context;
 
 public class GameConf {
 
-	public static final int PIECE_WIDHT = 40;
-	public static final int PIECE_HEIGHT = 40;
+	/**
+	 * every piece width and height
+	 */
+	public static final int PIECE_WIDHT = 60;
+	public static final int PIECE_HEIGHT = 60;
 	
+	/**
+	 * game time.
+	 */
 	public static int DEFAULT_TIME = 100;
 	
+	/**
+	 * construct for gameconf.
+	 * @param mXSize max number for x axis.
+	 * @param mYSize max number for y axis.
+	 * @param mBeginImageX first piece's x-coordinate.
+	 * @param mBeginImageY first piece's y-coordinate.
+	 * @param gameTime game time.
+	 * @param mContext context for resource.
+	 */
 	public GameConf(int mXSize, int mYSize, int mBeginImageX, int mBeginImageY,
 			long gameTime, Context mContext) {
 		super();

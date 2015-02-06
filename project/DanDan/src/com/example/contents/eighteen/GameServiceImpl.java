@@ -44,7 +44,6 @@ public class GameServiceImpl implements GameService {
 
 	@Override
 	public Piece[][] getPieces() {
-		Log.d(TAG, "getPieces");
 		return mPieces;
 	}
 

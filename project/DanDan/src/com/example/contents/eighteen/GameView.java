@@ -36,12 +36,56 @@ public class GameView extends View {
 		this.mSelectPiece = mSelectPiece;
 	}
 	
+	public void setmGameService(GameService mGameService) {
+		this.mGameService = mGameService;
+	}
+	
 	@Override
 	protected void onDraw(Canvas canvas) {
-		// TODO Auto-generated method stub
 		super.onDraw(canvas);
+		if (mGameService == null) {
+			Log.e(TAG, "onDraw mGameService == null");
+			return;
+		}
+		Piece[][] pieces = mGameService.getPieces();
+		if (pieces != null) {
+			for (int i = 0; i < pieces.length; i++) {
+				for (int j = 0; j < pieces[i].length; j++) {
+					if (pieces[i][j] != null) {
+						Piece piece = pieces[i][j];
+						canvas.drawBitmap(piece.getmImage().getmImage(),
+								piece.getmBeginX(), 
+								piece.getmBeginY(), 
+								null);
+						
+					}
+				}
+			}
+		}
+		
+		if (mLinkInfo != null) {
+			Log.d(TAG, "drwa Line");
+			drawLine(mLinkInfo, canvas);
+			mLinkInfo = null;
+		}
+		
+		if (mSelectPiece != null) {
+			canvas.drawBitmap(mSelectImage,
+					mSelectPiece.getmBeginX(), 
+					mSelectPiece.getmBeginY(),
+					null);
+			Log.d(TAG, "draw select piece.");
+		}
 	}
 
+	
+	public void startGame()
+	{
+		if (mGameService != null) {
+			mGameService.start();
+			postInvalidate();
+		}
+	}
 	
 	private void initialize(Context context)
 	{
@@ -75,6 +119,9 @@ public class GameView extends View {
 	private Piece mSelectPiece;
 	private LinkInfo mLinkInfo;
 	private Bitmap mSelectImage;
+	private GameService mGameService;
+
+
 	private Paint mPaint;
 	
 }
