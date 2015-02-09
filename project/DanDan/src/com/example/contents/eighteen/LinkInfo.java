@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.graphics.Point;
+import android.util.Log;
 
 public class LinkInfo {
 
@@ -38,7 +39,14 @@ public class LinkInfo {
 	{
 		return mPoints;
 	}
-	
+
+	public void print()
+	{
+		for (int i = 0; i < mPoints.size(); i++) {
+			Point p = mPoints.get(i);
+			Log.d(TAG, "Point:" + i + "(" + p.x + "," + p.y + ")");
+		}
+	}
 	private List<Point> mPoints = new ArrayList<Point>();
-	
+	public final String TAG = "LinkInfo";
 }

@@ -210,6 +210,7 @@ public class LinkMainActivity extends Activity {
 		if (mSelectPiece != null) {
 			LinkInfo linkInfo = mGameService.link(mSelectPiece, currentPiece);
 			if (linkInfo == null) {
+				Log.d(TAG, "gameViewTouchDown linkInfo is null");
 				mSelectPiece = currentPiece;
 				mGameView.postInvalidate();
 			} else {
@@ -221,6 +222,7 @@ public class LinkMainActivity extends Activity {
 	
 	private void handleSuccessLink(LinkInfo linkInfo, Piece PrePiece, Piece currentPiece, Piece[][] pieces)
 	{
+		linkInfo.print();
 		mGameView.setmLinkInfo(linkInfo);
 		mGameView.setmSelectPiece(null);
 		mGameView.postInvalidate();

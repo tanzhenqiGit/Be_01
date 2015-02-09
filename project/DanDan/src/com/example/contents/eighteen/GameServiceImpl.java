@@ -11,7 +11,10 @@ import android.util.Log;
 
 public class GameServiceImpl implements GameService {
 
-	
+	/**
+	 * 
+	 * @param mGameConf
+	 */
 	public GameServiceImpl(GameConf mGameConf) {
 		super();
 		this.mGameConf = mGameConf;
@@ -62,7 +65,7 @@ public class GameServiceImpl implements GameService {
 
 	@Override
 	public Piece findPiece(float touchX, float touchY) {
-		Log.d(TAG, "findPiece touch:" + touchX + " touchY:" + touchY);
+		Log.d(TAG, "findPiece touch:(" + touchX + "," + touchY + ")");
 		int relativeX = (int) touchX - mGameConf.getmBeginImageX();
 		int relativeY = (int) touchY - mGameConf.getmBeginImageY();
 		if ( relativeX < 0 || relativeY < 0 ) {
@@ -71,7 +74,8 @@ public class GameServiceImpl implements GameService {
 		}
 		int indexX = getIndex(relativeX, GameConf.PIECE_WIDHT);
 		int indexY = getIndex(relativeY, GameConf.PIECE_HEIGHT);
-		
+		Log.d(TAG, "findPiece Piece position:(" + indexX + "," + indexY + ")");
+
 		if (indexX < 0 || indexY < 0) {
 			Log.e(TAG, "indexX = " + indexX + ", indexY=" + indexY);
 			return null;
@@ -91,7 +95,7 @@ public class GameServiceImpl implements GameService {
 
 	@Override
 	public LinkInfo link(Piece p1, Piece p2) {
-		Log.d(TAG,"link");
+		Log.d(TAG,"link piece p1(" + p1.getmIndexX() + "," + p1.getmIndexY() + ")" + "p2(" + p2.getmIndexX() + "," + p2.getmIndexY() + ")");
 		if (p1.equals(p2)) {
 			Log.d(TAG, "p1 is equals p2, do nothing.");
 			return null;
@@ -105,7 +109,7 @@ public class GameServiceImpl implements GameService {
 		Point p1Point = p1.getCenter();
 		Point p2Point = p2.getCenter();
 		// case 1 in same y
-		if (p1.getmIndexY() == p2.getmBeginY()) {
+		if (p1.getmIndexY() == p2.getmIndexY()) {
 			Log.d(TAG, "p1 and p2 is in same Y");
 			if ( !isXblock(p1Point, p2Point, GameConf.PIECE_WIDHT) ) {
 				Log.d(TAG, "link x is not block.");
@@ -113,7 +117,7 @@ public class GameServiceImpl implements GameService {
 			}
 		}
 		// case in same x
-		if (p1.getmIndexX() == p1.getmIndexX()) {
+		if (p1.getmIndexX() == p2.getmIndexX()) {
 			Log.d(TAG, "p1 and p2 is in same X");
 			if ( !isYblock(p1Point, p2Point, GameConf.PIECE_HEIGHT) ) {
 				Log.d(TAG, "link y is not  block");
@@ -124,11 +128,13 @@ public class GameServiceImpl implements GameService {
 		// case in has a corner point
 		Point cornerPoint = getCornerPoint(p1Point, p2Point, GameConf.PIECE_WIDHT, GameConf.PIECE_HEIGHT);
 		if (cornerPoint != null) {
+			Log.d(TAG, "getConerPoint");
 			return new LinkInfo(p1Point, cornerPoint, p2Point);
 		}
 		
 		//case in has two corner point
 		Map<Point, Point> turns = getLinkPoints(p1Point, p2Point, GameConf.PIECE_WIDHT, GameConf.PIECE_HEIGHT);
+		Log.d(TAG, "LinkPoints");
 		if (turns.size() != 0) {
 			return getShortCut(p1Point, p2Point, turns, getDistance(p1Point, p2Point));
 		}
@@ -137,10 +143,15 @@ public class GameServiceImpl implements GameService {
 		return null;
 	}
 	
-	
+	/**
+	 * 
+	 * @param relative
+	 * @param size
+	 * @return
+	 */
 	private int getIndex(int relative , int size)
 	{
-		Log.d(TAG, "getIndex(relative:" + relative + ",size:" + size + ")");
+		//Log.d(TAG, "getIndex(relative:" + relative + ",size:" + size + ")");
 		int index = -1;
 		if (relative % size == 0) {
 			index = relative / size -1;
@@ -154,9 +165,17 @@ public class GameServiceImpl implements GameService {
 	
 	
 	
-	
+	/**
+	 * 
+	 * @param p1
+	 * @param p2
+	 * @param pieceWidth
+	 * @param pieceHeight
+	 * @return
+	 */
 	private Point getCornerPoint(Point p1, Point p2, int pieceWidth, int pieceHeight)
 	{
+		Log.d(TAG, "getCornerPoint:(" + p1.x + "," + p1.y + ")" + "p2(" + p2.x + "," + p2.y + ")");
 		if (isLeftUp(p1, p2) || isLeftDown(p1, p2))
 		{
 			return getCornerPoint(p2, p1, pieceWidth, pieceHeight);
@@ -184,6 +203,13 @@ public class GameServiceImpl implements GameService {
 		return null;
 	}
 
+	/**
+	 * 
+	 * @param p1
+	 * @param p2
+	 * @param pieceWidth
+	 * @return
+	 */
 	private boolean isXblock(Point p1, Point p2, int pieceWidth)
 	{
 		if (p2.x < p1.x) {
@@ -199,6 +225,13 @@ public class GameServiceImpl implements GameService {
 		return false;
 	}
 	
+	/**
+	 * 
+	 * @param p1
+	 * @param p2
+	 * @param pieceHeight
+	 * @return
+	 */
 	private boolean isYblock(Point p1, Point p2, int pieceHeight)
 	{
 		if (p2.y < p1.y) {
@@ -213,6 +246,12 @@ public class GameServiceImpl implements GameService {
 		return false;
 	}
 	
+	/**
+	 * 
+	 * @param x
+	 * @param y
+	 * @return
+	 */
 	private boolean hasPiece(int x, int y)
 	{
 		if (findPiece(x, y) == null) {
@@ -285,6 +324,13 @@ public class GameServiceImpl implements GameService {
 		return result;
 	}
 	
+	/**
+	 * 
+	 * @param p
+	 * @param min
+	 * @param pieceWidth
+	 * @return
+	 */
 	private List<Point> getLeftChanel(Point p, int min, int pieceWidth)
 	{
 		List<Point> result = new ArrayList<Point>();
@@ -360,10 +406,17 @@ public class GameServiceImpl implements GameService {
 		return null;
 	}
 	
-	
+	/**
+	 * 
+	 * @param p1
+	 * @param p2
+	 * @param pieceWidth
+	 * @param pieceHeight
+	 * @return
+	 */
 	private Map<Point, Point> getLinkPoints(Point p1, Point p2, int pieceWidth, int pieceHeight)
 	{
-		
+		Log.d(TAG, "getLinkPoints:(" + p1.x + "," + p1.y + ")" + "p2(" + p2.x + "," + p2.y + ")");
 		if (isLeftUp(p1, p2) || isLeftDown(p1, p2)) {
 			return getLinkPoints(p2, p1, pieceWidth, pieceHeight);
 		}
@@ -471,7 +524,13 @@ public class GameServiceImpl implements GameService {
 		
 	}
 	
-	
+	/**
+	 * 
+	 * @param p1Chanel
+	 * @param p2Chancel
+	 * @param pieceWidth
+	 * @return
+	 */
 	private Map<Point, Point> getXLinkPoints(List<Point> p1Chanel, List<Point> p2Chancel, int pieceWidth)
 	{
 		Map<Point, Point> result = new HashMap<Point, Point>();
@@ -490,6 +549,13 @@ public class GameServiceImpl implements GameService {
 		return result;
 	}
 
+	/**
+	 * 
+	 * @param p1Chanel
+	 * @param p2Chanel
+	 * @param pieceHeight
+	 * @return
+	 */
 	private Map<Point, Point> getYLinkPoints(List<Point> p1Chanel, List<Point> p2Chanel, int pieceHeight)
 	{
 		Map<Point, Point> result = new HashMap<Point, Point>();
@@ -507,6 +573,14 @@ public class GameServiceImpl implements GameService {
 		return result;
 	}
 	
+	/**
+	 * 
+	 * @param p1
+	 * @param p2
+	 * @param turns
+	 * @param shortDistance
+	 * @return
+	 */
 	private LinkInfo getShortCut(Point p1,Point p2, Map<Point, Point> turns, int shortDistance)
 	{
 		List<LinkInfo> infos = new ArrayList<LinkInfo>();
@@ -517,7 +591,12 @@ public class GameServiceImpl implements GameService {
 		return getShortCut(infos,shortDistance);
 	}
 	
-	
+	/**
+	 * 
+	 * @param infos
+	 * @param shortDistance
+	 * @return
+	 */
 	private LinkInfo getShortCut(List<LinkInfo> infos, int shortDistance)
 	{
 		int temp1 = 0;
@@ -544,7 +623,11 @@ public class GameServiceImpl implements GameService {
 		return result;
 	}
 	
-	
+	/**
+	 * 
+	 * @param points
+	 * @return
+	 */
 	private int countAll(List<Point> points)
 	{
 		int result = 0;
@@ -555,7 +638,12 @@ public class GameServiceImpl implements GameService {
 		}
 		return result;
 	}
-	
+	/**
+	 * 
+	 * @param p1
+	 * @param p2
+	 * @return
+	 */
 	private int getDistance(Point p1, Point p2)
 	{
 		int xDistance = Math.abs(p1.x - p2.x);
