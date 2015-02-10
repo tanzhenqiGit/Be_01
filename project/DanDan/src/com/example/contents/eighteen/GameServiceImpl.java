@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Random;
+//import java.util.Random;
 
 import android.graphics.Point;
 import android.util.Log;
@@ -24,8 +24,8 @@ public class GameServiceImpl implements GameService {
 	public void start() {
 		Log.d(TAG, "start");
 		AbstractBoard board = null;
-		Random random = new Random();
-		int index = random.nextInt(4);
+		//Random random = new Random();
+		int index = 1;//random.nextInt(3);
 		switch (index)
 		{
 		case VERTICAL_BOARD:
@@ -38,7 +38,7 @@ public class GameServiceImpl implements GameService {
 			board = new FullBoard();
 			break;
 		default:
-			board = new FullBoard();	
+			board = new HorizontalBoard();	
 			break;
 		}
 		mPieces = board.create(mGameConf);
@@ -65,7 +65,7 @@ public class GameServiceImpl implements GameService {
 
 	@Override
 	public Piece findPiece(float touchX, float touchY) {
-		Log.d(TAG, "findPiece touch:(" + touchX + "," + touchY + ")");
+		//Log.d(TAG, "findPiece touch:(" + touchX + "," + touchY + ")");
 		int relativeX = (int) touchX - mGameConf.getmBeginImageX();
 		int relativeY = (int) touchY - mGameConf.getmBeginImageY();
 		if ( relativeX < 0 || relativeY < 0 ) {
@@ -74,14 +74,14 @@ public class GameServiceImpl implements GameService {
 		}
 		int indexX = getIndex(relativeX, GameConf.PIECE_WIDHT);
 		int indexY = getIndex(relativeY, GameConf.PIECE_HEIGHT);
-		Log.d(TAG, "findPiece Piece position:(" + indexX + "," + indexY + ")");
+		//Log.d(TAG, "findPiece Piece position:(" + indexX + "," + indexY + ")");
 
 		if (indexX < 0 || indexY < 0) {
 			Log.e(TAG, "indexX = " + indexX + ", indexY=" + indexY);
 			return null;
 		}
 		
-		if (indexX > mGameConf.getmXSize() || indexY > mGameConf.getmYSize())
+		if (indexX >= mGameConf.getmXSize() || indexY >= mGameConf.getmYSize())
 		{
 			Log.e(TAG, "indexX = " + indexX 
 					+ ",MaxX:" + mGameConf.getmXSize() 
@@ -89,7 +89,8 @@ public class GameServiceImpl implements GameService {
 					+ ",MaxY" + mGameConf.getmYSize());
 			return null;
 		}
-		
+		Log.d(TAG, "findPiece indexX=" + indexX + ",indexY=" + indexY  +(mPieces[indexX][indexY]==null ? "==>null" : "==>not null"));
+
 		return mPieces[indexX][indexY];
 	}
 
@@ -110,7 +111,7 @@ public class GameServiceImpl implements GameService {
 		Point p2Point = p2.getCenter();
 		// case 1 in same y
 		if (p1.getmIndexY() == p2.getmIndexY()) {
-			Log.d(TAG, "p1 and p2 is in same Y");
+			Log.d(TAG, "link case 1 p1 and p2 is in same Y");
 			if ( !isXblock(p1Point, p2Point, GameConf.PIECE_WIDHT) ) {
 				Log.d(TAG, "link x is not block.");
 				return new LinkInfo(p1Point, p2Point);
@@ -213,12 +214,15 @@ public class GameServiceImpl implements GameService {
 	private boolean isXblock(Point p1, Point p2, int pieceWidth)
 	{
 		if (p2.x < p1.x) {
+			Log.d(TAG, "isXblock p1:" + p1.x + ", " + p1.y + "p2:" + p2.x + ","+p2.y);
 			return isXblock(p2, p1, pieceWidth);
 		}
 		// p1.x < p2.x 	
 		for (int i = p1.x + pieceWidth; i < p2.x; i = i + pieceWidth)
 		{
-			if (hasPiece(i, p1.y)); {
+			Log.d(TAG, "isXblock i:" + i + ", " + p1.y + "p2:" + p2.x + ","+p2.y);
+
+			if (hasPiece(i, p1.y)) {
 				return true;
 			}
 		}
@@ -255,6 +259,7 @@ public class GameServiceImpl implements GameService {
 	private boolean hasPiece(int x, int y)
 	{
 		if (findPiece(x, y) == null) {
+			Log.d(TAG, "(" + x + "," + y + ")" + "is null");
 			return false;
 		} else {
 			return true;
@@ -396,7 +401,7 @@ public class GameServiceImpl implements GameService {
 		for (int i = 0; i < p1Chanel.size(); i++) {
 			Point temp1 = p1Chanel.get(i);
 			for (int j = 0; j < p2Chanel.size(); j ++) {
-				Point temp2 = p2Chanel.get(i);
+				Point temp2 = p2Chanel.get(j);
 				if (temp1.equals(temp2)) {
 					return temp1;
 				}
@@ -435,15 +440,23 @@ public class GameServiceImpl implements GameService {
 		int widthMax = (mGameConf.getmXSize() + 1) * pieceWidth + mGameConf.getmBeginImageX();
 		
 		if (p1.y == p2.y) {
+			Log.d(TAG, "getLinkPoint p1.y == p2.y");
 			p1UpChanel = getUpChanel(p1, 0, pieceHeight);
 			p2UpChanel = getUpChanel(p2, 0, pieceHeight);
-			
-			Map<Point, Point> upLinkPoints = getXLinkPoints(p1UpChanel, p1UpChanel, pieceHeight);
+			Log.d(TAG, "p1UpChanel size=" + p1UpChanel.size());
+			Log.d(TAG, "p2UpChanel size=" + p2UpChanel.size());
+
+			Map<Point, Point> upLinkPoints = getXLinkPoints(p1UpChanel, p2UpChanel, pieceHeight);
+			Log.d(TAG, "upLinkPoints size=" + upLinkPoints.size());
 			
 			p1DownChanel = getDownChanel(p1, heightMax, pieceHeight);
-			p2DownChanel = getDownChanel(p1, heightMax, pieceHeight);
-			Map<Point, Point> downLinkPoints = getXLinkPoints(p2DownChanel, p2DownChanel, pieceWidth);
+			p2DownChanel = getDownChanel(p2, heightMax, pieceHeight);
 			
+			Log.d(TAG, "p1DownChanel size=" + p1DownChanel.size());
+			Log.d(TAG, "p2DownChanel size=" + p2DownChanel.size());
+			Map<Point, Point> downLinkPoints = getXLinkPoints(p1DownChanel, p2DownChanel, pieceWidth);
+			Log.d(TAG, "downLinkPoints size=" + downLinkPoints.size());
+
 			result.putAll(upLinkPoints);
 			result.putAll(downLinkPoints);
 		} else if (p1.x == p2.x) {
@@ -453,7 +466,7 @@ public class GameServiceImpl implements GameService {
 			
 			p1RightChanel = getRightChanel(p1, widthMax, pieceWidth);
 			List<Point> p2RightChanel = getRightChanel(p2, widthMax, pieceWidth);
-			Map<Point, Point> rightLinkPoints = getYLinkPoints(p1LeftChanel, p2RightChanel, pieceHeight);
+			Map<Point, Point> rightLinkPoints = getYLinkPoints(p1RightChanel, p2RightChanel, pieceHeight);
 			
 			result.putAll(leftLinkPoints);
 			result.putAll(rightLinkPoints);

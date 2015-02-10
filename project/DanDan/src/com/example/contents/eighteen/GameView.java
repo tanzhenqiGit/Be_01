@@ -74,7 +74,6 @@ public class GameView extends View {
 					mSelectPiece.getmBeginX(), 
 					mSelectPiece.getmBeginY(),
 					null);
-			Log.d(TAG, "draw select piece.");
 		}
 	}
 

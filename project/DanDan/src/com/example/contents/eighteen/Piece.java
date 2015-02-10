@@ -9,6 +9,10 @@ public class Piece {
 		super();
 		this.mIndexX = mIndexX;
 		this.mIndexY = mIndexY;
+		mImage = null;
+		mBeginX = 0;
+		mBeginY = 0;
+		
 	}
 	
 	

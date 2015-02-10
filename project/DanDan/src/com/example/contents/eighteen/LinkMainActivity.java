@@ -74,7 +74,7 @@ public class LinkMainActivity extends Activity {
 	{
 		Log.d(TAG, "initialize()");
 		setContentView(R.layout.eighteen_link_main);
-		mGameConfig = new GameConf(8, 9, 2, 4, 100 * 1000, this);
+		mGameConfig = new GameConf(8, 8, 2, 4, 100 * 1000, this);
 		
 	
 		mStartBtn = (Button) findViewById(R.id.eighteen_link_main_start_btn);
@@ -194,12 +194,13 @@ public class LinkMainActivity extends Activity {
 		Piece[][] pieces = mGameService.getPieces();
 		float touchX = event.getX();
 		float touchY = event.getY();
-		Log.d(TAG, "touch : (" + touchX + "," + touchY + ")");
+	
 		Piece currentPiece = mGameService.findPiece(touchX, touchY);
 		if (currentPiece == null) {
 			return;
 		}
-		
+		Log.d(TAG, "touch : (" + currentPiece.getmIndexX() + "," + currentPiece.getmIndexY() + ")");
+
 		mGameView.setmSelectPiece(currentPiece);
 		if (mSelectPiece == null) {
 			mSelectPiece = currentPiece;
