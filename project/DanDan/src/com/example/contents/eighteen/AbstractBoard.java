@@ -28,13 +28,8 @@ public abstract class AbstractBoard {
 			piece.setmBeginX(piece.getmIndexX() * imageWidth + config.getmBeginImageX());
 			piece.setmBeginY(piece.getmIndexY() * imageHeight + config.getmBeginImageY());
 			pieces[piece.getmIndexX()][piece.getmIndexY()] = piece;
-			Log.d(TAG, "("+piece.getmIndexX() + ", " + piece.getmIndexY() + ")");
 		}
-		for (int i = 0; i < pieces.length; i++) {
-			for (int j = 0; j < pieces[i].length; j++) {
-				Log.d(TAG, "piece(" + i + "," + j + ")" + ((pieces[i][j] == null) ? "==>null" : "==>not null"));
-			}
-		}
+
 		return pieces;
 	}
 }
