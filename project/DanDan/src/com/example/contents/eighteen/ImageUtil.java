@@ -65,6 +65,7 @@ public class ImageUtil {
 		for (int i = 0; i < size; i++) {
 			try {
 				int index = random.nextInt(sourceValue.size());
+				Log.d(TAG, "getRandomValues max=" + sourceValue.size() + "==>index");
 				Integer image = sourceValue.get(index);
 				result.add(image);
 			} catch (IndexOutOfBoundsException e) {
@@ -99,6 +100,7 @@ public class ImageUtil {
 	 */
 	public static List<PieceImage> getPlayImages(Context context, int size)
 	{
+		Log.d(TAG, "getPlayImages mImageValue.size=" + mImageValue.size());
 		List<Integer> resourceValues = getPlayValues(size);
 		List<PieceImage> result = new ArrayList<PieceImage>();
 		for (Integer value : resourceValues) {

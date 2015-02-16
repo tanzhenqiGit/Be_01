@@ -74,7 +74,7 @@ public class LinkMainActivity extends Activity {
 	{
 		Log.d(TAG, "initialize()");
 		setContentView(R.layout.eighteen_link_main);
-		mGameConfig = new GameConf(8, 8, 2, 4, 100 * 1000, this);
+		mGameConfig = new GameConf(9, 8, 2, 4, 100 * 1000, this);
 		
 	
 		mStartBtn = (Button) findViewById(R.id.eighteen_link_main_start_btn);
