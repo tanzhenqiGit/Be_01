@@ -8,6 +8,7 @@ import com.example.contents.five.FiveContentsActivity;
 import com.example.contents.four.FourContentsActivity;
 import com.example.contents.fourteen.FourteenContentActivity;
 import com.example.contents.nine.NineContentsActivity;
+import com.example.contents.nineteen.NineteenContentsActivity;
 import com.example.contents.seven.SevenContentsActivity;
 import com.example.contents.seventeen.SeventeenContentsActivity;
 import com.example.contents.six.SixContentsActivity;
@@ -160,7 +161,9 @@ public class ContentsActivity extends Activity {
 						startActivity(eighteen_intent);
 						break;
 					case CHAPTER_NINETEEN:
-						
+						Intent nineteen_intent 
+							= new Intent(ContentsActivity.this, NineteenContentsActivity.class);
+						startActivity(nineteen_intent);
 						break;
 				    default:
 				    	break;

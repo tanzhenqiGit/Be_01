@@ -18,7 +18,7 @@
         <item > 16 GPS 应用开发</item>
         <item > 17 使用Google Map 服务</item>
         <item > 18 疯狂连连看</item>
-        <item > 19 电子拍卖系统 </item>
+        <item > 19 开发实例 </item>
     </string-array>
     
     <string-array name="chapterTwoContents">
@@ -196,6 +196,12 @@
         <item > 17.1 </item>
         <item > 17.2 </item>
         <item > 17.3 </item>
+    </string-array>
+    
+    <string-array name="chapterNineteenContents">
+        <item > 19.1 </item>
+        <item > 19.2 </item>
+        <item > 19.3 </item>
     </string-array>
     
     <!-- 声明一个名为statusNames的字符串数组 -->

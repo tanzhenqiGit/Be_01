@@ -255,6 +255,7 @@
 	<string name="SixteenContentsActivity">第十六章内容</string>
 	<string name="SeventeenContentsActivity">第十七章内容</string>
 	<string name="LinkMainActivity">第十八章内容</string>
+	<string name="NineteenContentsActivity">第十九章内容</string>
 	<string name="AllProvidersActivity">AllProvidersActivity的应用</string>
 	<string name="LocationActivity">Location的应用</string>
 	<string name="ProximityActivity">Proximity的应用</string>
