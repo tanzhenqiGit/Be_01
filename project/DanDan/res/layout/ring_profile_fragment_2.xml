@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/ring_profile_fragment_2_relativelayout"
+    android:padding="@dimen/ring_profile_pading"
+    >
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/help"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:id="@+id/ring_profile_help"
+        />
+    
+    <TimePicker 
+        android:id="@+id/ring_profile_timepicker"
+        android:layout_below="@id/ring_profile_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    
+    <RadioGroup
+        android:id="@+id/ring_profile_fragment2_radiogroup"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ring_profile_timepicker"
+        
+        >
+        
+    	<RadioButton 
+            android:id="@+id/ring_profile_fragment2_ring_and_vibrate"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/ring_profile_text_size"
+            android:paddingLeft="@dimen/ring_profile_padding_left"
+            android:text="@string/ring_and_vibrate"
+            />
+        
+        <RadioButton 
+            android:id="@+id/ring_profile_fragment2_ring"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/ring_profile_text_size"
+            android:paddingLeft="@dimen/ring_profile_padding_left"
+            android:text="@string/ring"
+            />
+        <RadioButton 
+            android:id="@+id/ring_profile_fragment2_vibrate"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/ring_profile_text_size"
+            android:paddingLeft="@dimen/ring_profile_padding_left"
+            android:text="@string/vibrate"
+            />
+        <RadioButton 
+            android:id="@+id/ring_profile_fragment2_silent"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/ring_profile_text_size"
+            android:paddingLeft="@dimen/ring_profile_padding_left"
+            android:text="@string/silent"
+            />
+    </RadioGroup>
+    
+</RelativeLayout>

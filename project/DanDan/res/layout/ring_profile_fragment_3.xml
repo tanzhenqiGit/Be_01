@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ring_profile_fragment_3_absolutelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="Deprecated" >
+
+    <TextView
+        android:id="@+id/ring_profile_fragment_3_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="42dp"
+        android:textSize="@dimen/ring_profile_text_size" />
+
+    <ImageView
+        android:id="@+id/ring_profile_fragment_3_img"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_x="110dp"
+        android:layout_y="32dp"
+        android:contentDescription="@string/Default" />
+
+    <TextView
+        android:id="@+id/ring_profile_fragment_3_txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="102dp"
+        android:text="@string/sound_volume"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/ring_profile_fragment_3_progressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dip"
+        android:layout_height="wrap_content"
+        android:layout_x="110dp"
+        android:layout_y="102dp"
+        android:max="7" />
+
+    <ImageButton
+        android:id="@+id/ring_profile_fragment_3_downBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_x="50dp"
+        android:layout_y="162dp"
+        android:contentDescription="@string/Default"
+        android:src="@drawable/down" />
+
+    <ImageButton
+        android:id="@+id/ring_profile_fragment_3_upBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_x="150dp"
+        android:layout_y="162dp"
+        android:contentDescription="@string/Default"
+        android:src="@drawable/up" />
+
+    <ImageButton
+        android:id="@+id/ring_profile_fragment_3_normalBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="50dp"
+        android:layout_y="272dp"
+        android:contentDescription="@string/Default"
+        android:src="@drawable/normal" />
+
+    <ImageButton
+        android:id="@+id/ring_profile_fragment_3_muteBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="120dp"
+        android:layout_y="272dp"
+        android:contentDescription="@string/Default"
+        android:src="@drawable/mute" />
+
+    <ImageButton
+        android:id="@+id/ring_profile_fragment_3_vibrateBtn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_x="190dp"
+        android:layout_y="272dp"
+        android:contentDescription="@string/Default"
+        android:src="@drawable/vibrate" />
+
+</AbsoluteLayout>

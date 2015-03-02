@@ -8,4 +8,9 @@
     <dimen name="map_edittext_size">85px</dimen>
     <dimen name="map_pading">8px</dimen>
     <dimen name="key_size">100dp</dimen>
+    <dimen name="ring_profile_text_size">24sp</dimen>
+    <dimen name="ring_profile_padding_left">5sp</dimen>
+    <dimen name="ring_profile_padding_right">50sp</dimen>
+    <dimen name="ring_profile_pading">12sp</dimen>
+    
 </resources>

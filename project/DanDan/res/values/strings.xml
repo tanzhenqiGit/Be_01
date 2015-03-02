@@ -256,6 +256,7 @@
 	<string name="SeventeenContentsActivity">第十七章内容</string>
 	<string name="LinkMainActivity">第十八章内容</string>
 	<string name="NineteenContentsActivity">第十九章内容</string>
+	<string name="RingProfile">RingProfile</string>
 	<string name="AllProvidersActivity">AllProvidersActivity的应用</string>
 	<string name="LocationActivity">Location的应用</string>
 	<string name="ProximityActivity">Proximity的应用</string>
@@ -271,5 +272,12 @@
 	<string name="speech">朗读</string>
 	<string name="record">录音</string>
 	<string name="defaultTime">00:00:00</string>
+	
+	<string name="ring_and_vibrate">铃声和振动</string>
+	<string name="ring">铃声</string>
+	<string name="vibrate">振动</string>
+	<string name="silent">静音</string>
+	<string name="help">设置时间</string>
+	<string name="sound_volume">声音音量</string>
 	
 </resources>

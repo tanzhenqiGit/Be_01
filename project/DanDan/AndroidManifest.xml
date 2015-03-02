@@ -776,6 +776,13 @@
             android:name="com.example.contents.nineteen.NineteenContentsActivity"
             android:label="@string/NineteenContentsActivity">           
         </activity>
+        
+        <activity 
+            android:name="com.example.contents.nineteen.ringprofile.RingProfile"
+            android:label="@string/RingProfile">           
+        </activity>
+        
+        
         <service android:name="com.example.contents.ten.firstService.FirstService" >
         	<intent-filter>
         	    <action android:name="com.example.contents.ten.firstService.FirstService" />
